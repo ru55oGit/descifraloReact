@@ -1,0 +1,73 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true,
+      "jest": true
+    },
+    "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["react"],
+    "rules": {
+      "react/display-name": [0],
+      "template-curly-spacing": [0],
+      "import/no-unresolved": [0],
+      "indent": [0],
+      "quotes": [1, "single"],
+      "semi": ["error", "never"],
+      "func-style": 0,
+      "max-len": 0,
+      "no-magic-numbers": 0,
+      "max-lines-per-function": 0,
+      "space-before-function-paren": [
+        1,
+        {
+          "anonymous": "never",
+          "named": "never",
+          "asyncArrow": "always"
+        }
+      ],
+      "no-tabs": [0],
+      "function-call-argument-newline": 0,
+      "padded-blocks": 0,
+      "padding-line-between-statements": [
+        1,
+        { "blankLine": "always", "prev": "*", "next": "return" },
+        { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+        {
+          "blankLine": "any",
+          "prev": ["const", "let", "var"],
+          "next": ["const", "let", "var"]
+        }
+      ],
+      "object-curly-spacing": [1, "always"],
+      "one-var": [1, "never"],
+      "quote-props": 0,
+      "sort-imports": 0,
+      "sort-keys": [
+        "error",
+        "asc",
+        { "caseSensitive": true, "natural": false, "minKeys": 2 }
+      ],
+      "react/prop-types": 1,
+      "react/function-component-definition": [0],
+      "react/jsx-sort-props": 1,
+      "react/jsx-filename-extension": 0,
+      "react/react-in-jsx-scope": 0,
+      "react/jsx-no-literals": 0,
+      "react/jsx-one-expression-per-line": 0,
+      "react/jsx-max-depth": 0,
+      "react/jsx-newline": 0,
+      "react/jsx-props-no-spreading": 0,
+      "react/jsx-indent": "off",
+      "react/jsx-indent-props": "off",
+      "object-curly-newline": ["error", { "consistent": true }]
+    },
+    "ignorePatterns": ["node_modules/", "build/", "coverage/"]
+  }
