@@ -1,15 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useTheme } from '@mui/material'
 import Paper from '../components/Paper'
 import Splash from '../components/Splash'
-import Login from '../components/Login'
 
 const IntroPage = () => {
   const theme = useTheme()
-  const [splash, setSplash] = useState(true)
+  const navigate = useNavigate()
 
   useEffect(() => {
-    setTimeout(() => setSplash(false), 3000)
+    setTimeout(() => navigate('/niveles'), 3000)
   })
 
   return (
@@ -23,7 +23,7 @@ const IntroPage = () => {
         margin: 2,
       }}
     >
-      {splash ? <Splash /> : <Login />}
+      <Splash />
     </Paper>
   )
 }
