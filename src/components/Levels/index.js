@@ -9,7 +9,7 @@ import {
   Peliculas,
   Jugadores,
 } from '../IconsCategories'
-import { Emojis1 } from '../SVG/Emojis'
+import { Emojis1, Emojis2 } from '../SVG/Emojis'
 
 const Levels = () => {
   const classes = useStyles()
@@ -22,7 +22,7 @@ const Levels = () => {
         <Emojis1 />
       </Stack>
       <Stack className={classes.row} direction="row">
-        <Emojis1 />
+        <Emojis2 />
         <Emojis />
       </Stack>
       <Stack className={classes.row} direction="row">
