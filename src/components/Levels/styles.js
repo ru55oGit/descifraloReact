@@ -1,7 +1,9 @@
 import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles((theme) => ({
-  container: {
+  containerLevel: {
+    border: `1px solid ${theme.palette.black.main}`,
+    margin: 'auto',
     maxWidth: '768px',
   },
   row: {

@@ -9,33 +9,33 @@ import {
   Peliculas,
   Jugadores,
 } from '../IconsCategories'
-import { Emojis1, Emojis2 } from '../SVG/Emojis'
+import LevelEmojis from '../LevelEmojis'
 
 const Levels = () => {
   const classes = useStyles()
   // const theme = useTheme()
 
   return (
-    <Box className={classes.container}>
+    <Box className={classes.containerLevel}>
       <Stack className={classes.row} direction="row">
         <Acertijos />
-        <Emojis1 />
+        <LevelEmojis level={1} />
       </Stack>
       <Stack className={classes.row} direction="row">
-        <Emojis2 />
+        <LevelEmojis level={2} />
         <Emojis />
       </Stack>
       <Stack className={classes.row} direction="row">
         <Logos />
-        <Emojis1 />
+        <LevelEmojis level={1} />
       </Stack>
       <Stack className={classes.row} direction="row">
-        <Emojis1 />
+        <LevelEmojis level={2} />
         <Peliculas />
       </Stack>
       <Stack className={classes.row} direction="row">
         <Jugadores />
-        <Emojis1 />
+        <LevelEmojis level={1} />
       </Stack>
     </Box>
   )

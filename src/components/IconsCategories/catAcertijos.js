@@ -1,7 +1,7 @@
 import SvgIcon from '@mui/material/SvgIcon'
 
 const CatAcertijos = () => (
-  <SvgIcon sx={{ height: '100%', width: '50vw' }} viewBox="0 0 400 400">
+  <SvgIcon sx={{ height: '100%', width: '50%' }} viewBox="0 0 400 400">
     <svg
       height="400"
       viewBox="0 0 400 400"
