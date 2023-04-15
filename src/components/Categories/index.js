@@ -10,6 +10,8 @@ import {
 } from '../IconsCategories'
 import LevelEmojis from '../LevelEmojis'
 import LevelJugadores from '../LevelJugadores'
+import LevelAdivinanzas from '../LevelAdivinanzas'
+import LevelLogos from '../LevelLogos'
 
 const Levels = () => {
   const classes = useStyles()
@@ -18,15 +20,15 @@ const Levels = () => {
     <Box className={classes.containerLevel}>
       <Stack className={classes.row} direction="row">
         <Acertijos />
-        <LevelEmojis level={1} />
+        <LevelAdivinanzas level={1} />
       </Stack>
       <Stack className={classes.row} direction="row">
-        <LevelEmojis level={2} />
+        <LevelEmojis level={1} />
         <Emojis />
       </Stack>
       <Stack className={classes.row} direction="row">
         <Logos />
-        <LevelEmojis level={1} />
+        <LevelLogos level={1} />
       </Stack>
       <Stack className={classes.row} direction="row">
         <LevelEmojis level={2} />
