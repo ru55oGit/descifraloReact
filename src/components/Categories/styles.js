@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
   },
   row: {
     alignItems: 'center',
+    cursor: 'pointer',
     height: '100%',
   },
   [theme.breakpoints.up('md')]: {

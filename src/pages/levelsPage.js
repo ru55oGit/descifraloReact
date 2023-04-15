@@ -1,6 +1,6 @@
 // import { useTheme } from '@mui/material'
-import Levels from '../components/Levels'
+import Categories from '../components/Categories'
 
-const IntroPage = () => <Levels />
+const IntroPage = () => <Categories />
 
 export default IntroPage
