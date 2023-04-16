@@ -83,7 +83,7 @@ const theme = createTheme({
       fontSize: 16,
       lineHeight: 24 / 16,
     },
-    fontFamily: 'Averta Std',
+    fontFamily: 'Averta',
     h1: {
       fontSize: 28,
       fontWeight: 700,
