@@ -16,11 +16,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 14,
     width: 'auto',
   },
-  containerLevel: {
-    // border: `1px solid ${theme.palette.black.main}`,
-    margin: 'auto',
-    maxWidth: '768px',
-  },
+
   navBar: {
     alignItems: 'center',
     backgroundColor: theme.palette.white.main,
@@ -29,14 +25,6 @@ const useStyles = makeStyles((theme) => ({
     height: 50,
     justifyContent: 'space-between',
     padding: 8,
-  },
-  row: {
-    alignItems: 'center',
-    cursor: 'pointer',
-    height: '100%',
-  },
-  [theme.breakpoints.up('md')]: {
-    justifyContent: 'center',
   },
 }))
 
