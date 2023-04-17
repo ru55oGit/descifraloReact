@@ -16,15 +16,17 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 14,
     width: 'auto',
   },
-
   navBar: {
     alignItems: 'center',
     backgroundColor: theme.palette.white.main,
     borderBottom: `1px solid ${theme.palette.primary.main}`,
     display: 'flex',
-    height: 50,
+    height: 45,
     justifyContent: 'space-between',
+    maxWidth: '752px',
     padding: 8,
+    position: 'fixed',
+    width: 'calc(100% - 16px)',
   },
 }))
 

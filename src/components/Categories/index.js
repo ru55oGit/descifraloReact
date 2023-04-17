@@ -23,33 +23,35 @@ const Levels = () => {
   const [level, setLevel] = useState(1)
 
   return (
-    <Box className={classes.containerLevel}>
+    <>
       <NavBar level={level} setLevel={setLevel} />
-      <Stack className={classes.row} direction="row">
-        <Acertijos />
-        <LevelAdivinanzas level={level} />
-      </Stack>
-      <Stack className={classes.row} direction="row">
-        <LevelEmojis level={level} />
-        <Emojis />
-      </Stack>
-      <Stack className={classes.row} direction="row">
-        <Logos />
-        <LevelLogos level={level} />
-      </Stack>
-      <Stack className={classes.row} direction="row">
-        <LevelPeliculas level={level} />
-        <Peliculas />
-      </Stack>
-      <Stack className={classes.row} direction="row">
-        <Jugadores />
-        <LevelJugadores level={level} />
-      </Stack>
-      <Stack className={classes.row} direction="row">
-        <LevelSombras level={level} />
-        <Sombras />
-      </Stack>
-    </Box>
+      <Box className={classes.containerLevel}>
+        <Stack className={classes.row} direction="row">
+          <Acertijos />
+          <LevelAdivinanzas level={level} />
+        </Stack>
+        <Stack className={classes.row} direction="row">
+          <LevelEmojis level={level} />
+          <Emojis />
+        </Stack>
+        <Stack className={classes.row} direction="row">
+          <Logos />
+          <LevelLogos level={level} />
+        </Stack>
+        <Stack className={classes.row} direction="row">
+          <LevelPeliculas level={level} />
+          <Peliculas />
+        </Stack>
+        <Stack className={classes.row} direction="row">
+          <Jugadores />
+          <LevelJugadores level={level} />
+        </Stack>
+        <Stack className={classes.row} direction="row">
+          <LevelSombras level={level} />
+          <Sombras />
+        </Stack>
+      </Box>
+    </>
   )
 }
 
