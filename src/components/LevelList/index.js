@@ -9,8 +9,13 @@ import Typography from '@mui/material/Typography'
 import Divider from '@mui/material/Divider'
 import { useTheme } from '@mui/styles'
 
-const LevelList = ({ cant, setLevel }) => {
+const LevelList = ({ cant, setLevel, setOpen }) => {
   const theme = useTheme()
+
+  const handleClick = (i) => {
+    setLevel(i + 1)
+    setOpen(false)
+  }
 
   return (
     <Box
@@ -26,7 +31,7 @@ const LevelList = ({ cant, setLevel }) => {
         {Array.from({ length: cant }, (e, index) => (
           <>
             <ListItem key={index} component="div" disablePadding>
-              <ListItemButton onClick={() => setLevel(index + 1)}>
+              <ListItemButton onClick={() => handleClick(index)}>
                 <ListItemText>
                   <Typography color="text.primary" variant="h2">
                     Nivel {index + 1}
@@ -52,4 +57,5 @@ export default LevelList
 LevelList.propTypes = {
   cant: PropTypes.number.isRequired,
   setLevel: PropTypes.func.isRequired,
+  setOpen: PropTypes.func.isRequired,
 }

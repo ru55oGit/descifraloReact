@@ -47,7 +47,7 @@ const NavBar = ({ level, setLevel }) => {
         </Stack>
       </Stack>
       <Dialog onClose={handleClose} open={open}>
-        <LevelList cant={200} setLevel={setLevel} />
+        <LevelList cant={200} setLevel={setLevel} setOpen={setOpen} />
       </Dialog>
     </>
   )
