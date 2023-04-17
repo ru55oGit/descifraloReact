@@ -7,12 +7,14 @@ import {
   Logos,
   Peliculas,
   Jugadores,
+  Sombras,
 } from '../IconsCategories'
 import LevelEmojis from '../LevelEmojis'
 import LevelJugadores from '../LevelJugadores'
 import LevelAdivinanzas from '../LevelAdivinanzas'
 import LevelLogos from '../LevelLogos'
 import LevelPeliculas from '../LevelPeliculas'
+import LevelSombras from '../LevelSombras'
 import NavBar from '../NavBar'
 import useStyles from './styles'
 
@@ -42,6 +44,10 @@ const Levels = () => {
       <Stack className={classes.row} direction="row">
         <Jugadores />
         <LevelJugadores level={level} />
+      </Stack>
+      <Stack className={classes.row} direction="row">
+        <LevelSombras level={level} />
+        <Sombras />
       </Stack>
     </Box>
   )
