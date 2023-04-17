@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   containerLevel: {
     margin: 'auto',
     maxWidth: '768px',
-    paddingTop: '62px',
+    paddingTop: '61px',
   },
   row: {
     alignItems: 'center',

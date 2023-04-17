@@ -23,9 +23,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     height: 45,
     justifyContent: 'space-between',
+    left: '50%',
     maxWidth: '752px',
     padding: 8,
     position: 'fixed',
+    transform: 'translate(-50%, 0px)',
     width: 'calc(100% - 16px)',
   },
 }))
