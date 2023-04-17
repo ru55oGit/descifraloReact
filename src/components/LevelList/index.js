@@ -4,6 +4,9 @@ import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
+import Typography from '@mui/material/Typography'
+
+import Divider from '@mui/material/Divider'
 import { useTheme } from '@mui/styles'
 
 const LevelList = ({ cant, setLevel }) => {
@@ -15,16 +18,29 @@ const LevelList = ({ cant, setLevel }) => {
         backgroundColor: theme.palette.white.main,
         display: 'flex',
         justifyContent: 'center',
-        width: '80vw',
+        maxHeight: '80vh',
+        width: '35vw',
       }}
     >
       <List>
         {Array.from({ length: cant }, (e, index) => (
-          <ListItem key={index} component="div" disablePadding>
-            <ListItemButton onClick={() => setLevel(index + 1)}>
-              <ListItemText primary={`Nivel ${index + 1}`} />
-            </ListItemButton>
-          </ListItem>
+          <>
+            <ListItem key={index} component="div" disablePadding>
+              <ListItemButton onClick={() => setLevel(index + 1)}>
+                <ListItemText>
+                  <Typography color="text.primary" variant="h2">
+                    Nivel {index + 1}
+                  </Typography>
+                </ListItemText>
+              </ListItemButton>
+            </ListItem>
+            <Divider
+              sx={{
+                borderColor: theme.palette.text.primary,
+                borderWidth: '0.5px',
+              }}
+            />
+          </>
         ))}
       </List>
     </Box>
