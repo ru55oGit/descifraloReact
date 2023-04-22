@@ -37,7 +37,6 @@ const Game = () => {
     } else {
       navigate('/niveles')
     }
-    inputRef.current.focus()
   }, [gameState, navigate])
 
   const Image = () => {
@@ -60,14 +59,12 @@ const Game = () => {
   }
 
   return (
-    <Box
-      className={classes.gameContainer}
-      onClick={() => inputRef.current.focus()}
-    >
+    <Box className={classes.gameContainer}>
       <NavBar />
       <Box className={classes.imageContainer}>{Image()}</Box>
       <TextField
         ref={inputRef}
+        autoFocus
         className={classes.hideInput}
         label="Outlined"
         variant="outlined"
