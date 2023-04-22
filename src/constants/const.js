@@ -1,0 +1,6 @@
+export const ACERTIJOS = 'acertijos'
+export const EMOJIS = 'emojis'
+export const LOGOS = 'logos'
+export const PELICULAS = 'peliculas'
+export const JUGADORES = 'jugadores'
+export const SOMBRAS = 'sombras'

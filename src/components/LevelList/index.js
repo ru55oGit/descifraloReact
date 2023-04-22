@@ -27,10 +27,10 @@ const LevelList = ({ cant, setLevel, setOpen }) => {
         width: '35vw',
       }}
     >
-      <List>
+      <List sx={{ width: '100%' }}>
         {Array.from({ length: cant }, (e, index) => (
           <>
-            <ListItem key={index} component="div" disablePadding>
+            <ListItem key={index} disablePadding>
               <ListItemButton onClick={() => handleClick(index)}>
                 <ListItemText>
                   <Typography color="text.primary" variant="h2">
@@ -42,7 +42,7 @@ const LevelList = ({ cant, setLevel, setOpen }) => {
             <Divider
               sx={{
                 borderColor: theme.palette.text.primary,
-                borderWidth: '0.5px',
+                borderWidth: '0.2px',
               }}
             />
           </>
