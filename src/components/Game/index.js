@@ -60,7 +60,10 @@ const Game = () => {
   }
 
   return (
-    <Box className={classes.gameContainer}>
+    <Box
+      className={classes.gameContainer}
+      onClick={() => inputRef.current.focus()}
+    >
       <NavBar />
       <Box className={classes.imageContainer}>{Image()}</Box>
       <TextField

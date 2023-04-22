@@ -47,53 +47,89 @@ const Levels = () => {
     <>
       <NavBar level={level} setLevel={setLevel} />
       <Box className={classes.containerLevel}>
-        <Stack
-          className={classes.row}
-          direction="row"
-          onClick={() => handleClick(level, ACERTIJOS)}
-        >
-          <Acertijos />
-          <LevelAdivinanzas level={level} />
+        <Stack direction="row">
+          <Stack
+            onClick={() => handleClick(level, ACERTIJOS)}
+            sx={{ width: '50%' }}
+          >
+            <Acertijos />
+          </Stack>
+          <Stack
+            onClick={() => handleClick(level, ACERTIJOS)}
+            sx={{ width: '50%' }}
+          >
+            <LevelAdivinanzas level={level} />
+          </Stack>
         </Stack>
-        <Stack
-          className={classes.row}
-          direction="row"
-          onClick={() => handleClick(level, EMOJIS)}
-        >
-          <LevelEmojis level={level} />
-          <Emojis />
+        <Stack direction="row">
+          <Stack
+            onClick={() => handleClick(level, EMOJIS)}
+            sx={{ width: '50%' }}
+          >
+            <LevelEmojis level={level} />
+          </Stack>
+          <Stack
+            onClick={() => handleClick(level, EMOJIS)}
+            sx={{ width: '50%' }}
+          >
+            <Emojis />
+          </Stack>
         </Stack>
-        <Stack
-          className={classes.row}
-          direction="row"
-          onClick={() => handleClick(level, LOGOS)}
-        >
-          <Logos />
-          <LevelLogos level={level} />
+        <Stack direction="row">
+          <Stack
+            onClick={() => handleClick(level, LOGOS)}
+            sx={{ width: '50%' }}
+          >
+            <Logos />
+          </Stack>
+          <Stack
+            onClick={() => handleClick(level, LOGOS)}
+            sx={{ width: '50%' }}
+          >
+            <LevelLogos level={level} />
+          </Stack>
         </Stack>
-        <Stack
-          className={classes.row}
-          direction="row"
-          onClick={() => handleClick(level, PELICULAS)}
-        >
-          <LevelPeliculas level={level} />
-          <Peliculas />
+        <Stack direction="row">
+          <Stack
+            onClick={() => handleClick(level, PELICULAS)}
+            sx={{ width: '50%' }}
+          >
+            <LevelPeliculas level={level} />
+          </Stack>
+          <Stack
+            onClick={() => handleClick(level, PELICULAS)}
+            sx={{ width: '50%' }}
+          >
+            <Peliculas />
+          </Stack>
         </Stack>
-        <Stack
-          className={classes.row}
-          direction="row"
-          onClick={() => handleClick(level, JUGADORES)}
-        >
-          <Jugadores />
-          <LevelJugadores level={level} />
+        <Stack direction="row">
+          <Stack
+            onClick={() => handleClick(level, JUGADORES)}
+            sx={{ width: '50%' }}
+          >
+            <Jugadores />
+          </Stack>
+          <Stack
+            onClick={() => handleClick(level, JUGADORES)}
+            sx={{ width: '50%' }}
+          >
+            <LevelJugadores level={level} />
+          </Stack>
         </Stack>
-        <Stack
-          className={classes.row}
-          direction="row"
-          onClick={() => handleClick(level, SOMBRAS)}
-        >
-          <LevelSombras level={level} />
-          <Sombras />
+        <Stack direction="row">
+          <Stack
+            onClick={() => handleClick(level, SOMBRAS)}
+            sx={{ width: '50%' }}
+          >
+            <LevelSombras level={level} />
+          </Stack>
+          <Stack
+            onClick={() => handleClick(level, SOMBRAS)}
+            sx={{ width: '50%' }}
+          >
+            <Sombras />
+          </Stack>
         </Stack>
       </Box>
     </>
