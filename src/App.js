@@ -2,7 +2,6 @@ import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles'
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
 import { GameProvider } from './store'
 import IntroPage from './pages/introPage'
-import LevelsPage from './pages/categoriesPage'
 import PlayPage from './pages/playPage'
 import theme from './theme'
 
@@ -14,7 +13,6 @@ function App() {
           <Router>
             <Routes>
               <Route element={<IntroPage />} path="/" />
-              <Route element={<LevelsPage />} path="/niveles" />
               <Route element={<PlayPage />} path="/jugar" />
             </Routes>
           </Router>
