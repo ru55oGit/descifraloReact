@@ -1,9 +1,11 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unstable-nested-components */
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import Keyboard from 'react-simple-keyboard'
 import Box from '@mui/material/Box'
+import Stack from '@mui/material/Stack'
 import { useNavigate } from 'react-router-dom'
-import Keyboard from '../Keyboard'
 import NavBar from '../NavBar'
 import LevelAcertijos from '../LevelAdivinanzas'
 import LevelEmojis from '../LevelEmojis'
@@ -20,6 +22,7 @@ import {
   SOMBRAS,
 } from '../../constants/const'
 import { useGameContext } from '../../store'
+import 'react-simple-keyboard/build/css/index.css'
 import useStyles from './styles'
 
 const Game = () => {
@@ -61,7 +64,13 @@ const Game = () => {
     <Box className={classes.gameContainer}>
       <NavBar />
       <Box className={classes.imageContainer}>{Image()}</Box>
-      <Keyboard />
+      <Stack className={classes.keyboardContainer}>
+        <Keyboard
+          layoutName="default"
+          onChange={() => {}}
+          onKeyPress={() => {}}
+        />
+      </Stack>
     </Box>
   )
 }

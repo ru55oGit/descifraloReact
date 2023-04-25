@@ -20,6 +20,11 @@ const useStyles = makeStyles((theme) => ({
     top: '75px',
     width: '30vh',
   },
+  keyboardContainer: {
+    bottom: 0,
+    position: 'absolute',
+    width: '100%',
+  },
 }))
 
 export default useStyles
