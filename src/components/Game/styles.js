@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     position: 'relative',
     top: '75px',
-    width: '30vh',
   },
   keyboardContainer: {
     bottom: 0,

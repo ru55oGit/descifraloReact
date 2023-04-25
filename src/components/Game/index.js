@@ -2,6 +2,7 @@
 /* eslint-disable react/no-unstable-nested-components */
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import { isMobile, MobileView } from 'react-device-detect'
 import Keyboard from 'react-simple-keyboard'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
@@ -31,6 +32,15 @@ const Game = () => {
   const navigate = useNavigate()
   const [level, setLevel] = useState()
   const [category, setCategory] = useState()
+
+  const layout = {
+    default: [
+      '1 2 3 4 5 6 7 8 9 0',
+      'Q W E R T Y U I O P',
+      'A S D F G H J K L',
+      'Z X C V B N M',
+    ],
+  }
 
   useEffect(() => {
     if (gameState?.game) {
@@ -63,14 +73,22 @@ const Game = () => {
   return (
     <Box className={classes.gameContainer}>
       <NavBar />
-      <Box className={classes.imageContainer}>{Image()}</Box>
-      <Stack className={classes.keyboardContainer}>
-        <Keyboard
-          layoutName="default"
-          onChange={() => {}}
-          onKeyPress={() => {}}
-        />
-      </Stack>
+      <Box
+        className={classes.imageContainer}
+        sx={{ width: isMobile ? '30vh' : '50vh' }}
+      >
+        {Image()}
+      </Box>
+      <MobileView>
+        <Stack className={classes.keyboardContainer}>
+          <Keyboard
+            layout={layout}
+            layoutName="default"
+            onChange={() => {}}
+            onKeyPress={() => {}}
+          />
+        </Stack>
+      </MobileView>
     </Box>
   )
 }
