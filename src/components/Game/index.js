@@ -121,11 +121,11 @@ const Game = () => {
     }
 
     setCorrectLetters(result.toString().replace(/,/g, ''))
-    if (result.toString().indexOf('_') < 0) {
-      console.log('ready')
-      // Keyboard.dismiss()
-      // this.setState({ levelReached: this.props.image_to_guess.level + 1 })
-    }
+    // if (result.toString().indexOf('_') < 0) {
+    //   console.log('ready')
+    //   // Keyboard.dismiss()
+    //   // this.setState({ levelReached: this.props.image_to_guess.level + 1 })
+    // }
   }
 
   return (
