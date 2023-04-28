@@ -28,15 +28,17 @@ import NavBar from '../NavBar'
 import useStyles from './styles'
 import { useGameContext, Actions } from '../../store'
 
+import DataAcertijos from '../../data/adivinanzas.json'
+
 const Levels = () => {
   const classes = useStyles()
   const navigate = useNavigate()
   const [level, setLevel] = useState(1)
   const { gameDispatch } = useGameContext()
 
-  const handleClick = (lev, cat) => {
+  const handleClick = (lev, cat, wor) => {
     gameDispatch({
-      game: { category: cat, level: lev },
+      game: { category: cat, level: lev, word: wor },
       type: Actions.UPDATE_LEVEL,
     })
 
@@ -47,17 +49,20 @@ const Levels = () => {
     <>
       <NavBar level={level} setLevel={setLevel} />
       <Box className={classes.containerLevel}>
-        <Stack direction="row">
-          <Stack
-            onClick={() => handleClick(level, ACERTIJOS)}
-            sx={{ width: '50%' }}
-          >
+        <Stack
+          direction="row"
+          onClick={() =>
+            handleClick(
+              level,
+              ACERTIJOS,
+              DataAcertijos.listado[level].respuesta
+            )
+          }
+        >
+          <Stack sx={{ width: '50%' }}>
             <Acertijos />
           </Stack>
-          <Stack
-            onClick={() => handleClick(level, ACERTIJOS)}
-            sx={{ width: '50%' }}
-          >
+          <Stack sx={{ width: '50%' }}>
             <LevelAdivinanzas level={level} />
           </Stack>
         </Stack>

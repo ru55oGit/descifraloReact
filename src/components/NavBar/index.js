@@ -69,10 +69,11 @@ const NavBar = ({ level, setLevel }) => {
 export default NavBar
 
 NavBar.propTypes = {
-  level: PropTypes.number.isRequired,
+  level: PropTypes.number,
   setLevel: PropTypes.func,
 }
 
 NavBar.defaultProps = {
+  level: undefined,
   setLevel: () => {},
 }

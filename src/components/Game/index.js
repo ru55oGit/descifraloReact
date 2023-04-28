@@ -1,11 +1,12 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unstable-nested-components */
 import { useState, useEffect } from 'react'
-import PropTypes from 'prop-types'
 import { isMobile, MobileView } from 'react-device-detect'
 import Keyboard from 'react-simple-keyboard'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
+import Paper from '@mui/material/Paper'
 import { useNavigate } from 'react-router-dom'
 import NavBar from '../NavBar'
 import LevelAcertijos from '../LevelAdivinanzas'
@@ -32,6 +33,9 @@ const Game = () => {
   const navigate = useNavigate()
   const [level, setLevel] = useState()
   const [category, setCategory] = useState()
+  const [word, setWord] = useState()
+  const [rendered, setRendered] = useState(false)
+  const [correctLetters, setCorrectLetters] = useState('_')
 
   const layout = {
     default: [
@@ -46,6 +50,7 @@ const Game = () => {
     if (gameState?.game) {
       setLevel(gameState.game.level)
       setCategory(gameState.game.category)
+      setWord(gameState.game.word)
     } else {
       navigate('/')
     }
@@ -70,34 +75,83 @@ const Game = () => {
     }
   }
 
+  const wordToGuess = () => {
+    let answer
+
+    if (rendered) {
+      answer = correctLetters?.split('|')
+    } else {
+      answer = word?.split('|')
+    }
+
+    return answer?.map((k, id) => (
+      <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }}>
+        {answer[id].split('').map((key) => (
+          <Paper
+            key={Math.ceil(Math.random() * 10000)}
+            className={classes.letters}
+            elevation={2}
+          >
+            {rendered ? key.toUpperCase() : key === ' ' ? '' : '_'}
+          </Paper>
+        ))}
+      </Stack>
+    ))
+  }
+
+  const handleKeyboard = (letter) => {
+    setRendered(true)
+    const answer = word
+    const result = correctLetters.split('')
+
+    for (let i = 0; i < answer.length; i += 1) {
+      if (answer.charAt(i).toUpperCase() !== letter.toUpperCase()) {
+        if (result[i] === undefined) {
+          result[i] = '_'
+        }
+        if (answer.charAt(i) === '|') {
+          result[i] = '|'
+        }
+        if (answer.charAt(i) === ' ') {
+          result[i] = ' '
+        }
+      } else {
+        result[i] = answer.charAt(i)
+      }
+    }
+
+    setCorrectLetters(result.toString().replace(/,/g, ''))
+    if (result.toString().indexOf('_') < 0) {
+      console.log('ready')
+      // Keyboard.dismiss()
+      // this.setState({ levelReached: this.props.image_to_guess.level + 1 })
+    }
+  }
+
   return (
-    <Box className={classes.gameContainer}>
+    <>
       <NavBar />
-      <Box
-        className={classes.imageContainer}
-        sx={{ width: isMobile ? '30vh' : '50vh' }}
-      >
-        {Image()}
+      <Box className={classes.gameContainer}>
+        <Box
+          className={classes.imageContainer}
+          sx={{ width: isMobile ? '30vh' : '50vh' }}
+        >
+          {Image()}
+        </Box>
+        <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
+        <MobileView>
+          <Stack className={classes.keyboardContainer}>
+            <Keyboard
+              layout={layout}
+              layoutName="default"
+              onChange={() => {}}
+              onKeyPress={(e) => handleKeyboard(e)}
+            />
+          </Stack>
+        </MobileView>
       </Box>
-      <MobileView>
-        <Stack className={classes.keyboardContainer}>
-          <Keyboard
-            layout={layout}
-            layoutName="default"
-            onChange={() => {}}
-            onKeyPress={() => {}}
-          />
-        </Stack>
-      </MobileView>
-    </Box>
+    </>
   )
 }
 
 export default Game
-
-Game.propTypes = {
-  image: PropTypes.shape({
-    category: PropTypes.string,
-    level: PropTypes.number,
-  }).isRequired,
-}

@@ -6,23 +6,30 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
     margin: 'auto',
     maxWidth: '768px',
-  },
-  hideInput: {
-    opacity: 0,
-    top: -10000,
+    paddingTop: 85,
   },
   imageContainer: {
     backgroundColor: theme.palette.black.main,
     border: `3px solid ${theme.palette.black.main}`,
     borderBottom: 'none',
     margin: 'auto',
-    position: 'relative',
-    top: '75px',
   },
   keyboardContainer: {
     bottom: 0,
-    position: 'absolute',
+    position: 'fixed',
     width: '100%',
+  },
+  letters: {
+    backgroundColor: theme.palette.white.main,
+    border: `2px solid ${theme.palette.black.main}`,
+    borderRadius: 6,
+    height: 24,
+    marginRight: 1,
+    overflow: 'hidden',
+    paddingBottom: 0,
+    paddingTop: 3,
+    textAlign: 'center',
+    width: 24,
   },
 }))
 
