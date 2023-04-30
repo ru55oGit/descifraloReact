@@ -2,7 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unstable-nested-components */
 import { useState, useEffect } from 'react'
-import { isMobile, MobileView } from 'react-device-detect'
+import { isMobile } from 'react-device-detect'
 import Keyboard from 'react-simple-keyboard'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
@@ -36,6 +36,7 @@ const Game = () => {
   const [word, setWord] = useState()
   const [rendered, setRendered] = useState(false)
   const [correctLetters, setCorrectLetters] = useState('_')
+  const [hideKeyboard, setHideKeyboard] = useState(false)
 
   const layout = {
     default: [
@@ -85,7 +86,11 @@ const Game = () => {
     }
 
     return answer?.map((k, id) => (
-      <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }}>
+      <Stack
+        direction="row"
+        spacing={1}
+        sx={{ justifyContent: 'center', mb: 2 }}
+      >
         {answer[id].split('').map((key) => (
           <Paper
             key={Math.ceil(Math.random() * 10000)}
@@ -121,36 +126,33 @@ const Game = () => {
     }
 
     setCorrectLetters(result.toString().replace(/,/g, ''))
-    // if (result.toString().indexOf('_') < 0) {
-    //   console.log('ready')
-    //   // Keyboard.dismiss()
-    //   // this.setState({ levelReached: this.props.image_to_guess.level + 1 })
-    // }
+    if (result.toString().indexOf('_') < 0) {
+      setHideKeyboard(true)
+      // this.setState({ levelReached: this.props.image_to_guess.level + 1 })
+    }
   }
 
   return (
-    <>
+    <Box className={classes.gameContainer}>
       <NavBar />
-      <Box className={classes.gameContainer}>
-        <Box
-          className={classes.imageContainer}
-          sx={{ width: isMobile ? '30vh' : '50vh' }}
-        >
-          {Image()}
-        </Box>
-        <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
-        <MobileView>
-          <Stack className={classes.keyboardContainer}>
-            <Keyboard
-              layout={layout}
-              layoutName="default"
-              onChange={() => {}}
-              onKeyPress={(e) => handleKeyboard(e)}
-            />
-          </Stack>
-        </MobileView>
+      <Box
+        className={classes.imageContainer}
+        sx={{ width: isMobile ? '30vh' : '50vh' }}
+      >
+        {Image()}
       </Box>
-    </>
+      <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
+      {!hideKeyboard && (
+        <Stack className={classes.keyboardContainer}>
+          <Keyboard
+            layout={layout}
+            layoutName="default"
+            onChange={() => {}}
+            onKeyPress={(e) => handleKeyboard(e)}
+          />
+        </Stack>
+      )}
+    </Box>
   )
 }
 

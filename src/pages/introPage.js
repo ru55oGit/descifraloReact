@@ -18,18 +18,21 @@ const IntroPage = () => {
   return (
     <Box>
       {splash ? (
-        <Paper
-          sx={{
-            alignItems: 'center',
-            borderColor: `1px solid ${theme.palette.primary.main}`,
-            display: 'flex',
-            height: '95vh',
-            justifyContent: 'center',
-            margin: 2,
-          }}
-        >
-          <Splash />
-        </Paper>
+        <Box className={classes.boxContainer}>
+          <Paper
+            sx={{
+              alignItems: 'center',
+              borderColor: `1px solid ${theme.palette.primary.main}`,
+              display: 'flex',
+              height: '95vh',
+              justifyContent: 'center',
+              margin: 'auto',
+              maxWidth: '768px',
+            }}
+          >
+            <Splash />
+          </Paper>
+        </Box>
       ) : (
         <Box className={classes.boxContainer}>
           <Categories />

@@ -26,7 +26,11 @@ const NavBar = ({ level, setLevel }) => {
 
   return (
     <>
-      <Stack className={classes.navBar} direction="row">
+      <Stack
+        className={classes.navBar}
+        direction="row"
+        sx={{ position: level ? 'fixed' : 'relative' }}
+      >
         {level ? (
           <MenuIcon
             sx={{ color: theme.palette.primary.main, fontSize: '2rem' }}
