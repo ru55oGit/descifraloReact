@@ -8,7 +8,6 @@ import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import Paper from '@mui/material/Paper'
 import { useNavigate } from 'react-router-dom'
-import NavBar from '../NavBar'
 import LevelAcertijos from '../LevelAdivinanzas'
 import LevelEmojis from '../LevelEmojis'
 import LevelPeliculas from '../LevelPeliculas'
@@ -134,7 +133,6 @@ const Game = () => {
 
   return (
     <Box className={classes.gameContainer}>
-      <NavBar />
       <Box
         className={classes.imageContainer}
         sx={{ width: isMobile ? '30vh' : '50vh' }}

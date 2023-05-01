@@ -1,38 +1,30 @@
-import { useState } from 'react'
 import PropTypes from 'prop-types'
-import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
+import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import MenuIcon from '@mui/icons-material/Menu'
 import PaidIcon from '@mui/icons-material/Paid'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
-import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore'
-import Dialog from '@mui/material/Dialog'
 import { useNavigate } from 'react-router-dom'
-
 import { useTheme } from '@mui/styles'
-import LevelList from '../LevelList'
+
 import useStyles from './styles'
 
-const NavBar = ({ level, setLevel }) => {
+const NavBar = ({ isGame, openMenu, setOpenMenu }) => {
   const theme = useTheme()
   const classes = useStyles()
   const navigate = useNavigate()
-  const [open, setOpen] = useState(false)
-
-  const handleClose = () => {
-    setOpen(!open)
-  }
 
   return (
-    <>
+    <Box sx={{ position: 'relative' }}>
       <Stack
         className={classes.navBar}
         direction="row"
-        sx={{ position: level ? 'fixed' : 'relative' }}
+        sx={{ position: isGame ? 'relative' : 'fixed' }}
       >
-        {level ? (
+        {!isGame ? (
           <MenuIcon
+            onClick={() => setOpenMenu(!openMenu)}
             sx={{ color: theme.palette.primary.main, fontSize: '2rem' }}
           />
         ) : (
@@ -41,19 +33,7 @@ const NavBar = ({ level, setLevel }) => {
             sx={{ color: theme.palette.primary.main, fontSize: '2rem' }}
           />
         )}
-        {level && (
-          <Button className={classes.button} onClick={() => setOpen(!open)}>
-            <Typography variant="h2">Nivel {level}</Typography>
-            <UnfoldMoreIcon
-              sx={{
-                color: open
-                  ? theme.palette.primary.main
-                  : theme.palette.white.main,
-                fontSize: '1.4rem',
-              }}
-            />
-          </Button>
-        )}
+
         <Stack>
           <PaidIcon
             sx={{ color: theme.palette.primary.main, margin: 'auto' }}
@@ -63,21 +43,20 @@ const NavBar = ({ level, setLevel }) => {
           </Typography>
         </Stack>
       </Stack>
-      <Dialog onClose={handleClose} open={open}>
-        <LevelList cant={200} setLevel={setLevel} setOpen={setOpen} />
-      </Dialog>
-    </>
+    </Box>
   )
 }
 
 export default NavBar
 
 NavBar.propTypes = {
-  level: PropTypes.number,
-  setLevel: PropTypes.func,
+  isGame: PropTypes.bool,
+  openMenu: PropTypes.bool,
+  setOpenMenu: PropTypes.func,
 }
 
 NavBar.defaultProps = {
-  level: undefined,
-  setLevel: () => {},
+  isGame: false,
+  openMenu: false,
+  setOpenMenu: () => {},
 }

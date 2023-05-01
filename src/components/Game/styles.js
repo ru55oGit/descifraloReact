@@ -3,15 +3,16 @@ import { makeStyles } from '@mui/styles'
 const useStyles = makeStyles((theme) => ({
   gameContainer: {
     backgroundColor: theme.palette.primary.main,
-    height: '100vh',
+    height: 'calc(100vh - 90px)',
     margin: 'auto',
     maxWidth: '768px',
+    paddingTop: 30,
   },
   imageContainer: {
     backgroundColor: theme.palette.black.main,
     border: `3px solid ${theme.palette.black.main}`,
     borderBottom: 'none',
-    margin: '30px auto',
+    margin: 'auto',
   },
   keyboardContainer: {
     bottom: 0,

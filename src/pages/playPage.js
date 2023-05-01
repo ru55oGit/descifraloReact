@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box'
 import Game from '../components/Game'
+import NavBar from '../components/NavBar'
 import useStyles from '../styles/pages'
 
 const PlayPage = () => {
@@ -7,6 +8,7 @@ const PlayPage = () => {
 
   return (
     <Box className={classes.boxContainer}>
+      <NavBar isGame />
       <Game />
     </Box>
   )
