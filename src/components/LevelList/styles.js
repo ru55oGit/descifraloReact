@@ -8,6 +8,12 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 768,
     width: '100vw',
   },
+  listItem: {
+    '&:nth-child(even)': {
+      backgroundColor: theme.palette.divider,
+    },
+    borderBottom: `1px solid ${theme.palette.text.primary}`,
+  },
 }))
 
 export default useStyles
