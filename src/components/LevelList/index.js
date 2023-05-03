@@ -21,7 +21,7 @@ const LevelList = () => {
     if (languageState) {
       setLanguage(languageState.language)
     }
-  }, [language])
+  }, [languageState])
 
   const handleLanguage = (lang) => {
     setLanguage(lang)
