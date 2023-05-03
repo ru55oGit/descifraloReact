@@ -22,7 +22,7 @@ import {
   JUGADORES,
   SOMBRAS,
 } from '../../constants/const'
-import { useGameContext } from '../../store'
+import { useGameContext } from '../../store/game'
 import 'react-simple-keyboard/build/css/index.css'
 import useStyles from './styles'
 

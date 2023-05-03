@@ -24,7 +24,7 @@ import LevelLogos from '../LevelLogos'
 import LevelPeliculas from '../LevelPeliculas'
 import LevelSombras from '../LevelSombras'
 import useStyles from './styles'
-import { useGameContext, Actions } from '../../store'
+import { useGameContext, Actions } from '../../store/game'
 
 import DataAcertijos from '../../data/adivinanzas.json'
 
