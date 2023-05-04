@@ -4,6 +4,7 @@ import { GameProvider } from './store/game'
 import { LanguageProvider } from './store/language'
 import IntroPage from './pages/introPage'
 import PlayPage from './pages/playPage'
+import LevelsPage from './pages/levelsPage'
 import theme from './theme'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
               <Routes>
                 <Route element={<IntroPage />} path="/" />
                 <Route element={<PlayPage />} path="/jugar" />
+                <Route element={<LevelsPage />} path="/niveles" />
               </Routes>
             </Router>
           </ThemeProvider>

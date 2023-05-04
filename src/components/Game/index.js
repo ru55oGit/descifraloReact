@@ -41,7 +41,7 @@ const Game = () => {
     default: [
       '1 2 3 4 5 6 7 8 9 0',
       'Q W E R T Y U I O P',
-      'A S D F G H J K L',
+      'A S D F G H J K L Ñ',
       'Z X C V B N M',
     ],
   }
@@ -93,7 +93,9 @@ const Game = () => {
         {answer[id].split('').map((key) => (
           <Paper
             key={Math.ceil(Math.random() * 10000)}
-            className={classes.letters}
+            className={
+              key === ' ' ? classes.letterWithSpaceContainer : classes.letters
+            }
             elevation={2}
           >
             {rendered ? key.toUpperCase() : key === ' ' ? '' : '_'}

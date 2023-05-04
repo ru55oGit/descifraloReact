@@ -8,7 +8,7 @@ const PlayPage = () => {
 
   return (
     <Box className={classes.boxContainer}>
-      <NavBar isGame />
+      <NavBar backArrow />
       <Game />
     </Box>
   )

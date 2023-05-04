@@ -13,7 +13,7 @@ const IntroPage = () => {
 
   return (
     <Box className={classes.boxContainer}>
-      <NavBar openMenu={openMenu} setOpenMenu={setOpenMenu} />
+      <NavBar fixed openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <Collapse className={classes.menu} in={openMenu}>
         <LevelList />
       </Collapse>

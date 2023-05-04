@@ -69,14 +69,14 @@ const LevelList = () => {
         <Stack direction="row" sx={{ justifyContent: 'space-evenly', mt: 2 }}>
           <Stack sx={{ alignItems: 'center', display: 'flex' }}>
             <Avatar
-              onClick={() => handleLanguage('latino')}
+              onClick={() => handleLanguage('lat')}
               src="images/argentina.svg"
               sx={{ height: 24, width: 36 }}
               variant="square"
             />
             <Typography
               fontWeight={
-                language === 'latino'
+                language === 'lat'
                   ? theme.fontWeight.bold
                   : theme.fontWeight.regular
               }
@@ -86,14 +86,14 @@ const LevelList = () => {
           </Stack>
           <Stack sx={{ alignItems: 'center', display: 'flex' }}>
             <Avatar
-              onClick={() => handleLanguage('español')}
+              onClick={() => handleLanguage('esp')}
               src="images/espania.svg"
               sx={{ height: 24, width: 36 }}
               variant="square"
             />
             <Typography
               fontWeight={
-                language === 'español'
+                language === 'esp'
                   ? theme.fontWeight.bold
                   : theme.fontWeight.regular
               }
@@ -103,14 +103,14 @@ const LevelList = () => {
           </Stack>
           <Stack sx={{ alignItems: 'center', display: 'flex' }}>
             <Avatar
-              onClick={() => handleLanguage('english')}
+              onClick={() => handleLanguage('eng')}
               src="images/usa.svg"
               sx={{ height: 24, width: 36 }}
               variant="square"
             />
             <Typography
               fontWeight={
-                language === 'english'
+                language === 'eng'
                   ? theme.fontWeight.bold
                   : theme.fontWeight.regular
               }

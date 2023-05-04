@@ -10,7 +10,7 @@ import { useTheme } from '@mui/styles'
 
 import useStyles from './styles'
 
-const NavBar = ({ isGame, openMenu, setOpenMenu }) => {
+const NavBar = ({ backArrow, fixed, openMenu, setOpenMenu }) => {
   const theme = useTheme()
   const classes = useStyles()
   const navigate = useNavigate()
@@ -20,9 +20,9 @@ const NavBar = ({ isGame, openMenu, setOpenMenu }) => {
       <Stack
         className={classes.navBar}
         direction="row"
-        sx={{ position: isGame ? 'relative' : 'fixed' }}
+        sx={{ position: fixed ? 'fixed' : 'relative' }}
       >
-        {!isGame ? (
+        {!backArrow ? (
           <MenuIcon
             onClick={() => setOpenMenu(!openMenu)}
             sx={{ color: theme.palette.primary.main, fontSize: '2rem' }}
@@ -50,13 +50,15 @@ const NavBar = ({ isGame, openMenu, setOpenMenu }) => {
 export default NavBar
 
 NavBar.propTypes = {
-  isGame: PropTypes.bool,
+  backArrow: PropTypes.bool,
+  fixed: PropTypes.bool,
   openMenu: PropTypes.bool,
   setOpenMenu: PropTypes.func,
 }
 
 NavBar.defaultProps = {
-  isGame: false,
+  backArrow: false,
+  fixed: false,
   openMenu: false,
   setOpenMenu: () => {},
 }
