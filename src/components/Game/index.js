@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unstable-nested-components */
