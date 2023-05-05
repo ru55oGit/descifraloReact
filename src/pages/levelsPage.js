@@ -96,7 +96,7 @@ const LevelsPage = () => {
             gameState.game.level >= i + 1 ? (
               <Button
                 onClick={() => handleClick(i + 1)}
-                sx={{ p: '4px', width: '25%' }}
+                sx={{ p: '4px', width: '24.8%' }}
               >
                 {gameState.game.category === ACERTIJOS && (
                   <LevelAdivinanzas level={i + 1} />

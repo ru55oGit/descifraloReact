@@ -17,7 +17,7 @@ const useLanguageContext = () => {
   return context
 }
 
-const initialActions = { language: window.localStorage.getItem('lang') }
+const initialActions = { language: localStorage.getItem('lang') || 'lat' }
 
 const LanguageProvider = ({ children, defaultState }) => {
   const [state, dispatch] = useReducer(reducer, defaultState || initialActions)

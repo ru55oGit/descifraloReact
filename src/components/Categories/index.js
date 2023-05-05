@@ -31,20 +31,20 @@ const Levels = () => {
   const classes = useStyles()
   const navigate = useNavigate()
   const { gameDispatch } = useGameContext()
-  const [levelAcertijos, setLevelAcertijos] = useState(1)
-  const [levelEmojis, setLevelEmojis] = useState(1)
-  const [levelLogos, setLevelLogos] = useState(1)
-  const [levelPeliculas, setLevelPeliculas] = useState(1)
-  const [levelJugadores, setLevelJugadores] = useState(1)
-  const [levelSombras, setLevelSombras] = useState(1)
+  const [levelAcertijos, setLevelAcertijos] = useState()
+  const [levelEmojis, setLevelEmojis] = useState()
+  const [levelLogos, setLevelLogos] = useState()
+  const [levelPeliculas, setLevelPeliculas] = useState()
+  const [levelJugadores, setLevelJugadores] = useState()
+  const [levelSombras, setLevelSombras] = useState()
 
   useEffect(() => {
-    setLevelAcertijos(localStorage?.getItem(ACERTIJOS))
-    setLevelEmojis(localStorage?.getItem(EMOJIS))
-    setLevelLogos(localStorage?.getItem(LOGOS))
-    setLevelPeliculas(localStorage?.getItem(PELICULAS))
-    setLevelJugadores(localStorage?.getItem(JUGADORES))
-    setLevelSombras(localStorage?.getItem(SOMBRAS))
+    setLevelAcertijos(localStorage?.getItem(ACERTIJOS) || 1)
+    setLevelEmojis(localStorage?.getItem(EMOJIS) || 1)
+    setLevelLogos(localStorage?.getItem(LOGOS) || 1)
+    setLevelPeliculas(localStorage?.getItem(PELICULAS) || 1)
+    setLevelJugadores(localStorage?.getItem(JUGADORES) || 1)
+    setLevelSombras(localStorage?.getItem(SOMBRAS) || 1)
   }, [])
 
   const handleClick = (category, level) => {
@@ -66,12 +66,12 @@ const Levels = () => {
           <Acertijos />
         </Stack>
         <Stack sx={{ width: '50%' }}>
-          <LevelAdivinanzas level={levelAcertijos} />
+          <LevelAdivinanzas level={parseInt(levelAcertijos, 10)} />
         </Stack>
       </Stack>
       <Stack direction="row" onClick={() => handleClick(EMOJIS, levelEmojis)}>
         <Stack sx={{ width: '50%' }}>
-          <LevelEmojis level={levelEmojis} />
+          <LevelEmojis level={parseInt(levelEmojis, 10)} />
         </Stack>
         <Stack sx={{ width: '50%' }}>
           <Emojis />
@@ -82,7 +82,7 @@ const Levels = () => {
           <Logos />
         </Stack>
         <Stack sx={{ width: '50%' }}>
-          <LevelLogos level={levelLogos} />
+          <LevelLogos level={parseInt(levelLogos, 10)} />
         </Stack>
       </Stack>
       <Stack
@@ -90,7 +90,7 @@ const Levels = () => {
         onClick={() => handleClick(PELICULAS, levelPeliculas)}
       >
         <Stack sx={{ width: '50%' }}>
-          <LevelPeliculas level={levelPeliculas} />
+          <LevelPeliculas level={parseInt(levelPeliculas, 10)} />
         </Stack>
         <Stack sx={{ width: '50%' }}>
           <Peliculas />
@@ -104,12 +104,12 @@ const Levels = () => {
           <Jugadores />
         </Stack>
         <Stack sx={{ width: '50%' }}>
-          <LevelJugadores level={levelJugadores} />
+          <LevelJugadores level={parseInt(levelJugadores, 10)} />
         </Stack>
       </Stack>
       <Stack direction="row" onClick={() => handleClick(SOMBRAS, levelSombras)}>
         <Stack sx={{ width: '50%' }}>
-          <LevelSombras level={levelSombras} />
+          <LevelSombras level={parseInt(levelSombras, 10)} />
         </Stack>
         <Stack sx={{ width: '50%' }}>
           <Sombras />
