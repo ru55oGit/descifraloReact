@@ -10,6 +10,16 @@ import {
   Adivinanzas8,
   Adivinanzas9,
   Adivinanzas10,
+  Adivinanzas11,
+  Adivinanzas12,
+  Adivinanzas13,
+  Adivinanzas14,
+  Adivinanzas15,
+  Adivinanzas16,
+  Adivinanzas17,
+  Adivinanzas18,
+  Adivinanzas19,
+  Adivinanzas20,
 } from '../SVG/Adivinanzas'
 
 const LevelAdivinanzas = ({ level }) => {
@@ -34,6 +44,26 @@ const LevelAdivinanzas = ({ level }) => {
       return <Adivinanzas9 />
     case 10:
       return <Adivinanzas10 />
+    case 11:
+      return <Adivinanzas11 />
+    case 12:
+      return <Adivinanzas12 />
+    case 13:
+      return <Adivinanzas13 />
+    case 14:
+      return <Adivinanzas14 />
+    case 15:
+      return <Adivinanzas15 />
+    case 16:
+      return <Adivinanzas16 />
+    case 17:
+      return <Adivinanzas17 />
+    case 18:
+      return <Adivinanzas18 />
+    case 19:
+      return <Adivinanzas19 />
+    case 20:
+      return <Adivinanzas20 />
     default:
       return <Adivinanzas1 />
   }

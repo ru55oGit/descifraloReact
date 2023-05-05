@@ -32,6 +32,7 @@ const Game = () => {
   const { gameState, gameDispatch } = useGameContext()
   const navigate = useNavigate()
   const [level, setLevel] = useState()
+  const [levelReached, setLevelReached] = useState()
   const [category, setCategory] = useState()
   const [word, setWord] = useState()
   const [rendered, setRendered] = useState(false)
@@ -52,6 +53,9 @@ const Game = () => {
       setLevel(gameState.game.level)
       setCategory(gameState.game.category)
       setWord(gameState.game.word)
+      setLevelReached(
+        parseInt(localStorage.getItem(gameState.game.category), 10)
+      )
     } else {
       navigate('/')
     }
@@ -130,14 +134,19 @@ const Game = () => {
     setCorrectLetters(result.toString().replace(/,/g, ''))
     if (result.toString().indexOf('_') < 0) {
       setHideKeyboard(true)
-      window.localStorage.setItem(gameState.game.category, level + 1)
       gameDispatch({
         game: {
           category: gameState.game.category,
-          level: gameState.game.level + 1,
+          level:
+            levelReached <= gameState.game.level
+              ? gameState.game.level + 1
+              : levelReached,
         },
         type: Actions.UPDATE_LEVEL,
       })
+      if (levelReached <= gameState.game.level) {
+        localStorage.setItem(gameState.game.category, level + 1)
+      }
     }
   }
 
