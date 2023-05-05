@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
+import Typography from '@mui/material/Typography'
+import { useTheme } from '@mui/styles'
 import NavBar from '../components/NavBar'
 import { useGameContext, Actions } from '../store/game'
 import useStyles from '../styles/pages'
@@ -29,6 +31,7 @@ import dataSombras from '../data/sombras.json'
 
 const LevelsPage = () => {
   const classes = useStyles()
+  const theme = useTheme()
   const navigate = useNavigate()
   const { gameState, gameDispatch } = useGameContext()
   const [list, setList] = useState()
@@ -84,50 +87,52 @@ const LevelsPage = () => {
           flexWrap: 'wrap',
           justifyContent: 'center',
           margin: 'auto',
-          maxWidth: 'calc(768px + 36px)',
+          maxWidth: 'calc(768px + 16px)',
           pt: '64px',
         }}
       >
         {list &&
-          list.map((k, i) => (
-            <Box
-              sx={{
-                m: 'auto 2px',
-                width: '23.5%',
-              }}
-            >
-              {gameState.game.category === ACERTIJOS && (
-                <Button onClick={() => handleClick(i + 1)}>
+          list.map((k, i) =>
+            gameState.game.level >= i + 1 ? (
+              <Button
+                onClick={() => handleClick(i + 1)}
+                sx={{ p: '4px', width: '25%' }}
+              >
+                {gameState.game.category === ACERTIJOS && (
                   <LevelAdivinanzas level={i + 1} />
-                </Button>
-              )}
-              {gameState.game.category === EMOJIS && (
-                <Button onClick={() => handleClick(i + 1)}>
+                )}
+                {gameState.game.category === EMOJIS && (
                   <LevelEmojis level={i + 1} />
-                </Button>
-              )}
-              {gameState.game.category === PELICULAS && (
-                <Button onClick={() => handleClick(i + 1)}>
+                )}
+                {gameState.game.category === PELICULAS && (
                   <LevelPeliculas level={i + 1} />
-                </Button>
-              )}
-              {gameState.game.category === LOGOS && (
-                <Button onClick={() => handleClick(i + 1)}>
+                )}
+                {gameState.game.category === LOGOS && (
                   <LevelLogos level={i + 1} />
-                </Button>
-              )}
-              {gameState.game.category === JUGADORES && (
-                <Button onClick={() => handleClick(i + 1)}>
+                )}
+                {gameState.game.category === JUGADORES && (
                   <LevelJugadores level={i + 1} />
-                </Button>
-              )}
-              {gameState.game.category === SOMBRAS && (
-                <Button onClick={() => handleClick(i + 1)}>
+                )}
+                {gameState.game.category === SOMBRAS && (
                   <LevelSombras level={i + 1} />
-                </Button>
-              )}
-            </Box>
-          ))}
+                )}
+              </Button>
+            ) : (
+              <Button
+                disabled
+                sx={{
+                  backgroundColor: theme.palette.white.main,
+                  borderRadius: 0,
+                  height: 'calc(25vw - 8px)',
+                  margin: '3px',
+                  maxHeight: 190,
+                  width: 'calc(25% - 8px)',
+                }}
+              >
+                <Typography variant="hxxl">{i + 1}</Typography>
+              </Button>
+            )
+          )}
       </Box>
     </Box>
   )

@@ -22,13 +22,13 @@ import {
   JUGADORES,
   SOMBRAS,
 } from '../../constants/const'
-import { useGameContext } from '../../store/game'
+import { useGameContext, Actions } from '../../store/game'
 import 'react-simple-keyboard/build/css/index.css'
 import useStyles from './styles'
 
 const Game = () => {
   const classes = useStyles()
-  const { gameState } = useGameContext()
+  const { gameState, gameDispatch } = useGameContext()
   const navigate = useNavigate()
   const [level, setLevel] = useState()
   const [category, setCategory] = useState()
@@ -54,7 +54,7 @@ const Game = () => {
     } else {
       navigate('/')
     }
-  }, [gameState, navigate])
+  }, [])
 
   const Image = () => {
     switch (category) {
@@ -129,7 +129,14 @@ const Game = () => {
     setCorrectLetters(result.toString().replace(/,/g, ''))
     if (result.toString().indexOf('_') < 0) {
       setHideKeyboard(true)
-      // this.setState({ levelReached: this.props.image_to_guess.level + 1 })
+      window.localStorage.setItem(gameState.game.category, level + 1)
+      gameDispatch({
+        game: {
+          category: gameState.game.category,
+          level: gameState.game.level + 1,
+        },
+        type: Actions.UPDATE_LEVEL,
+      })
     }
   }
 
