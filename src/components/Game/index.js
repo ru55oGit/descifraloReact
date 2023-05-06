@@ -54,7 +54,7 @@ const Game = () => {
       setCategory(gameState.game.category)
       setWord(gameState.game.word)
       setLevelReached(
-        parseInt(localStorage.getItem(gameState.game.category), 10)
+        parseInt(localStorage.getItem(gameState.game.category) || 1, 10)
       )
     } else {
       navigate('/')
