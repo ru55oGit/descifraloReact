@@ -15,6 +15,8 @@ import {
   JUGADORES,
   SOMBRAS,
   FUNKOS,
+  ESCUDOS,
+  BANDERAS,
 } from '../constants/const'
 import LevelAdivinanzas from '../components/LevelAdivinanzas'
 import LevelEmojis from '../components/LevelEmojis'
@@ -23,6 +25,8 @@ import LevelLogos from '../components/LevelLogos'
 import LevelJugadores from '../components/LevelJugadores'
 import LevelSombras from '../components/LevelSombras'
 import LevelFunkos from '../components/LevelFunkos'
+import LevelEscudos from '../components/LevelEscudos'
+import LevelBanderas from '../components/LevelBanderas'
 
 import dataAcertijos from '../data/adivinanzas.json'
 import dataEmojis from '../data/emojis.json'
@@ -31,6 +35,8 @@ import dataLogos from '../data/marcas.json'
 import dataJugadores from '../data/jugadores.json'
 import dataSombras from '../data/sombras.json'
 import dataFunkos from '../data/funkos.json'
+import dataEscudos from '../data/escudos.json'
+import dataBanderas from '../data/banderas.json'
 
 const LevelsPage = () => {
   const classes = useStyles()
@@ -67,6 +73,12 @@ const LevelsPage = () => {
         case FUNKOS:
           setList(dataFunkos.listado)
           break
+        case ESCUDOS:
+          setList(dataEscudos.listado)
+          break
+        case BANDERAS:
+          setList(dataBanderas.listado)
+          break
         default:
           setList(dataAcertijos.listado)
       }
@@ -79,7 +91,7 @@ const LevelsPage = () => {
     gameDispatch({
       game: {
         category: gameState.game.category,
-        level,
+        level: level + 1,
         word: list[level].respuesta,
       },
       type: Actions.UPDATE_LEVEL,
@@ -105,7 +117,7 @@ const LevelsPage = () => {
           list.map((k, i) =>
             levelReached >= i + 1 ? (
               <Button
-                onClick={() => handleClick(i + 1)}
+                onClick={() => handleClick(i)}
                 sx={{ p: '4px', width: '24.8%' }}
               >
                 {gameState.game.category === ACERTIJOS && (
@@ -128,6 +140,12 @@ const LevelsPage = () => {
                 )}
                 {gameState.game.category === FUNKOS && (
                   <LevelFunkos level={i + 1} />
+                )}
+                {gameState.game.category === ESCUDOS && (
+                  <LevelEscudos level={i + 1} />
+                )}
+                {gameState.game.category === BANDERAS && (
+                  <LevelBanderas level={i + 1} />
                 )}
               </Button>
             ) : (

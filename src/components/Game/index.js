@@ -16,6 +16,8 @@ import LevelJugadores from '../LevelJugadores'
 import LevelSombras from '../LevelSombras'
 import LevelLogos from '../LevelLogos'
 import LevelFunkos from '../LevelFunkos'
+import LevelEscudos from '../LevelEscudos'
+import LevelBanderas from '../LevelBanderas'
 import {
   ACERTIJOS,
   PELICULAS,
@@ -24,6 +26,8 @@ import {
   JUGADORES,
   SOMBRAS,
   FUNKOS,
+  ESCUDOS,
+  BANDERAS,
 } from '../../constants/const'
 import { useGameContext, Actions } from '../../store/game'
 import 'react-simple-keyboard/build/css/index.css'
@@ -79,6 +83,10 @@ const Game = () => {
         return <LevelSombras level={level} />
       case FUNKOS:
         return <LevelFunkos level={level} />
+      case ESCUDOS:
+        return <LevelEscudos level={level} />
+      case BANDERAS:
+        return <LevelBanderas level={level} />
       default:
         return <LevelAcertijos level={level} />
     }

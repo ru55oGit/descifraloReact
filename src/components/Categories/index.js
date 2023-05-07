@@ -10,6 +10,8 @@ import {
   Jugadores,
   Sombras,
   Funkos,
+  Escudos,
+  Banderas,
 } from '../IconsCategories'
 import {
   ACERTIJOS,
@@ -19,6 +21,8 @@ import {
   JUGADORES,
   SOMBRAS,
   FUNKOS,
+  ESCUDOS,
+  BANDERAS,
 } from '../../constants/const'
 import LevelEmojis from '../LevelEmojis'
 import LevelJugadores from '../LevelJugadores'
@@ -27,6 +31,8 @@ import LevelLogos from '../LevelLogos'
 import LevelPeliculas from '../LevelPeliculas'
 import LevelSombras from '../LevelSombras'
 import LevelFunkos from '../LevelFunkos'
+import LevelEscudos from '../LevelEscudos'
+import LevelBanderas from '../LevelBanderas'
 import useStyles from './styles'
 import { useGameContext, Actions } from '../../store/game'
 
@@ -41,6 +47,8 @@ const Levels = () => {
   const [levelJugadores, setLevelJugadores] = useState()
   const [levelSombras, setLevelSombras] = useState()
   const [levelFunkos, setLevelFunkos] = useState()
+  const [levelEscudos, setLevelEscudos] = useState()
+  const [levelBanderas, setLevelBanderas] = useState()
 
   useEffect(() => {
     setLevelAcertijos(localStorage?.getItem(ACERTIJOS) || 1)
@@ -50,6 +58,8 @@ const Levels = () => {
     setLevelJugadores(localStorage?.getItem(JUGADORES) || 1)
     setLevelSombras(localStorage?.getItem(SOMBRAS) || 1)
     setLevelFunkos(localStorage?.getItem(FUNKOS) || 1)
+    setLevelEscudos(localStorage?.getItem(ESCUDOS) || 1)
+    setLevelBanderas(localStorage?.getItem(BANDERAS) || 1)
   }, [])
 
   const handleClick = (category, level) => {
@@ -126,6 +136,25 @@ const Levels = () => {
         </Stack>
         <Stack sx={{ width: '50%' }}>
           <LevelJugadores level={parseInt(levelJugadores, 10)} />
+        </Stack>
+      </Stack>
+      <Stack direction="row" onClick={() => handleClick(ESCUDOS, levelEscudos)}>
+        <Stack sx={{ width: '50%' }}>
+          <LevelEscudos level={parseInt(levelEscudos, 10)} />
+        </Stack>
+        <Stack sx={{ width: '50%' }}>
+          <Escudos />
+        </Stack>
+      </Stack>
+      <Stack
+        direction="row"
+        onClick={() => handleClick(BANDERAS, levelBanderas)}
+      >
+        <Stack sx={{ width: '50%' }}>
+          <Banderas />
+        </Stack>
+        <Stack sx={{ width: '50%' }}>
+          <LevelBanderas level={parseInt(levelBanderas, 10)} />
         </Stack>
       </Stack>
     </Box>
