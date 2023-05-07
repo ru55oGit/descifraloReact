@@ -38,8 +38,12 @@ const LevelsPage = () => {
   const navigate = useNavigate()
   const { gameState, gameDispatch } = useGameContext()
   const [list, setList] = useState()
+  const [levelReached, setLevelReached] = useState()
 
   useEffect(() => {
+    setLevelReached(
+      parseInt(localStorage.getItem(gameState.game.category) || 1, 10)
+    )
     if (gameState.game) {
       switch (gameState.game.category) {
         case ACERTIJOS:
@@ -99,7 +103,7 @@ const LevelsPage = () => {
       >
         {list &&
           list.map((k, i) =>
-            gameState.game.level >= i + 1 ? (
+            levelReached >= i + 1 ? (
               <Button
                 onClick={() => handleClick(i + 1)}
                 sx={{ p: '4px', width: '24.8%' }}
