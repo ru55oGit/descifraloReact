@@ -14,6 +14,7 @@ import {
   LOGOS,
   JUGADORES,
   SOMBRAS,
+  FUNKOS,
 } from '../constants/const'
 import LevelAdivinanzas from '../components/LevelAdivinanzas'
 import LevelEmojis from '../components/LevelEmojis'
@@ -21,6 +22,7 @@ import LevelPeliculas from '../components/LevelPeliculas'
 import LevelLogos from '../components/LevelLogos'
 import LevelJugadores from '../components/LevelJugadores'
 import LevelSombras from '../components/LevelSombras'
+import LevelFunkos from '../components/LevelFunkos'
 
 import dataAcertijos from '../data/adivinanzas.json'
 import dataEmojis from '../data/emojis.json'
@@ -28,6 +30,7 @@ import dataPeliculas from '../data/peliculas.json'
 import dataLogos from '../data/marcas.json'
 import dataJugadores from '../data/jugadores.json'
 import dataSombras from '../data/sombras.json'
+import dataFunkos from '../data/funkos.json'
 
 const LevelsPage = () => {
   const classes = useStyles()
@@ -56,6 +59,9 @@ const LevelsPage = () => {
           break
         case SOMBRAS:
           setList(dataSombras.listado)
+          break
+        case FUNKOS:
+          setList(dataFunkos.listado)
           break
         default:
           setList(dataAcertijos.listado)
@@ -115,6 +121,9 @@ const LevelsPage = () => {
                 )}
                 {gameState.game.category === SOMBRAS && (
                   <LevelSombras level={i + 1} />
+                )}
+                {gameState.game.category === FUNKOS && (
+                  <LevelFunkos level={i + 1} />
                 )}
               </Button>
             ) : (

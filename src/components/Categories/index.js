@@ -9,6 +9,7 @@ import {
   Peliculas,
   Jugadores,
   Sombras,
+  Funkos,
 } from '../IconsCategories'
 import {
   ACERTIJOS,
@@ -17,6 +18,7 @@ import {
   EMOJIS,
   JUGADORES,
   SOMBRAS,
+  FUNKOS,
 } from '../../constants/const'
 import LevelEmojis from '../LevelEmojis'
 import LevelJugadores from '../LevelJugadores'
@@ -24,6 +26,7 @@ import LevelAdivinanzas from '../LevelAdivinanzas'
 import LevelLogos from '../LevelLogos'
 import LevelPeliculas from '../LevelPeliculas'
 import LevelSombras from '../LevelSombras'
+import LevelFunkos from '../LevelFunkos'
 import useStyles from './styles'
 import { useGameContext, Actions } from '../../store/game'
 
@@ -37,6 +40,7 @@ const Levels = () => {
   const [levelPeliculas, setLevelPeliculas] = useState()
   const [levelJugadores, setLevelJugadores] = useState()
   const [levelSombras, setLevelSombras] = useState()
+  const [levelFunkos, setLevelFunkos] = useState()
 
   useEffect(() => {
     setLevelAcertijos(localStorage?.getItem(ACERTIJOS) || 1)
@@ -45,6 +49,7 @@ const Levels = () => {
     setLevelPeliculas(localStorage?.getItem(PELICULAS) || 1)
     setLevelJugadores(localStorage?.getItem(JUGADORES) || 1)
     setLevelSombras(localStorage?.getItem(SOMBRAS) || 1)
+    setLevelFunkos(localStorage?.getItem(FUNKOS) || 1)
   }, [])
 
   const handleClick = (category, level) => {
@@ -96,6 +101,22 @@ const Levels = () => {
           <Peliculas />
         </Stack>
       </Stack>
+      <Stack direction="row" onClick={() => handleClick(FUNKOS, levelFunkos)}>
+        <Stack sx={{ width: '50%' }}>
+          <Funkos />
+        </Stack>
+        <Stack sx={{ width: '50%' }}>
+          <LevelFunkos level={parseInt(levelFunkos, 10)} />
+        </Stack>
+      </Stack>
+      <Stack direction="row" onClick={() => handleClick(SOMBRAS, levelSombras)}>
+        <Stack sx={{ width: '50%' }}>
+          <LevelSombras level={parseInt(levelSombras, 10)} />
+        </Stack>
+        <Stack sx={{ width: '50%' }}>
+          <Sombras />
+        </Stack>
+      </Stack>
       <Stack
         direction="row"
         onClick={() => handleClick(JUGADORES, levelJugadores)}
@@ -105,14 +126,6 @@ const Levels = () => {
         </Stack>
         <Stack sx={{ width: '50%' }}>
           <LevelJugadores level={parseInt(levelJugadores, 10)} />
-        </Stack>
-      </Stack>
-      <Stack direction="row" onClick={() => handleClick(SOMBRAS, levelSombras)}>
-        <Stack sx={{ width: '50%' }}>
-          <LevelSombras level={parseInt(levelSombras, 10)} />
-        </Stack>
-        <Stack sx={{ width: '50%' }}>
-          <Sombras />
         </Stack>
       </Stack>
     </Box>
