@@ -9,6 +9,9 @@ import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import Paper from '@mui/material/Paper'
 import { useNavigate } from 'react-router-dom'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
+import { useTheme } from '@mui/styles'
 import LevelAcertijos from '../LevelAdivinanzas'
 import LevelEmojis from '../LevelEmojis'
 import LevelPeliculas from '../LevelPeliculas'
@@ -35,6 +38,7 @@ import useStyles from './styles'
 
 const Game = () => {
   const classes = useStyles()
+  const theme = useTheme()
   const { gameState, gameDispatch } = useGameContext()
   const navigate = useNavigate()
   const [level, setLevel] = useState()
@@ -43,6 +47,7 @@ const Game = () => {
   const [word, setWord] = useState()
   const [rendered, setRendered] = useState(false)
   const [correctLetters, setCorrectLetters] = useState('_')
+  const [wrongLetters, setWrongLetters] = useState('000')
   const [hideKeyboard, setHideKeyboard] = useState(false)
 
   const layout = {
@@ -52,6 +57,12 @@ const Game = () => {
       'A S D F G H J K L Ñ',
       'Z X C V B N M',
     ],
+  }
+
+  const handleWrongLetters = () => {
+    if (wrongLetters?.includes('111')) {
+      setHideKeyboard(true)
+    }
   }
 
   useEffect(() => {
@@ -65,7 +76,8 @@ const Game = () => {
     } else {
       navigate('/')
     }
-  }, [])
+    handleWrongLetters()
+  }, [wrongLetters])
 
   const Image = () => {
     switch (category) {
@@ -124,8 +136,12 @@ const Game = () => {
 
   const handleKeyboard = (letter) => {
     setRendered(true)
-    const answer = word
+    const answer = word.toLowerCase()
     const result = correctLetters.split('')
+
+    if (!answer.includes(letter.toLowerCase())) {
+      setWrongLetters(wrongLetters.replace('0', '1'))
+    }
 
     for (let i = 0; i < answer.length; i += 1) {
       if (answer.charAt(i).toUpperCase() !== letter.toUpperCase()) {
@@ -144,6 +160,7 @@ const Game = () => {
     }
 
     setCorrectLetters(result.toString().replace(/,/g, ''))
+
     if (result.toString().indexOf('_') < 0) {
       setHideKeyboard(true)
       gameDispatch({
@@ -164,6 +181,22 @@ const Game = () => {
 
   return (
     <Box className={classes.gameContainer}>
+      <Stack className={classes.lifeContainer} direction="row">
+        {wrongLetters &&
+          wrongLetters
+            .split('')
+            .map((k) =>
+              k === '0' ? (
+                <FavoriteIcon
+                  sx={{ color: theme.palette.white.main, fontSize: '2rem' }}
+                />
+              ) : (
+                <FavoriteBorderIcon
+                  sx={{ color: theme.palette.white.main, fontSize: '2rem' }}
+                />
+              )
+            )}
+      </Stack>
       <Box
         className={classes.imageContainer}
         sx={{ width: isMobile ? '30vh' : '50vh' }}

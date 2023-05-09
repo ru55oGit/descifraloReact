@@ -6,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
     height: 'calc(100vh - 90px)',
     margin: 'auto',
     maxWidth: '768px',
-    paddingTop: 30,
   },
   imageContainer: {
     backgroundColor: theme.palette.black.main,
@@ -37,6 +36,10 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 3,
     textAlign: 'center',
     width: 24,
+  },
+  lifeContainer: {
+    justifyContent: 'flex-end',
+    padding: 10,
   },
 }))
 
