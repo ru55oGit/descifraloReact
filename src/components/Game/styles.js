@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     width: 24,
   },
   lifeContainer: {
+    height: '2rem',
     justifyContent: 'flex-end',
     padding: 10,
   },

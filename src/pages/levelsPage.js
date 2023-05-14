@@ -48,7 +48,11 @@ const LevelsPage = () => {
 
   useEffect(() => {
     setLevelReached(
-      parseInt(localStorage.getItem(gameState.game.category) || 1, 10)
+      parseInt(
+        JSON.parse(localStorage.getItem(gameState.game.category))
+          ?.levelReached || 1,
+        10
+      )
     )
     if (gameState.game) {
       switch (gameState.game.category) {
@@ -117,6 +121,7 @@ const LevelsPage = () => {
           list.map((k, i) =>
             levelReached >= i + 1 ? (
               <Button
+                key={k.respuesta}
                 onClick={() => handleClick(i)}
                 sx={{ p: '4px', width: '24.8%' }}
               >
@@ -150,6 +155,7 @@ const LevelsPage = () => {
               </Button>
             ) : (
               <Button
+                key={k.respuesta}
                 disabled
                 sx={{
                   backgroundColor: theme.palette.white.main,

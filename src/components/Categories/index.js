@@ -51,15 +51,27 @@ const Levels = () => {
   const [levelBanderas, setLevelBanderas] = useState()
 
   useEffect(() => {
-    setLevelAcertijos(localStorage?.getItem(ACERTIJOS) || 1)
-    setLevelEmojis(localStorage?.getItem(EMOJIS) || 1)
-    setLevelLogos(localStorage?.getItem(LOGOS) || 1)
-    setLevelPeliculas(localStorage?.getItem(PELICULAS) || 1)
-    setLevelJugadores(localStorage?.getItem(JUGADORES) || 1)
-    setLevelSombras(localStorage?.getItem(SOMBRAS) || 1)
-    setLevelFunkos(localStorage?.getItem(FUNKOS) || 1)
-    setLevelEscudos(localStorage?.getItem(ESCUDOS) || 1)
-    setLevelBanderas(localStorage?.getItem(BANDERAS) || 1)
+    setLevelAcertijos(
+      JSON.parse(localStorage?.getItem(ACERTIJOS))?.levelReached || 1
+    )
+    setLevelEmojis(JSON.parse(localStorage?.getItem(EMOJIS))?.levelReached || 1)
+    setLevelLogos(JSON.parse(localStorage?.getItem(LOGOS))?.levelReached || 1)
+    setLevelPeliculas(
+      JSON.parse(localStorage?.getItem(PELICULAS))?.levelReached || 1
+    )
+    setLevelJugadores(
+      JSON.parse(localStorage?.getItem(JUGADORES))?.levelReached || 1
+    )
+    setLevelSombras(
+      JSON.parse(localStorage?.getItem(SOMBRAS))?.levelReached || 1
+    )
+    setLevelFunkos(JSON.parse(localStorage?.getItem(FUNKOS))?.levelReached || 1)
+    setLevelEscudos(
+      JSON.parse(localStorage?.getItem(ESCUDOS))?.levelReached || 1
+    )
+    setLevelBanderas(
+      JSON.parse(localStorage?.getItem(BANDERAS))?.levelReached || 1
+    )
   }, [])
 
   const handleClick = (category, level) => {

@@ -30,7 +30,7 @@ const LanguageProvider = ({ children, defaultState }) => {
     [state, dispatch]
   )
 
-  window.localStorage.setItem('lang', value?.languageState.language)
+  localStorage.setItem('lang', value?.languageState.language)
 
   return (
     <LanguageContext.Provider value={value}>

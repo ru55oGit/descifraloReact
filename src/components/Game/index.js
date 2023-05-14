@@ -1,3 +1,4 @@
+/* eslint-disable no-bitwise */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable import/no-extraneous-dependencies */
@@ -7,11 +8,14 @@ import { isMobile } from 'react-device-detect'
 import Keyboard from 'react-simple-keyboard'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
+import Dialog from '@mui/material/Dialog'
 import Paper from '@mui/material/Paper'
+import Typography from '@mui/material/Typography'
 import { useNavigate } from 'react-router-dom'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useTheme } from '@mui/styles'
+import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import LevelAcertijos from '../LevelAdivinanzas'
 import LevelEmojis from '../LevelEmojis'
 import LevelPeliculas from '../LevelPeliculas'
@@ -49,6 +53,7 @@ const Game = () => {
   const [correctLetters, setCorrectLetters] = useState('_')
   const [wrongLetters, setWrongLetters] = useState('000')
   const [hideKeyboard, setHideKeyboard] = useState(false)
+  const [minutesBlocked, setMinutesBlocked] = useState(300)
 
   const layout = {
     default: [
@@ -60,19 +65,43 @@ const Game = () => {
   }
 
   const handleWrongLetters = () => {
-    if (wrongLetters?.includes('111')) {
+    const storage = JSON.parse(localStorage.getItem(gameState?.game?.category))
+
+    if (wrongLetters?.includes('111') && storage?.timeBlocked === undefined) {
       setHideKeyboard(true)
+      const timeBlocked = new Date(Date.now() + 5 * 60 * 1000)
+
+      localStorage.setItem(
+        gameState.game.category,
+        JSON.stringify({
+          levelReached: level,
+          timeBlocked,
+        })
+      )
     }
   }
 
   useEffect(() => {
     if (gameState?.game) {
+      const storage = JSON.parse(
+        localStorage.getItem(gameState?.game?.category)
+      )
+
+      if (
+        new Date(storage?.timeBlocked) > Date.now() &&
+        gameState?.game.level === storage?.levelReached
+      ) {
+        const mb = Math.abs(new Date(storage?.timeBlocked) - Date.now())
+        const minutes = Math.floor(mb / 1000)
+
+        setHideKeyboard(true)
+        setWrongLetters('111')
+        setMinutesBlocked(minutes)
+      }
       setLevel(gameState.game.level)
       setCategory(gameState.game.category)
       setWord(gameState.game.word)
-      setLevelReached(
-        parseInt(localStorage.getItem(gameState.game.category) || 1, 10)
-      )
+      setLevelReached(parseInt(storage?.levelReached || 1, 10))
     } else {
       navigate('/')
     }
@@ -115,6 +144,7 @@ const Game = () => {
 
     return answer?.map((k, id) => (
       <Stack
+        key={Math.ceil(Math.random() * 10000)}
         direction="row"
         spacing={1}
         sx={{ justifyContent: 'center', mb: 2 }}
@@ -139,7 +169,10 @@ const Game = () => {
     const answer = word.toLowerCase()
     const result = correctLetters.split('')
 
-    if (!answer.includes(letter.toLowerCase())) {
+    if (
+      gameState.game.level === levelReached &&
+      !answer.includes(letter.toLowerCase())
+    ) {
       setWrongLetters(wrongLetters.replace('0', '1'))
     }
 
@@ -167,14 +200,18 @@ const Game = () => {
         game: {
           category: gameState.game.category,
           level:
-            levelReached <= gameState.game.level
+            levelReached === gameState.game.level
               ? gameState.game.level + 1
-              : levelReached,
+              : 1,
         },
         type: Actions.UPDATE_LEVEL,
       })
-      if (levelReached <= gameState.game.level) {
-        localStorage.setItem(gameState.game.category, level + 1)
+
+      if (levelReached === gameState.game.level) {
+        localStorage.setItem(
+          gameState.game.category,
+          JSON.stringify({ blocked: false, levelReached: level + 1 })
+        )
       }
     }
   }
@@ -182,16 +219,18 @@ const Game = () => {
   return (
     <Box className={classes.gameContainer}>
       <Stack className={classes.lifeContainer} direction="row">
-        {wrongLetters &&
+        {gameState?.game?.level === levelReached &&
           wrongLetters
             .split('')
             .map((k) =>
               k === '0' ? (
                 <FavoriteIcon
+                  key={Math.random()}
                   sx={{ color: theme.palette.white.main, fontSize: '2rem' }}
                 />
               ) : (
                 <FavoriteBorderIcon
+                  key={Math.random()}
                   sx={{ color: theme.palette.white.main, fontSize: '2rem' }}
                 />
               )
@@ -214,6 +253,36 @@ const Game = () => {
           />
         </Stack>
       )}
+      <Dialog
+        open={wrongLetters === '111'}
+        sx={{
+          '& .MuiDialog-paperScrollPaper': {
+            borderRadius: '50%',
+            overflow: 'hidden',
+          },
+        }}
+      >
+        <Stack>
+          <CountdownCircleTimer
+            colors={['#000', '#d9dbdf', '#aeb0b4', '#76787b']}
+            colorsTime={[7, 5, 2, 0]}
+            duration={minutesBlocked}
+            isPlaying
+            onComplete={() => {
+              setHideKeyboard(false)
+              setWrongLetters('000')
+              localStorage.setItem(
+                gameState.game.category,
+                JSON.stringify({ levelReached })
+              )
+            }}
+          >
+            {({ remainingTime }) => (
+              <Typography variant="hxxl">{remainingTime}</Typography>
+            )}
+          </CountdownCircleTimer>
+        </Stack>
+      </Dialog>
     </Box>
   )
 }

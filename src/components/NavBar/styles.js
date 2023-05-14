@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 8,
     transform: 'translate(-50%, 0px)',
     width: 'calc(100% - 16px)',
-    zIndex: 1,
+    zIndex: 11111,
   },
 }))
 
