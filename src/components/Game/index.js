@@ -87,16 +87,22 @@ const Game = () => {
         localStorage.getItem(gameState?.game?.category)
       )
 
-      if (
-        new Date(storage?.timeBlocked) > Date.now() &&
-        gameState?.game.level === storage?.levelReached
-      ) {
-        const mb = Math.abs(new Date(storage?.timeBlocked) - Date.now())
-        const minutes = Math.floor(mb / 1000)
+      if (gameState?.game.level === storage?.levelReached) {
+        if (new Date(storage?.timeBlocked) > Date.now()) {
+          const mb = Math.abs(new Date(storage?.timeBlocked) - Date.now())
+          const minutes = Math.floor(mb / 1000)
 
-        setHideKeyboard(true)
-        setWrongLetters('111')
-        setMinutesBlocked(minutes)
+          setHideKeyboard(true)
+          setWrongLetters('111')
+          setMinutesBlocked(minutes)
+        } else {
+          localStorage.setItem(
+            gameState.game.category,
+            JSON.stringify({
+              levelReached: gameState.game.level,
+            })
+          )
+        }
       }
       setLevel(gameState.game.level)
       setCategory(gameState.game.category)
@@ -210,7 +216,7 @@ const Game = () => {
       if (levelReached === gameState.game.level) {
         localStorage.setItem(
           gameState.game.category,
-          JSON.stringify({ blocked: false, levelReached: level + 1 })
+          JSON.stringify({ levelReached: level + 1 })
         )
       }
     }
@@ -278,7 +284,14 @@ const Game = () => {
             }}
           >
             {({ remainingTime }) => (
-              <Typography variant="hxxl">{remainingTime}</Typography>
+              <Stack>
+                <Typography sx={{ textAlign: 'center' }} variant="hxxl">
+                  {remainingTime}
+                </Typography>
+                <Typography sx={{ textAlign: 'center' }} variant="body0">
+                  Segundos
+                </Typography>
+              </Stack>
             )}
           </CountdownCircleTimer>
         </Stack>
