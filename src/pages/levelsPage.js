@@ -47,14 +47,14 @@ const LevelsPage = () => {
   const [levelReached, setLevelReached] = useState()
 
   useEffect(() => {
-    setLevelReached(
-      parseInt(
-        JSON.parse(localStorage.getItem(gameState.game.category))
-          ?.levelReached || 1,
-        10
-      )
-    )
     if (gameState.game) {
+      setLevelReached(
+        parseInt(
+          JSON.parse(localStorage.getItem(gameState.game.category))
+            ?.levelReached || 1,
+          10
+        )
+      )
       switch (gameState.game.category) {
         case ACERTIJOS:
           setList(dataAcertijos.listado)

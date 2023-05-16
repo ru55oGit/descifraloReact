@@ -208,7 +208,7 @@ const Game = () => {
           level:
             levelReached === gameState.game.level
               ? gameState.game.level + 1
-              : 1,
+              : gameState.game.level,
         },
         type: Actions.UPDATE_LEVEL,
       })

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
@@ -10,10 +11,15 @@ import { useTheme } from '@mui/styles'
 
 import useStyles from './styles'
 
-const NavBar = ({ backArrow, fixed, openMenu, setOpenMenu }) => {
+const NavBar = ({ backArrow, fixed, openMenu, setOpenMenu, level }) => {
   const theme = useTheme()
   const classes = useStyles()
   const navigate = useNavigate()
+  const [lev, setLev] = useState()
+
+  useEffect(() => {
+    setLev(level)
+  }, [])
 
   return (
     <Box sx={{ position: 'relative' }}>
@@ -32,6 +38,20 @@ const NavBar = ({ backArrow, fixed, openMenu, setOpenMenu }) => {
             onClick={() => navigate(-1)}
             sx={{ color: theme.palette.primary.main, fontSize: '2rem' }}
           />
+        )}
+        {level && (
+          <Stack sx={{ textAlign: 'center' }}>
+            <Typography color="primary.main" variant="body1">
+              Nivel
+            </Typography>
+            <Typography
+              color="primary.main"
+              sx={{ lineHeight: 1 }}
+              variant="hxxl"
+            >
+              {lev}
+            </Typography>
+          </Stack>
         )}
 
         <Stack>
@@ -52,6 +72,7 @@ export default NavBar
 NavBar.propTypes = {
   backArrow: PropTypes.bool,
   fixed: PropTypes.bool,
+  level: PropTypes.string,
   openMenu: PropTypes.bool,
   setOpenMenu: PropTypes.func,
 }
@@ -59,6 +80,7 @@ NavBar.propTypes = {
 NavBar.defaultProps = {
   backArrow: false,
   fixed: false,
+  level: undefined,
   openMenu: false,
   setOpenMenu: () => {},
 }
