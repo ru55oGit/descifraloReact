@@ -12,7 +12,15 @@ import { useTheme } from '@mui/styles'
 
 import useStyles from './styles'
 
-const NavBar = ({ backArrow, fixed, openMenu, setOpenMenu, level }) => {
+const NavBar = ({
+  backArrow,
+  fixed,
+  openMenu,
+  setOpenMenu,
+  openDonate,
+  setOpenDonate,
+  level,
+}) => {
   const theme = useTheme()
   const classes = useStyles()
   const navigate = useNavigate()
@@ -21,6 +29,16 @@ const NavBar = ({ backArrow, fixed, openMenu, setOpenMenu, level }) => {
   useEffect(() => {
     setLev(level)
   }, [])
+
+  const handleOpenMenu = () => {
+    setOpenMenu(!openMenu)
+    setOpenDonate(false)
+  }
+
+  const handleOpenDonate = () => {
+    setOpenDonate(!openDonate)
+    setOpenMenu(false)
+  }
 
   return (
     <Box sx={{ position: 'relative' }}>
@@ -31,7 +49,7 @@ const NavBar = ({ backArrow, fixed, openMenu, setOpenMenu, level }) => {
       >
         {!backArrow ? (
           <MenuIcon
-            onClick={() => setOpenMenu(!openMenu)}
+            onClick={handleOpenMenu}
             sx={{ color: theme.palette.primary.main, fontSize: '2rem' }}
           />
         ) : (
@@ -55,7 +73,7 @@ const NavBar = ({ backArrow, fixed, openMenu, setOpenMenu, level }) => {
           </Stack>
         )}
 
-        <Stack>
+        <Stack onClick={handleOpenDonate}>
           <PaidIcon
             sx={{ color: theme.palette.primary.main, margin: 'auto' }}
           />
@@ -74,7 +92,9 @@ NavBar.propTypes = {
   backArrow: PropTypes.bool,
   fixed: PropTypes.bool,
   level: PropTypes.string,
+  openDonate: PropTypes.bool,
   openMenu: PropTypes.bool,
+  setOpenDonate: PropTypes.func,
   setOpenMenu: PropTypes.func,
 }
 
@@ -82,6 +102,8 @@ NavBar.defaultProps = {
   backArrow: false,
   fixed: false,
   level: undefined,
+  openDonate: false,
   openMenu: false,
+  setOpenDonate: () => {},
   setOpenMenu: () => {},
 }
