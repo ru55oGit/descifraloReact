@@ -8,6 +8,7 @@ import { isMobile } from 'react-device-detect'
 import Keyboard from 'react-simple-keyboard'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
+import Button from '@mui/material/Button'
 import Dialog from '@mui/material/Dialog'
 import Paper from '@mui/material/Paper'
 import Typography from '@mui/material/Typography'
@@ -139,6 +140,21 @@ const Game = () => {
     }
   }
 
+  const handleShare = () => {
+    if (navigator.canShare && navigator.canShare({ files: Image() })) {
+      navigator
+        .share({
+          files: Image(),
+          text: 'Photos from September 27 to October 14.',
+          title: 'Vacation Pictures',
+        })
+        .then(() => console.log('Share was successful.'))
+        .catch((error) => console.log('Sharing failed', error))
+    } else {
+      console.log(`Your system doesn't support sharing files.`)
+    }
+  }
+
   const wordToGuess = () => {
     let answer
 
@@ -249,7 +265,7 @@ const Game = () => {
         {Image()}
       </Box>
       <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
-      {!hideKeyboard && (
+      {!hideKeyboard ? (
         <Stack className={classes.keyboardContainer}>
           <Keyboard
             layout={layout}
@@ -258,6 +274,10 @@ const Game = () => {
             onKeyPress={(e) => handleKeyboard(e)}
           />
         </Stack>
+      ) : (
+        <Button onClick={handleShare} sx={{ border: '1px solid black' }}>
+          <Typography color="white.main">Share</Typography>
+        </Button>
       )}
       <Dialog
         open={wrongLetters === '111'}
