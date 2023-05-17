@@ -148,10 +148,17 @@ const Game = () => {
           text: 'Photos from September 27 to October 14.',
           title: 'Vacation Pictures',
         })
-        .then(() => console.log('Share was successful.'))
-        .catch((error) => console.log('Sharing failed', error))
+        .then(() =>
+          // eslint-disable-next-line no-console
+          console.log('Share was successful.')
+        )
+        .catch((error) =>
+          // eslint-disable-next-line no-console
+          console.log('Sharing failed', error)
+        )
     } else {
-      console.log(`Your system doesn't support sharing files.`)
+      // eslint-disable-next-line no-console
+      console.log('Your system doesnt support sharing files.')
     }
   }
 
