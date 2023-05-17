@@ -17,7 +17,7 @@ const Emojis10 = () => (
           width="400"
         />
       </defs>
-      <use href="#img1" id="Background" x="0" y="0" />
+      <use href="#Emojis10" id="Background" x="0" y="0" />
     </svg>{' '}
   </SvgIcon>
 )
