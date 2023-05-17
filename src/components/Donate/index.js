@@ -58,14 +58,16 @@ const Donate = () => {
           >
             <Avatar
               src="images/whatsappicon.png"
-              sx={{ height: 36, width: 36 }}
+              sx={{ height: 48, width: 48 }}
             />
           </Link>
-          <Avatar
-            src="images/facebookicon.png"
-            sx={{ height: 36, width: 36 }}
-          />
-          <Avatar src="images/twittericon.png" sx={{ height: 36, width: 36 }} />
+          <Link href="https://www.facebook.com/dialog/share?app_id=1430238181087321&display=popup&href=https://descifralo.netlify.app/">
+            <Avatar
+              src="images/facebookicon.png"
+              sx={{ height: 48, width: 48 }}
+            />
+          </Link>
+          <Avatar src="images/twittericon.png" sx={{ height: 48, width: 48 }} />
         </Stack>
       </Stack>
     </Box>
