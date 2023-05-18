@@ -91,7 +91,7 @@ export default NavBar
 NavBar.propTypes = {
   backArrow: PropTypes.bool,
   fixed: PropTypes.bool,
-  level: PropTypes.string,
+  level: PropTypes.number,
   openDonate: PropTypes.bool,
   openMenu: PropTypes.bool,
   setOpenDonate: PropTypes.func,

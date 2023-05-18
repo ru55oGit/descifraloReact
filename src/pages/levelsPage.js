@@ -3,7 +3,9 @@ import { useNavigate } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
+import Collapse from '@mui/material/Collapse'
 import { useTheme } from '@mui/styles'
+import Donate from '../components/Donate'
 import NavBar from '../components/NavBar'
 import { useGameContext, Actions } from '../store/game'
 import useStyles from '../styles/pages'
@@ -45,6 +47,7 @@ const LevelsPage = () => {
   const { gameState, gameDispatch } = useGameContext()
   const [list, setList] = useState()
   const [levelReached, setLevelReached] = useState()
+  const [openDonate, setOpenDonate] = useState(false)
 
   useEffect(() => {
     if (gameState.game) {
@@ -106,7 +109,15 @@ const LevelsPage = () => {
 
   return (
     <Box className={classes.boxContainer}>
-      <NavBar backArrow fixed />
+      <NavBar
+        backArrow
+        fixed
+        openDonate={openDonate}
+        setOpenDonate={setOpenDonate}
+      />
+      <Collapse className={classes.menu} in={openDonate}>
+        <Donate />
+      </Collapse>
       <Box
         sx={{
           display: 'flex',

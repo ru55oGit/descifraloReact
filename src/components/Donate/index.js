@@ -54,14 +54,20 @@ const Donate = () => {
           sx={{ display: 'flex', justifyContent: 'space-evenly' }}
         >
           <Link
-            href={`whatsapp://send?text=${encodeURIComponent(window.location)}`}
+            href={`whatsapp://send?text=${encodeURIComponent(
+              window.location.origin
+            )}`}
           >
             <Avatar
               src="images/whatsappicon.png"
               sx={{ height: 48, width: 48 }}
             />
           </Link>
-          <Link href="https://www.facebook.com/dialog/share?app_id=1430238181087321&display=popup&href=https://descifralo.netlify.app/&redirect_uri=https://descifralo.netlify.app/">
+          <Link
+            href={`https://www.facebook.com/dialog/share?app_id=1430238181087321&display=popup&href=${encodeURIComponent(
+              window.location.origin
+            )}&redirect_uri=${encodeURIComponent(window.location.origin)}`}
+          >
             <Avatar
               src="images/facebookicon.png"
               sx={{ height: 48, width: 48 }}
@@ -69,7 +75,7 @@ const Donate = () => {
           </Link>
           <Link
             href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-              window.location
+              window.location.origin
             )}`}
             target="_blank"
           >

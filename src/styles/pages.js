@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     top: 55,
     transform: 'translate(-50%, 5px)',
+    zIndex: 1400,
   },
 }))
 
