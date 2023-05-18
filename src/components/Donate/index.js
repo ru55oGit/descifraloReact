@@ -61,13 +61,23 @@ const Donate = () => {
               sx={{ height: 48, width: 48 }}
             />
           </Link>
-          <Link href="https://www.facebook.com/dialog/share?app_id=1430238181087321&display=popup&href=https://descifralo.netlify.app/">
+          <Link href="https://www.facebook.com/dialog/share?app_id=1430238181087321&display=popup&href=https://descifralo.netlify.app/&redirect_uri=https://descifralo.netlify.app/">
             <Avatar
               src="images/facebookicon.png"
               sx={{ height: 48, width: 48 }}
             />
           </Link>
-          <Avatar src="images/twittericon.png" sx={{ height: 48, width: 48 }} />
+          <Link
+            href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+              window.location
+            )}`}
+            target="_blank"
+          >
+            <Avatar
+              src="images/twittericon.png"
+              sx={{ height: 48, width: 48 }}
+            />
+          </Link>
         </Stack>
       </Stack>
     </Box>
