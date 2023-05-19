@@ -278,9 +278,16 @@ const Game = () => {
           <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
           {wrongLetters === '111' && (
             <Typography
-              color="white.main"
-              sx={{ display: 'block', marginTop: 2, textAlign: 'center' }}
-              variant="hxxl"
+              color="primary.main"
+              sx={{
+                background: theme.palette.white.main,
+                borderRadius: '8px',
+                display: 'block',
+                margin: '16px auto',
+                padding: 1,
+                width: 'fit-content',
+              }}
+              variant="hxl"
             >
               {window.location.origin}
             </Typography>
