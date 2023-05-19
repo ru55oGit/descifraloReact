@@ -267,14 +267,25 @@ const Game = () => {
               )
             )}
       </Stack>
-      <Box ref={refQR} className={classes.downloadContainer}>
-        <Box
-          className={classes.imageContainer}
-          sx={{ width: isMobile ? '30vh' : '50vh' }}
-        >
-          {Image()}
+      <Box ref={refQR}>
+        <Box sx={{ background: theme.palette.primary.main, padding: '10px 0' }}>
+          <Box
+            className={classes.imageContainer}
+            sx={{ width: isMobile ? '30vh' : '50vh' }}
+          >
+            {Image()}
+          </Box>
+          <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
+          {wrongLetters === '111' && (
+            <Typography
+              color="white.main"
+              sx={{ display: 'block', marginTop: 2, textAlign: 'center' }}
+              variant="hxxl"
+            >
+              {window.location.origin}
+            </Typography>
+          )}
         </Box>
-        <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
       </Box>
       {!hideKeyboard && (
         <Stack className={classes.keyboardContainer}>
@@ -290,7 +301,6 @@ const Game = () => {
         open={wrongLetters === '111'}
         sx={{
           '& .MuiDialog-paperScrollPaper': {
-            // borderRadius: '50%',
             overflow: 'hidden',
             p: 5,
           },
