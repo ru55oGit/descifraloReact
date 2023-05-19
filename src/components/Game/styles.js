@@ -1,6 +1,10 @@
 import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles((theme) => ({
+  downloadContainer: {
+    backgroundColor: theme.palette.primary.main,
+    padding: 10,
+  },
   gameContainer: {
     backgroundColor: theme.palette.primary.main,
     height: 'calc(100vh - 90px)',

@@ -3,12 +3,14 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unstable-nested-components */
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { isMobile } from 'react-device-detect'
+import { toPng } from 'html-to-image'
 import Keyboard from 'react-simple-keyboard'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import Dialog from '@mui/material/Dialog'
+import Button from '@mui/material/Button'
 import Paper from '@mui/material/Paper'
 import Typography from '@mui/material/Typography'
 import { useNavigate } from 'react-router-dom'
@@ -43,6 +45,7 @@ import useStyles from './styles'
 const Game = () => {
   const classes = useStyles()
   const theme = useTheme()
+  const refQR = useRef()
   const { gameState, gameDispatch } = useGameContext()
   const navigate = useNavigate()
   const [level, setLevel] = useState()
@@ -63,6 +66,28 @@ const Game = () => {
       'Z X C V B N M',
     ],
   }
+
+  const handleDownload = useCallback(() => {
+    const baseNode = refQR.current
+
+    if (!baseNode) return
+
+    toPng(baseNode, {
+      backgroundColor: theme.palette.common.white,
+      cacheBust: false,
+    })
+      .then((dataUrl) => {
+        const linkToDownload = document.createElement('a')
+
+        linkToDownload.download = `${category}-${level}.png`
+        linkToDownload.href = dataUrl
+        linkToDownload.click()
+      })
+      .catch((err) => {
+        // eslint-disable-next-line no-console
+        console.log('Image download failed', err)
+      })
+  }, [refQR, level, theme])
 
   const handleWrongLetters = () => {
     const storage = JSON.parse(localStorage.getItem(gameState?.game?.category))
@@ -242,13 +267,15 @@ const Game = () => {
               )
             )}
       </Stack>
-      <Box
-        className={classes.imageContainer}
-        sx={{ width: isMobile ? '30vh' : '50vh' }}
-      >
-        {Image()}
+      <Box ref={refQR} className={classes.downloadContainer}>
+        <Box
+          className={classes.imageContainer}
+          sx={{ width: isMobile ? '30vh' : '50vh' }}
+        >
+          {Image()}
+        </Box>
+        <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
       </Box>
-      <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
       {!hideKeyboard && (
         <Stack className={classes.keyboardContainer}>
           <Keyboard
@@ -263,12 +290,13 @@ const Game = () => {
         open={wrongLetters === '111'}
         sx={{
           '& .MuiDialog-paperScrollPaper': {
-            borderRadius: '50%',
+            // borderRadius: '50%',
             overflow: 'hidden',
+            p: 5,
           },
         }}
       >
-        <Stack>
+        <Stack spacing={2}>
           <CountdownCircleTimer
             colors={['#000', '#d9dbdf', '#aeb0b4', '#76787b']}
             colorsTime={[7, 5, 2, 0]}
@@ -294,6 +322,12 @@ const Game = () => {
               </Stack>
             )}
           </CountdownCircleTimer>
+          <Button
+            onClick={handleDownload}
+            sx={{ border: `1px solid ${theme.palette.primary.main}` }}
+          >
+            Bajar y compartir
+          </Button>
         </Stack>
       </Dialog>
     </Box>
