@@ -20,6 +20,26 @@ import {
   Emojis18,
   Emojis19,
   Emojis20,
+  Emojis21,
+  Emojis22,
+  Emojis23,
+  Emojis24,
+  Emojis25,
+  Emojis26,
+  Emojis27,
+  Emojis28,
+  Emojis29,
+  Emojis30,
+  Emojis31,
+  Emojis32,
+  Emojis33,
+  Emojis34,
+  Emojis35,
+  Emojis36,
+  Emojis37,
+  Emojis38,
+  Emojis39,
+  Emojis40,
 } from '../SVG/Emojis'
 
 const LevelEmojis = ({ level }) => {
@@ -64,6 +84,46 @@ const LevelEmojis = ({ level }) => {
       return <Emojis19 />
     case 20:
       return <Emojis20 />
+    case 21:
+      return <Emojis21 />
+    case 22:
+      return <Emojis22 />
+    case 23:
+      return <Emojis23 />
+    case 24:
+      return <Emojis24 />
+    case 25:
+      return <Emojis25 />
+    case 26:
+      return <Emojis26 />
+    case 27:
+      return <Emojis27 />
+    case 28:
+      return <Emojis28 />
+    case 29:
+      return <Emojis29 />
+    case 30:
+      return <Emojis30 />
+    case 31:
+      return <Emojis31 />
+    case 32:
+      return <Emojis32 />
+    case 33:
+      return <Emojis33 />
+    case 34:
+      return <Emojis34 />
+    case 35:
+      return <Emojis35 />
+    case 36:
+      return <Emojis36 />
+    case 37:
+      return <Emojis37 />
+    case 38:
+      return <Emojis38 />
+    case 39:
+      return <Emojis39 />
+    case 40:
+      return <Emojis40 />
     default:
       return <Emojis1 />
   }

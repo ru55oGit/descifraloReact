@@ -18,6 +18,26 @@ import Emojis17 from './emojis17'
 import Emojis18 from './emojis18'
 import Emojis19 from './emojis19'
 import Emojis20 from './emojis20'
+import Emojis21 from './emojis21'
+import Emojis22 from './emojis22'
+import Emojis23 from './emojis23'
+import Emojis24 from './emojis24'
+import Emojis25 from './emojis25'
+import Emojis26 from './emojis26'
+import Emojis27 from './emojis27'
+import Emojis28 from './emojis28'
+import Emojis29 from './emojis29'
+import Emojis30 from './emojis30'
+import Emojis31 from './emojis31'
+import Emojis32 from './emojis32'
+import Emojis33 from './emojis33'
+import Emojis34 from './emojis34'
+import Emojis35 from './emojis35'
+import Emojis36 from './emojis36'
+import Emojis37 from './emojis37'
+import Emojis38 from './emojis38'
+import Emojis39 from './emojis39'
+import Emojis40 from './emojis40'
 
 export {
   Emojis1,
@@ -40,4 +60,24 @@ export {
   Emojis18,
   Emojis19,
   Emojis20,
+  Emojis21,
+  Emojis22,
+  Emojis23,
+  Emojis24,
+  Emojis25,
+  Emojis26,
+  Emojis27,
+  Emojis28,
+  Emojis29,
+  Emojis30,
+  Emojis31,
+  Emojis32,
+  Emojis33,
+  Emojis34,
+  Emojis35,
+  Emojis36,
+  Emojis37,
+  Emojis38,
+  Emojis39,
+  Emojis40,
 }
