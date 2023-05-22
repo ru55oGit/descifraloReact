@@ -134,7 +134,15 @@ const LevelsPage = () => {
               <Button
                 key={k.respuesta}
                 onClick={() => handleClick(i)}
-                sx={{ p: '4px', width: '24.8%' }}
+                sx={{
+                  '& svg': {
+                    border: `1px solid ${theme.palette.primary.main}`,
+                    borderRadius: '4px',
+                    boxShadow: theme.palette.shadows.overlay,
+                  },
+                  p: '4px',
+                  width: '24.8%',
+                }}
               >
                 {gameState.game.category === ACERTIJOS && (
                   <LevelAdivinanzas level={i + 1} />
