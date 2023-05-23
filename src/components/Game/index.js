@@ -294,6 +294,7 @@ const Game = () => {
           )}
         </Box>
       </Box>
+
       {!hideKeyboard && (
         <Stack className={classes.keyboardContainer}>
           <Keyboard
