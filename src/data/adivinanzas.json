@@ -501,17 +501,17 @@
       "nivel": ""
     },
     {
-      "respuesta": "envido",
+      "respuesta": "polinesia|francesa",
       "solucion": "",
       "nivel": ""
     },
     {
-      "respuesta": "real|envido",
+      "respuesta": "armonicamente",
       "solucion": "",
       "nivel": ""
     },
     {
-      "respuesta": "falta|envido",
+      "respuesta": "picante",
       "solucion": "",
       "nivel": ""
     },
@@ -611,7 +611,7 @@
       "nivel": ""
     },
     {
-      "respuesta": "australia",
+      "respuesta": "calculo",
       "solucion": "",
       "nivel": ""
     },
@@ -636,7 +636,7 @@
       "nivel": ""
     },
     {
-      "respuesta": "curitiba",
+      "respuesta": "pino",
       "solucion": "",
       "nivel": ""
     },
@@ -661,7 +661,7 @@
       "nivel": ""
     },
     {
-      "respuesta": "rosario",
+      "respuesta": "falacia",
       "solucion": "",
       "nivel": ""
     },
@@ -691,12 +691,12 @@
       "nivel": ""
     },
     {
-      "respuesta": "venado|tuerto",
+      "respuesta": "sahara",
       "solucion": "",
       "nivel": ""
     },
     {
-      "respuesta": "capilla|del monte",
+      "respuesta": "receta",
       "solucion": "",
       "nivel": ""
     },
@@ -706,7 +706,7 @@
       "nivel": ""
     },
     {
-      "respuesta": "san|fernando",
+      "respuesta": "bolivia",
       "solucion": "",
       "nivel": ""
     },
@@ -717,7 +717,12 @@
     },
 
     {
-      "respuesta": "tierra|del fuego",
+      "respuesta": "damasco",
+      "solucion": "",
+      "nivel": ""
+    },
+    {
+      "respuesta": "tierra del|fuego",
       "solucion": "",
       "nivel": ""
     },
@@ -727,27 +732,22 @@
       "nivel": ""
     },
     {
-      "respuesta": "olavarria",
+      "respuesta": "salubre",
       "solucion": "",
       "nivel": ""
     },
     {
-      "respuesta": "sierra de|la ventana",
+      "respuesta": "cataratas",
       "solucion": "",
       "nivel": ""
     },
     {
-      "respuesta": "caleta|olivia",
+      "respuesta": "rebota",
       "solucion": "",
       "nivel": ""
     },
     {
       "respuesta": "lisboa",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "barbados",
       "solucion": "",
       "nivel": ""
     },
@@ -1321,23 +1321,9 @@
       "solucion": "",
       "nivel": ""
     },
-    {
-      "respuesta": "salubre",
-      "solucion": "",
-      "nivel": ""
-    },
+
     {
       "respuesta": "rebota",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "receta",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "falacia",
       "solucion": "",
       "nivel": ""
     },
@@ -1353,46 +1339,6 @@
     },
     {
       "respuesta": "salta",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "damasco",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "bolivia",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "sahara",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "pino",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "calculo",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "picante",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "armonicamente",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "polinesia|francesa",
       "solucion": "",
       "nivel": ""
     }
