@@ -752,6 +752,11 @@
       "nivel": ""
     },
     {
+      "respuesta": "barbados",
+      "solucion": "",
+      "nivel": ""
+    },
+    {
       "respuesta": "canada",
       "solucion": "",
       "nivel": ""
@@ -1027,7 +1032,7 @@
       "nivel": ""
     },
     {
-      "respuesta": "santa rosa",
+      "respuesta": "cuba",
       "solucion": "",
       "nivel": ""
     },
@@ -1242,7 +1247,7 @@
       "nivel": ""
     },
     {
-      "respuesta": "cuba",
+      "respuesta": "cantina",
       "solucion": "",
       "nivel": ""
     },
@@ -1313,32 +1318,6 @@
     },
     {
       "respuesta": "diezmar",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "cantina",
-      "solucion": "",
-      "nivel": ""
-    },
-
-    {
-      "respuesta": "rebota",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "catarata",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "la falda",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "salta",
       "solucion": "",
       "nivel": ""
     }

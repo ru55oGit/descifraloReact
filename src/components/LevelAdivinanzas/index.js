@@ -150,6 +150,120 @@ import {
   Adivinanzas148,
   Adivinanzas149,
   Adivinanzas150,
+  Adivinanzas151,
+  Adivinanzas152,
+  Adivinanzas153,
+  Adivinanzas154,
+  Adivinanzas155,
+  Adivinanzas156,
+  Adivinanzas157,
+  Adivinanzas158,
+  Adivinanzas159,
+  Adivinanzas160,
+  Adivinanzas161,
+  Adivinanzas162,
+  Adivinanzas163,
+  Adivinanzas164,
+  Adivinanzas165,
+  Adivinanzas166,
+  Adivinanzas167,
+  Adivinanzas168,
+  Adivinanzas169,
+  Adivinanzas170,
+  Adivinanzas171,
+  Adivinanzas172,
+  Adivinanzas173,
+  Adivinanzas174,
+  Adivinanzas175,
+  Adivinanzas176,
+  Adivinanzas177,
+  Adivinanzas178,
+  Adivinanzas179,
+  Adivinanzas180,
+  Adivinanzas181,
+  Adivinanzas182,
+  Adivinanzas183,
+  Adivinanzas184,
+  Adivinanzas185,
+  Adivinanzas186,
+  Adivinanzas187,
+  Adivinanzas188,
+  Adivinanzas189,
+  Adivinanzas190,
+  Adivinanzas191,
+  Adivinanzas192,
+  Adivinanzas193,
+  Adivinanzas194,
+  Adivinanzas195,
+  Adivinanzas196,
+  Adivinanzas197,
+  Adivinanzas198,
+  Adivinanzas199,
+  Adivinanzas200,
+  Adivinanzas201,
+  Adivinanzas202,
+  Adivinanzas203,
+  Adivinanzas204,
+  Adivinanzas205,
+  Adivinanzas206,
+  Adivinanzas207,
+  Adivinanzas208,
+  Adivinanzas209,
+  Adivinanzas210,
+  Adivinanzas211,
+  Adivinanzas212,
+  Adivinanzas213,
+  Adivinanzas214,
+  Adivinanzas215,
+  Adivinanzas216,
+  Adivinanzas217,
+  Adivinanzas218,
+  Adivinanzas219,
+  Adivinanzas220,
+  Adivinanzas221,
+  Adivinanzas222,
+  Adivinanzas223,
+  Adivinanzas224,
+  Adivinanzas225,
+  Adivinanzas226,
+  Adivinanzas227,
+  Adivinanzas228,
+  Adivinanzas229,
+  Adivinanzas230,
+  Adivinanzas231,
+  Adivinanzas232,
+  Adivinanzas233,
+  Adivinanzas234,
+  Adivinanzas235,
+  Adivinanzas236,
+  Adivinanzas237,
+  Adivinanzas238,
+  Adivinanzas239,
+  Adivinanzas240,
+  Adivinanzas241,
+  Adivinanzas242,
+  Adivinanzas243,
+  Adivinanzas244,
+  Adivinanzas245,
+  Adivinanzas246,
+  Adivinanzas247,
+  Adivinanzas248,
+  Adivinanzas249,
+  Adivinanzas250,
+  Adivinanzas251,
+  Adivinanzas252,
+  Adivinanzas253,
+  Adivinanzas254,
+  Adivinanzas255,
+  Adivinanzas256,
+  Adivinanzas257,
+  Adivinanzas258,
+  Adivinanzas259,
+  Adivinanzas260,
+  Adivinanzas261,
+  Adivinanzas262,
+  Adivinanzas263,
+  Adivinanzas264,
 } from '../SVG/Adivinanzas'
 
 const LevelAdivinanzas = ({ level }) => {
@@ -454,8 +568,236 @@ const LevelAdivinanzas = ({ level }) => {
       return <Adivinanzas149 />
     case 150:
       return <Adivinanzas150 />
+    case 151:
+      return <Adivinanzas151 />
+    case 152:
+      return <Adivinanzas152 />
+    case 153:
+      return <Adivinanzas153 />
+    case 154:
+      return <Adivinanzas154 />
+    case 155:
+      return <Adivinanzas155 />
+    case 156:
+      return <Adivinanzas156 />
+    case 157:
+      return <Adivinanzas157 />
+    case 158:
+      return <Adivinanzas158 />
+    case 159:
+      return <Adivinanzas159 />
+    case 160:
+      return <Adivinanzas160 />
+    case 161:
+      return <Adivinanzas161 />
+    case 162:
+      return <Adivinanzas162 />
+    case 163:
+      return <Adivinanzas163 />
+    case 164:
+      return <Adivinanzas164 />
+    case 165:
+      return <Adivinanzas165 />
+    case 166:
+      return <Adivinanzas166 />
+    case 167:
+      return <Adivinanzas167 />
+    case 168:
+      return <Adivinanzas168 />
+    case 169:
+      return <Adivinanzas169 />
+    case 170:
+      return <Adivinanzas170 />
+    case 171:
+      return <Adivinanzas171 />
+    case 172:
+      return <Adivinanzas172 />
+    case 173:
+      return <Adivinanzas173 />
+    case 174:
+      return <Adivinanzas174 />
+    case 175:
+      return <Adivinanzas175 />
+    case 176:
+      return <Adivinanzas176 />
+    case 177:
+      return <Adivinanzas177 />
+    case 178:
+      return <Adivinanzas178 />
+    case 179:
+      return <Adivinanzas179 />
+    case 180:
+      return <Adivinanzas180 />
+    case 181:
+      return <Adivinanzas181 />
+    case 182:
+      return <Adivinanzas182 />
+    case 183:
+      return <Adivinanzas183 />
+    case 184:
+      return <Adivinanzas184 />
+    case 185:
+      return <Adivinanzas185 />
+    case 186:
+      return <Adivinanzas186 />
+    case 187:
+      return <Adivinanzas187 />
+    case 188:
+      return <Adivinanzas188 />
+    case 189:
+      return <Adivinanzas189 />
+    case 190:
+      return <Adivinanzas190 />
+    case 191:
+      return <Adivinanzas191 />
+    case 192:
+      return <Adivinanzas192 />
+    case 193:
+      return <Adivinanzas193 />
+    case 194:
+      return <Adivinanzas194 />
+    case 195:
+      return <Adivinanzas195 />
+    case 196:
+      return <Adivinanzas196 />
+    case 197:
+      return <Adivinanzas197 />
+    case 198:
+      return <Adivinanzas198 />
+    case 199:
+      return <Adivinanzas199 />
+    case 200:
+      return <Adivinanzas200 />
+    case 201:
+      return <Adivinanzas201 />
+    case 202:
+      return <Adivinanzas202 />
+    case 203:
+      return <Adivinanzas203 />
+    case 204:
+      return <Adivinanzas204 />
+    case 205:
+      return <Adivinanzas205 />
+    case 206:
+      return <Adivinanzas206 />
+    case 207:
+      return <Adivinanzas207 />
+    case 208:
+      return <Adivinanzas208 />
+    case 209:
+      return <Adivinanzas209 />
+    case 210:
+      return <Adivinanzas210 />
+    case 211:
+      return <Adivinanzas211 />
+    case 212:
+      return <Adivinanzas212 />
+    case 213:
+      return <Adivinanzas213 />
+    case 214:
+      return <Adivinanzas214 />
+    case 215:
+      return <Adivinanzas215 />
+    case 216:
+      return <Adivinanzas216 />
+    case 217:
+      return <Adivinanzas217 />
+    case 218:
+      return <Adivinanzas218 />
+    case 219:
+      return <Adivinanzas219 />
+    case 220:
+      return <Adivinanzas220 />
+    case 221:
+      return <Adivinanzas221 />
+    case 222:
+      return <Adivinanzas222 />
+    case 223:
+      return <Adivinanzas223 />
+    case 224:
+      return <Adivinanzas224 />
+    case 225:
+      return <Adivinanzas225 />
+    case 226:
+      return <Adivinanzas226 />
+    case 227:
+      return <Adivinanzas227 />
+    case 228:
+      return <Adivinanzas228 />
+    case 229:
+      return <Adivinanzas229 />
+    case 230:
+      return <Adivinanzas230 />
+    case 231:
+      return <Adivinanzas231 />
+    case 232:
+      return <Adivinanzas232 />
+    case 233:
+      return <Adivinanzas233 />
+    case 234:
+      return <Adivinanzas234 />
+    case 235:
+      return <Adivinanzas235 />
+    case 236:
+      return <Adivinanzas236 />
+    case 237:
+      return <Adivinanzas237 />
+    case 238:
+      return <Adivinanzas238 />
+    case 239:
+      return <Adivinanzas239 />
+    case 240:
+      return <Adivinanzas240 />
+    case 241:
+      return <Adivinanzas241 />
+    case 242:
+      return <Adivinanzas242 />
+    case 243:
+      return <Adivinanzas243 />
+    case 244:
+      return <Adivinanzas244 />
+    case 245:
+      return <Adivinanzas245 />
+    case 246:
+      return <Adivinanzas246 />
+    case 247:
+      return <Adivinanzas247 />
+    case 248:
+      return <Adivinanzas248 />
+    case 249:
+      return <Adivinanzas249 />
+    case 250:
+      return <Adivinanzas250 />
+    case 251:
+      return <Adivinanzas251 />
+    case 252:
+      return <Adivinanzas252 />
+    case 253:
+      return <Adivinanzas253 />
+    case 254:
+      return <Adivinanzas254 />
+    case 255:
+      return <Adivinanzas255 />
+    case 256:
+      return <Adivinanzas256 />
+    case 257:
+      return <Adivinanzas257 />
+    case 258:
+      return <Adivinanzas258 />
+    case 259:
+      return <Adivinanzas259 />
+    case 260:
+      return <Adivinanzas260 />
+    case 261:
+      return <Adivinanzas261 />
+    case 262:
+      return <Adivinanzas262 />
+    case 263:
+      return <Adivinanzas263 />
+    case 264:
+      return <Adivinanzas264 />
     default:
-      return <Adivinanzas1 />
+      return <Adivinanzas264 />
   }
 }
 
