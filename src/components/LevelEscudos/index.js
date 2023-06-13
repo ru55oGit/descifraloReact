@@ -305,7 +305,7 @@ const LevelEscudos = ({ level }) => {
     case 100:
       return <Escudos100 />
     default:
-      return <Escudos1 />
+      return <Escudos100 />
   }
 }
 

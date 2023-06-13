@@ -21,6 +21,35 @@ import {
   Marcas19,
   Marcas20,
   Marcas21,
+  Marcas22,
+  Marcas23,
+  Marcas24,
+  Marcas25,
+  Marcas26,
+  Marcas27,
+  Marcas28,
+  Marcas29,
+  Marcas30,
+  Marcas31,
+  Marcas32,
+  Marcas33,
+  Marcas34,
+  Marcas35,
+  Marcas36,
+  Marcas37,
+  Marcas38,
+  Marcas39,
+  Marcas40,
+  Marcas41,
+  Marcas42,
+  Marcas43,
+  Marcas44,
+  Marcas45,
+  Marcas46,
+  Marcas47,
+  Marcas48,
+  Marcas49,
+  Marcas50,
 } from '../SVG/Logos'
 
 const LevelLogos = ({ level }) => {
@@ -67,6 +96,64 @@ const LevelLogos = ({ level }) => {
       return <Marcas20 />
     case 21:
       return <Marcas21 />
+    case 22:
+      return <Marcas22 />
+    case 23:
+      return <Marcas23 />
+    case 24:
+      return <Marcas24 />
+    case 25:
+      return <Marcas25 />
+    case 26:
+      return <Marcas26 />
+    case 27:
+      return <Marcas27 />
+    case 28:
+      return <Marcas28 />
+    case 29:
+      return <Marcas29 />
+    case 30:
+      return <Marcas30 />
+    case 31:
+      return <Marcas31 />
+    case 32:
+      return <Marcas32 />
+    case 33:
+      return <Marcas33 />
+    case 34:
+      return <Marcas34 />
+    case 35:
+      return <Marcas35 />
+    case 36:
+      return <Marcas36 />
+    case 37:
+      return <Marcas37 />
+    case 38:
+      return <Marcas38 />
+    case 39:
+      return <Marcas39 />
+    case 40:
+      return <Marcas40 />
+    case 41:
+      return <Marcas41 />
+    case 42:
+      return <Marcas42 />
+    case 43:
+      return <Marcas43 />
+    case 44:
+      return <Marcas44 />
+    case 45:
+      return <Marcas45 />
+    case 46:
+      return <Marcas46 />
+    case 47:
+      return <Marcas47 />
+    case 48:
+      return <Marcas48 />
+    case 49:
+      return <Marcas49 />
+    case 50:
+      return <Marcas50 />
     default:
       return <Marcas1 />
   }

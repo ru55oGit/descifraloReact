@@ -19,6 +19,35 @@ import Marcas18 from './marcas18'
 import Marcas19 from './marcas19'
 import Marcas20 from './marcas20'
 import Marcas21 from './marcas21'
+import Marcas22 from './marcas22'
+import Marcas23 from './marcas23'
+import Marcas24 from './marcas24'
+import Marcas25 from './marcas25'
+import Marcas26 from './marcas26'
+import Marcas27 from './marcas27'
+import Marcas28 from './marcas28'
+import Marcas29 from './marcas29'
+import Marcas30 from './marcas30'
+import Marcas31 from './marcas31'
+import Marcas32 from './marcas32'
+import Marcas33 from './marcas33'
+import Marcas34 from './marcas34'
+import Marcas35 from './marcas35'
+import Marcas36 from './marcas36'
+import Marcas37 from './marcas37'
+import Marcas38 from './marcas38'
+import Marcas39 from './marcas39'
+import Marcas40 from './marcas40'
+import Marcas41 from './marcas41'
+import Marcas42 from './marcas42'
+import Marcas43 from './marcas43'
+import Marcas44 from './marcas44'
+import Marcas45 from './marcas45'
+import Marcas46 from './marcas46'
+import Marcas47 from './marcas47'
+import Marcas48 from './marcas48'
+import Marcas49 from './marcas49'
+import Marcas50 from './marcas50'
 
 export {
   Marcas1,
@@ -42,4 +71,33 @@ export {
   Marcas19,
   Marcas20,
   Marcas21,
+  Marcas22,
+  Marcas23,
+  Marcas24,
+  Marcas25,
+  Marcas26,
+  Marcas27,
+  Marcas28,
+  Marcas29,
+  Marcas30,
+  Marcas31,
+  Marcas32,
+  Marcas33,
+  Marcas34,
+  Marcas35,
+  Marcas36,
+  Marcas37,
+  Marcas38,
+  Marcas39,
+  Marcas40,
+  Marcas41,
+  Marcas42,
+  Marcas43,
+  Marcas44,
+  Marcas45,
+  Marcas46,
+  Marcas47,
+  Marcas48,
+  Marcas49,
+  Marcas50,
 }

@@ -466,7 +466,7 @@
       "nivel": ""
     },
     {
-      "respuesta": "tienes un email",
+      "respuesta": "tienes un|email",
       "solucion": "",
       "nivel": ""
     },
@@ -596,7 +596,7 @@
       "nivel": ""
     },
     {
-      "respuesta": "guerra mundial z",
+      "respuesta": "guerra|mundial z",
       "solucion": "",
       "nivel": ""
     },
@@ -616,12 +616,12 @@
       "nivel": ""
     },
     {
-      "respuesta": "jurasic park",
+      "respuesta": "jurassic|park",
       "solucion": "",
       "nivel": ""
     },
     {
-      "respuesta": "super size me",
+      "respuesta": "super|size me",
       "solucion": "",
       "nivel": ""
     },
