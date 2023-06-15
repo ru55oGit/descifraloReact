@@ -50,6 +50,56 @@ import {
   Marcas48,
   Marcas49,
   Marcas50,
+  Marcas51,
+  Marcas52,
+  Marcas53,
+  Marcas54,
+  Marcas55,
+  Marcas56,
+  Marcas57,
+  Marcas58,
+  Marcas59,
+  Marcas60,
+  Marcas61,
+  Marcas62,
+  Marcas63,
+  Marcas64,
+  Marcas65,
+  Marcas66,
+  Marcas67,
+  Marcas68,
+  Marcas69,
+  Marcas70,
+  Marcas71,
+  Marcas72,
+  Marcas73,
+  Marcas74,
+  Marcas75,
+  Marcas76,
+  Marcas77,
+  Marcas78,
+  Marcas79,
+  Marcas80,
+  Marcas81,
+  Marcas82,
+  Marcas83,
+  Marcas84,
+  Marcas85,
+  Marcas86,
+  Marcas87,
+  Marcas88,
+  Marcas89,
+  Marcas90,
+  Marcas91,
+  Marcas92,
+  Marcas93,
+  Marcas94,
+  Marcas95,
+  Marcas96,
+  Marcas97,
+  Marcas98,
+  Marcas99,
+  Marcas100,
 } from '../SVG/Logos'
 
 const LevelLogos = ({ level }) => {
@@ -154,8 +204,108 @@ const LevelLogos = ({ level }) => {
       return <Marcas49 />
     case 50:
       return <Marcas50 />
+    case 51:
+      return <Marcas51 />
+    case 52:
+      return <Marcas52 />
+    case 53:
+      return <Marcas53 />
+    case 54:
+      return <Marcas54 />
+    case 55:
+      return <Marcas55 />
+    case 56:
+      return <Marcas56 />
+    case 57:
+      return <Marcas57 />
+    case 58:
+      return <Marcas58 />
+    case 59:
+      return <Marcas59 />
+    case 60:
+      return <Marcas60 />
+    case 61:
+      return <Marcas61 />
+    case 62:
+      return <Marcas62 />
+    case 63:
+      return <Marcas63 />
+    case 64:
+      return <Marcas64 />
+    case 65:
+      return <Marcas65 />
+    case 66:
+      return <Marcas66 />
+    case 67:
+      return <Marcas67 />
+    case 68:
+      return <Marcas68 />
+    case 69:
+      return <Marcas69 />
+    case 70:
+      return <Marcas70 />
+    case 71:
+      return <Marcas71 />
+    case 72:
+      return <Marcas72 />
+    case 73:
+      return <Marcas73 />
+    case 74:
+      return <Marcas74 />
+    case 75:
+      return <Marcas75 />
+    case 76:
+      return <Marcas76 />
+    case 77:
+      return <Marcas77 />
+    case 78:
+      return <Marcas78 />
+    case 79:
+      return <Marcas79 />
+    case 80:
+      return <Marcas80 />
+    case 81:
+      return <Marcas81 />
+    case 82:
+      return <Marcas82 />
+    case 83:
+      return <Marcas83 />
+    case 84:
+      return <Marcas84 />
+    case 85:
+      return <Marcas85 />
+    case 86:
+      return <Marcas86 />
+    case 87:
+      return <Marcas87 />
+    case 88:
+      return <Marcas88 />
+    case 89:
+      return <Marcas89 />
+    case 90:
+      return <Marcas90 />
+    case 91:
+      return <Marcas91 />
+    case 92:
+      return <Marcas92 />
+    case 93:
+      return <Marcas93 />
+    case 94:
+      return <Marcas94 />
+    case 95:
+      return <Marcas95 />
+    case 96:
+      return <Marcas96 />
+    case 97:
+      return <Marcas97 />
+    case 98:
+      return <Marcas98 />
+    case 99:
+      return <Marcas99 />
+    case 100:
+      return <Marcas100 />
     default:
-      return <Marcas1 />
+      return <Marcas100 />
   }
 }
 
