@@ -62,7 +62,7 @@ const LevelsPage = () => {
     } else {
       navigate('/')
     }
-  }, [gameState, navigate, list])
+  }, [gameState, navigate])
 
   const handleClick = (level) => {
     gameDispatch({
