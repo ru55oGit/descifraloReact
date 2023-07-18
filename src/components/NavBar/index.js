@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
@@ -24,11 +23,6 @@ const NavBar = ({
   const theme = useTheme()
   const classes = useStyles()
   const navigate = useNavigate()
-  const [lev, setLev] = useState()
-
-  useEffect(() => {
-    setLev(level)
-  }, [])
 
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu)
@@ -68,7 +62,7 @@ const NavBar = ({
               sx={{ lineHeight: 1 }}
               variant="hxxl"
             >
-              {lev}
+              {level}
             </Typography>
           </Stack>
         )}

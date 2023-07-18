@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
@@ -9,6 +9,18 @@ import Donate from '../components/Donate'
 import NavBar from '../components/NavBar'
 import { useGameContext, Actions } from '../store/game'
 import useStyles from '../styles/pages'
+
+import LevelAdivinanzas from '../components/LevelAdivinanzas'
+import LevelEmojis from '../components/LevelEmojis'
+import LevelPeliculas from '../components/LevelPeliculas'
+import LevelLogos from '../components/LevelLogos'
+import LevelJugadores from '../components/LevelJugadores'
+import LevelSombras from '../components/LevelSombras'
+import LevelFunkos from '../components/LevelFunkos'
+import LevelEscudos from '../components/LevelEscudos'
+import LevelBanderas from '../components/LevelBanderas'
+import getWordToGuess from '../utils'
+
 import {
   ACERTIJOS,
   EMOJIS,
@@ -20,30 +32,12 @@ import {
   ESCUDOS,
   BANDERAS,
 } from '../constants/const'
-import LevelAdivinanzas from '../components/LevelAdivinanzas'
-import LevelEmojis from '../components/LevelEmojis'
-import LevelPeliculas from '../components/LevelPeliculas'
-import LevelLogos from '../components/LevelLogos'
-import LevelJugadores from '../components/LevelJugadores'
-import LevelSombras from '../components/LevelSombras'
-import LevelFunkos from '../components/LevelFunkos'
-import LevelEscudos from '../components/LevelEscudos'
-import LevelBanderas from '../components/LevelBanderas'
-
-import dataAcertijos from '../data/adivinanzas.json'
-import dataEmojis from '../data/emojis.json'
-import dataPeliculas from '../data/peliculas.json'
-import dataLogos from '../data/marcas.json'
-import dataJugadores from '../data/jugadores.json'
-import dataSombras from '../data/sombras.json'
-import dataFunkos from '../data/funkos.json'
-import dataEscudos from '../data/escudos.json'
-import dataBanderas from '../data/banderas.json'
 
 const LevelsPage = () => {
   const classes = useStyles()
   const theme = useTheme()
   const navigate = useNavigate()
+  const scrollToRef = useRef(null)
   const { gameState, gameDispatch } = useGameContext()
   const [list, setList] = useState()
   const [levelReached, setLevelReached] = useState()
@@ -58,48 +52,23 @@ const LevelsPage = () => {
           10
         )
       )
-      switch (gameState.game.category) {
-        case ACERTIJOS:
-          setList(dataAcertijos.listado)
-          break
-        case EMOJIS:
-          setList(dataEmojis.listado)
-          break
-        case PELICULAS:
-          setList(dataPeliculas.listado)
-          break
-        case LOGOS:
-          setList(dataLogos.listado)
-          break
-        case JUGADORES:
-          setList(dataJugadores.listado)
-          break
-        case SOMBRAS:
-          setList(dataSombras.listado)
-          break
-        case FUNKOS:
-          setList(dataFunkos.listado)
-          break
-        case ESCUDOS:
-          setList(dataEscudos.listado)
-          break
-        case BANDERAS:
-          setList(dataBanderas.listado)
-          break
-        default:
-          setList(dataAcertijos.listado)
+      setList(getWordToGuess(gameState.game.category))
+      if (scrollToRef.current) {
+        scrollToRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        })
       }
     } else {
       navigate('/')
     }
-  }, [gameState, navigate])
+  }, [gameState, navigate, list])
 
   const handleClick = (level) => {
     gameDispatch({
       game: {
         category: gameState.game.category,
         level: level + 1,
-        word: list[level].respuesta,
       },
       type: Actions.UPDATE_LEVEL,
     })
@@ -133,6 +102,7 @@ const LevelsPage = () => {
             levelReached >= i + 1 ? (
               <Button
                 key={k.respuesta}
+                ref={scrollToRef}
                 onClick={() => handleClick(i)}
                 sx={{
                   '& svg': {

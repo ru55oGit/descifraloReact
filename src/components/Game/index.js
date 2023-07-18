@@ -40,6 +40,7 @@ import {
 } from '../../constants/const'
 import { useGameContext, Actions } from '../../store/game'
 import 'react-simple-keyboard/build/css/index.css'
+import getWordToGuess from '../../utils'
 import useStyles from './styles'
 
 const Game = () => {
@@ -107,6 +108,10 @@ const Game = () => {
   }
 
   useEffect(() => {
+    handleWrongLetters()
+  }, [wrongLetters])
+
+  useEffect(() => {
     if (gameState?.game) {
       const storage = JSON.parse(
         localStorage.getItem(gameState?.game?.category)
@@ -131,13 +136,28 @@ const Game = () => {
       }
       setLevel(gameState.game.level)
       setCategory(gameState.game.category)
-      setWord(gameState.game.word)
+      setWord(
+        getWordToGuess(gameState?.game?.category)[gameState.game.level - 1]
+          .respuesta
+      )
       setLevelReached(parseInt(storage?.levelReached || 1, 10))
     } else {
       navigate('/')
     }
-    handleWrongLetters()
-  }, [wrongLetters])
+
+    return () => {
+      gameDispatch({
+        game: {
+          category: gameState.game.category,
+          level:
+            levelReached === gameState.game.level
+              ? gameState.game.level + 1
+              : gameState.game.level,
+        },
+        type: Actions.UPDATE_LEVEL,
+      })
+    }
+  }, [])
 
   const Image = () => {
     switch (category) {
@@ -227,16 +247,6 @@ const Game = () => {
 
     if (result.toString().indexOf('_') < 0) {
       setHideKeyboard(true)
-      gameDispatch({
-        game: {
-          category: gameState.game.category,
-          level:
-            levelReached === gameState.game.level
-              ? gameState.game.level + 1
-              : gameState.game.level,
-        },
-        type: Actions.UPDATE_LEVEL,
-      })
 
       if (levelReached === gameState.game.level) {
         localStorage.setItem(
