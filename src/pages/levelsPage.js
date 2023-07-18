@@ -87,6 +87,27 @@ const LevelsPage = () => {
       <Collapse className={classes.menu} in={openDonate}>
         <Donate />
       </Collapse>
+      {!list && (
+        <Box
+          sx={{
+            alignItems: 'center',
+            display: 'flex',
+            flexWrap: 'wrap',
+            height: '100vh',
+            justifyContent: 'center',
+            pt: '64px',
+          }}
+        >
+          <ThreeCircles
+            ariaLabel="three-circles-rotating"
+            color={theme.palette.primary.main}
+            height="100"
+            visible
+            width="100"
+            wrapperStyle={{}}
+          />
+        </Box>
+      )}
       <Box
         sx={{
           display: 'flex',
@@ -97,16 +118,6 @@ const LevelsPage = () => {
           pt: '64px',
         }}
       >
-        {!list && (
-          <ThreeCircles
-            ariaLabel="three-circles-rotating"
-            color={theme.palette.primary.main}
-            height="100"
-            visible
-            width="100"
-            wrapperStyle={{}}
-          />
-        )}
         {list &&
           list.map((k, i) =>
             levelReached >= i + 1 ? (
