@@ -3,13 +3,13 @@ import { useNavigate } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
+import { ThreeCircles } from 'react-loader-spinner'
 import Collapse from '@mui/material/Collapse'
 import { useTheme } from '@mui/styles'
 import Donate from '../components/Donate'
 import NavBar from '../components/NavBar'
 import { useGameContext, Actions } from '../store/game'
 import useStyles from '../styles/pages'
-
 import LevelAdivinanzas from '../components/LevelAdivinanzas'
 import LevelEmojis from '../components/LevelEmojis'
 import LevelPeliculas from '../components/LevelPeliculas'
@@ -62,7 +62,7 @@ const LevelsPage = () => {
     } else {
       navigate('/')
     }
-  }, [gameState, navigate])
+  }, [gameState, navigate, list])
 
   const handleClick = (level) => {
     gameDispatch({
@@ -97,6 +97,16 @@ const LevelsPage = () => {
           pt: '64px',
         }}
       >
+        {!list && (
+          <ThreeCircles
+            ariaLabel="three-circles-rotating"
+            color={theme.palette.primary.main}
+            height="100"
+            visible
+            width="100"
+            wrapperStyle={{}}
+          />
+        )}
         {list &&
           list.map((k, i) =>
             levelReached >= i + 1 ? (
