@@ -102,7 +102,7 @@ const LevelsPage = () => {
             levelReached >= i + 1 ? (
               <Button
                 key={k.respuesta}
-                ref={scrollToRef}
+                ref={levelReached === i + 1 ? scrollToRef : null}
                 onClick={() => handleClick(i)}
                 sx={{
                   '& svg': {
