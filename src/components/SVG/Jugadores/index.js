@@ -8,6 +8,8 @@ import Jugadores7 from './jugadores7'
 import Jugadores8 from './jugadores8'
 import Jugadores9 from './jugadores9'
 import Jugadores10 from './jugadores10'
+import Jugadores11 from './jugadores11'
+import Jugadores12 from './jugadores12'
 
 export {
   Jugadores1,
@@ -20,4 +22,6 @@ export {
   Jugadores8,
   Jugadores9,
   Jugadores10,
+  Jugadores11,
+  Jugadores12,
 }
