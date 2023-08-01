@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { Funkos1, Funkos2 } from '../SVG/Funkos'
+import { Funkos1, Funkos2 } from '../../SVG/Funkos'
 
 const LevelFunkos = ({ level }) => {
   switch (level) {

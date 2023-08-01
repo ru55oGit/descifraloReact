@@ -100,7 +100,7 @@ import {
   Marcas98,
   Marcas99,
   Marcas100,
-} from '../SVG/Logos'
+} from '../../SVG/Logos'
 
 const LevelLogos = ({ level }) => {
   switch (level) {

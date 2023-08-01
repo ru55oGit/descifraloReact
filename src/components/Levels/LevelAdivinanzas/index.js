@@ -264,7 +264,7 @@ import {
   Adivinanzas262,
   Adivinanzas263,
   Adivinanzas264,
-} from '../SVG/Adivinanzas'
+} from '../../SVG/Adivinanzas'
 
 const LevelAdivinanzas = ({ level }) => {
   switch (level) {

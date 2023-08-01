@@ -25,7 +25,7 @@ import {
   Sombras23,
   Sombras24,
   Sombras25,
-} from '../SVG/Sombras'
+} from '../../SVG/Sombras'
 
 const LevelSombras = ({ level }) => {
   switch (level) {

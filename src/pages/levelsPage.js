@@ -6,19 +6,19 @@ import Typography from '@mui/material/Typography'
 import { ThreeCircles } from 'react-loader-spinner'
 import Collapse from '@mui/material/Collapse'
 import { useTheme } from '@mui/styles'
+import LevelAdivinanzas from '../components/Levels/LevelAdivinanzas'
+import LevelEmojis from '../components/Levels/LevelEmojis'
+import LevelPeliculas from '../components/Levels/LevelPeliculas'
+import LevelLogos from '../components/Levels/LevelLogos'
+import LevelJugadores from '../components/Levels/LevelJugadores'
+import LevelSombras from '../components/Levels/LevelSombras'
+import LevelFunkos from '../components/Levels/LevelFunkos'
+import LevelEscudos from '../components/Levels/LevelEscudos'
+import LevelBanderas from '../components/Levels/LevelBanderas'
 import Donate from '../components/Donate'
 import NavBar from '../components/NavBar'
 import { useGameContext, Actions } from '../store/game'
 import useStyles from '../styles/pages'
-import LevelAdivinanzas from '../components/LevelAdivinanzas'
-import LevelEmojis from '../components/LevelEmojis'
-import LevelPeliculas from '../components/LevelPeliculas'
-import LevelLogos from '../components/LevelLogos'
-import LevelJugadores from '../components/LevelJugadores'
-import LevelSombras from '../components/LevelSombras'
-import LevelFunkos from '../components/LevelFunkos'
-import LevelEscudos from '../components/LevelEscudos'
-import LevelBanderas from '../components/LevelBanderas'
 import getWordToGuess from '../utils'
 
 import {
@@ -95,7 +95,6 @@ const LevelsPage = () => {
             flexWrap: 'wrap',
             height: '100vh',
             justifyContent: 'center',
-            pt: '64px',
           }}
         >
           <ThreeCircles

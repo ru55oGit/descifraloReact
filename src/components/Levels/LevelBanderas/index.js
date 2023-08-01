@@ -100,7 +100,7 @@ import {
   Banderas98,
   Banderas99,
   Banderas100,
-} from '../SVG/Banderas'
+} from '../../SVG/Banderas'
 
 const LevelBanderas = ({ level }) => {
   switch (level) {

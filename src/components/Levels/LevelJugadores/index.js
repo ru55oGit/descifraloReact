@@ -12,7 +12,7 @@ import {
   Jugadores10,
   Jugadores11,
   Jugadores12,
-} from '../SVG/Jugadores'
+} from '../../SVG/Jugadores'
 
 const LevelJugadores = ({ level }) => {
   switch (level) {

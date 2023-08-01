@@ -2,6 +2,15 @@ import { useState, useEffect } from 'react'
 import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
 import { useNavigate } from 'react-router-dom'
+import LevelEmojis from '../Levels/LevelEmojis'
+import LevelJugadores from '../Levels/LevelJugadores'
+import LevelAdivinanzas from '../Levels/LevelAdivinanzas'
+import LevelLogos from '../Levels/LevelLogos'
+import LevelPeliculas from '../Levels/LevelPeliculas'
+import LevelSombras from '../Levels/LevelSombras'
+import LevelFunkos from '../Levels/LevelFunkos'
+import LevelEscudos from '../Levels/LevelEscudos'
+import LevelBanderas from '../Levels/LevelBanderas'
 import {
   Acertijos,
   Emojis,
@@ -24,17 +33,8 @@ import {
   ESCUDOS,
   BANDERAS,
 } from '../../constants/const'
-import LevelEmojis from '../LevelEmojis'
-import LevelJugadores from '../LevelJugadores'
-import LevelAdivinanzas from '../LevelAdivinanzas'
-import LevelLogos from '../LevelLogos'
-import LevelPeliculas from '../LevelPeliculas'
-import LevelSombras from '../LevelSombras'
-import LevelFunkos from '../LevelFunkos'
-import LevelEscudos from '../LevelEscudos'
-import LevelBanderas from '../LevelBanderas'
-import useStyles from './styles'
 import { useGameContext, Actions } from '../../store/game'
+import useStyles from './styles'
 
 const Levels = () => {
   const classes = useStyles()
