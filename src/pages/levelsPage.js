@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
-import { ThreeCircles } from 'react-loader-spinner'
+import { ProgressBar } from 'react-loader-spinner'
 import Collapse from '@mui/material/Collapse'
 import { useTheme } from '@mui/styles'
 import LevelAdivinanzas from '../components/Levels/LevelAdivinanzas'
@@ -97,9 +97,9 @@ const LevelsPage = () => {
             justifyContent: 'center',
           }}
         >
-          <ThreeCircles
-            ariaLabel="three-circles-rotating"
-            color={theme.palette.primary.main}
+          <ProgressBar
+            barColor={theme.palette.primary.main}
+            borderColor={theme.palette.primary.main}
             height="100"
             visible
             width="100"

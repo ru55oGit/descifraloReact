@@ -47,7 +47,6 @@ const Game = () => {
   const classes = useStyles()
   const theme = useTheme()
   const refQR = useRef()
-  const scrollToRef = useRef(null)
   const { gameState, gameDispatch } = useGameContext()
   const navigate = useNavigate()
   const [level, setLevel] = useState()
@@ -144,13 +143,6 @@ const Game = () => {
       setLevelReached(parseInt(storage?.levelReached || 1, 10))
     } else {
       navigate('/')
-    }
-
-    if (scrollToRef.current) {
-      scrollToRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'top',
-      })
     }
 
     return () => {
