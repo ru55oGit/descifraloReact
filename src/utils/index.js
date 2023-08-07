@@ -20,6 +20,16 @@ import dataFunkos from '../data/funkos.json'
 import dataEscudos from '../data/escudos.json'
 import dataBanderas from '../data/banderas.json'
 
+import LevelAcertijos from '../components/Levels/LevelAdivinanzas'
+import LevelEmojis from '../components/Levels/LevelEmojis'
+import LevelPeliculas from '../components/Levels/LevelPeliculas'
+import LevelJugadores from '../components/Levels/LevelJugadores'
+import LevelSombras from '../components/Levels/LevelSombras'
+import LevelLogos from '../components/Levels/LevelLogos'
+import LevelFunkos from '../components/Levels/LevelFunkos'
+import LevelEscudos from '../components/Levels/LevelEscudos'
+import LevelBanderas from '../components/Levels/LevelBanderas'
+
 const getWordToGuess = (category) => {
   switch (category) {
     case ACERTIJOS:
@@ -45,4 +55,29 @@ const getWordToGuess = (category) => {
   }
 }
 
-export default getWordToGuess
+const getImage = (category, level) => {
+  switch (category) {
+    case ACERTIJOS:
+      return <LevelAcertijos level={level} />
+    case PELICULAS:
+      return <LevelPeliculas level={level} />
+    case LOGOS:
+      return <LevelLogos level={level} />
+    case EMOJIS:
+      return <LevelEmojis level={level} />
+    case JUGADORES:
+      return <LevelJugadores level={level} />
+    case SOMBRAS:
+      return <LevelSombras level={level} />
+    case FUNKOS:
+      return <LevelFunkos level={level} />
+    case ESCUDOS:
+      return <LevelEscudos level={level} />
+    case BANDERAS:
+      return <LevelBanderas level={level} />
+    default:
+      return <LevelAcertijos level={level} />
+  }
+}
+
+export { getWordToGuess, getImage }

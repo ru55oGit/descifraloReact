@@ -2,15 +2,8 @@ import { useState, useEffect } from 'react'
 import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
 import { useNavigate } from 'react-router-dom'
-import LevelEmojis from '../Levels/LevelEmojis'
-import LevelJugadores from '../Levels/LevelJugadores'
-import LevelAdivinanzas from '../Levels/LevelAdivinanzas'
-import LevelLogos from '../Levels/LevelLogos'
-import LevelPeliculas from '../Levels/LevelPeliculas'
-import LevelSombras from '../Levels/LevelSombras'
-import LevelFunkos from '../Levels/LevelFunkos'
-import LevelEscudos from '../Levels/LevelEscudos'
-import LevelBanderas from '../Levels/LevelBanderas'
+import { getImage } from '../../utils'
+
 import {
   Acertijos,
   Emojis,
@@ -93,12 +86,12 @@ const Levels = () => {
           <Acertijos />
         </Stack>
         <Stack sx={{ width: '50%' }}>
-          <LevelAdivinanzas level={parseInt(levelAcertijos, 10)} />
+          {getImage(ACERTIJOS, parseInt(levelAcertijos, 10))}
         </Stack>
       </Stack>
       <Stack direction="row" onClick={() => handleClick(EMOJIS, levelEmojis)}>
         <Stack sx={{ width: '50%' }}>
-          <LevelEmojis level={parseInt(levelEmojis, 10)} />
+          {getImage(EMOJIS, parseInt(levelEmojis, 10))}
         </Stack>
         <Stack sx={{ width: '50%' }}>
           <Emojis />
@@ -109,7 +102,7 @@ const Levels = () => {
           <Logos />
         </Stack>
         <Stack sx={{ width: '50%' }}>
-          <LevelLogos level={parseInt(levelLogos, 10)} />
+          {getImage(LOGOS, parseInt(levelLogos, 10))}
         </Stack>
       </Stack>
       <Stack
@@ -117,7 +110,7 @@ const Levels = () => {
         onClick={() => handleClick(PELICULAS, levelPeliculas)}
       >
         <Stack sx={{ width: '50%' }}>
-          <LevelPeliculas level={parseInt(levelPeliculas, 10)} />
+          {getImage(PELICULAS, parseInt(levelPeliculas, 10))}
         </Stack>
         <Stack sx={{ width: '50%' }}>
           <Peliculas />
@@ -128,12 +121,12 @@ const Levels = () => {
           <Funkos />
         </Stack>
         <Stack sx={{ width: '50%' }}>
-          <LevelFunkos level={parseInt(levelFunkos, 10)} />
+          {getImage(FUNKOS, parseInt(levelFunkos, 10))}
         </Stack>
       </Stack>
       <Stack direction="row" onClick={() => handleClick(SOMBRAS, levelSombras)}>
         <Stack sx={{ width: '50%' }}>
-          <LevelSombras level={parseInt(levelSombras, 10)} />
+          {getImage(SOMBRAS, parseInt(levelSombras, 10))}
         </Stack>
         <Stack sx={{ width: '50%' }}>
           <Sombras />
@@ -147,12 +140,12 @@ const Levels = () => {
           <Jugadores />
         </Stack>
         <Stack sx={{ width: '50%' }}>
-          <LevelJugadores level={parseInt(levelJugadores, 10)} />
+          {getImage(JUGADORES, parseInt(levelJugadores, 10))}
         </Stack>
       </Stack>
       <Stack direction="row" onClick={() => handleClick(ESCUDOS, levelEscudos)}>
         <Stack sx={{ width: '50%' }}>
-          <LevelEscudos level={parseInt(levelEscudos, 10)} />
+          {getImage(ESCUDOS, parseInt(levelEscudos, 10))}
         </Stack>
         <Stack sx={{ width: '50%' }}>
           <Escudos />
@@ -166,7 +159,7 @@ const Levels = () => {
           <Banderas />
         </Stack>
         <Stack sx={{ width: '50%' }}>
-          <LevelBanderas level={parseInt(levelBanderas, 10)} />
+          {getImage(BANDERAS, parseInt(levelBanderas, 10))}
         </Stack>
       </Stack>
     </Box>

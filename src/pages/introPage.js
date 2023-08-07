@@ -1,7 +1,8 @@
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
+import Typography from '@mui/material/Typography'
 import { useNavigate } from 'react-router-dom'
-
+import Carrousel from '../components/Carrousel'
 import useStyles from '../styles/pages'
 
 const CategoriesPage = () => {
@@ -9,8 +10,14 @@ const CategoriesPage = () => {
   const navigate = useNavigate()
 
   return (
-    <Box className={classes.boxContainer}>
-      <Button onClick={() => navigate('/categorias')}>Jugar</Button>
+    <Box className={classes.backgroundIntro}>
+      <Carrousel />
+      <Button
+        className={classes.transparentButton}
+        onClick={() => navigate('/categorias')}
+      >
+        <Typography variant="hxl">Jugar</Typography>
+      </Button>
     </Box>
   )
 }

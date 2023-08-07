@@ -3,7 +3,7 @@ import { makeStyles } from '@mui/styles'
 const useStyles = makeStyles((theme) => ({
   containerLevel: {
     margin: 'auto',
-    maxWidth: '768px',
+    maxWidth: 'calc(414px + 16px)',
     paddingTop: '61px',
   },
   [theme.breakpoints.up('md')]: {

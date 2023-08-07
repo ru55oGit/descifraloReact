@@ -6,32 +6,11 @@ import Typography from '@mui/material/Typography'
 import { ProgressBar } from 'react-loader-spinner'
 import Collapse from '@mui/material/Collapse'
 import { useTheme } from '@mui/styles'
-import LevelAdivinanzas from '../components/Levels/LevelAdivinanzas'
-import LevelEmojis from '../components/Levels/LevelEmojis'
-import LevelPeliculas from '../components/Levels/LevelPeliculas'
-import LevelLogos from '../components/Levels/LevelLogos'
-import LevelJugadores from '../components/Levels/LevelJugadores'
-import LevelSombras from '../components/Levels/LevelSombras'
-import LevelFunkos from '../components/Levels/LevelFunkos'
-import LevelEscudos from '../components/Levels/LevelEscudos'
-import LevelBanderas from '../components/Levels/LevelBanderas'
 import Donate from '../components/Donate'
 import NavBar from '../components/NavBar'
 import { useGameContext, Actions } from '../store/game'
 import useStyles from '../styles/pages'
-import getWordToGuess from '../utils'
-
-import {
-  ACERTIJOS,
-  EMOJIS,
-  PELICULAS,
-  LOGOS,
-  JUGADORES,
-  SOMBRAS,
-  FUNKOS,
-  ESCUDOS,
-  BANDERAS,
-} from '../constants/const'
+import { getWordToGuess, getImage } from '../utils'
 
 const LevelsPage = () => {
   const classes = useStyles()
@@ -113,7 +92,7 @@ const LevelsPage = () => {
           flexWrap: 'wrap',
           justifyContent: 'center',
           margin: 'auto',
-          maxWidth: 'calc(768px + 16px)',
+          maxWidth: 'calc(414px + 16px)',
           pt: '64px',
         }}
       >
@@ -134,33 +113,7 @@ const LevelsPage = () => {
                   width: '24.8%',
                 }}
               >
-                {gameState.game.category === ACERTIJOS && (
-                  <LevelAdivinanzas level={i + 1} />
-                )}
-                {gameState.game.category === EMOJIS && (
-                  <LevelEmojis level={i + 1} />
-                )}
-                {gameState.game.category === PELICULAS && (
-                  <LevelPeliculas level={i + 1} />
-                )}
-                {gameState.game.category === LOGOS && (
-                  <LevelLogos level={i + 1} />
-                )}
-                {gameState.game.category === JUGADORES && (
-                  <LevelJugadores level={i + 1} />
-                )}
-                {gameState.game.category === SOMBRAS && (
-                  <LevelSombras level={i + 1} />
-                )}
-                {gameState.game.category === FUNKOS && (
-                  <LevelFunkos level={i + 1} />
-                )}
-                {gameState.game.category === ESCUDOS && (
-                  <LevelEscudos level={i + 1} />
-                )}
-                {gameState.game.category === BANDERAS && (
-                  <LevelBanderas level={i + 1} />
-                )}
+                {getImage(gameState.game.category, i + 1)}
               </Button>
             ) : (
               <Button
@@ -169,7 +122,7 @@ const LevelsPage = () => {
                 sx={{
                   backgroundColor: theme.palette.white.main,
                   borderRadius: 0,
-                  height: 'calc(25vw - 8px)',
+                  height: 'calc(8vw - 8px)',
                   margin: '3px',
                   maxHeight: 190,
                   width: 'calc(25% - 8px)',

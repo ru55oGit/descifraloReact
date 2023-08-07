@@ -18,29 +18,10 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useTheme } from '@mui/styles'
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
-import LevelAcertijos from '../Levels/LevelAdivinanzas'
-import LevelEmojis from '../Levels/LevelEmojis'
-import LevelPeliculas from '../Levels/LevelPeliculas'
-import LevelJugadores from '../Levels/LevelJugadores'
-import LevelSombras from '../Levels/LevelSombras'
-import LevelLogos from '../Levels/LevelLogos'
-import LevelFunkos from '../Levels/LevelFunkos'
-import LevelEscudos from '../Levels/LevelEscudos'
-import LevelBanderas from '../Levels/LevelBanderas'
-import {
-  ACERTIJOS,
-  PELICULAS,
-  LOGOS,
-  EMOJIS,
-  JUGADORES,
-  SOMBRAS,
-  FUNKOS,
-  ESCUDOS,
-  BANDERAS,
-} from '../../constants/const'
+
 import { useGameContext, Actions } from '../../store/game'
 import 'react-simple-keyboard/build/css/index.css'
-import getWordToGuess from '../../utils'
+import { getWordToGuess, getImage } from '../../utils'
 import useStyles from './styles'
 
 const Game = () => {
@@ -159,31 +140,6 @@ const Game = () => {
     }
   }, [])
 
-  const Image = () => {
-    switch (category) {
-      case ACERTIJOS:
-        return <LevelAcertijos level={level} />
-      case PELICULAS:
-        return <LevelPeliculas level={level} />
-      case LOGOS:
-        return <LevelLogos level={level} />
-      case EMOJIS:
-        return <LevelEmojis level={level} />
-      case JUGADORES:
-        return <LevelJugadores level={level} />
-      case SOMBRAS:
-        return <LevelSombras level={level} />
-      case FUNKOS:
-        return <LevelFunkos level={level} />
-      case ESCUDOS:
-        return <LevelEscudos level={level} />
-      case BANDERAS:
-        return <LevelBanderas level={level} />
-      default:
-        return <LevelAcertijos level={level} />
-    }
-  }
-
   const wordToGuess = () => {
     let answer
 
@@ -283,7 +239,7 @@ const Game = () => {
             className={classes.imageContainer}
             sx={{ width: isMobile ? '30vh' : '50vh' }}
           >
-            {Image()}
+            {getImage(category, level)}
           </Box>
           <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
           {wrongLetters === '111' && (
