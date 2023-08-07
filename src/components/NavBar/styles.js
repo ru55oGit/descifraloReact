@@ -24,10 +24,10 @@ const useStyles = makeStyles((theme) => ({
     height: 45,
     justifyContent: 'space-between',
     left: '50%',
-    maxWidth: '752px',
+    maxWidth: '414px',
     padding: 8,
     transform: 'translate(-50%, 0px)',
-    width: '414px',
+    width: 'calc(100% - 16px)',
     zIndex: 11111,
   },
 }))

@@ -3,9 +3,12 @@ import { makeStyles } from '@mui/styles'
 const useStyles = makeStyles((theme) => ({
   gameContainer: {
     backgroundColor: theme.palette.primary.main,
-    height: 'calc(100vh - 90px)',
+    height: 'calc(100vh - 60px)',
     margin: 'auto',
     width: 'calc(414px + 16px)',
+    [theme.breakpoints.down('sm')]: {
+      width: '414px',
+    },
   },
   imageContainer: {
     backgroundColor: theme.palette.black.main,
@@ -19,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 'calc(414px + 16px)',
     position: 'fixed',
     width: '100%',
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '414px',
+    },
   },
   letterWithSpaceContainer: {
     background: 'transparent',

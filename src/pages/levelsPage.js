@@ -122,7 +122,7 @@ const LevelsPage = () => {
                 sx={{
                   backgroundColor: theme.palette.white.main,
                   borderRadius: 0,
-                  height: 'calc(8vw - 8px)',
+                  height: 100,
                   margin: '3px',
                   maxHeight: 190,
                   width: 'calc(25% - 8px)',
