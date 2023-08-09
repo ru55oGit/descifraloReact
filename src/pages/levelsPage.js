@@ -90,7 +90,7 @@ const LevelsPage = () => {
         sx={{
           display: 'flex',
           flexWrap: 'wrap',
-          justifyContent: 'center',
+          justifyContent: 'space-around',
           margin: 'auto',
           maxWidth: 'calc(414px + 16px)',
           pt: '64px',
@@ -104,13 +104,13 @@ const LevelsPage = () => {
                 ref={levelReached === i + 1 ? scrollToRef : null}
                 onClick={() => handleClick(i)}
                 sx={{
-                  '& svg': {
-                    border: `1px solid ${theme.palette.primary.main}`,
-                    borderRadius: '4px',
-                    boxShadow: theme.palette.shadows.overlay,
-                  },
+                  background: theme.palette.white.main,
+                  border: `1px solid ${theme.palette.primary.main}`,
+                  borderRadius: '4px',
+                  boxShadow: theme.palette.shadows.overlay,
+                  m: '2px',
                   p: '4px',
-                  width: '24.8%',
+                  width: 'calc(25% - 8px)',
                 }}
               >
                 {getImage(gameState.game.category, i + 1)}
@@ -120,11 +120,12 @@ const LevelsPage = () => {
                 key={k.respuesta}
                 disabled
                 sx={{
-                  backgroundColor: theme.palette.white.main,
-                  borderRadius: 0,
-                  height: 100,
-                  margin: '3px',
-                  maxHeight: 190,
+                  background: theme.palette.white.main,
+                  borderRadius: '4px',
+                  boxShadow: theme.palette.shadows.overlay,
+                  m: '4px 2px',
+                  minHeight: '90px',
+                  p: '4px',
                   width: 'calc(25% - 8px)',
                 }}
               >
