@@ -5,9 +5,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.main,
     height: 'calc(100vh - 60px)',
     margin: 'auto',
-    width: 'calc(414px + 16px)',
+    maxWidth: 'calc(414px + 16px)',
+    width: '100%',
     [theme.breakpoints.down('sm')]: {
-      width: '414px',
+      maxWidth: '414px',
     },
   },
   imageContainer: {
@@ -16,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: 'none',
     margin: 'auto',
     width: '75%',
+    [theme.breakpoints.between('xs', 'sm')]: {
+      width: '60vw',
+    },
   },
   keyboardContainer: {
     bottom: 0,

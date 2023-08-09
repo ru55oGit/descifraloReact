@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.white.main,
     margin: 'auto',
     padding: '8px 32px',
-    width: 'calc(100% - 16px)',
+    width: 'calc(100% - 32px)',
   },
 }))
 
