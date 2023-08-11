@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Box from '@mui/material/Box'
 import Collapse from '@mui/material/Collapse'
-import Categories from '../components/Categories'
+import Categories2 from '../components/Categories2'
 import NavBar from '../components/NavBar'
 import Menu from '../components/Menu'
 import Donate from '../components/Donate'
@@ -28,7 +28,7 @@ const CategoriesPage = () => {
       <Collapse className={classes.menu} in={openDonate}>
         <Donate />
       </Collapse>
-      <Categories />
+      <Categories2 />
     </Box>
   )
 }
