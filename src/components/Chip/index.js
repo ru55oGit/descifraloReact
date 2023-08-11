@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
@@ -53,3 +54,8 @@ const Chip = (props) => {
 }
 
 export default Chip
+
+Chip.propTypes = {
+  category: PropTypes.string.isRequired,
+  level: PropTypes.number.isRequired,
+}
