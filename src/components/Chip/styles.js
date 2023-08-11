@@ -6,8 +6,9 @@ const useStyles = makeStyles((theme) => ({
     background: theme.palette.white.main,
     border: `2px solid ${theme.palette.primary.main}`,
     borderRadius: `${theme.borderRadius[3]}px`,
+    boxShadow: '5px 5px 10px 0px rgba(0,0,0,0.5)',
     display: 'flex',
-    height: '90px',
+    height: '110px',
     margin: '50px auto',
     position: 'relative',
     width: '90%',
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     '& SVG': {
       borderRadius: `${theme.borderRadius[3]}px`,
     },
+    cursor: 'pointer',
     position: 'absolute',
     right: '20px',
     top: '-40px',

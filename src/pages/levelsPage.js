@@ -88,6 +88,7 @@ const LevelsPage = () => {
       )}
       <Box
         sx={{
+          background: theme.backgrounds[2],
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'space-around',

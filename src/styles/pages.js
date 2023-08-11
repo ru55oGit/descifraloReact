@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '414px',
   },
   boxContainer: {
-    backgroundColor: theme.backgrounds[2],
+    backgroundColor: 'transparent',
   },
   menu: {
     left: '50%',

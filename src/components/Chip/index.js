@@ -29,7 +29,10 @@ const Chip = (props) => {
   return (
     <Box>
       <Box className={classes.chipContainer}>
-        <Stack className={classes.imageContainer}>
+        <Stack
+          className={classes.imageContainer}
+          onClick={() => handleClick(category, level)}
+        >
           {getImage(category, level)}
         </Stack>
 
@@ -40,6 +43,7 @@ const Chip = (props) => {
               background: theme.palette.white.main,
               borderRadius: '50%',
               color: theme.palette.primary.main,
+              cursor: 'pointer',
               fontSize: '3rem',
             }}
           />

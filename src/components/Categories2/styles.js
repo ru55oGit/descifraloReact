@@ -1,9 +1,10 @@
 import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles((theme) => ({
-  containerLevel: {
+  containerCategories: {
+    background: theme.backgrounds[2],
     margin: 'auto',
-    maxWidth: 'calc(414px + 16px)',
+    maxWidth: 'calc(414px - 4px)',
     padding: '60px 10px',
   },
   [theme.breakpoints.up('md')]: {

@@ -52,7 +52,7 @@ const Levels = () => {
   }, [])
 
   return (
-    <Box className={classes.containerLevel}>
+    <Box className={classes.containerCategories}>
       <Chip category={ACERTIJOS} level={parseInt(levelAcertijos, 10)} />
       <Chip category={PELICULAS} level={parseInt(levelPeliculas, 10)} />
       <Chip category={EMOJIS} level={parseInt(levelEmojis, 10)} />
