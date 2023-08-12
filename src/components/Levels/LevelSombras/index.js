@@ -99,6 +99,79 @@ import {
   Sombras97,
   Sombras98,
   Sombras99,
+  Sombras100,
+  Sombras101,
+  Sombras102,
+  Sombras103,
+  Sombras104,
+  Sombras105,
+  Sombras106,
+  Sombras107,
+  Sombras108,
+  Sombras109,
+  Sombras110,
+  Sombras111,
+  Sombras112,
+  Sombras113,
+  Sombras114,
+  Sombras115,
+  Sombras116,
+  Sombras117,
+  Sombras118,
+  Sombras119,
+  Sombras120,
+  Sombras121,
+  Sombras122,
+  Sombras123,
+  Sombras124,
+  Sombras125,
+  Sombras126,
+  Sombras127,
+  Sombras128,
+  Sombras129,
+  Sombras130,
+  Sombras131,
+  Sombras132,
+  Sombras133,
+  Sombras134,
+  Sombras135,
+  Sombras136,
+  Sombras137,
+  Sombras138,
+  Sombras139,
+  Sombras140,
+  Sombras141,
+  Sombras142,
+  Sombras143,
+  Sombras144,
+  Sombras145,
+  Sombras146,
+  Sombras147,
+  Sombras148,
+  Sombras149,
+  Sombras150,
+  Sombras151,
+  Sombras152,
+  Sombras153,
+  Sombras154,
+  Sombras155,
+  Sombras156,
+  Sombras157,
+  Sombras158,
+  Sombras159,
+  Sombras160,
+  Sombras161,
+  Sombras162,
+  Sombras163,
+  Sombras164,
+  Sombras165,
+  Sombras166,
+  Sombras167,
+  Sombras168,
+  Sombras169,
+  Sombras170,
+  Sombras171,
+  Sombras172,
 } from '../../SVG/Sombras'
 
 const LevelSombras = ({ level }) => {
@@ -301,6 +374,152 @@ const LevelSombras = ({ level }) => {
       return <Sombras98 />
     case 99:
       return <Sombras99 />
+    case 100:
+      return <Sombras100 />
+    case 101:
+      return <Sombras101 />
+    case 102:
+      return <Sombras102 />
+    case 103:
+      return <Sombras103 />
+    case 104:
+      return <Sombras104 />
+    case 105:
+      return <Sombras105 />
+    case 106:
+      return <Sombras106 />
+    case 107:
+      return <Sombras107 />
+    case 108:
+      return <Sombras108 />
+    case 109:
+      return <Sombras109 />
+    case 110:
+      return <Sombras110 />
+    case 111:
+      return <Sombras111 />
+    case 112:
+      return <Sombras112 />
+    case 113:
+      return <Sombras113 />
+    case 114:
+      return <Sombras114 />
+    case 115:
+      return <Sombras115 />
+    case 116:
+      return <Sombras116 />
+    case 117:
+      return <Sombras117 />
+    case 118:
+      return <Sombras118 />
+    case 119:
+      return <Sombras119 />
+    case 120:
+      return <Sombras120 />
+    case 121:
+      return <Sombras121 />
+    case 122:
+      return <Sombras122 />
+    case 123:
+      return <Sombras123 />
+    case 124:
+      return <Sombras124 />
+    case 125:
+      return <Sombras125 />
+    case 126:
+      return <Sombras126 />
+    case 127:
+      return <Sombras127 />
+    case 128:
+      return <Sombras128 />
+    case 129:
+      return <Sombras129 />
+    case 130:
+      return <Sombras130 />
+    case 131:
+      return <Sombras131 />
+    case 132:
+      return <Sombras132 />
+    case 133:
+      return <Sombras133 />
+    case 134:
+      return <Sombras134 />
+    case 135:
+      return <Sombras135 />
+    case 136:
+      return <Sombras136 />
+    case 137:
+      return <Sombras137 />
+    case 138:
+      return <Sombras138 />
+    case 139:
+      return <Sombras139 />
+    case 140:
+      return <Sombras140 />
+    case 141:
+      return <Sombras141 />
+    case 142:
+      return <Sombras142 />
+    case 143:
+      return <Sombras143 />
+    case 144:
+      return <Sombras144 />
+    case 145:
+      return <Sombras145 />
+    case 146:
+      return <Sombras146 />
+    case 147:
+      return <Sombras147 />
+    case 148:
+      return <Sombras148 />
+    case 149:
+      return <Sombras149 />
+    case 150:
+      return <Sombras150 />
+    case 151:
+      return <Sombras151 />
+    case 152:
+      return <Sombras152 />
+    case 153:
+      return <Sombras153 />
+    case 154:
+      return <Sombras154 />
+    case 155:
+      return <Sombras155 />
+    case 156:
+      return <Sombras156 />
+    case 157:
+      return <Sombras157 />
+    case 158:
+      return <Sombras158 />
+    case 159:
+      return <Sombras159 />
+    case 160:
+      return <Sombras160 />
+    case 161:
+      return <Sombras161 />
+    case 162:
+      return <Sombras162 />
+    case 163:
+      return <Sombras163 />
+    case 164:
+      return <Sombras164 />
+    case 165:
+      return <Sombras165 />
+    case 166:
+      return <Sombras166 />
+    case 167:
+      return <Sombras167 />
+    case 168:
+      return <Sombras168 />
+    case 169:
+      return <Sombras169 />
+    case 170:
+      return <Sombras170 />
+    case 171:
+      return <Sombras171 />
+    case 172:
+      return <Sombras172 />
     default:
       return <Sombras99 />
   }
