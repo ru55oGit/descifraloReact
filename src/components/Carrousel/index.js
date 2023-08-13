@@ -16,8 +16,8 @@ const Carrousel = () => {
         background: theme.palette.white.main,
         borderRadius: `${theme.borderRadius[2]}px`,
         m: 'auto',
-        p: 2,
-        width: 'calc(100% - 64px)',
+        padding: '16px 8px',
+        width: 'calc(90% - 64px)',
       }}
     >
       <Carousel autoplay autoplayInterval={3000} withoutControls wrapAround>

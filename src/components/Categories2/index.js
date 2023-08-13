@@ -53,15 +53,47 @@ const Levels = () => {
 
   return (
     <Box className={classes.containerCategories}>
-      <Chip category={ACERTIJOS} level={parseInt(levelAcertijos, 10)} />
-      <Chip category={PELICULAS} level={parseInt(levelPeliculas, 10)} />
-      <Chip category={EMOJIS} level={parseInt(levelEmojis, 10)} />
-      <Chip category={LOGOS} level={parseInt(levelLogos, 10)} />
-      <Chip category={SOMBRAS} level={parseInt(levelSombras, 10)} />
-      <Chip category={FUNKOS} level={parseInt(levelFunkos, 10)} />
-      <Chip category={JUGADORES} level={parseInt(levelJugadores, 10)} />
-      <Chip category={ESCUDOS} level={parseInt(levelEscudos, 10)} />
-      <Chip category={BANDERAS} level={parseInt(levelBanderas, 10)} />
+      <Chip
+        category={ACERTIJOS}
+        level={parseInt(levelAcertijos, 10)}
+        title="Acertijos"
+      />
+      <Chip
+        category={PELICULAS}
+        level={parseInt(levelPeliculas, 10)}
+        title="Peliculas"
+      />
+      <Chip
+        category={EMOJIS}
+        level={parseInt(levelEmojis, 10)}
+        title="Peliculas con emojis"
+      />
+      <Chip category={LOGOS} level={parseInt(levelLogos, 10)} title="Logos" />
+      <Chip
+        category={SOMBRAS}
+        level={parseInt(levelSombras, 10)}
+        title="Sombras"
+      />
+      <Chip
+        category={FUNKOS}
+        level={parseInt(levelFunkos, 10)}
+        title="Personajes Funkos"
+      />
+      <Chip
+        category={JUGADORES}
+        level={parseInt(levelJugadores, 10)}
+        title="Jugadores de fútbol"
+      />
+      <Chip
+        category={ESCUDOS}
+        level={parseInt(levelEscudos, 10)}
+        title="Escudos de fútbol"
+      />
+      <Chip
+        category={BANDERAS}
+        level={parseInt(levelBanderas, 10)}
+        title="Banderas de paises"
+      />
     </Box>
   )
 }

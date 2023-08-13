@@ -15,7 +15,7 @@ const Chip = (props) => {
   const navigate = useNavigate()
   const { gameDispatch } = useGameContext()
 
-  const { level, category } = props
+  const { level, category, title } = props
 
   const handleClick = (cat, lev) => {
     gameDispatch({
@@ -49,7 +49,7 @@ const Chip = (props) => {
           />
           <Typography>Nivel: {level}</Typography>
           <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
-            {category}
+            {title}
           </Typography>
         </Stack>
       </Box>
@@ -60,6 +60,13 @@ const Chip = (props) => {
 export default Chip
 
 Chip.propTypes = {
-  category: PropTypes.string.isRequired,
-  level: PropTypes.number.isRequired,
+  category: PropTypes.string,
+  level: PropTypes.number,
+  title: PropTypes.string,
+}
+
+Chip.defaultProps = {
+  category: '',
+  level: 1,
+  title: '',
 }
