@@ -521,7 +521,7 @@ const LevelSombras = ({ level }) => {
     case 172:
       return <Sombras172 />
     default:
-      return <Sombras99 />
+      return <Sombras172 />
   }
 }
 
