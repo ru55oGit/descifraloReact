@@ -1,504 +1,604 @@
 {
   "listado": [
     {
+      "titulo": "Logos",
       "respuesta": "the new|york times",
-      "solucion": "",
-      "nivel": "1"
+      "pregunta": "1",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "facebook",
-      "solucion": "",
-      "nivel": "2"
+      "pregunta": "2",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "wordpress",
-      "solucion": "",
-      "nivel": "3"
+      "pregunta": "3",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "twitter",
-      "solucion": "",
-      "nivel": "4"
+      "pregunta": "4",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "chrome",
-      "solucion": "",
-      "nivel": "5"
+      "pregunta": "5",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "cartoon|network",
-      "solucion": "",
-      "nivel": "6"
+      "pregunta": "6",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "nickelodeon",
-      "solucion": "",
-      "nivel": "7"
+      "pregunta": "7",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "apple",
-      "solucion": "",
-      "nivel": "8"
+      "pregunta": "8",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "amazon",
-      "solucion": "",
-      "nivel": "9"
+      "pregunta": "9",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "whatsapp",
-      "solucion": "",
-      "nivel": "10"
+      "pregunta": "10",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "mini",
-      "solucion": "",
-      "nivel": "11"
+      "pregunta": "11",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "x box",
-      "solucion": "",
-      "nivel": "12"
+      "pregunta": "12",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "chevrolet",
-      "solucion": "",
-      "nivel": "13"
+      "pregunta": "13",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "ford",
-      "solucion": "",
-      "nivel": "14"
+      "pregunta": "14",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "kodak",
-      "solucion": "",
-      "nivel": "15"
+      "pregunta": "15",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "lacoste",
-      "solucion": "",
-      "nivel": "16"
+      "pregunta": "16",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "play|station",
-      "solucion": "",
-      "nivel": "17"
+      "pregunta": "17",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "peugeot",
-      "solucion": "",
-      "nivel": "18"
+      "pregunta": "18",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "mercedes|benz",
-      "solucion": "",
-      "nivel": "19"
+      "pregunta": "19",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "pepsi",
-      "solucion": "",
-      "nivel": "20"
+      "pregunta": "20",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "adidas",
-      "solucion": "",
-      "nivel": "21"
+      "pregunta": "21",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "fisher|price",
-      "solucion": "",
-      "nivel": "22"
+      "pregunta": "22",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "ferrari",
-      "solucion": "",
-      "nivel": "23"
+      "pregunta": "23",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "firefox",
-      "solucion": "",
-      "nivel": "24"
+      "pregunta": "24",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "nike",
-      "solucion": "",
-      "nivel": "25"
+      "pregunta": "25",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "levis",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "26",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "volskwagen",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "27",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "umbro",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "28",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "coca cola",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "29",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "bacardi",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "30",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "motorola",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "31",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "suzuki",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "32",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "stella|artois",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "33",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "shell",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "34",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "seat",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "35",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "samsung",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "36",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "reebok",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "37",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "telegram",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "38",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "gucci",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "39",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "converse",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "40",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "fanta",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "41",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "puma",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "42",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "pritt",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "43",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "audi",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "44",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "mcdonalds",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "45",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "chanel",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "46",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "bridgestone",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "47",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "bic",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "48",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "carolina|herrera",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "49",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "direct tv",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "50",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "citroen",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "51",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "instagram",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "52",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "dodge",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "53",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "speed",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "54",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "louis|vuitton",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "55",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "gatorade",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "56",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "firestone",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "57",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "quiksilver",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "58",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "pinterest",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "59",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "dove",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "60",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "carrefour",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "61",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "mitsubishi",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "62",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "le coq|sportif",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "63",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "opel",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "64",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "linkedin",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "65",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "nestle",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "66",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "wilson",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "67",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "pringles",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "68",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "red bull",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "69",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "lego",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "70",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "honda",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "71",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "minolta",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "72",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "rip curl",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "73",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "mizuno",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "74",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "hewlett|packard",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "75",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "starbucks",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "76",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "giorgio|armani",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "77",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "lotto",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "78",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "new balance",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "79",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "kappa",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "80",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "rolex",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "81",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "dropbox",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "82",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "drive",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "83",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "burger king",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "84",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "timberland",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "85",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "visa",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "86",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "rayban",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "87",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "opera",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "88",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "vans",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "89",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "intel",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "90",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "wikipedia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "91",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "mercado libre",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "92",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "ebay",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "93",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "nbc",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "94",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "pizza hut",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "95",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "toyota",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "96",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "bmw",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "97",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "lg",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "98",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "texaco",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "99",
+      "categoria": "Logos"
     },
     {
+      "titulo": "Logos",
       "respuesta": "national|geographic",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "100",
+      "categoria": "Logos"
     }
   ]
 }

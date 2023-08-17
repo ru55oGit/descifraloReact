@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     height: '110px',
     margin: '50px auto',
     position: 'relative',
-    width: '90%',
+    width: '95%',
   },
   imageContainer: {
     '& SVG': {

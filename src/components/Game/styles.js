@@ -12,13 +12,18 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageContainer: {
-    backgroundColor: theme.palette.black.main,
+    alignItems: 'center',
+    backgroundColor: theme.palette.white.main,
     border: `3px solid ${theme.palette.black.main}`,
-    borderBottom: 'none',
+    display: 'flex',
+    justifyContent: 'center',
     margin: 'auto',
+    minHeight: 250,
+    padding: '8px',
+    textAlign: 'center',
     width: '75%',
     [theme.breakpoints.between('xs', 'sm')]: {
-      width: '60vw',
+      width: '70vw',
     },
   },
   keyboardContainer: {

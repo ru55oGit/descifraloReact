@@ -76,6 +76,7 @@ const LevelsPage = () => {
             justifyContent: 'center',
           }}
         >
+          <Typography>CARGANDO...</Typography>
           <ProgressBar
             barColor={theme.palette.primary.main}
             borderColor={theme.palette.primary.main}

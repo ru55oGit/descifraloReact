@@ -14,16 +14,19 @@ const Chip = (props) => {
   const theme = useTheme()
   const navigate = useNavigate()
   const { gameDispatch } = useGameContext()
-
   const { level, category, title } = props
 
   const handleClick = (cat, lev) => {
+    const payload = lev
+      ? { category: cat, level: lev }
+      : { category: 'Aleatorio', level: null }
+
     gameDispatch({
-      game: { category: cat, level: lev },
+      game: payload,
       type: Actions.UPDATE_LEVEL,
     })
 
-    navigate('/niveles')
+    navigate(lev ? '/niveles' : '/jugar')
   }
 
   return (
@@ -47,7 +50,11 @@ const Chip = (props) => {
               fontSize: '3rem',
             }}
           />
-          <Typography>Nivel: {level}</Typography>
+          {level ? (
+            <Typography> Nivel: {level}</Typography>
+          ) : (
+            <Typography>Todas las categorías</Typography>
+          )}
           <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
             {title}
           </Typography>
@@ -60,13 +67,11 @@ const Chip = (props) => {
 export default Chip
 
 Chip.propTypes = {
-  category: PropTypes.string,
+  category: PropTypes.string.isRequired,
   level: PropTypes.number,
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
 }
 
 Chip.defaultProps = {
-  category: '',
-  level: 1,
-  title: '',
+  level: '',
 }

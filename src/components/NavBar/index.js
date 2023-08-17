@@ -11,15 +11,16 @@ import { useTheme } from '@mui/styles'
 
 import useStyles from './styles'
 
-const NavBar = ({
-  backArrow,
-  fixed,
-  openMenu,
-  setOpenMenu,
-  openDonate,
-  setOpenDonate,
-  level,
-}) => {
+const NavBar = (props) => {
+  const {
+    backArrow,
+    fixed,
+    openMenu,
+    setOpenMenu,
+    openDonate,
+    setOpenDonate,
+    level,
+  } = props
   const theme = useTheme()
   const classes = useStyles()
   const navigate = useNavigate()
@@ -95,7 +96,7 @@ NavBar.propTypes = {
 NavBar.defaultProps = {
   backArrow: false,
   fixed: false,
-  level: undefined,
+  level: null,
   openDonate: false,
   openMenu: false,
   setOpenDonate: () => {},

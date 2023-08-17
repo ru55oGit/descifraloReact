@@ -312,5 +312,9 @@ const LevelEscudos = ({ level }) => {
 export default LevelEscudos
 
 LevelEscudos.propTypes = {
-  level: PropTypes.number.isRequired,
+  level: PropTypes.number,
+}
+
+LevelEscudos.defaultProps = {
+  level: 1,
 }

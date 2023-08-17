@@ -15,6 +15,18 @@ import {
 } from '../../constants/const'
 import useStyles from './styles'
 
+const random = [
+  ACERTIJOS,
+  PELICULAS,
+  LOGOS,
+  EMOJIS,
+  JUGADORES,
+  SOMBRAS,
+  FUNKOS,
+  ESCUDOS,
+  BANDERAS,
+]
+
 const Levels = () => {
   const classes = useStyles()
   const [levelAcertijos, setLevelAcertijos] = useState()
@@ -93,6 +105,11 @@ const Levels = () => {
         category={BANDERAS}
         level={parseInt(levelBanderas, 10)}
         title="Banderas de paises"
+      />
+      <Chip
+        category={random[Math.ceil(Math.random() * random.length - 1)]}
+        level={null}
+        title="Aleatorios"
       />
     </Box>
   )

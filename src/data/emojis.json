@@ -1,649 +1,778 @@
 {
   "listado": [
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "una aventura|extraordinaria",
-      "solucion": "https://youtu.be/vvnVXZMaWyI?t=273",
-      "nivel": "1"
+      "pregunta": "1",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "dr dolittle",
-      "solucion": "https://youtu.be/oQWvQAi7Xu0?t=272",
-      "nivel": "2"
+      "pregunta": "2",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "psicosis",
-      "solucion": "https://youtu.be/JizsMU7B_OM?t=272",
-      "nivel": "3"
+      "pregunta": "3",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "apolo 13",
-      "solucion": "https://youtu.be/A-JzUW1zOoA?t=272",
-      "nivel": "4"
+      "pregunta": "4",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "kung fu|panda",
-      "solucion": "https://youtu.be/SNEvM-27UP8?t=272",
-      "nivel": "5"
+      "pregunta": "5",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "comer rezar|amar",
-      "solucion": "https://youtu.be/eJ5XPaBHkO0?t=272",
-      "nivel": "6"
+      "pregunta": "6",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "diamantes|de sangre",
-      "solucion": "https://youtu.be/zIXf7bknqLU?t=273",
-      "nivel": "7"
+      "pregunta": "7",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "et",
-      "solucion": "https://youtu.be/I7FYYJYqZCg?t=273",
-      "nivel": "8"
+      "pregunta": "8",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "american pie",
-      "solucion": "https://youtu.be/mTuP1JPu0ZA?t=273",
-      "nivel": "9"
+      "pregunta": "9",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "hombres|de negro",
-      "solucion": "https://youtu.be/AG4iTXDF5n0?t=273",
-      "nivel": "10"
+      "pregunta": "1010",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "liberen|a willy",
-      "solucion": "https://youtu.be/632BnneIx_E?t=273",
-      "nivel": "11"
+      "pregunta": "111",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "up",
-      "solucion": "https://youtu.be/MpW7cZu2BpA?t=273",
-      "nivel": "12"
+      "pregunta": "1212",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el planeta|de los simios",
-      "solucion": "https://youtu.be/b72Jspj-gaI?t=273",
-      "nivel": "13"
+      "pregunta": "1313",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "belleza|americana",
-      "solucion": "https://youtu.be/o_FlIF_ugZY?t=273",
-      "nivel": "14"
+      "pregunta": "1414",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el rey leon",
-      "solucion": "https://youtu.be/IkKOhJRVuVI?t=273",
-      "nivel": "15"
+      "pregunta": "1515",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "gorilas en|la niebla",
-      "solucion": "https://youtu.be/Yo3qyLk8t8k?t=273",
-      "nivel": "16"
+      "pregunta": "1616",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el diablo|viste a la moda",
-      "solucion": "https://youtu.be/Zvcb6Wr5e-k?t=273",
-      "nivel": "17"
+      "pregunta": "1717",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "x men",
-      "solucion": "https://youtu.be/C5F2dQ_ARFI?t=273",
-      "nivel": "18"
+      "pregunta": "1818",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "harry potter",
-      "solucion": "https://youtu.be/9syozBlt4LY?t=273",
-      "nivel": "19"
+      "pregunta": "1919",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "spiderman",
-      "solucion": "https://youtu.be/TDsy23r3olk?t=273",
-      "nivel": "20"
+      "pregunta": "2020",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "buscando|a nemo",
-      "solucion": "https://youtu.be/5jjxkKnGIAk?t=273",
-      "nivel": "21"
+      "pregunta": "2121",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "mary poppins",
-      "solucion": "https://youtu.be/GkQKdlQXf8E?t=273",
-      "nivel": "22"
+      "pregunta": "2222",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "los juegos|del hambre",
-      "solucion": "https://youtu.be/aV6YKtJWr3I?t=273",
-      "nivel": "23"
+      "pregunta": "2323",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "rapido y|furioso",
-      "solucion": "https://youtu.be/jmHXFhXxeLc?t=273",
-      "nivel": "24"
+      "pregunta": "2424",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "cars",
-      "solucion": "https://youtu.be/9sRaYTvlqSU?t=273",
-      "nivel": "25"
+      "pregunta": "2525",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el discurso|del rey",
-      "solucion": "https://youtu.be/Yz3EXH4uqgc?t=273",
-      "nivel": "26"
+      "pregunta": "2626",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "500 dias|con ella",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "27",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "angeles|y demonios",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "28",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "cocodrilo|dundee",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "29",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "tiburon",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "30",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "sharknado",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "31",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "la dama y|el vagabundo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "32",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "mi pobre|angelito",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "33",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "rambo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "34",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "maxima|velocidad",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "35",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el gato|con botas",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "36",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "indiana|jones",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "37",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "pinocho",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "38",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "caza|fantasmas",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "39",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "la era|de hielo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "40",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "scary|movie",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "41",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "pearl|harbor",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "42",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el efecto|mariposa",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "43",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "forrest|gump",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "44",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "diario de|motocicleta",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "45",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "volcano",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "46",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "armagedon",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "47",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el rey|escorpion",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "48",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "la llamada",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "49",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "gravedad",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "50",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "12 monos",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "51",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "ratatouille",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "52",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "127 horas",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "53",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "crepusculo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "54",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "batman",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "55",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "king kong",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "56",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "bee movie",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "57",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "cuenta|conmigo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "58",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "titanic",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "59",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "it",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "60",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "babe",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "61",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "snatch cerdos|y diamantes",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "62",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "expreso|polar",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "63",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el vuelo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "64",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "una noche|en el museo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "65",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "sex and|the city",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "66",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "turbo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "67",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "zootopia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "68",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el padrino",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "69",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "las tortugas|ninja",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "70",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "rocky",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "71",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "creed",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "72",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el joven manos|de tijera",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "73",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "volver al|futuro",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "74",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "corazon|valiente",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "75",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "los expedientes|secretos x",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "76",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "dumbo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "77",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "la gran|estafa",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "78",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "Siempre a|tu lado",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "79",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "bichos",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "80",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "nueve reinas",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "81",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "que paso ayer",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "82",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "101 dalmatas",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "83",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "happy feet",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "84",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "space jam",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "85",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "medianoche|en paris",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "86",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "los 33",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "87",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "scream",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "88",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "cantando|bajo la lluvia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "89",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "ted",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "90",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "sexto|sentido",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "91",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el curioso caso|Benjamin Button",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "92",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "top gun",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "93",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "tienes un|email",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "94",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "invictus",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "95",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "wimbledon",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "96",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "la caida del|halcon negro",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "97",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el codigo|da vinci",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "98",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "la naranja|mecanica",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "99",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "thor",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "100",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "avion|presidencial",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "101",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el fantasma|de la opera",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "102",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "novia|fugitiva",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "103",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "alicia en el pais|de las maravillas",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "104",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "frozen",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "105",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el libro|de la selva",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "106",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "karate|kid",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "107",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "actividad|paranormal",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "108",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "el exorcista",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "109",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "los pitufos",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "110",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "cobra",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "111",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "matrix",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "112",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "twister",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "113",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "La leyenda del|tesoro perdido",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "114",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "diario de|una pasion",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "115",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "60 segundos",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "116",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "super 8",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "117",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "jamaica|bajo cero",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "118",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "la sirenita",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "119",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "guerra|mundial z",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "120",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "dracula",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "121",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "aladdin",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "122",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "toy story",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "123",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "jurassic|park",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "124",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "super|size me",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "125",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "dia del|atentado",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "126",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "naufrago",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "127",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "godzilla",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "128",
+      "categoria": "Emojis"
     },
     {
+      "titulo": "Películas con Emojis",
       "respuesta": "la casa|del lago",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "129",
+      "categoria": "Emojis"
     }
   ]
 }

@@ -564,5 +564,9 @@ const LevelPeliculas = ({ level }) => {
 export default LevelPeliculas
 
 LevelPeliculas.propTypes = {
-  level: PropTypes.number.isRequired,
+  level: PropTypes.number,
+}
+
+LevelPeliculas.defaultProps = {
+  level: 1,
 }

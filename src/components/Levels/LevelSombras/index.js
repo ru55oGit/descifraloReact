@@ -528,5 +528,9 @@ const LevelSombras = ({ level }) => {
 export default LevelSombras
 
 LevelSombras.propTypes = {
-  level: PropTypes.number.isRequired,
+  level: PropTypes.number,
+}
+
+LevelSombras.defaultProps = {
+  level: 1,
 }

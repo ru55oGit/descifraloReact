@@ -48,5 +48,9 @@ const LevelJugadores = ({ level }) => {
 export default LevelJugadores
 
 LevelJugadores.propTypes = {
-  level: PropTypes.number.isRequired,
+  level: PropTypes.number,
+}
+
+LevelJugadores.defaultProps = {
+  level: 1,
 }

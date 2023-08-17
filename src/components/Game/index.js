@@ -21,7 +21,7 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 
 import { useGameContext, Actions } from '../../store/game'
 import 'react-simple-keyboard/build/css/index.css'
-import { getWordToGuess, getImage } from '../../utils'
+import { getWordToGuess, getImage, getQuestions } from '../../utils'
 import useStyles from './styles'
 
 const Game = () => {
@@ -39,6 +39,7 @@ const Game = () => {
   const [wrongLetters, setWrongLetters] = useState('000')
   const [hideKeyboard, setHideKeyboard] = useState(false)
   const [minutesBlocked, setMinutesBlocked] = useState(300)
+  const [question, setQuestion] = useState()
 
   const layout = {
     default: [
@@ -93,7 +94,7 @@ const Game = () => {
   }, [wrongLetters])
 
   useEffect(() => {
-    if (gameState?.game) {
+    if (gameState?.game && gameState?.game?.category !== 'Aleatorio') {
       const storage = JSON.parse(
         localStorage.getItem(gameState?.game?.category)
       )
@@ -122,21 +123,33 @@ const Game = () => {
           .respuesta
       )
       setLevelReached(parseInt(storage?.levelReached || 1, 10))
+    } else if (gameState?.game?.category === 'Aleatorio') {
+      const { pregunta, categoria, respuesta } = getQuestions()
+
+      if (categoria === 'Aleatorio') {
+        setQuestion(pregunta)
+      } else {
+        setLevel(parseInt(pregunta, 10))
+      }
+      setCategory(categoria)
+      setWord(respuesta)
     } else {
       navigate('/')
     }
 
     return () => {
-      gameDispatch({
-        game: {
-          category: gameState.game.category,
-          level:
-            levelReached === gameState.game.level
-              ? gameState.game.level + 1
-              : gameState.game.level,
-        },
-        type: Actions.UPDATE_LEVEL,
-      })
+      if (gameState?.game) {
+        gameDispatch({
+          game: {
+            category: gameState?.game?.category,
+            level:
+              levelReached === gameState.game.level
+                ? gameState.game.level + 1
+                : gameState.game.level,
+          },
+          type: Actions.UPDATE_LEVEL,
+        })
+      }
     }
   }, [])
 
@@ -239,7 +252,11 @@ const Game = () => {
             className={classes.imageContainer}
             sx={{ width: isMobile ? '30vh' : '50vh' }}
           >
-            {getImage(category, level)}
+            {category !== 'Aleatorio' ? (
+              getImage(category, level)
+            ) : (
+              <Typography variant="hxl">{question}</Typography>
+            )}
           </Box>
           <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
           {wrongLetters === '111' && (

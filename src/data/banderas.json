@@ -1,504 +1,604 @@
 {
   "listado": [
     {
+      "titulo": "Banderas",
       "respuesta": "argentina",
-      "solucion": "",
-      "nivel": "1"
+      "pregunta": "1",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "estados|unidos",
-      "solucion": "",
-      "nivel": "2"
+      "pregunta": "2",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "china",
-      "solucion": "",
-      "nivel": "3"
+      "pregunta": "3",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "rusia",
-      "solucion": "",
-      "nivel": "4"
+      "pregunta": "4",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "alemania",
-      "solucion": "",
-      "nivel": "5"
+      "pregunta": "5",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "italia",
-      "solucion": "",
-      "nivel": "6"
+      "pregunta": "6",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "francia",
-      "solucion": "",
-      "nivel": "7"
+      "pregunta": "7",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "japon",
-      "solucion": "",
-      "nivel": "8"
+      "pregunta": "8",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "australia",
-      "solucion": "",
-      "nivel": "9"
+      "pregunta": "9",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "corea|del sur",
-      "solucion": "",
-      "nivel": "10"
+      "pregunta": "10",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "hungria",
-      "solucion": "",
-      "nivel": "11"
+      "pregunta": "11",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "holanda",
-      "solucion": "",
-      "nivel": "12"
+      "pregunta": "12",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "uruguay",
-      "solucion": "",
-      "nivel": "13"
+      "pregunta": "13",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "nueva|zelanda",
-      "solucion": "",
-      "nivel": "14"
+      "pregunta": "14",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "brasil",
-      "solucion": "",
-      "nivel": "15"
+      "pregunta": "15",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "Kazajistan",
-      "solucion": "",
-      "nivel": "16"
+      "pregunta": "16",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "Corea|del Norte",
-      "solucion": "",
-      "nivel": "17"
+      "pregunta": "17",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "kenia",
-      "solucion": "",
-      "nivel": "18"
+      "pregunta": "18",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "canada",
-      "solucion": "",
-      "nivel": "19"
+      "pregunta": "19",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "polonia",
-      "solucion": "",
-      "nivel": "20"
+      "pregunta": "20",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "colombia",
-      "solucion": "",
-      "nivel": "21"
+      "pregunta": "21",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "cuba",
-      "solucion": "",
-      "nivel": "22"
+      "pregunta": "22",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "suiza",
-      "solucion": "",
-      "nivel": "23"
+      "pregunta": "23",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "belgica",
-      "solucion": "",
-      "nivel": "24"
+      "pregunta": "24",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "grecia",
-      "solucion": "",
-      "nivel": "25"
+      "pregunta": "25",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "tailandia",
-      "solucion": "",
-      "nivel": "26"
+      "pregunta": "26",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "uzbekistan",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "27",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "jamaica",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "28",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "iran",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "29",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "sudafrica",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "30",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "suecia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "31",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "ucrania",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "32",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "dinamarca",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "33",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "bielorrusia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "34",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "eslovenia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "35",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "republica|checa",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "36",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "rumania",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "37",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "barein",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "38",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "eslovaquia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "39",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "vietnam",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "40",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "etiopia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "41",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "bahamas",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "42",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "fiyi",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "43",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "kosovo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "44",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "singapur",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "45",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "marruecos",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "46",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "camerun",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "47",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "escocia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "48",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "chipre",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "49",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "india",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "50",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "panama",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "51",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "argelia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "52",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "paraguay",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "53",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "egipto",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "54",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "costa rica",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "55",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "portugal",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "56",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "bolivia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "57",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "el salvador",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "58",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "croacia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "59",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "peru",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "60",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "mexico",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "61",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "ecuador",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "62",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "guatemala",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "63",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "arabia|saudita",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "64",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "serbia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "65",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "ghana",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "66",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "nigeria",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "67",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "austria",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "68",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "honduras",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "69",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "turquia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "70",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "chile",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "71",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "irlanda",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "72",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "noruega",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "73",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "israel",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "74",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "bulgaria",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "75",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "republica|dominicana",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "76",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "finlandia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "77",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "ruanda",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "78",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "gabon",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "79",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "islandia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "80",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "jordania",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "81",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "libano",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "82",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "tanzania",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "83",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "liberia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "84",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "malasia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "85",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "madagascar",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "86",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "estonia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "87",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "filipinas",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "88",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "oman",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "89",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "somalia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "90",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "Bosnia|Herzegovina",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "91",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "Tibet",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "92",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "tunez",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "93",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "Trinidad|y Tobago",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "94",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "Tonga",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "95",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "pakistan",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "96",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "nepal",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "97",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "Mongolia",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "98",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "monaco",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "99",
+      "categoria": "Banderas"
     },
     {
+      "titulo": "Banderas",
       "respuesta": "Mozambique",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "100",
+      "categoria": "Banderas"
     }
   ]
 }

@@ -104,8 +104,8 @@ const theme = createTheme({
       lineHeight: 24 / 16,
     },
     hxl: {
-      fontSize: 28,
-      lineHeight: 40 / 28,
+      fontSize: 26,
+      lineHeight: 40 / 26,
     },
     hxxl: {
       fontSize: 32,

@@ -19,6 +19,7 @@ import dataSombras from '../data/sombras.json'
 import dataFunkos from '../data/funkos.json'
 import dataEscudos from '../data/escudos.json'
 import dataBanderas from '../data/banderas.json'
+import dataAleatoria from '../data/preguntas.json'
 
 import LevelAcertijos from '../components/Levels/LevelAdivinanzas'
 import LevelEmojis from '../components/Levels/LevelEmojis'
@@ -80,4 +81,9 @@ const getImage = (category, level) => {
   }
 }
 
-export { getWordToGuess, getImage }
+const getQuestions = () =>
+  dataAleatoria.preguntas[
+    Math.ceil(Math.random() * dataAleatoria.preguntas.length)
+  ]
+
+export { getWordToGuess, getImage, getQuestions }
