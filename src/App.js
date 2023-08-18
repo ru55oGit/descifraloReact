@@ -6,6 +6,7 @@ import IntroPage from './pages/introPage'
 import CategoriesPage from './pages/categoriesPage'
 import PlayPage from './pages/playPage'
 import LevelsPage from './pages/levelsPage'
+import SuccessPage from './pages/successPage'
 import theme from './theme'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <Route element={<CategoriesPage />} path="/categorias" />
                 <Route element={<PlayPage />} path="/jugar" />
                 <Route element={<LevelsPage />} path="/niveles" />
+                <Route element={<SuccessPage />} path="/success/:category" />
               </Routes>
             </Router>
           </ThemeProvider>

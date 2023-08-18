@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import useStyles from './styles'
 import { getImage } from '../../utils'
 import { useGameContext, Actions } from '../../store/game'
+import { ALEATORIO } from '../../constants/const'
 
 const Chip = (props) => {
   const classes = useStyles()
@@ -19,7 +20,7 @@ const Chip = (props) => {
   const handleClick = (cat, lev) => {
     const payload = lev
       ? { category: cat, level: lev }
-      : { category: 'Aleatorio', level: null }
+      : { category: ALEATORIO, level: null }
 
     gameDispatch({
       game: payload,

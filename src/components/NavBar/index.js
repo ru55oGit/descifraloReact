@@ -8,7 +8,8 @@ import PaidIcon from '@mui/icons-material/Paid'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import { useNavigate } from 'react-router-dom'
 import { useTheme } from '@mui/styles'
-
+import { useGameContext } from '../../store/game'
+import { ALEATORIO } from '../../constants/const'
 import useStyles from './styles'
 
 const NavBar = (props) => {
@@ -24,6 +25,7 @@ const NavBar = (props) => {
   const theme = useTheme()
   const classes = useStyles()
   const navigate = useNavigate()
+  const { gameState } = useGameContext()
 
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu)
@@ -33,6 +35,19 @@ const NavBar = (props) => {
   const handleOpenDonate = () => {
     setOpenDonate(!openDonate)
     setOpenMenu(false)
+  }
+
+  const handleBack = () => {
+    if (
+      gameState?.game?.category === ALEATORIO ||
+      window.location.pathname === '/niveles'
+    ) {
+      navigate('/categorias')
+    } else if (window.location.pathname === '/jugar') {
+      navigate('/niveles')
+    } else {
+      navigate(-1)
+    }
   }
 
   return (
@@ -49,11 +64,11 @@ const NavBar = (props) => {
           />
         ) : (
           <ArrowBackIcon
-            onClick={() => navigate(-1)}
+            onClick={handleBack}
             sx={{ color: theme.palette.primary.main, fontSize: '2rem' }}
           />
         )}
-        {level && (
+        {level && gameState?.game?.category !== ALEATORIO && (
           <Stack sx={{ textAlign: 'center' }}>
             <Typography color="primary.main" variant="body1">
               Nivel

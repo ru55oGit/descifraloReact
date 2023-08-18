@@ -18,7 +18,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useTheme } from '@mui/styles'
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
-
+import { ALEATORIO } from '../../constants/const'
 import { useGameContext, Actions } from '../../store/game'
 import 'react-simple-keyboard/build/css/index.css'
 import { getWordToGuess, getImage, getQuestions } from '../../utils'
@@ -94,7 +94,7 @@ const Game = () => {
   }, [wrongLetters])
 
   useEffect(() => {
-    if (gameState?.game && gameState?.game?.category !== 'Aleatorio') {
+    if (gameState?.game && gameState?.game?.category !== ALEATORIO) {
       const storage = JSON.parse(
         localStorage.getItem(gameState?.game?.category)
       )
@@ -123,10 +123,10 @@ const Game = () => {
           .respuesta
       )
       setLevelReached(parseInt(storage?.levelReached || 1, 10))
-    } else if (gameState?.game?.category === 'Aleatorio') {
+    } else if (gameState?.game?.category === ALEATORIO) {
       const { pregunta, categoria, respuesta } = getQuestions()
 
-      if (categoria === 'Aleatorio') {
+      if (categoria === ALEATORIO) {
         setQuestion(pregunta)
       } else {
         setLevel(parseInt(pregunta, 10))
@@ -223,6 +223,7 @@ const Game = () => {
           JSON.stringify({ levelReached: level + 1 })
         )
       }
+      navigate(`/success/${category}`)
     }
   }
 
@@ -252,7 +253,7 @@ const Game = () => {
             className={classes.imageContainer}
             sx={{ width: isMobile ? '30vh' : '50vh' }}
           >
-            {category !== 'Aleatorio' ? (
+            {category !== ALEATORIO ? (
               getImage(category, level)
             ) : (
               <Typography variant="hxl">{question}</Typography>
