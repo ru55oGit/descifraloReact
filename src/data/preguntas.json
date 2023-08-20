@@ -3304,12 +3304,12 @@
     {
       "titulo": "#Descifralo",
       "pregunta": "¿Quién fué elegido para suceder a G. Bush a partir del año 2009?",
-      "respuesta": "Barak Obama",
+      "respuesta": "Barack Obama",
       "categoria": "aleatorio"
     },
     {
       "titulo": "#Descifralo",
-      "pregunta": "¿Quién fué elegido para suceder a Barak Obama a partir del año 2017?",
+      "pregunta": "¿Quién fué elegido para suceder a Barack Obama a partir del año 2017?",
       "respuesta": "Donald Trump",
       "categoria": "aleatorio"
     },
@@ -4869,12 +4869,6 @@
     },
     {
       "titulo": "#Descifralo",
-      "pregunta": "¿Qué proteína contienen las uñas?",
-      "respuesta": "Queratina",
-      "categoria": "aleatorio"
-    },
-    {
-      "titulo": "#Descifralo",
       "pregunta": "¿Cómo se llama el líquido que sale por los poros de la piel?",
       "respuesta": "Sudor",
       "categoria": "aleatorio"
@@ -5925,7 +5919,7 @@
     },
     {
       "titulo": "Acertijos",
-      "pregunta": "1",
+      "pregunta": "11",
       "respuesta": "sombrilla",
       "categoria": "acertijos"
     },

@@ -40,6 +40,7 @@ const Game = () => {
   const [hideKeyboard, setHideKeyboard] = useState(false)
   const [minutesBlocked, setMinutesBlocked] = useState(300)
   const [question, setQuestion] = useState()
+  const [title, setTitle] = useState()
 
   const layout = {
     default: [
@@ -74,6 +75,13 @@ const Game = () => {
 
   const handleWrongLetters = () => {
     const storage = JSON.parse(localStorage.getItem(gameState?.game?.category))
+
+    if (
+      wrongLetters?.includes('111') &&
+      gameState?.game?.category === ALEATORIO
+    ) {
+      navigate(`/success/${ALEATORIO}`)
+    }
 
     if (wrongLetters?.includes('111') && storage?.timeBlocked === undefined) {
       setHideKeyboard(true)
@@ -124,7 +132,7 @@ const Game = () => {
       )
       setLevelReached(parseInt(storage?.levelReached || 1, 10))
     } else if (gameState?.game?.category === ALEATORIO) {
-      const { pregunta, categoria, respuesta } = getQuestions()
+      const { pregunta, categoria, respuesta, titulo } = getQuestions()
 
       if (categoria === ALEATORIO) {
         setQuestion(pregunta)
@@ -133,6 +141,7 @@ const Game = () => {
       }
       setCategory(categoria)
       setWord(respuesta)
+      setTitle(titulo)
     } else {
       navigate('/')
     }
@@ -190,7 +199,8 @@ const Game = () => {
     const result = correctLetters.split('')
 
     if (
-      gameState.game.level === levelReached &&
+      (gameState.game.level === levelReached ||
+        gameState?.game?.category === ALEATORIO) &&
       !answer.includes(letter.toLowerCase())
     ) {
       setWrongLetters(wrongLetters.replace('0', '1'))
@@ -230,7 +240,8 @@ const Game = () => {
   return (
     <Box className={classes.gameContainer}>
       <Stack className={classes.lifeContainer} direction="row">
-        {gameState?.game?.level === levelReached &&
+        {(gameState?.game?.level === levelReached ||
+          gameState?.game?.category === ALEATORIO) &&
           wrongLetters
             .split('')
             .map((k) =>
@@ -248,7 +259,15 @@ const Game = () => {
             )}
       </Stack>
       <Box ref={refQR}>
-        <Box sx={{ background: theme.palette.primary.main, padding: '10px 0' }}>
+        <Box className={classes.souround}>
+          <Typography
+            align="center"
+            color="white.main"
+            sx={{ mb: '4px' }}
+            variant="hxxl"
+          >
+            {title}
+          </Typography>
           <Box
             className={classes.imageContainer}
             sx={{ width: isMobile ? '30vh' : '50vh' }}

@@ -56,7 +56,14 @@ const useStyles = makeStyles((theme) => ({
   lifeContainer: {
     height: '2rem',
     justifyContent: 'flex-end',
-    padding: 10,
+    padding: '4px 8px',
+  },
+  souround: {
+    background: theme.palette.primary.main,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    padding: '0 8px 0',
   },
 }))
 
