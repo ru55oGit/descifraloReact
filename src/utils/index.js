@@ -81,12 +81,9 @@ const getImage = (category, level) => {
   }
 }
 
-const getQuestions = () => {
-  console.log(Math.ceil(Math.random() * dataAleatoria.preguntas.length))
-
-  return dataAleatoria.preguntas[
+const getQuestions = () =>
+  dataAleatoria.preguntas[
     Math.ceil(Math.random() * dataAleatoria.preguntas.length)
   ]
-}
 
 export { getWordToGuess, getImage, getQuestions }
