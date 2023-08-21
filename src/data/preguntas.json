@@ -138,7 +138,6 @@
       "respuesta": "11",
       "categoria": "aleatorio"
     },
-
     {
       "titulo": "#Descifralo",
       "pregunta": "¿Cuál es el ojo defectuoso de Popeye?",
@@ -2459,12 +2458,6 @@
       "titulo": "#Descifralo",
       "pregunta": "¿Cuántos centavos hay en 2 pesos?",
       "respuesta": "200",
-      "categoria": "aleatorio"
-    },
-    {
-      "titulo": "#Descifralo",
-      "pregunta": "¿Cuál es el segundo idioma oficial, además del castellano, en la provincia de Corrientes?",
-      "respuesta": "Guarani",
       "categoria": "aleatorio"
     },
     {
@@ -10017,1105 +10010,1105 @@
       "categoria": "escudos"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "volver al|futuro",
       "pregunta": "1",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "beethoven",
       "pregunta": "2",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "beetlejuice",
       "pregunta": "3",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "capitan|america",
       "pregunta": "4",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "chucky",
       "pregunta": "5",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "click",
       "pregunta": "6",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "jamaica|bajo cero",
       "pregunta": "7",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "tonto y|retonto",
       "pregunta": "8",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el silencio de|los inocentes",
       "pregunta": "9",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el joven manos|de tijera",
       "pregunta": "10",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "rescate en la|antartida",
       "pregunta": "11",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el laberinto|del fauno",
       "pregunta": "12",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "et",
       "pregunta": "13",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "fantasia",
       "pregunta": "14",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "bee movie",
       "pregunta": "15",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "quisiera|ser grande",
       "pregunta": "16",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "iron man",
       "pregunta": "17",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "gremlins",
       "pregunta": "18",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "linterna|verde",
       "pregunta": "19",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "guardianes de|la galaxia",
       "pregunta": "20",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "gladiador",
       "pregunta": "21",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "intensamente",
       "pregunta": "22",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "indiana|jones",
       "pregunta": "23",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "kill bill",
       "pregunta": "24",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "una aventura|extraordinaria",
       "pregunta": "25",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "superman",
       "pregunta": "26",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "meteoro",
       "pregunta": "27",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "madagascar",
       "pregunta": "28",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "ouija",
       "pregunta": "29",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "up",
       "pregunta": "30",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "rocky",
       "pregunta": "31",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "cars",
       "pregunta": "32",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "twister",
       "pregunta": "33",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "transformers",
       "pregunta": "34",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "milagro en|la calle 8",
       "pregunta": "35",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "jerry|maguire",
       "pregunta": "36",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "coco",
       "pregunta": "37",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "anaconda",
       "pregunta": "38",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la bella y|la bestia",
       "pregunta": "39",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "austin|powers",
       "pregunta": "40",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "christine",
       "pregunta": "41",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el avispon|verde",
       "pregunta": "42",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "godzilla",
       "pregunta": "43",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "hellboy",
       "pregunta": "44",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "monstruos|vs aliens",
       "pregunta": "45",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "matrix",
       "pregunta": "46",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "stuart|little",
       "pregunta": "47",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "rapido|y furioso",
       "pregunta": "48",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "una noche en|el museo",
       "pregunta": "49",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "mad max",
       "pregunta": "50",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "troya",
       "pregunta": "51",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "rio",
       "pregunta": "52",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "memento",
       "pregunta": "53",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "cupido|motorizado",
       "pregunta": "54",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "las cronicas|de narnia",
       "pregunta": "55",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el origen",
       "pregunta": "56",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "garfield",
       "pregunta": "57",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "buscando|a nemo",
       "pregunta": "58",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "starsky|y hutch",
       "pregunta": "59",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "porkys",
       "pregunta": "60",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "little miss|sunshine",
       "pregunta": "61",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "spiderman",
       "pregunta": "62",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el gran|torino",
       "pregunta": "63",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la dama y|el vagabundo",
       "pregunta": "64",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "101|dalmatas",
       "pregunta": "65",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los juegos|del hambre",
       "pregunta": "66",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "kung fu|panda",
       "pregunta": "67",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "pinocho",
       "pregunta": "68",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "zathura",
       "pregunta": "69",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "depredador",
       "pregunta": "70",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "space jam",
       "pregunta": "71",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la sirenita",
       "pregunta": "72",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "dumbo",
       "pregunta": "73",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "king kong",
       "pregunta": "74",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "300",
       "pregunta": "75",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el llanero|solitario",
       "pregunta": "76",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "tiburon",
       "pregunta": "77",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los|increibles",
       "pregunta": "78",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "las pesadillas|de freddie",
       "pregunta": "79",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "dia de la|independencia",
       "pregunta": "80",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "aladdin",
       "pregunta": "81",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "toy story",
       "pregunta": "82",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "v de vendetta",
       "pregunta": "83",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el padrino",
       "pregunta": "84",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "megamente",
       "pregunta": "85",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "monster inc",
       "pregunta": "86",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la guerra de|las galaxias",
       "pregunta": "87",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "dias de|trueno",
       "pregunta": "88",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "daniel el|travieso",
       "pregunta": "89",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los cuatro|fantasticos",
       "pregunta": "90",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la estafa|maestra",
       "pregunta": "91",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "babe",
       "pregunta": "92",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "ratatouille",
       "pregunta": "93",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "lassie",
       "pregunta": "94",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "batman",
       "pregunta": "95",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el increible|hulk",
       "pregunta": "96",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "vecinos|invasores",
       "pregunta": "97",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "las tortugas|ninjas",
       "pregunta": "98",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "sherlock|holmes",
       "pregunta": "99",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "marcianos|al ataque",
       "pregunta": "100",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el regalo|prometido",
       "pregunta": "101",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los|picapiedras",
       "pregunta": "102",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los pinguinos|de madagascar",
       "pregunta": "103",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "frozen",
       "pregunta": "104",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el planeta|de los simios",
       "pregunta": "105",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "james bond",
       "pregunta": "106",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el rey leon",
       "pregunta": "107",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "scooby doo",
       "pregunta": "108",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "top secret",
       "pregunta": "109",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "alien",
       "pregunta": "110",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los duques|de hazzard",
       "pregunta": "111",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los sospechosos|de siempre",
       "pregunta": "112",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "lego|la pelicula",
       "pregunta": "113",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "mary poppins",
       "pregunta": "114",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los pitufos",
       "pregunta": "115",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "ghost rider",
       "pregunta": "116",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "bambi",
       "pregunta": "117",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "van helsing",
       "pregunta": "118",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "robocop",
       "pregunta": "119",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la era|del hielo",
       "pregunta": "120",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "zoolander",
       "pregunta": "121",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el oso yogi",
       "pregunta": "122",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "tron",
       "pregunta": "123",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "red social",
       "pregunta": "124",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la mascara",
       "pregunta": "125",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "happy feet",
       "pregunta": "126",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "mi novia|polly",
       "pregunta": "127",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "malefica",
       "pregunta": "128",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el|castigador",
       "pregunta": "129",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "ted",
       "pregunta": "130",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "angry birds|la pelicula",
       "pregunta": "131",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "como entrenar|a mi dragon",
       "pregunta": "132",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "zootopia",
       "pregunta": "133",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los minions",
       "pregunta": "134",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "jumanji",
       "pregunta": "135",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la momia",
       "pregunta": "136",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "faivel un|cuento americano",
       "pregunta": "137",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "milagros|inesperados",
       "pregunta": "138",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la llamada",
       "pregunta": "139",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "60 segundos",
       "pregunta": "140",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "rambo",
       "pregunta": "141",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "karate|kid",
       "pregunta": "142",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "wall e",
       "pregunta": "143",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la maquina|del tiempo",
       "pregunta": "144",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "naufrago",
       "pregunta": "145",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la familia|de mi novia",
       "pregunta": "146",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "viernes 13",
       "pregunta": "147",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "hombres de|negro",
       "pregunta": "148",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los piratas|del caribe",
       "pregunta": "149",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "brigada a",
       "pregunta": "150",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el juego|del miedo",
       "pregunta": "151",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "pajaros",
       "pregunta": "152",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "cortocircuito",
       "pregunta": "153",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "yo robot",
       "pregunta": "154",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los muppets",
       "pregunta": "155",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "titanic",
       "pregunta": "156",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "avatar",
       "pregunta": "157",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "scream",
       "pregunta": "158",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "grandes|heroes",
       "pregunta": "159",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "terminator",
       "pregunta": "160",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la guerra de|los mundos",
       "pregunta": "161",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "atrapame|si puedes",
       "pregunta": "162",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "x men",
       "pregunta": "163",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la mascara|del zorro",
       "pregunta": "164",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "liberen|a willy",
       "pregunta": "165",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "forrest|gump",
       "pregunta": "166",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los|cazafantasmas",
       "pregunta": "167",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "top gun",
       "pregunta": "168",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el fantasma|de la opera",
       "pregunta": "169",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "maxima|velocidad",
       "pregunta": "170",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "star trek",
       "pregunta": "171",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "borat",
       "pregunta": "172",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "shrek",
       "pregunta": "173",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el vuelo",
       "pregunta": "174",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "resident|evil",
       "pregunta": "175",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "la masacre|de texas",
       "pregunta": "176",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "jurassic|park",
       "pregunta": "177",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "thor",
       "pregunta": "178",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el grinch",
       "pregunta": "179",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "psicosis",
       "pregunta": "180",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "casper",
       "pregunta": "181",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "harry|potter",
       "pregunta": "182",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "el santo",
       "pregunta": "183",
       "categoria": "peliculas"
     },
     {
-      "titulo:": "Peliculas",
+      "titulo": "¿Qué película es?",
       "respuesta": "los locos|adams",
       "pregunta": "184",
       "categoria": "peliculas"
