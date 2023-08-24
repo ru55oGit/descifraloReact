@@ -45,7 +45,9 @@ const SuccessPage = () => {
     }
   }, [state.answer, state.title])
 
-  const goToNext = () => {
+  const goToNext = (e) => {
+    e.preventDefault()
+
     if (gameState?.game?.category !== ALEATORIO) {
       gameDispatch({
         game: {
@@ -58,7 +60,9 @@ const SuccessPage = () => {
     navigate('/jugar')
   }
 
-  const goToCategories = () => {
+  const goToCategories = (e) => {
+    e.preventDefault()
+
     navigate('/categorias')
   }
 
@@ -104,10 +108,13 @@ const SuccessPage = () => {
       )}
 
       <Box sx={{ textAlign: 'center' }}>
-        <Button className={classes.darkButton} onClick={goToNext}>
+        <Button className={classes.darkButton} onClick={(e) => goToNext(e)}>
           <Typography variant="hxl">Siguiente</Typography>
         </Button>
-        <Button className={classes.darkButton} onClick={goToCategories}>
+        <Button
+          className={classes.darkButton}
+          onClick={(e) => goToCategories(e)}
+        >
           <Typography variant="hxl">Categorías</Typography>
         </Button>
       </Box>
