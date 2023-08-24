@@ -42,7 +42,7 @@ const SuccessPage = () => {
       }
       setSession(sessionStorage)
     }
-  }, [])
+  }, [state.answer, state.title])
 
   const handleClick = () => {
     if (gameState?.game?.category !== ALEATORIO) {
