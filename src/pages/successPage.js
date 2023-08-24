@@ -10,6 +10,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useParams } from 'react-router'
 import { useTheme } from '@mui/styles'
+import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import { useGameContext, Actions } from '../store/game'
 import useStyles from '../styles/pages'
 import { ALEATORIO } from '../constants/const'
@@ -44,7 +45,7 @@ const SuccessPage = () => {
     }
   }, [state.answer, state.title])
 
-  const handleClick = () => {
+  const goToNext = () => {
     if (gameState?.game?.category !== ALEATORIO) {
       gameDispatch({
         game: {
@@ -55,6 +56,10 @@ const SuccessPage = () => {
       })
     }
     navigate('/jugar')
+  }
+
+  const goToCategories = () => {
+    navigate('/categorias')
   }
 
   const getStatistics = () => {
@@ -85,14 +90,24 @@ const SuccessPage = () => {
       {state.title && (
         <Box sx={{ textAlign: 'center' }}>{session && getStatistics()}</Box>
       )}
+
+      {!state.title && (
+        <Stack sx={{ textAlign: 'center' }}>
+          <CheckCircleIcon
+            color="success"
+            sx={{ fontSize: 200, margin: 'auto' }}
+          />
+          <Typography color="success.main" variant="hxxl">
+            Correcto
+          </Typography>
+        </Stack>
+      )}
+
       <Box sx={{ textAlign: 'center' }}>
-        <Button className={classes.darkButton} onClick={() => handleClick()}>
+        <Button className={classes.darkButton} onClick={goToNext}>
           <Typography variant="hxl">Siguiente</Typography>
         </Button>
-        <Button
-          className={classes.darkButton}
-          onClick={() => navigate('/categorias')}
-        >
+        <Button className={classes.darkButton} onClick={goToCategories}>
           <Typography variant="hxl">Categorías</Typography>
         </Button>
       </Box>
