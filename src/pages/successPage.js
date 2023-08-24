@@ -86,7 +86,7 @@ const SuccessPage = () => {
         <Box sx={{ textAlign: 'center' }}>{session && getStatistics()}</Box>
       )}
       <Box sx={{ textAlign: 'center' }}>
-        <Button className={classes.darkButton} onClick={handleClick}>
+        <Button className={classes.darkButton} onClick={() => handleClick()}>
           <Typography variant="hxl">Siguiente</Typography>
         </Button>
         <Button
