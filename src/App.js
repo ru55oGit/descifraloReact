@@ -21,7 +21,7 @@ function App() {
                 <Route element={<CategoriesPage />} path="/categorias" />
                 <Route element={<PlayPage />} path="/jugar" />
                 <Route element={<LevelsPage />} path="/niveles" />
-                <Route element={<SuccessPage />} path="/success/:category" />
+                <Route element={<SuccessPage />} path="/sig/:category" />
               </Routes>
             </Router>
           </ThemeProvider>

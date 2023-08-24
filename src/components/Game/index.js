@@ -80,10 +80,11 @@ const Game = () => {
       wrongLetters?.includes('111') &&
       gameState?.game?.category === ALEATORIO
     ) {
-      navigate(`/success/${ALEATORIO}`)
-    }
-
-    if (wrongLetters?.includes('111') && storage?.timeBlocked === undefined) {
+      navigate(`/sig/${ALEATORIO}`, { state: { answer: 0, title } })
+    } else if (
+      wrongLetters?.includes('111') &&
+      storage?.timeBlocked === undefined
+    ) {
       setHideKeyboard(true)
       const timeBlocked = new Date(Date.now() + 5 * 60 * 1000)
 
@@ -233,7 +234,7 @@ const Game = () => {
           JSON.stringify({ levelReached: level + 1 })
         )
       }
-      navigate(`/success/${category}`)
+      navigate(`/sig/${category}`, { state: { answer: 1, title } })
     }
   }
 
