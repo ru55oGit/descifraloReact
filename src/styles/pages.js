@@ -32,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: `${theme.borderRadius[1]}px`,
     color: theme.palette.text.primary,
     margin: '8px auto',
-    padding: '8px 32px',
-    width: 'calc(85% - 32px)',
+    padding: '8px 16px',
+    width: '95%',
   },
   menu: {
     left: '50%',

@@ -6,6 +6,7 @@ import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
 import { useNavigate, useLocation } from 'react-router-dom'
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useParams } from 'react-router'
@@ -107,17 +108,21 @@ const SuccessPage = () => {
         </Stack>
       )}
 
-      <Box sx={{ textAlign: 'center' }}>
-        <Button className={classes.darkButton} onClick={(e) => goToNext(e)}>
-          <Typography variant="hxl">Siguiente</Typography>
-        </Button>
-        <Button
-          className={classes.darkButton}
-          onClick={(e) => goToCategories(e)}
-        >
-          <Typography variant="hxl">Categorías</Typography>
-        </Button>
-      </Box>
+      <Grid container spacing={1}>
+        <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
+          <Button className={classes.darkButton} onClick={(e) => goToNext(e)}>
+            <Typography variant="hxl">Siguiente</Typography>
+          </Button>
+        </Grid>
+        <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
+          <Button
+            className={classes.darkButton}
+            onClick={(e) => goToCategories(e)}
+          >
+            <Typography variant="hxl">Categorías</Typography>
+          </Button>
+        </Grid>
+      </Grid>
     </Box>
   )
 }
