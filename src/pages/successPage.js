@@ -111,7 +111,7 @@ const SuccessPage = () => {
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button className={classes.darkButton} onClick={(e) => goToNext(e)}>
-            <Typography variant="hxl">Siguiente</Typography>
+            <Typography variant="h1">Siguiente</Typography>
           </Button>
         </Grid>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
@@ -119,7 +119,7 @@ const SuccessPage = () => {
             className={classes.darkButton}
             onClick={(e) => goToCategories(e)}
           >
-            <Typography variant="hxl">Categorías</Typography>
+            <Typography variant="h1">Categorías</Typography>
           </Button>
         </Grid>
       </Grid>

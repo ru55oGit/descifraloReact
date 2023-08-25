@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     width: '75%',
     [theme.breakpoints.between('xs', 'sm')]: {
-      width: '70vw',
+      width: '65vw',
     },
   },
   keyboardContainer: {
