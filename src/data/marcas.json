@@ -548,7 +548,7 @@
     },
     {
       "titulo": "Logos",
-      "respuesta": "mercado libre",
+      "respuesta": "mercado|libre",
       "pregunta": "92",
       "categoria": "Logos"
     },

@@ -107,7 +107,7 @@ const Levels = () => {
         title="Banderas de paises"
       />
       <Chip
-        category={random[Math.ceil(Math.random() * random.length - 1)]}
+        category={random[Math.ceil(Math.random() * 5)]}
         level={null}
         title="Aleatorios"
       />

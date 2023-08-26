@@ -63,8 +63,11 @@ const SuccessPage = () => {
 
   const goToCategories = (e) => {
     e.preventDefault()
-
-    navigate('/categorias')
+    if (gameState?.game?.category !== ALEATORIO) {
+      navigate('/niveles')
+    } else {
+      navigate('/categorias')
+    }
   }
 
   const getStatistics = () => {
@@ -119,7 +122,11 @@ const SuccessPage = () => {
             className={classes.darkButton}
             onClick={(e) => goToCategories(e)}
           >
-            <Typography variant="h1">Categorías</Typography>
+            <Typography variant="h1">
+              {gameState?.game?.category !== ALEATORIO
+                ? 'Niveles'
+                : 'Categorías'}
+            </Typography>
           </Button>
         </Grid>
       </Grid>
