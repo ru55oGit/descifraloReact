@@ -78,15 +78,21 @@ const SuccessPage = () => {
       const { questions, correct } = JSON.parse(sessionStorage.getItem(key))
 
       rows.push(
-        <Stack key={key}>
-          <Typography fontWeight={theme.fontWeight.bold} variant="hxl">
+        <Grid key={key} className={classes.gridItem} item xs={6}>
+          <Typography
+            fontWeight={theme.fontWeight.bold}
+            sx={{ lineHeight: 1 }}
+            variant="hxl"
+          >
             {key}
           </Typography>
-          <Typography variant="body1">{`${correct} de ${questions}`}</Typography>
-          <Typography variant="h3">
-            {((correct / questions) * 100).toFixed(2)}%
-          </Typography>
-        </Stack>
+          <Stack>
+            <Typography variant="body1">{`${correct} de ${questions}`}</Typography>
+            <Typography variant="h3">
+              {((correct / questions) * 100).toFixed(2)}%
+            </Typography>
+          </Stack>
+        </Grid>
       )
     }
 
@@ -95,9 +101,7 @@ const SuccessPage = () => {
 
   return (
     <Box className={classes.backgroundSuccess}>
-      {state.title && (
-        <Box sx={{ textAlign: 'center' }}>{session && getStatistics()}</Box>
-      )}
+      {state.title && <Grid container>{session && getStatistics()}</Grid>}
 
       {!state.title && (
         <Stack sx={{ textAlign: 'center' }}>

@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     margin: '16px auto',
     maxWidth: '414px',
     minHeight: '85vh',
-    padding: '30px 0',
+    padding: '30px 8px',
     width: '90%',
   },
   boxContainer: {
@@ -34,6 +34,16 @@ const useStyles = makeStyles((theme) => ({
     margin: '24px auto 0',
     padding: '8px 16px',
     width: '95%',
+  },
+  gridItem: {
+    borderRadius: '12px',
+    boxShadow: '0 3px 1px 1px rgba(0, 0, 0, 0.75)',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100px',
+    justifyContent: 'space-between',
+    margin: '10px auto',
+    textAlign: 'center',
   },
   menu: {
     left: '50%',
