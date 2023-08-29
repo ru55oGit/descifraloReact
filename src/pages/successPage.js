@@ -78,11 +78,11 @@ const SuccessPage = () => {
       const { questions, correct } = JSON.parse(sessionStorage.getItem(key))
 
       rows.push(
-        <Grid key={key} className={classes.gridItem} item xs={6}>
+        <Grid key={key} className={classes.gridItem} item xs={5.5}>
           <Typography
             fontWeight={theme.fontWeight.bold}
             sx={{ lineHeight: 1 }}
-            variant="hxl"
+            variant="h1"
           >
             {key}
           </Typography>
