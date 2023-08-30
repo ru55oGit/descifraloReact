@@ -48,6 +48,56 @@ import Funkos47 from './funkos47'
 import Funkos48 from './funkos48'
 import Funkos49 from './funkos49'
 import Funkos50 from './funkos50'
+import Funkos51 from './funkos51'
+import Funkos52 from './funkos52'
+import Funkos53 from './funkos53'
+import Funkos54 from './funkos54'
+import Funkos55 from './funkos55'
+import Funkos56 from './funkos56'
+import Funkos57 from './funkos57'
+import Funkos58 from './funkos58'
+import Funkos59 from './funkos59'
+import Funkos60 from './funkos60'
+import Funkos61 from './funkos61'
+import Funkos62 from './funkos62'
+import Funkos63 from './funkos63'
+import Funkos64 from './funkos64'
+import Funkos65 from './funkos65'
+import Funkos66 from './funkos66'
+import Funkos67 from './funkos67'
+import Funkos68 from './funkos68'
+import Funkos69 from './funkos69'
+import Funkos70 from './funkos70'
+import Funkos71 from './funkos71'
+import Funkos72 from './funkos72'
+import Funkos73 from './funkos73'
+import Funkos74 from './funkos74'
+import Funkos75 from './funkos75'
+import Funkos76 from './funkos76'
+import Funkos77 from './funkos77'
+import Funkos78 from './funkos78'
+import Funkos79 from './funkos79'
+import Funkos80 from './funkos80'
+import Funkos81 from './funkos81'
+import Funkos82 from './funkos82'
+import Funkos83 from './funkos83'
+import Funkos84 from './funkos84'
+import Funkos85 from './funkos85'
+import Funkos86 from './funkos86'
+import Funkos87 from './funkos87'
+import Funkos88 from './funkos88'
+import Funkos89 from './funkos89'
+import Funkos90 from './funkos90'
+import Funkos91 from './funkos91'
+import Funkos92 from './funkos92'
+import Funkos93 from './funkos93'
+import Funkos94 from './funkos94'
+import Funkos95 from './funkos95'
+import Funkos96 from './funkos96'
+import Funkos97 from './funkos97'
+import Funkos98 from './funkos98'
+import Funkos99 from './funkos99'
+import Funkos100 from './funkos100'
 
 export {
   Funkos1,
@@ -100,4 +150,54 @@ export {
   Funkos48,
   Funkos49,
   Funkos50,
+  Funkos51,
+  Funkos52,
+  Funkos53,
+  Funkos54,
+  Funkos55,
+  Funkos56,
+  Funkos57,
+  Funkos58,
+  Funkos59,
+  Funkos60,
+  Funkos61,
+  Funkos62,
+  Funkos63,
+  Funkos64,
+  Funkos65,
+  Funkos66,
+  Funkos67,
+  Funkos68,
+  Funkos69,
+  Funkos70,
+  Funkos71,
+  Funkos72,
+  Funkos73,
+  Funkos74,
+  Funkos75,
+  Funkos76,
+  Funkos77,
+  Funkos78,
+  Funkos79,
+  Funkos80,
+  Funkos81,
+  Funkos82,
+  Funkos83,
+  Funkos84,
+  Funkos85,
+  Funkos86,
+  Funkos87,
+  Funkos88,
+  Funkos89,
+  Funkos90,
+  Funkos91,
+  Funkos92,
+  Funkos93,
+  Funkos94,
+  Funkos95,
+  Funkos96,
+  Funkos97,
+  Funkos98,
+  Funkos99,
+  Funkos100,
 }
