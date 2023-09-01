@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Box from '@mui/material/Box'
+import Stack from '@mui/material/Stack'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import { ProgressBar } from 'react-loader-spinner'
@@ -76,15 +77,17 @@ const LevelsPage = () => {
             justifyContent: 'center',
           }}
         >
-          <Typography>CARGANDO...</Typography>
-          <ProgressBar
-            barColor={theme.palette.primary.main}
-            borderColor={theme.palette.primary.main}
-            height="100"
-            visible
-            width="100"
-            wrapperStyle={{}}
-          />
+          <Stack>
+            <ProgressBar
+              barColor={theme.palette.primary.main}
+              borderColor={theme.palette.primary.main}
+              height="100"
+              visible
+              width="100"
+              wrapperStyle={{}}
+            />
+            <Typography>CARGANDO...</Typography>
+          </Stack>
         </Box>
       )}
       <Box

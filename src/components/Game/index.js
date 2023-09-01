@@ -127,10 +127,15 @@ const Game = () => {
       }
       setLevel(gameState.game.level)
       setCategory(gameState.game.category)
-      setWord(
-        getWordToGuess(gameState?.game?.category)[gameState.game.level - 1]
-          .respuesta
-      )
+      try {
+        setWord(
+          getWordToGuess(gameState?.game?.category)[gameState.game.level - 1]
+            .respuesta
+        )
+      } catch (err) {
+        navigate('/niveles')
+      }
+
       setLevelReached(parseInt(storage?.levelReached || 1, 10))
     } else if (gameState?.game?.category === ALEATORIO) {
       const { pregunta, categoria, respuesta, titulo } = getQuestions()
