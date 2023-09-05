@@ -10,6 +10,7 @@ import Jugadores9 from './jugadores9'
 import Jugadores10 from './jugadores10'
 import Jugadores11 from './jugadores11'
 import Jugadores12 from './jugadores12'
+import Jugadores13 from './jugadores13'
 
 export {
   Jugadores1,
@@ -24,4 +25,5 @@ export {
   Jugadores10,
   Jugadores11,
   Jugadores12,
+  Jugadores13,
 }

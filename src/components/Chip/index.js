@@ -15,7 +15,7 @@ const Chip = (props) => {
   const theme = useTheme()
   const navigate = useNavigate()
   const { gameDispatch } = useGameContext()
-  const { level, category, title } = props
+  const { level, category, title, isRandom } = props
 
   const handleClick = (cat, lev) => {
     const payload = lev
@@ -51,10 +51,10 @@ const Chip = (props) => {
               fontSize: '3rem',
             }}
           />
-          {level ? (
-            <Typography> Nivel: {level}</Typography>
-          ) : (
+          {isRandom ? (
             <Typography>Todas las categorías</Typography>
+          ) : (
+            <Typography> Nivel: {level}</Typography>
           )}
           <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
             {title}
@@ -69,10 +69,12 @@ export default Chip
 
 Chip.propTypes = {
   category: PropTypes.string.isRequired,
+  isRandom: PropTypes.bool,
   level: PropTypes.number,
   title: PropTypes.string.isRequired,
 }
 
 Chip.defaultProps = {
+  isRandom: false,
   level: '',
 }

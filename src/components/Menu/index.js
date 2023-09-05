@@ -3,6 +3,7 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Stack from '@mui/material/Stack'
 import Avatar from '@mui/material/Avatar'
+import Button from '@mui/material/Button'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
@@ -58,16 +59,7 @@ const Menu = () => {
           <ListItemButton>
             <ListItemText>
               <Typography color="text.primary" variant="h2">
-                Seleccion Argentina
-              </Typography>
-            </ListItemText>
-          </ListItemButton>
-        </ListItem>
-        <ListItem className={classes.listItem} disablePadding>
-          <ListItemButton>
-            <ListItemText>
-              <Typography color="text.primary" variant="h2">
-                River Plate
+                Niños
               </Typography>
             </ListItemText>
           </ListItemButton>
@@ -78,41 +70,57 @@ const Menu = () => {
           Idioma/Language
         </Typography>
         <Stack direction="row" sx={{ justifyContent: 'space-evenly', mt: 2 }}>
-          <Stack sx={{ alignItems: 'center', display: 'flex' }}>
-            <Avatar
-              onClick={() => handleLanguage('lat')}
-              src="images/argentina.svg"
-              sx={{ height: 24, width: 36 }}
-              variant="square"
-            />
-            <Typography
-              fontWeight={
-                language === 'lat'
-                  ? theme.fontWeight.bold
-                  : theme.fontWeight.regular
-              }
-            >
-              Latino
-            </Typography>
-          </Stack>
-          <Stack sx={{ alignItems: 'center', display: 'flex' }}>
-            <Avatar
-              onClick={() => handleLanguage('esp')}
-              src="images/espania.svg"
-              sx={{ height: 24, width: 36 }}
-              variant="square"
-            />
-            <Typography
-              fontWeight={
-                language === 'esp'
-                  ? theme.fontWeight.bold
-                  : theme.fontWeight.regular
-              }
-            >
-              Español
-            </Typography>
-          </Stack>
-          <Stack sx={{ alignItems: 'center', display: 'flex' }}>
+          <Button
+            onClick={() => handleLanguage('lat')}
+            sx={{
+              '&:hover': { background: 'transparent' },
+              color: theme.palette.text.primary,
+            }}
+          >
+            <Stack sx={{ alignItems: 'center', display: 'flex' }}>
+              <Avatar
+                src="images/argentina.svg"
+                sx={{ height: 28, width: 40 }}
+                variant="square"
+              />
+              <Typography
+                fontWeight={
+                  language === 'lat'
+                    ? theme.fontWeight.bold
+                    : theme.fontWeight.regular
+                }
+                variant={language === 'lat' ? 'body1' : 'body0'}
+              >
+                Latino
+              </Typography>
+            </Stack>
+          </Button>
+          <Button
+            onClick={() => handleLanguage('esp')}
+            sx={{
+              '&:hover': { background: 'transparent' },
+              color: theme.palette.text.primary,
+            }}
+          >
+            <Stack sx={{ alignItems: 'center', display: 'flex' }}>
+              <Avatar
+                src="images/espania.svg"
+                sx={{ height: 28, width: 40 }}
+                variant="square"
+              />
+              <Typography
+                fontWeight={
+                  language === 'esp'
+                    ? theme.fontWeight.bold
+                    : theme.fontWeight.regular
+                }
+                variant={language === 'esp' ? 'body1' : 'body0'}
+              >
+                Español
+              </Typography>
+            </Stack>
+          </Button>
+          {/* <Stack sx={{ alignItems: 'center', display: 'flex' }}>
             <Avatar
               onClick={() => handleLanguage('eng')}
               src="images/usa.svg"
@@ -128,7 +136,7 @@ const Menu = () => {
             >
               English
             </Typography>
-          </Stack>
+          </Stack> */}
         </Stack>
       </Stack>
     </Box>

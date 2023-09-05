@@ -7,11 +7,11 @@ import {
   PELICULAS,
   LOGOS,
   EMOJIS,
-  JUGADORES,
   SOMBRAS,
   FUNKOS,
   ESCUDOS,
   BANDERAS,
+  // JUGADORES,
 } from '../../constants/const'
 import useStyles from './styles'
 
@@ -20,11 +20,11 @@ const random = [
   PELICULAS,
   LOGOS,
   EMOJIS,
-  JUGADORES,
   SOMBRAS,
   FUNKOS,
   ESCUDOS,
   BANDERAS,
+  // JUGADORES,
 ]
 
 const Levels = () => {
@@ -33,11 +33,11 @@ const Levels = () => {
   const [levelEmojis, setLevelEmojis] = useState()
   const [levelLogos, setLevelLogos] = useState()
   const [levelPeliculas, setLevelPeliculas] = useState()
-  const [levelJugadores, setLevelJugadores] = useState()
   const [levelSombras, setLevelSombras] = useState()
   const [levelFunkos, setLevelFunkos] = useState()
   const [levelEscudos, setLevelEscudos] = useState()
   const [levelBanderas, setLevelBanderas] = useState()
+  // const [levelJugadores, setLevelJugadores] = useState()
 
   useEffect(() => {
     setLevelAcertijos(
@@ -47,9 +47,6 @@ const Levels = () => {
     setLevelLogos(JSON.parse(localStorage?.getItem(LOGOS))?.levelReached || 1)
     setLevelPeliculas(
       JSON.parse(localStorage?.getItem(PELICULAS))?.levelReached || 1
-    )
-    setLevelJugadores(
-      JSON.parse(localStorage?.getItem(JUGADORES))?.levelReached || 1
     )
     setLevelSombras(
       JSON.parse(localStorage?.getItem(SOMBRAS))?.levelReached || 1
@@ -61,6 +58,9 @@ const Levels = () => {
     setLevelBanderas(
       JSON.parse(localStorage?.getItem(BANDERAS))?.levelReached || 1
     )
+    /* setLevelJugadores(
+      JSON.parse(localStorage?.getItem(JUGADORES))?.levelReached || 1
+    ) */
   }, [])
 
   return (
@@ -92,11 +92,6 @@ const Levels = () => {
         title="Personajes Funkos"
       />
       <Chip
-        category={JUGADORES}
-        level={parseInt(levelJugadores, 10)}
-        title="Jugadores de fútbol"
-      />
-      <Chip
         category={ESCUDOS}
         level={parseInt(levelEscudos, 10)}
         title="Escudos de fútbol"
@@ -107,10 +102,16 @@ const Levels = () => {
         title="Banderas de paises"
       />
       <Chip
-        category={random[Math.ceil(Math.random() * 5)]}
-        level={null}
+        category={random[Math.ceil(Math.random() * 8)]}
+        isRandom
+        level={Math.ceil(Math.random() * 99)}
         title="Aleatorios"
       />
+      {/* <Chip
+        category={JUGADORES}
+        level={parseInt(levelJugadores, 10)}
+        title="Jugadores de fútbol"
+  /> */}
     </Box>
   )
 }

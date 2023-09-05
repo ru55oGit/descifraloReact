@@ -1,864 +1,604 @@
 {
   "listado": [
     {
+      "titulo": "Jugadores",
       "respuesta": "Lionel|Messi",
-      "solucion": "",
-      "nivel": "1"
+      "pregunta": "1",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "Cristiano|Ronaldo",
-      "solucion": "",
-      "nivel": "2"
+      "pregunta": "2",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "Ronaldo",
-      "solucion": "",
-      "nivel": "3"
+      "pregunta": "3",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "diego|maradona",
-      "solucion": "",
-      "nivel": "4"
+      "pregunta": "4",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "enzo|francescoli",
-      "solucion": "",
-      "nivel": "5"
+      "pregunta": "5",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "zinedine|zidane",
-      "solucion": "",
-      "nivel": "6"
+      "pregunta": "6",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "raul",
-      "solucion": "",
-      "nivel": "7"
+      "pregunta": "7",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "pele",
-      "solucion": "",
-      "nivel": "8"
+      "pregunta": "8",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "Zlatan|Ibrahimovic",
-      "solucion": "",
-      "nivel": "9"
+      "pregunta": "9",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "wayne|rooney",
-      "solucion": "",
-      "nivel": "10"
+      "pregunta": "10",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "Franz|Beckenbauer",
-      "solucion": "",
-      "nivel": "11"
+      "pregunta": "11",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "Johan|Cruyff",
-      "solucion": "",
-      "nivel": "12"
+      "pregunta": "12",
+      "categoria": "Jugadores"
     },
     {
-      "respuesta": "mario bros",
-      "solucion": "",
-      "nivel": "13"
+      "titulo": "Jugadores",
+      "respuesta": "rafa|marquez",
+      "pregunta": "13",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "gohan",
-      "solucion": "",
-      "nivel": "14"
+      "pregunta": "14",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "el gavilan|pollero",
-      "solucion": "",
-      "nivel": "15"
+      "pregunta": "15",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "Kearney",
-      "solucion": "",
-      "nivel": "16"
+      "pregunta": "16",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "jefe|Quimby",
-      "solucion": "",
-      "nivel": "17"
+      "pregunta": "17",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "majin boo",
-      "solucion": "",
-      "nivel": "18"
+      "pregunta": "18",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "astro",
-      "solucion": "",
-      "nivel": "19"
+      "pregunta": "19",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "pitufo|fortachon",
-      "solucion": "",
-      "nivel": "20"
+      "pregunta": "20",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "porky",
-      "solucion": "",
-      "nivel": "21"
+      "pregunta": "21",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "dr hibbert",
-      "solucion": "",
-      "nivel": "22"
+      "pregunta": "22",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "donald",
-      "solucion": "",
-      "nivel": "23"
+      "pregunta": "23",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "steve|Hyuga",
-      "solucion": "",
-      "nivel": "24"
+      "pregunta": "24",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "milhouse",
-      "solucion": "",
-      "nivel": "25"
+      "pregunta": "25",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "pluto",
-      "solucion": "",
-      "nivel": "26"
+      "pregunta": "26",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "lisa|simpson",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "27",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "tiro loco|mcgraw",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "28",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "akira",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "29",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "robotina",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "30",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "masha|y oso",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "31",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "maggie|simpson",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "32",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "super|sonico",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "33",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "alcalde|diamante",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "34",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "goofy",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "35",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "huckleberry|hound",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "36",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "la hormiga",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "37",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "el pajaro|loco",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "38",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "el inspector",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "39",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "el fantasma|del espacio",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "40",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "pitufo|vanidoso",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "41",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "los gemelos|fantasticos",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "42",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "artie|ziff",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "43",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "ayudante|de santa",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "44",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "carl|carlson",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "45",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "cleto",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "46",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "uter",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "47",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "edna|krabappel",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "48",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "barney",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "49",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "patan",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "50",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "jeremias|springfield",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "51",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "jessica|alegria",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "52",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "kent|brockman",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "53",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "kirk|van houten",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "54",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "margo|zavala",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "55",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "montgomery|burns",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "56",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "la mujer|maravilla",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "57",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "profesor|frink",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "58",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "rafa|gorgory",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "59",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "cometin|sonico",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "60",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "sam|bigotes",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "61",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "leon o",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "62",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "astroboy",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "63",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "la hormiga|atomica",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "64",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "el oso|yogi",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "65",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "jem",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "66",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "herbert|powell",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "67",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "benito",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "68",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "la pantera|rosa",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "69",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "funzo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "70",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "ricky|ricon",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "71",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "duffman",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "72",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "pikachu",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "73",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "lucero|sonico",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "74",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "gaspar",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "75",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "battle cat",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "76",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "jefe|gorgory",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "77",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "super|raton",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "78",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "jimbo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "79",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "juan|topo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "80",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "frank|grimes",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "81",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "don gato",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "82",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "pitufo|filosofo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "83",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "dr nick",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "84",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "birdman",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "85",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "vegetta",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "86",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "larry|burns",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "87",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "inocencia|donoso",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "88",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "rayo de|plata",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "89",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "lionel|hutz",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "90",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "kang",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "91",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "krusty",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "92",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "el gallo|claudio",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "93",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "heidi",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "94",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "el jardinero|willy",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "95",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "papa|pitufo",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "96",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "Ultra|sonico",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "97",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "mr chispa",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "98",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "el inspector|gadget",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "99",
+      "categoria": "Jugadores"
     },
     {
+      "titulo": "Jugadores",
       "respuesta": "martin|prince",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "hombre|abejorro",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "el oso|hormiguero",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "orco",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "mc bain",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "rayo mcqueen",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "daly",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "luiggi",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "bugs|bunny",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "el pato|lucas",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "gil",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "bart|simpson",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "picoro",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "magda",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "buzz|lightyear",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "benji|price",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "oficial|matute",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "marge|simpson",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "mate",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "otto",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "cerebro",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "homero|simpson",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "flash",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "pepe le pew",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "goku",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "ned|flanders",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "scooby|doo",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "moe",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "pinky",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "superman",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "mandibulin",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "el coyote",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "silvestre",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "tomy",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "mojo",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "pablo|marmol",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "bobby",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "oddie",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "taz",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "baloo",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "patty",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "bruce|harper",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "Johnny|Bravo",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "shaggy",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "marvin",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "nelson",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "popeye",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "lenny",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "dartagnan",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "speedy|gonzalez",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "lou",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "Betty|Marmol",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "Pedro|Picapiedras",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "Peter|Griffin",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "tweety",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "jerry",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "winnie pooh",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "krilin",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "dumbo",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "poochie",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "terri y|sherri",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "droopy",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "seymour|skinner",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "superintendente|chalmers",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "malefica",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "el gordo|tony",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "selma",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "Ariel",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "Helena|Alegria",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "Peter|Pan",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "Simba",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "Bob|esponja",
-      "solucion": "",
-      "nivel": ""
-    },
-    {
-      "respuesta": "Pinocho",
-      "solucion": "",
-      "nivel": ""
+      "pregunta": "100",
+      "categoria": "Jugadores"
     }
   ]
 }

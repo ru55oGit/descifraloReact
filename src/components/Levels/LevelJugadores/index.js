@@ -12,6 +12,7 @@ import {
   Jugadores10,
   Jugadores11,
   Jugadores12,
+  Jugadores13,
 } from '../../SVG/Jugadores'
 
 const LevelJugadores = ({ level }) => {
@@ -40,6 +41,8 @@ const LevelJugadores = ({ level }) => {
       return <Jugadores11 />
     case 12:
       return <Jugadores12 />
+    case 13:
+      return <Jugadores13 />
     default:
       return <Jugadores1 />
   }
