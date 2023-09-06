@@ -35,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
     padding: '8px 16px',
     width: '95%',
   },
+  error: {
+    color: theme.palette.error.main,
+  },
   gridItem: {
     borderRadius: '12px',
     boxShadow: '0 3px 5px 1px rgba(0, 0, 0, 0.75)',
@@ -53,6 +56,9 @@ const useStyles = makeStyles((theme) => ({
     transform: 'translate(-50%, 5px)',
     zIndex: 1400,
   },
+  success: {
+    color: theme.palette.success.checkmark,
+  },
   transparentButton: {
     background: 'transparent',
     border: `1px solid ${theme.palette.white.main}`,
@@ -61,6 +67,9 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     padding: '8px 32px',
     width: 'calc(85% - 32px)',
+  },
+  warning: {
+    color: theme.palette.warning.dark,
   },
 }))
 

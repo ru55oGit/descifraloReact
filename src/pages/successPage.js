@@ -1,6 +1,7 @@
 /* eslint-disable consistent-return */
 /* eslint-disable no-unreachable-loop */
 /* eslint-disable no-restricted-syntax */
+import clsx from 'clsx'
 import { useEffect, useState } from 'react'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
@@ -76,6 +77,7 @@ const SuccessPage = () => {
 
     for (const key of keys) {
       const { questions, correct } = JSON.parse(sessionStorage.getItem(key))
+      const percentage = ((correct / questions) * 100).toFixed(2)
 
       rows.push(
         <Grid key={key} className={classes.gridItem} item xs={5.5}>
@@ -88,8 +90,16 @@ const SuccessPage = () => {
           </Typography>
           <Stack>
             <Typography variant="body1">{`${correct} de ${questions}`}</Typography>
-            <Typography variant="h3">
-              {((correct / questions) * 100).toFixed(2)}%
+            <Typography
+              className={clsx(
+                percentage > 69 && classes.success,
+                percentage > 49 && percentage < 70 && classes.warning,
+                percentage < 50 && classes.error
+              )}
+              fontWeight={theme.fontWeight.bold}
+              variant="h3"
+            >
+              {percentage}%
             </Typography>
           </Stack>
         </Grid>

@@ -18,7 +18,7 @@ const Chip = (props) => {
   const { level, category, title, isRandom } = props
 
   const handleClick = (cat, lev) => {
-    const payload = lev
+    const payload = !isRandom
       ? { category: cat, level: lev }
       : { category: ALEATORIO, level: null }
 
@@ -27,7 +27,7 @@ const Chip = (props) => {
       type: Actions.UPDATE_LEVEL,
     })
 
-    navigate(lev ? '/niveles' : '/jugar')
+    navigate(!isRandom ? '/niveles' : '/jugar')
   }
 
   return (
