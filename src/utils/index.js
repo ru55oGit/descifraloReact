@@ -12,6 +12,7 @@ import {
 
 import dataAcertijos from '../data/adivinanzas.json'
 import dataEmojis from '../data/emojis.json'
+import dataEmojisEsp from '../data/emojis_sp.json'
 import dataPeliculas from '../data/peliculas.json'
 import dataLogos from '../data/marcas.json'
 import dataJugadores from '../data/jugadores.json'
@@ -31,12 +32,22 @@ import LevelFunkos from '../components/Levels/LevelFunkos'
 import LevelEscudos from '../components/Levels/LevelEscudos'
 import LevelBanderas from '../components/Levels/LevelBanderas'
 
-const getWordToGuess = (category) => {
+const getWordToGuess = (category, lang) => {
+  let dataList
+
   switch (category) {
     case ACERTIJOS:
       return dataAcertijos.listado
     case EMOJIS:
-      return dataEmojis.listado
+      if (lang === 'esp') {
+        dataList = dataEmojisEsp.listado
+      } else if (lang === 'lat') {
+        dataList = dataEmojis.listado
+      } else {
+        console.log('eng')
+      }
+
+      return dataList
     case PELICULAS:
       return dataPeliculas.listado
     case LOGOS:

@@ -20,6 +20,8 @@ import { useTheme } from '@mui/styles'
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import { ALEATORIO } from '../../constants/const'
 import { useGameContext, Actions } from '../../store/game'
+import { useLanguageContext } from '../../store/language'
+
 import 'react-simple-keyboard/build/css/index.css'
 import { getWordToGuess, getImage, getQuestions } from '../../utils'
 import useStyles from './styles'
@@ -29,6 +31,7 @@ const Game = () => {
   const theme = useTheme()
   const refQR = useRef()
   const { gameState, gameDispatch } = useGameContext()
+  const { languageState } = useLanguageContext()
   const navigate = useNavigate()
   const [level, setLevel] = useState()
   const [levelReached, setLevelReached] = useState()
@@ -74,7 +77,11 @@ const Game = () => {
   }, [refQR, level, theme])
 
   const handleWrongLetters = () => {
-    const storage = JSON.parse(localStorage.getItem(gameState?.game?.category))
+    const storage = JSON.parse(
+      localStorage.getItem(
+        `${gameState?.game?.category}_${languageState.language}`
+      )
+    )
 
     if (
       wrongLetters?.includes('111') &&
@@ -89,7 +96,7 @@ const Game = () => {
       const timeBlocked = new Date(Date.now() + 5 * 60 * 1000)
 
       localStorage.setItem(
-        gameState.game.category,
+        `${gameState?.game?.category}_${languageState.language}`,
         JSON.stringify({
           levelReached: level,
           timeBlocked,
@@ -105,7 +112,9 @@ const Game = () => {
   useEffect(() => {
     if (gameState?.game && gameState?.game?.category !== ALEATORIO) {
       const storage = JSON.parse(
-        localStorage.getItem(gameState?.game?.category)
+        localStorage.getItem(
+          `${gameState?.game?.category}_${languageState.language}`
+        )
       )
 
       if (gameState?.game.level === storage?.levelReached) {
@@ -118,7 +127,7 @@ const Game = () => {
           setMinutesBlocked(minutes)
         } else {
           localStorage.setItem(
-            gameState.game.category,
+            `${gameState?.game?.category}_${languageState.language}`,
             JSON.stringify({
               levelReached: gameState.game.level,
             })
@@ -129,8 +138,9 @@ const Game = () => {
       setCategory(gameState.game.category)
       try {
         setWord(
-          getWordToGuess(gameState?.game?.category)[gameState.game.level - 1]
-            .respuesta
+          getWordToGuess(gameState?.game?.category, languageState.language)[
+            gameState.game.level - 1
+          ].respuesta
         )
       } catch (err) {
         navigate('/niveles')
@@ -235,7 +245,7 @@ const Game = () => {
 
       if (levelReached === gameState.game.level) {
         localStorage.setItem(
-          gameState.game.category,
+          `${gameState?.game?.category}_${languageState.language}`,
           JSON.stringify({ levelReached: level + 1 })
         )
       }
@@ -333,7 +343,7 @@ const Game = () => {
               setHideKeyboard(false)
               setWrongLetters('000')
               localStorage.setItem(
-                gameState.game.category,
+                `${gameState?.game?.category}_${languageState.language}`,
                 JSON.stringify({ levelReached })
               )
             }}

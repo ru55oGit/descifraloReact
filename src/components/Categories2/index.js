@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Box from '@mui/material/Box'
 import Chip from '../Chip'
+import { useLanguageContext } from '../../store/language'
 
 import {
   ACERTIJOS,
@@ -38,30 +39,47 @@ const Levels = () => {
   const [levelEscudos, setLevelEscudos] = useState()
   const [levelBanderas, setLevelBanderas] = useState()
   // const [levelJugadores, setLevelJugadores] = useState()
+  const { languageState } = useLanguageContext()
 
   useEffect(() => {
     setLevelAcertijos(
-      JSON.parse(localStorage?.getItem(ACERTIJOS))?.levelReached || 1
+      JSON.parse(
+        localStorage?.getItem(`${ACERTIJOS}_${languageState.language}`)
+      )?.levelReached || 1
     )
-    setLevelEmojis(JSON.parse(localStorage?.getItem(EMOJIS))?.levelReached || 1)
-    setLevelLogos(JSON.parse(localStorage?.getItem(LOGOS))?.levelReached || 1)
+    setLevelEmojis(
+      JSON.parse(localStorage?.getItem(`${EMOJIS}_${languageState.language}`))
+        ?.levelReached || 1
+    )
+    setLevelLogos(
+      JSON.parse(localStorage?.getItem(`${LOGOS}_${languageState.language}`))
+        ?.levelReached || 1
+    )
     setLevelPeliculas(
-      JSON.parse(localStorage?.getItem(PELICULAS))?.levelReached || 1
+      JSON.parse(
+        localStorage?.getItem(`${PELICULAS}_${languageState.language}`)
+      )?.levelReached || 1
     )
     setLevelSombras(
-      JSON.parse(localStorage?.getItem(SOMBRAS))?.levelReached || 1
+      JSON.parse(localStorage?.getItem(`${SOMBRAS}_${languageState.language}`))
+        ?.levelReached || 1
     )
-    setLevelFunkos(JSON.parse(localStorage?.getItem(FUNKOS))?.levelReached || 1)
+    setLevelFunkos(
+      JSON.parse(localStorage?.getItem(`${FUNKOS}_${languageState.language}`))
+        ?.levelReached || 1
+    )
     setLevelEscudos(
-      JSON.parse(localStorage?.getItem(ESCUDOS))?.levelReached || 1
+      JSON.parse(localStorage?.getItem(`${ESCUDOS}_${languageState.language}`))
+        ?.levelReached || 1
     )
     setLevelBanderas(
-      JSON.parse(localStorage?.getItem(BANDERAS))?.levelReached || 1
+      JSON.parse(localStorage?.getItem(`${BANDERAS}_${languageState.language}`))
+        ?.levelReached || 1
     )
     /* setLevelJugadores(
       JSON.parse(localStorage?.getItem(JUGADORES))?.levelReached || 1
     ) */
-  }, [])
+  }, [languageState])
 
   return (
     <Box className={classes.containerCategories}>

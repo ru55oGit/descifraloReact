@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography'
 import { useNavigate } from 'react-router-dom'
 import Carrousel from '../components/Carrousel'
 import useStyles from '../styles/pages'
+import Language from '../components/Language'
 
 const CategoriesPage = () => {
   const classes = useStyles()
@@ -18,6 +19,7 @@ const CategoriesPage = () => {
       >
         <Typography variant="hxl">Jugar</Typography>
       </Button>
+      <Language />
     </Box>
   )
 }

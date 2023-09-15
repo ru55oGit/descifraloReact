@@ -14,6 +14,8 @@ import { useParams } from 'react-router'
 import { useTheme } from '@mui/styles'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import { useGameContext, Actions } from '../store/game'
+import { useLanguageContext } from '../store/language'
+
 import useStyles from '../styles/pages'
 import { ALEATORIO } from '../constants/const'
 
@@ -22,6 +24,7 @@ const SuccessPage = () => {
   const theme = useTheme()
   const navigate = useNavigate()
   const { gameDispatch, gameState } = useGameContext()
+  const { languageState } = useLanguageContext()
   const { category } = useParams()
   const { state } = useLocation()
   const [session, setSession] = useState()
@@ -54,7 +57,10 @@ const SuccessPage = () => {
       gameDispatch({
         game: {
           category,
-          level: JSON.parse(localStorage?.getItem(category))?.levelReached || 1,
+          level:
+            JSON.parse(
+              localStorage?.getItem(`${category}_${languageState.language}`)
+            )?.levelReached || 1,
         },
         type: Actions.UPDATE_LEVEL,
       })

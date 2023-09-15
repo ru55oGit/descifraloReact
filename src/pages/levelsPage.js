@@ -10,6 +10,7 @@ import { useTheme } from '@mui/styles'
 import Donate from '../components/Donate'
 import NavBar from '../components/NavBar'
 import { useGameContext, Actions } from '../store/game'
+import { useLanguageContext } from '../store/language'
 import useStyles from '../styles/pages'
 import { getWordToGuess, getImage } from '../utils'
 
@@ -19,6 +20,7 @@ const LevelsPage = () => {
   const navigate = useNavigate()
   const scrollToRef = useRef(null)
   const { gameState, gameDispatch } = useGameContext()
+  const { languageState } = useLanguageContext()
   const [list, setList] = useState()
   const [levelReached, setLevelReached] = useState()
   const [openDonate, setOpenDonate] = useState(false)
@@ -27,12 +29,15 @@ const LevelsPage = () => {
     if (gameState.game) {
       setLevelReached(
         parseInt(
-          JSON.parse(localStorage.getItem(gameState.game.category))
-            ?.levelReached || 1,
+          JSON.parse(
+            localStorage.getItem(
+              `${gameState.game.category}_${languageState.language}`
+            )
+          )?.levelReached || 1,
           10
         )
       )
-      setList(getWordToGuess(gameState.game.category))
+      setList(getWordToGuess(gameState.game.category, languageState.language))
       if (scrollToRef.current) {
         scrollToRef.current.scrollIntoView({
           behavior: 'smooth',

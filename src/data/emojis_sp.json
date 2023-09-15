@@ -2,7 +2,7 @@
   "listado": [
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "una aventura|extraordinaria",
+      "respuesta": "la vida|de pi",
       "pregunta": "1",
       "categoria": "Emojis"
     },
@@ -32,19 +32,19 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "comer rezar|amar",
+      "respuesta": "come reza|ama",
       "pregunta": "6",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "diamantes|de sangre",
+      "respuesta": "diamante|de sangre",
       "pregunta": "7",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "et",
+      "respuesta": "et|el extraterrestre",
       "pregunta": "8",
       "categoria": "Emojis"
     },
@@ -56,13 +56,13 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "hombres|de negro",
-      "pregunta": "10",
+      "respuesta": "men in black",
+      "pregunta": "1010",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "liberen|a willy",
+      "respuesta": "liberad|a willy",
       "pregunta": "11",
       "categoria": "Emojis"
     },
@@ -80,7 +80,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "belleza|americana",
+      "respuesta": "American|Beauty",
       "pregunta": "14",
       "categoria": "Emojis"
     },
@@ -98,7 +98,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "el diablo|viste a la moda",
+      "respuesta": "el diablo|viste de Prada",
       "pregunta": "17",
       "categoria": "Emojis"
     },
@@ -116,7 +116,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "el hombre|araña",
+      "respuesta": "spiderman",
       "pregunta": "20",
       "categoria": "Emojis"
     },
@@ -140,7 +140,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "rapido y|furioso",
+      "respuesta": "The Fast and|the Furious",
       "pregunta": "24",
       "categoria": "Emojis"
     },
@@ -153,12 +153,12 @@
     {
       "titulo": "Películas con Emojis",
       "respuesta": "el discurso|del rey",
-      "pregunta": "26",
+      "pregunta": "2626",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "500 dias|con ella",
+      "respuesta": "500 dias|juntos",
       "pregunta": "27",
       "categoria": "Emojis"
     },
@@ -194,7 +194,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "mi pobre|angelito",
+      "respuesta": "Solo en casa",
       "pregunta": "33",
       "categoria": "Emojis"
     },
@@ -206,7 +206,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "maxima|velocidad",
+      "respuesta": "Speed|Maxima potencia",
       "pregunta": "35",
       "categoria": "Emojis"
     },
@@ -236,7 +236,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "la era|de hielo",
+      "respuesta": "la edad|de hielo",
       "pregunta": "40",
       "categoria": "Emojis"
     },
@@ -290,13 +290,13 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "la llamada",
+      "respuesta": "La señal",
       "pregunta": "49",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "gravedad",
+      "respuesta": "gravity",
       "pregunta": "50",
       "categoria": "Emojis"
     },
@@ -374,7 +374,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "el expreso|polar",
+      "respuesta": "Polar|Express",
       "pregunta": "63",
       "categoria": "Emojis"
     },
@@ -386,13 +386,13 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "una noche|en el museo",
+      "respuesta": "noche|en el museo",
       "pregunta": "65",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "sex and|the city",
+      "respuesta": "Sexo en|Nueva York",
       "pregunta": "66",
       "categoria": "Emojis"
     },
@@ -404,7 +404,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "zootopia",
+      "respuesta": "Zootropolis",
       "pregunta": "68",
       "categoria": "Emojis"
     },
@@ -416,7 +416,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "las tortugas|ninja",
+      "respuesta": "tortugas|ninja",
       "pregunta": "70",
       "categoria": "Emojis"
     },
@@ -434,25 +434,25 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "el joven manos|de tijera",
+      "respuesta": "Eduardo|Manostijeras",
       "pregunta": "73",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "volver al|futuro",
+      "respuesta": "Regreso al|futuro",
       "pregunta": "74",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "corazon|valiente",
+      "respuesta": "Braveheart",
       "pregunta": "75",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "los expedientes|secretos x",
+      "respuesta": "Expediente X",
       "pregunta": "76",
       "categoria": "Emojis"
     },
@@ -464,13 +464,13 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "la gran|estafa",
+      "respuesta": "The Italian|Job",
       "pregunta": "78",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "Siempre a|tu lado",
+      "respuesta": "Siempre a tu|lado Hachiko",
       "pregunta": "79",
       "categoria": "Emojis"
     },
@@ -482,13 +482,13 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "nueve reinas",
+      "respuesta": "nueve|reinas",
       "pregunta": "81",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "que paso ayer",
+      "respuesta": "Resacon en|Las Vegas",
       "pregunta": "82",
       "categoria": "Emojis"
     },
@@ -512,7 +512,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "medianoche|en paris",
+      "respuesta": "Midnight|in Paris",
       "pregunta": "86",
       "categoria": "Emojis"
     },
@@ -542,7 +542,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "sexto|sentido",
+      "respuesta": "el sexto|sentido",
       "pregunta": "91",
       "categoria": "Emojis"
     },
@@ -578,7 +578,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "la caida del|halcon negro",
+      "respuesta": "Black Hawk|derribado",
       "pregunta": "97",
       "categoria": "Emojis"
     },
@@ -602,7 +602,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "avion|presidencial",
+      "respuesta": "El avion|del presidente",
       "pregunta": "101",
       "categoria": "Emojis"
     },
@@ -614,7 +614,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "novia|fugitiva",
+      "respuesta": "Novia a|la fuga",
       "pregunta": "103",
       "categoria": "Emojis"
     },
@@ -644,7 +644,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "actividad|paranormal",
+      "respuesta": "Paranormal|Activity",
       "pregunta": "108",
       "categoria": "Emojis"
     },
@@ -680,13 +680,13 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "La leyenda del|tesoro perdido",
+      "respuesta": "La busqueda",
       "pregunta": "114",
       "categoria": "Emojis"
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "diario de|una pasion",
+      "respuesta": "El diario|de Noa",
       "pregunta": "115",
       "categoria": "Emojis"
     },
@@ -704,7 +704,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "jamaica|bajo cero",
+      "respuesta": "Elegidos para|el triunfo",
       "pregunta": "118",
       "categoria": "Emojis"
     },
@@ -752,7 +752,7 @@
     },
     {
       "titulo": "Películas con Emojis",
-      "respuesta": "dia del|atentado",
+      "respuesta": "Dia de|patriotas",
       "pregunta": "126",
       "categoria": "Emojis"
     },
