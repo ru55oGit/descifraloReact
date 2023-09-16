@@ -47,7 +47,7 @@ const LevelsPage = () => {
     } else {
       navigate('/')
     }
-  }, [gameState, navigate, list])
+  }, [gameState, navigate, list, languageState.language])
 
   const handleClick = (level) => {
     gameDispatch({
