@@ -44,7 +44,7 @@ const getWordToGuess = (category, lang) => {
       } else if (lang === 'lat') {
         dataList = dataEmojis.listado
       } else {
-        console.log('eng')
+        // console.log('eng')
       }
 
       return dataList
