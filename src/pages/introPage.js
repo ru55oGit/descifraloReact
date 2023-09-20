@@ -5,10 +5,13 @@ import { useNavigate } from 'react-router-dom'
 import Carrousel from '../components/Carrousel'
 import useStyles from '../styles/pages'
 import Language from '../components/Language'
+import { useLanguageContext } from '../store/language'
+import i18n from '../constants/i18n.json'
 
 const CategoriesPage = () => {
   const classes = useStyles()
   const navigate = useNavigate()
+  const { languageState } = useLanguageContext()
 
   return (
     <Box className={classes.backgroundIntro}>
@@ -17,7 +20,9 @@ const CategoriesPage = () => {
         className={classes.transparentButton}
         onClick={() => navigate('/categorias')}
       >
-        <Typography variant="hxl">Jugar</Typography>
+        <Typography variant="hxl">
+          {i18n.texts[languageState?.language].play}
+        </Typography>
       </Button>
       <Language />
     </Box>

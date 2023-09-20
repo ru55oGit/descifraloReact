@@ -8,11 +8,14 @@ import {
   FUNKOS,
   ESCUDOS,
   BANDERAS,
+  ESP,
+  LAT,
 } from '../constants/const'
 
 import dataAcertijos from '../data/adivinanzas.json'
 import dataEmojis from '../data/emojis.json'
 import dataEmojisEsp from '../data/emojis_sp.json'
+import dataEmojisEng from '../data/emojis_en.json'
 import dataPeliculas from '../data/peliculas.json'
 import dataLogos from '../data/marcas.json'
 import dataJugadores from '../data/jugadores.json'
@@ -39,12 +42,12 @@ const getWordToGuess = (category, lang) => {
     case ACERTIJOS:
       return dataAcertijos.listado
     case EMOJIS:
-      if (lang === 'esp') {
+      if (lang === ESP) {
         dataList = dataEmojisEsp.listado
-      } else if (lang === 'lat') {
+      } else if (lang === LAT) {
         dataList = dataEmojis.listado
       } else {
-        // console.log('eng')
+        dataList = dataEmojisEng.listado
       }
 
       return dataList

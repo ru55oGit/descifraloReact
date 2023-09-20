@@ -5,7 +5,15 @@ import Box from '@mui/material/Box'
 import { useTheme } from '@mui/styles'
 import { getImage } from '../../utils'
 
-import { ACERTIJOS, LOGOS, SOMBRAS } from '../../constants/const'
+import {
+  ACERTIJOS,
+  LOGOS,
+  SOMBRAS,
+  FUNKOS,
+  ESCUDOS,
+  PELICULAS,
+  EMOJIS,
+} from '../../constants/const'
 
 const Carrousel = () => {
   const theme = useTheme()
@@ -27,7 +35,7 @@ const Carrousel = () => {
             width: '80%',
           }}
         >
-          {getImage(ACERTIJOS, Math.floor(Math.random() * 10))}
+          {getImage(ACERTIJOS, Math.floor(Math.random() * 70))}
         </Box>
         <Box
           sx={{
@@ -35,7 +43,7 @@ const Carrousel = () => {
             width: '80%',
           }}
         >
-          {getImage(LOGOS, Math.floor(Math.random() * 10))}
+          {getImage(LOGOS, Math.floor(Math.random() * 70))}
         </Box>
         <Box
           sx={{
@@ -43,7 +51,39 @@ const Carrousel = () => {
             width: '80%',
           }}
         >
-          {getImage(SOMBRAS, Math.floor(Math.random() * 10))}
+          {getImage(FUNKOS, Math.floor(Math.random() * 70))}
+        </Box>
+        <Box
+          sx={{
+            m: 'auto',
+            width: '80%',
+          }}
+        >
+          {getImage(ESCUDOS, Math.floor(Math.random() * 70))}
+        </Box>
+        <Box
+          sx={{
+            m: 'auto',
+            width: '80%',
+          }}
+        >
+          {getImage(SOMBRAS, Math.floor(Math.random() * 70))}
+        </Box>
+        <Box
+          sx={{
+            m: 'auto',
+            width: '80%',
+          }}
+        >
+          {getImage(EMOJIS, Math.floor(Math.random() * 70))}
+        </Box>
+        <Box
+          sx={{
+            m: 'auto',
+            width: '80%',
+          }}
+        >
+          {getImage(PELICULAS, Math.floor(Math.random() * 70))}
         </Box>
       </Carousel>
     </Box>

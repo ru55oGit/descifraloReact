@@ -9,12 +9,15 @@ import useStyles from './styles'
 import { getImage } from '../../utils'
 import { useGameContext, Actions } from '../../store/game'
 import { ALEATORIO } from '../../constants/const'
+import { useLanguageContext } from '../../store/language'
+import i18n from '../../constants/i18n.json'
 
 const Chip = (props) => {
   const classes = useStyles()
   const theme = useTheme()
   const navigate = useNavigate()
   const { gameDispatch } = useGameContext()
+  const { languageState } = useLanguageContext()
   const { level, category, title, isRandom } = props
 
   const handleClick = (cat, lev) => {
@@ -52,9 +55,13 @@ const Chip = (props) => {
             }}
           />
           {isRandom ? (
-            <Typography>Todas las categorías</Typography>
+            <Typography>
+              {i18n.texts[languageState?.language].allCategories}
+            </Typography>
           ) : (
-            <Typography> Nivel: {level}</Typography>
+            <Typography>
+              {i18n.texts[languageState?.language].level}: {level}
+            </Typography>
           )}
           <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
             {title}

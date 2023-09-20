@@ -1,0 +1,46 @@
+{
+  "texts": {
+    "lat": {
+      "play": "Jugar",
+      "level": "Nivel",
+      "puzzles": "Acertijos",
+      "movies": "Peliculas",
+      "emojis": "Peliculas con emojis",
+      "shadows": "Sombras",
+      "logos": "Logos",
+      "funkos": "Personajes Funkos",
+      "soccerLogos": "Escudos de fútbol",
+      "flags": "Banderas de paises",
+      "random": "Aleatorios",
+      "allCategories": "Todas las categorías"
+    },
+    "esp": {
+      "play": "Jugar",
+      "level": "Nivel",
+      "puzzles": "Acertijos",
+      "movies": "Peliculas",
+      "emojis": "Peliculas con emojis",
+      "shadows": "Sombras",
+      "logos": "Logos",
+      "funkos": "Personajes Funkos",
+      "soccerLogos": "Escudos de fútbol",
+      "flags": "Banderas de paises",
+      "random": "Aleatorios",
+      "allCategories": "Todas las categorías"
+    },
+    "eng": {
+      "play": "Play",
+      "level": "Level",
+      "puzzles": "Puzzles",
+      "movies": "Movies",
+      "emojis": "Movies with emojis",
+      "shadows": "Shadows",
+      "logos": "Logos",
+      "funkos": "Funkos' Characters",
+      "soccerLogos": "Soccer logos",
+      "flags": "Flags",
+      "random": "Random",
+      "allCategories": "All categories"
+    }
+  }
+}

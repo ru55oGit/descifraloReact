@@ -2,6 +2,7 @@ import { createContext, useContext, useMemo, useReducer } from 'react'
 import PropTypes from 'prop-types'
 import reducer from './reducer'
 import actions from './actions'
+import { LAT } from '../../constants/const'
 
 const LanguageContext = createContext(false)
 
@@ -17,7 +18,7 @@ const useLanguageContext = () => {
   return context
 }
 
-const initialActions = { language: localStorage.getItem('lang') || 'lat' }
+const initialActions = { language: localStorage.getItem('lang') || LAT }
 
 const LanguageProvider = ({ children, defaultState }) => {
   const [state, dispatch] = useReducer(reducer, defaultState || initialActions)

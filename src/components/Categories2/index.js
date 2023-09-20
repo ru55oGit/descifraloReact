@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Box from '@mui/material/Box'
 import Chip from '../Chip'
 import { useLanguageContext } from '../../store/language'
+import i18n from '../../constants/i18n.json'
 
 import {
   ACERTIJOS,
@@ -86,44 +87,48 @@ const Levels = () => {
       <Chip
         category={ACERTIJOS}
         level={parseInt(levelAcertijos, 10)}
-        title="Acertijos"
+        title={i18n.texts[languageState?.language].puzzles}
       />
       <Chip
         category={PELICULAS}
         level={parseInt(levelPeliculas, 10)}
-        title="Peliculas"
+        title={i18n.texts[languageState?.language].movies}
       />
       <Chip
         category={EMOJIS}
         level={parseInt(levelEmojis, 10)}
-        title="Peliculas con emojis"
+        title={i18n.texts[languageState?.language].emojis}
       />
-      <Chip category={LOGOS} level={parseInt(levelLogos, 10)} title="Logos" />
+      <Chip
+        category={LOGOS}
+        level={parseInt(levelLogos, 10)}
+        title={i18n.texts[languageState?.language].logos}
+      />
       <Chip
         category={SOMBRAS}
         level={parseInt(levelSombras, 10)}
-        title="Sombras"
+        title={i18n.texts[languageState?.language].shadows}
       />
       <Chip
         category={FUNKOS}
         level={parseInt(levelFunkos, 10)}
-        title="Personajes Funkos"
+        title={i18n.texts[languageState?.language].funkos}
       />
       <Chip
         category={ESCUDOS}
         level={parseInt(levelEscudos, 10)}
-        title="Escudos de fútbol"
+        title={i18n.texts[languageState?.language].soccerLogos}
       />
       <Chip
         category={BANDERAS}
         level={parseInt(levelBanderas, 10)}
-        title="Banderas de paises"
+        title={i18n.texts[languageState?.language].flags}
       />
       <Chip
         category={random[Math.ceil(Math.random() * 8)]}
         isRandom
         level={Math.ceil(Math.random() * 99)}
-        title="Aleatorios"
+        title={i18n.texts[languageState?.language].random}
       />
       {/* <Chip
         category={JUGADORES}

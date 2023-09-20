@@ -44,7 +44,7 @@ const Menu = () => {
           </ListItemButton>
         </ListItem>
       </List>
-      <Language />
+      <Language showTitle />
     </Box>
   )
 }

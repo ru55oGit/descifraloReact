@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { useState, useEffect } from 'react'
 import Stack from '@mui/material/Stack'
 import Avatar from '@mui/material/Avatar'
@@ -5,8 +6,9 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import { useTheme } from '@mui/styles'
 import { useLanguageContext, Actions } from '../../store/language'
+import { ENG, ESP, LAT } from '../../constants/const'
 
-const Language = () => {
+const Language = ({ showTitle }) => {
   const theme = useTheme()
   const { languageDispatch, languageState } = useLanguageContext()
 
@@ -28,12 +30,14 @@ const Language = () => {
 
   return (
     <Stack sx={{ backgroundColor: theme.palette.divider, p: 1 }}>
-      <Typography sx={{ textAlign: 'center' }} variant="h1">
-        Idioma/Language
-      </Typography>
+      {showTitle && (
+        <Typography sx={{ textAlign: 'center' }} variant="h1">
+          Idioma/Language
+        </Typography>
+      )}
       <Stack direction="row" sx={{ justifyContent: 'space-evenly', mt: 1 }}>
         <Button
-          onClick={() => handleLanguage('lat')}
+          onClick={() => handleLanguage(LAT)}
           sx={{
             '&:hover': { background: 'transparent' },
             color: theme.palette.text.primary,
@@ -47,18 +51,18 @@ const Language = () => {
             />
             <Typography
               fontWeight={
-                language === 'lat'
+                language === LAT
                   ? theme.fontWeight.bold
                   : theme.fontWeight.regular
               }
-              variant={language === 'lat' ? 'body1' : 'body0'}
+              variant={language === LAT ? 'body1' : 'body0'}
             >
               Latino
             </Typography>
           </Stack>
         </Button>
         <Button
-          onClick={() => handleLanguage('esp')}
+          onClick={() => handleLanguage(ESP)}
           sx={{
             '&:hover': { background: 'transparent' },
             color: theme.palette.text.primary,
@@ -72,36 +76,52 @@ const Language = () => {
             />
             <Typography
               fontWeight={
-                language === 'esp'
+                language === ESP
                   ? theme.fontWeight.bold
                   : theme.fontWeight.regular
               }
-              variant={language === 'esp' ? 'body1' : 'body0'}
+              variant={language === ESP ? 'body1' : 'body0'}
             >
               Español
             </Typography>
           </Stack>
         </Button>
-        {/* <Stack sx={{ alignItems: 'center', display: 'flex' }}>
+        <Button
+          onClick={() => handleLanguage(ENG)}
+          sx={{
+            '&:hover': { background: 'transparent' },
+            color: theme.palette.text.primary,
+          }}
+        >
+          <Stack sx={{ alignItems: 'center', display: 'flex' }}>
             <Avatar
-              onClick={() => handleLanguage('eng')}
               src="images/usa.svg"
-              sx={{ height: 24, width: 36 }}
+              sx={{ height: 28, width: 40 }}
               variant="square"
             />
             <Typography
               fontWeight={
-                language === 'eng'
+                language === ENG
                   ? theme.fontWeight.bold
                   : theme.fontWeight.regular
               }
+              variant={language === ENG ? 'body1' : 'body0'}
             >
               English
             </Typography>
-          </Stack> */}
+          </Stack>
+        </Button>
       </Stack>
     </Stack>
   )
 }
 
 export default Language
+
+Language.propTypes = {
+  showTitle: PropTypes.bool,
+}
+
+Language.defaultProps = {
+  showTitle: false,
+}
