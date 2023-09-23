@@ -9,7 +9,7 @@ import {
   ESCUDOS,
   BANDERAS,
   ESP,
-  LAT,
+  ENG,
 } from '../constants/const'
 
 import dataAcertijos from '../data/adivinanzas.json'
@@ -17,6 +17,7 @@ import dataEmojis from '../data/emojis.json'
 import dataEmojisEsp from '../data/emojis_sp.json'
 import dataEmojisEng from '../data/emojis_en.json'
 import dataPeliculas from '../data/peliculas.json'
+import dataPeliculasEsp from '../data/peliculas_sp.json'
 import dataLogos from '../data/marcas.json'
 import dataJugadores from '../data/jugadores.json'
 import dataSombras from '../data/sombras.json'
@@ -44,15 +45,23 @@ const getWordToGuess = (category, lang) => {
     case EMOJIS:
       if (lang === ESP) {
         dataList = dataEmojisEsp.listado
-      } else if (lang === LAT) {
-        dataList = dataEmojis.listado
-      } else {
+      } else if (lang === ENG) {
         dataList = dataEmojisEng.listado
+      } else {
+        dataList = dataEmojis.listado
       }
 
       return dataList
     case PELICULAS:
-      return dataPeliculas.listado
+      if (lang === ESP) {
+        dataList = dataPeliculasEsp.listado
+      } else if (lang === ENG) {
+        dataList = dataPeliculas.listado
+      } else {
+        dataList = dataPeliculas.listado
+      }
+
+      return dataList
     case LOGOS:
       return dataLogos.listado
     case JUGADORES:

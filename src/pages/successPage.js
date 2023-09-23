@@ -15,7 +15,7 @@ import { useTheme } from '@mui/styles'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import { useGameContext, Actions } from '../store/game'
 import { useLanguageContext } from '../store/language'
-
+import i18n from '../constants/i18n.json'
 import useStyles from '../styles/pages'
 import { ALEATORIO } from '../constants/const'
 
@@ -126,7 +126,7 @@ const SuccessPage = () => {
             sx={{ fontSize: 200, margin: 'auto' }}
           />
           <Typography color="success.main" variant="hxxl">
-            Correcto
+            {i18n.texts[languageState.language].correct}
           </Typography>
         </Stack>
       )}
@@ -134,7 +134,9 @@ const SuccessPage = () => {
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button className={classes.darkButton} onClick={(e) => goToNext(e)}>
-            <Typography variant="h1">Siguiente</Typography>
+            <Typography variant="h1">
+              {i18n.texts[languageState.language].next}
+            </Typography>
           </Button>
         </Grid>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
@@ -144,8 +146,8 @@ const SuccessPage = () => {
           >
             <Typography variant="h1">
               {gameState?.game?.category !== ALEATORIO
-                ? 'Niveles'
-                : 'Categorías'}
+                ? i18n.texts[languageState.language].levels
+                : i18n.texts[languageState.language].categories}
             </Typography>
           </Button>
         </Grid>

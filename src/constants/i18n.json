@@ -12,7 +12,11 @@
       "soccerLogos": "Escudos de fútbol",
       "flags": "Banderas de paises",
       "random": "Aleatorios",
-      "allCategories": "Todas las categorías"
+      "allCategories": "Todas las categorías",
+      "correct": "Correcto",
+      "next": "Siguiente",
+      "levels": "Niveles",
+      "categories": "Categorías"
     },
     "esp": {
       "play": "Jugar",
@@ -26,7 +30,11 @@
       "soccerLogos": "Escudos de fútbol",
       "flags": "Banderas de paises",
       "random": "Aleatorios",
-      "allCategories": "Todas las categorías"
+      "allCategories": "Todas las categorías",
+      "correct": "Correcto",
+      "next": "Siguiente",
+      "levels": "Niveles",
+      "categories": "Categorías"
     },
     "eng": {
       "play": "Play",
@@ -40,7 +48,11 @@
       "soccerLogos": "Soccer logos",
       "flags": "Flags",
       "random": "Random",
-      "allCategories": "All categories"
+      "allCategories": "All categories",
+      "correct": "Correct",
+      "next": "Next",
+      "levels": "Levels",
+      "categories": "Categories"
     }
   }
 }

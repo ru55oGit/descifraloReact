@@ -57,7 +57,7 @@
     {
       "titulo": "Movies with emojis",
       "respuesta": "men in black",
-      "pregunta": "1010",
+      "pregunta": "10",
       "categoria": "Emojis"
     },
     {
@@ -494,7 +494,7 @@
     },
     {
       "titulo": "Movies with emojis",
-      "respuesta": "101 Dalmatians",
+      "respuesta": "101|Dalmatians",
       "pregunta": "83",
       "categoria": "Emojis"
     },
@@ -530,7 +530,7 @@
     },
     {
       "titulo": "Movies with emojis",
-      "respuesta": "Singing in the Rain",
+      "respuesta": "Singing in|the Rain",
       "pregunta": "89",
       "categoria": "Emojis"
     },
@@ -704,7 +704,7 @@
     },
     {
       "titulo": "Movies with emojis",
-      "respuesta": "Cool Runnings",
+      "respuesta": "Cool|Runnings",
       "pregunta": "118",
       "categoria": "Emojis"
     },
@@ -752,7 +752,7 @@
     },
     {
       "titulo": "Movies with emojis",
-      "respuesta": "Patriots Day",
+      "respuesta": "Patriots|Day",
       "pregunta": "126",
       "categoria": "Emojis"
     },
