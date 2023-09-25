@@ -18,6 +18,7 @@ import dataEmojisEsp from '../data/emojis_sp.json'
 import dataEmojisEng from '../data/emojis_en.json'
 import dataPeliculas from '../data/peliculas.json'
 import dataPeliculasEsp from '../data/peliculas_sp.json'
+import dataPeliculasEng from '../data/peliculas_en.json'
 import dataLogos from '../data/marcas.json'
 import dataJugadores from '../data/jugadores.json'
 import dataSombras from '../data/sombras.json'
@@ -56,7 +57,7 @@ const getWordToGuess = (category, lang) => {
       if (lang === ESP) {
         dataList = dataPeliculasEsp.listado
       } else if (lang === ENG) {
-        dataList = dataPeliculas.listado
+        dataList = dataPeliculasEng.listado
       } else {
         dataList = dataPeliculas.listado
       }
