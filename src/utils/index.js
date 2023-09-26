@@ -22,6 +22,8 @@ import dataPeliculasEng from '../data/peliculas_en.json'
 import dataLogos from '../data/marcas.json'
 import dataJugadores from '../data/jugadores.json'
 import dataSombras from '../data/sombras.json'
+import dataSombrasEsp from '../data/sombras_sp.json'
+import dataSombrasEng from '../data/sombras_en.json'
 import dataFunkos from '../data/funkos.json'
 import dataEscudos from '../data/escudos.json'
 import dataBanderas from '../data/banderas.json'
@@ -68,7 +70,15 @@ const getWordToGuess = (category, lang) => {
     case JUGADORES:
       return dataJugadores.listado
     case SOMBRAS:
-      return dataSombras.listado
+      if (lang === ESP) {
+        dataList = dataSombrasEsp.listado
+      } else if (lang === ENG) {
+        dataList = dataSombrasEng.listado
+      } else {
+        dataList = dataSombras.listado
+      }
+
+      return dataList
     case FUNKOS:
       return dataFunkos.listado
     case ESCUDOS:

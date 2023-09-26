@@ -32,7 +32,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "Inspector|Ardilla",
+      "respuesta": "Secret|Squirrel ",
       "pregunta": "6",
       "categoria": "Sombras"
     },
@@ -44,13 +44,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "freezer",
+      "respuesta": "Frieza",
       "pregunta": "8",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "pitufo|goloso",
+      "respuesta": "greedy|smurf",
       "pregunta": "9",
       "categoria": "Sombras"
     },
@@ -62,7 +62,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "oliver|atom",
+      "respuesta": "Captain|Tsubasa",
       "pregunta": "11",
       "categoria": "Sombras"
     },
@@ -74,19 +74,19 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "mario",
+      "respuesta": "mario bros",
       "pregunta": "13",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "gohan",
+      "respuesta": "son gohan",
       "pregunta": "14",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "el gavilan|pollero",
+      "respuesta": "Henery|Hawk",
       "pregunta": "15",
       "categoria": "Sombras"
     },
@@ -98,7 +98,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "jefe|Quimby",
+      "respuesta": "chief|Quimby",
       "pregunta": "17",
       "categoria": "Sombras"
     },
@@ -116,13 +116,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "pitufo|fortachon",
+      "respuesta": "Hefty|Smurf",
       "pregunta": "20",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "porky",
+      "respuesta": "Porky Pig ",
       "pregunta": "21",
       "categoria": "Sombras"
     },
@@ -134,13 +134,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "El Pato|Donald",
+      "respuesta": "donald|duck",
       "pregunta": "23",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "steve|Hyuga",
+      "respuesta": "Kojiro|Hyuga",
       "pregunta": "24",
       "categoria": "Sombras"
     },
@@ -164,7 +164,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "tiro loco|mcgraw",
+      "respuesta": "Quick Draw|McGraw",
       "pregunta": "28",
       "categoria": "Sombras"
     },
@@ -176,13 +176,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "robotina",
+      "respuesta": "rosie",
       "pregunta": "30",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "masha|y el oso",
+      "respuesta": "masha and|the bear",
       "pregunta": "31",
       "categoria": "Sombras"
     },

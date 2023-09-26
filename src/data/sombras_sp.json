@@ -80,13 +80,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "gohan",
+      "respuesta": "son gohan",
       "pregunta": "14",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "el gavilan|pollero",
+      "respuesta": "quique|gavilan",
       "pregunta": "15",
       "categoria": "Sombras"
     },
@@ -98,13 +98,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "jefe|Quimby",
+      "respuesta": "jefe|Gotier",
       "pregunta": "17",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "majin boo",
+      "respuesta": "Monstruo|Buu",
       "pregunta": "18",
       "categoria": "Sombras"
     },
@@ -122,7 +122,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "porky",
+      "respuesta": "Puerco|porky",
       "pregunta": "21",
       "categoria": "Sombras"
     },
@@ -140,7 +140,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "steve|Hyuga",
+      "respuesta": "Mark|Lenders",
       "pregunta": "24",
       "categoria": "Sombras"
     },
