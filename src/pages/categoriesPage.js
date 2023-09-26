@@ -28,7 +28,13 @@ const CategoriesPage = () => {
       <Collapse className={classes.menu} in={openDonate}>
         <Donate />
       </Collapse>
-      <Categories2 />
+      {openMenu && (
+        <Box className={classes.modal} onClick={() => setOpenMenu(false)} />
+      )}
+      {openDonate && (
+        <Box className={classes.modal} onClick={() => setOpenDonate(false)} />
+      )}
+      {!openMenu && !openDonate && <Categories2 />}
     </Box>
   )
 }

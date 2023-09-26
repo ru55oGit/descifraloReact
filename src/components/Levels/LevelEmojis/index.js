@@ -399,9 +399,5 @@ const LevelEmojis = ({ level }) => {
 export default LevelEmojis
 
 LevelEmojis.propTypes = {
-  level: PropTypes.number,
-}
-
-LevelEmojis.defaultProps = {
-  level: 1,
+  level: PropTypes.number.isRequired,
 }

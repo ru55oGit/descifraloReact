@@ -312,9 +312,5 @@ const LevelBanderas = ({ level }) => {
 export default LevelBanderas
 
 LevelBanderas.propTypes = {
-  level: PropTypes.number,
-}
-
-LevelBanderas.defaultProps = {
-  level: 1,
+  level: PropTypes.number.isRequired,
 }

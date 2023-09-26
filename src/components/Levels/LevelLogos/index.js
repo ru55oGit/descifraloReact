@@ -312,9 +312,5 @@ const LevelLogos = ({ level }) => {
 export default LevelLogos
 
 LevelLogos.propTypes = {
-  level: PropTypes.number,
-}
-
-LevelLogos.defaultProps = {
-  level: 1,
+  level: PropTypes.number.isRequired,
 }

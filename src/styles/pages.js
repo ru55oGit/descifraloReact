@@ -56,6 +56,12 @@ const useStyles = makeStyles((theme) => ({
     transform: 'translate(-50%, 5px)',
     zIndex: 1400,
   },
+  modal: {
+    background: 'rgba(168, 168, 168, 0.9)',
+    height: '100vh',
+    margin: 'auto',
+    maxWidth: 'calc(414px + 16px)',
+  },
   success: {
     color: theme.palette.success.checkmark,
   },

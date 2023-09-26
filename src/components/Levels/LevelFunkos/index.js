@@ -312,9 +312,5 @@ const LevelFunkos = ({ level }) => {
 export default LevelFunkos
 
 LevelFunkos.propTypes = {
-  level: PropTypes.number,
-}
-
-LevelFunkos.defaultProps = {
-  level: 1,
+  level: PropTypes.number.isRequired,
 }

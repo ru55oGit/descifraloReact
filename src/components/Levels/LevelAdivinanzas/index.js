@@ -804,9 +804,5 @@ const LevelAdivinanzas = ({ level }) => {
 export default LevelAdivinanzas
 
 LevelAdivinanzas.propTypes = {
-  level: PropTypes.number,
-}
-
-LevelAdivinanzas.defaultProps = {
-  level: 1,
+  level: PropTypes.number.isRequired,
 }
