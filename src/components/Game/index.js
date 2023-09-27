@@ -194,17 +194,27 @@ const Game = () => {
         spacing={1}
         sx={{ justifyContent: 'center', mb: 2 }}
       >
-        {answer[id].split('').map((key) => (
-          <Paper
-            key={Math.ceil(Math.random() * 10000)}
-            className={
-              key === ' ' ? classes.letterWithSpaceContainer : classes.letters
-            }
-            elevation={2}
-          >
-            {rendered ? key.toUpperCase() : key === ' ' ? '' : '_'}
-          </Paper>
-        ))}
+        {answer[id].split('').map((key) =>
+          key !== "'" ? (
+            <Paper
+              key={Math.ceil(Math.random() * 10000)}
+              className={
+                key === ' ' ? classes.letterWithSpaceContainer : classes.letters
+              }
+              elevation={2}
+            >
+              {rendered ? key.toUpperCase() : key === ' ' ? '' : '_'}
+            </Paper>
+          ) : (
+            <Typography
+              color="white.main"
+              sx={{ lineHeight: '0.8' }}
+              variant="hxl"
+            >
+              {key}
+            </Typography>
+          )
+        )}
       </Stack>
     ))
   }
@@ -232,6 +242,9 @@ const Game = () => {
         }
         if (answer.charAt(i) === ' ') {
           result[i] = ' '
+        }
+        if (answer.charAt(i) === "'") {
+          result[i] = "'"
         }
       } else {
         result[i] = answer.charAt(i)

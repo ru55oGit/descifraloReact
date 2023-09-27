@@ -32,7 +32,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "Secret|Squirrel ",
+      "respuesta": "Secret|Squirrel",
       "pregunta": "6",
       "categoria": "Sombras"
     },
@@ -50,7 +50,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "greedy|smurf",
+      "respuesta": "baker|smurf",
       "pregunta": "9",
       "categoria": "Sombras"
     },
@@ -122,7 +122,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "Porky Pig ",
+      "respuesta": "Porky Pig",
       "pregunta": "21",
       "categoria": "Sombras"
     },
@@ -194,13 +194,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "super|sonico",
+      "respuesta": "George|Jetson",
       "pregunta": "33",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "alcalde|diamante",
+      "respuesta": "Diamond|Joe",
       "pregunta": "34",
       "categoria": "Sombras"
     },
@@ -218,37 +218,37 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "la hormiga",
+      "respuesta": "the ant",
       "pregunta": "37",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "el pajaro|loco",
+      "respuesta": "Woody|Woodpecker",
       "pregunta": "38",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "el inspector",
+      "respuesta": "The inspector",
       "pregunta": "39",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "el fantasma|del espacio",
+      "respuesta": "Space|Ghost",
       "pregunta": "40",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "pitufo|vanidoso",
+      "respuesta": "vanity|smurf",
       "pregunta": "41",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "los gemelos|fantasticos",
+      "respuesta": "The Wonder|Twin",
       "pregunta": "42",
       "categoria": "Sombras"
     },
@@ -260,7 +260,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "ayudante|de santa",
+      "respuesta": "Santa's|Little Helper",
       "pregunta": "44",
       "categoria": "Sombras"
     },
@@ -272,7 +272,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "cleto",
+      "respuesta": "cletus",
       "pregunta": "46",
       "categoria": "Sombras"
     },
@@ -296,7 +296,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "patan",
+      "respuesta": "Muttley",
       "pregunta": "50",
       "categoria": "Sombras"
     },

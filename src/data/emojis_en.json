@@ -470,13 +470,13 @@
     },
     {
       "titulo": "Movies with emojis",
-      "respuesta": "Hachi|A Dogs Tale",
+      "respuesta": "Hachi|A Dog's Tale",
       "pregunta": "79",
       "categoria": "Emojis"
     },
     {
       "titulo": "Movies with emojis",
-      "respuesta": "A Bugs|Life",
+      "respuesta": "A Bug's|Life",
       "pregunta": "80",
       "categoria": "Emojis"
     },
@@ -530,7 +530,7 @@
     },
     {
       "titulo": "Movies with emojis",
-      "respuesta": "Singing in|the Rain",
+      "respuesta": "Singin' in|the Rain",
       "pregunta": "89",
       "categoria": "Emojis"
     },
@@ -560,7 +560,7 @@
     },
     {
       "titulo": "Movies with emojis",
-      "respuesta": "You have|Got Mail",
+      "respuesta": "You've|Got Mail",
       "pregunta": "94",
       "categoria": "Emojis"
     },

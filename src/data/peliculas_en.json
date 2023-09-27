@@ -26,7 +26,7 @@
     },
     {
       "titulo:": "Peliculas",
-      "respuesta": "Childs|Play",
+      "respuesta": "Child's|Play",
       "pregunta": "5",
       "categorias": "Peliculas"
     },
@@ -68,7 +68,7 @@
     },
     {
       "titulo:": "Peliculas",
-      "respuesta": "Pans|Labyrinth",
+      "respuesta": "Pan's|Labyrinth",
       "pregunta": "12",
       "categorias": "Peliculas"
     },
@@ -356,7 +356,7 @@
     },
     {
       "titulo:": "Peliculas",
-      "respuesta": "porkys",
+      "respuesta": "porky's",
       "pregunta": "60",
       "categorias": "Peliculas"
     },
@@ -494,7 +494,7 @@
     },
     {
       "titulo:": "Peliculas",
-      "respuesta": "v for vendetta",
+      "respuesta": "v for|vendetta",
       "pregunta": "83",
       "categorias": "Peliculas"
     },
@@ -512,7 +512,7 @@
     },
     {
       "titulo:": "Peliculas",
-      "respuesta": "monster inc",
+      "respuesta": "monsters inc",
       "pregunta": "86",
       "categorias": "Peliculas"
     },
@@ -818,7 +818,7 @@
     },
     {
       "titulo:": "Peliculas",
-      "respuesta": "An American Tail",
+      "respuesta": "An American|Tail",
       "pregunta": "137",
       "categorias": "Peliculas"
     },
@@ -896,7 +896,7 @@
     },
     {
       "titulo:": "Peliculas",
-      "respuesta": "the a team",
+      "respuesta": "the a|team",
       "pregunta": "150",
       "categorias": "Peliculas"
     },
@@ -914,7 +914,7 @@
     },
     {
       "titulo:": "Peliculas",
-      "respuesta": "Short Circuit",
+      "respuesta": "Short|Circuit",
       "pregunta": "153",
       "categorias": "Peliculas"
     },
@@ -950,7 +950,7 @@
     },
     {
       "titulo:": "Peliculas",
-      "respuesta": "Big Hero 6",
+      "respuesta": "Big Hero|6",
       "pregunta": "159",
       "categorias": "Peliculas"
     },
