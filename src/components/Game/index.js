@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 /* eslint-disable no-bitwise */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-nested-ternary */
