@@ -638,7 +638,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "luiggi",
+      "respuesta": "luigi",
       "pregunta": "107",
       "categoria": "Sombras"
     },
@@ -788,13 +788,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "silvestre",
+      "respuesta": "Sylvester",
       "pregunta": "132",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "tomy",
+      "respuesta": "scratchy",
       "pregunta": "133",
       "categoria": "Sombras"
     },
@@ -806,7 +806,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "pablo|marmol",
+      "respuesta": "Barney|Rubble",
       "pregunta": "135",
       "categoria": "Sombras"
     },
@@ -818,7 +818,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "oddie",
+      "respuesta": "odie",
       "pregunta": "137",
       "categoria": "Sombras"
     },
@@ -842,7 +842,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "bruce|harper",
+      "respuesta": "Ryo|Ishizaki",
       "pregunta": "141",
       "categoria": "Sombras"
     },
@@ -860,7 +860,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "marvin",
+      "respuesta": "marvin|the martian",
       "pregunta": "144",
       "categoria": "Sombras"
     },
@@ -884,7 +884,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "dartagnan",
+      "respuesta": "touche|turtle",
       "pregunta": "148",
       "categoria": "Sombras"
     },
@@ -902,13 +902,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "Betty|Marmol",
+      "respuesta": "Betty|Rubble",
       "pregunta": "151",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "Pedro|Picapiedras",
+      "respuesta": "Fred|Flintstone ",
       "pregunta": "152",
       "categoria": "Sombras"
     },
@@ -932,13 +932,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "winnie pooh",
+      "respuesta": "winnie|the pooh",
       "pregunta": "156",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "krilin",
+      "respuesta": "Kuririn",
       "pregunta": "157",
       "categoria": "Sombras"
     },
@@ -974,19 +974,19 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "superintendente|chalmers",
+      "respuesta": "Superintendent|Chalmers",
       "pregunta": "163",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "malefica",
+      "respuesta": "maleficent",
       "pregunta": "164",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "el gordo|tony",
+      "respuesta": "fat|tony",
       "pregunta": "165",
       "categoria": "Sombras"
     },
@@ -1004,7 +1004,7 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "Helena|Alegria",
+      "respuesta": "Helen|Lovejoy",
       "pregunta": "168",
       "categoria": "Sombras"
     },
@@ -1022,13 +1022,13 @@
     },
     {
       "titulo": "Sombras",
-      "respuesta": "Bob|esponja",
+      "respuesta": "SpongeBob|SquarePants",
       "pregunta": "171",
       "categoria": "Sombras"
     },
     {
       "titulo": "Sombras",
-      "respuesta": "Pinocho",
+      "respuesta": "Pinocchio",
       "pregunta": "172",
       "categoria": "Sombras"
     }
