@@ -13,7 +13,8 @@ import {
   FUNKOS,
   ESCUDOS,
   BANDERAS,
-  // JUGADORES,
+  WUZZLES,
+  ENG,
 } from '../../constants/const'
 import useStyles from './styles'
 
@@ -26,7 +27,7 @@ const random = [
   FUNKOS,
   ESCUDOS,
   BANDERAS,
-  // JUGADORES,
+  WUZZLES,
 ]
 
 const Levels = () => {
@@ -39,7 +40,7 @@ const Levels = () => {
   const [levelFunkos, setLevelFunkos] = useState()
   const [levelEscudos, setLevelEscudos] = useState()
   const [levelBanderas, setLevelBanderas] = useState()
-  // const [levelJugadores, setLevelJugadores] = useState()
+  const [levelWuzzles, setLevelWuzzles] = useState()
   const { languageState } = useLanguageContext()
 
   useEffect(() => {
@@ -77,18 +78,26 @@ const Levels = () => {
       JSON.parse(localStorage?.getItem(`${BANDERAS}_${languageState.language}`))
         ?.levelReached || 1
     )
-    /* setLevelJugadores(
-      JSON.parse(localStorage?.getItem(JUGADORES))?.levelReached || 1
-    ) */
+    setLevelWuzzles(
+      JSON.parse(localStorage?.getItem(WUZZLES))?.levelReached || 1
+    )
   }, [languageState])
 
   return (
     <Box className={classes.containerCategories}>
-      <Chip
-        category={ACERTIJOS}
-        level={parseInt(levelAcertijos, 10)}
-        title={i18n.texts[languageState?.language].puzzles}
-      />
+      {languageState.language === ENG ? (
+        <Chip
+          category={WUZZLES}
+          level={parseInt(levelWuzzles, 10)}
+          title={i18n.texts[languageState?.language].puzzles}
+        />
+      ) : (
+        <Chip
+          category={ACERTIJOS}
+          level={parseInt(levelAcertijos, 10)}
+          title={i18n.texts[languageState?.language].puzzles}
+        />
+      )}
       <Chip
         category={PELICULAS}
         level={parseInt(levelPeliculas, 10)}
@@ -130,11 +139,6 @@ const Levels = () => {
         level={Math.ceil(Math.random() * 99)}
         title={i18n.texts[languageState?.language].random}
       />
-      {/* <Chip
-        category={JUGADORES}
-        level={parseInt(levelJugadores, 10)}
-        title="Jugadores de fútbol"
-  /> */}
     </Box>
   )
 }

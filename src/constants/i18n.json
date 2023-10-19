@@ -16,7 +16,9 @@
       "correct": "Correcto",
       "next": "Siguiente",
       "levels": "Niveles",
-      "categories": "Categorías"
+      "categories": "Categorías",
+      "downloadAndShare": "Bajar y Compartir",
+      "seconds": "Segundos"
     },
     "esp": {
       "play": "Jugar",
@@ -31,10 +33,12 @@
       "flags": "Banderas de paises",
       "random": "Aleatorios",
       "allCategories": "Todas las categorías",
-      "correct": "Correcto",
+      "correct": "Enhorabuena",
       "next": "Siguiente",
       "levels": "Niveles",
-      "categories": "Categorías"
+      "categories": "Categorías",
+      "downloadAndShare": "Bajar y Compartir",
+      "seconds": "Segundos"
     },
     "eng": {
       "play": "Play",
@@ -52,7 +56,9 @@
       "correct": "Correct",
       "next": "Next",
       "levels": "Levels",
-      "categories": "Categories"
+      "categories": "Categories",
+      "downloadAndShare": "Download and Share",
+      "seconds": "Seconds"
     }
   }
 }

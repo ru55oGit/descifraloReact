@@ -50,9 +50,7 @@ const SuccessPage = () => {
     }
   }, [state.answer, state.title])
 
-  const goToNext = (e) => {
-    e.preventDefault()
-
+  const goToNext = () => {
     if (gameState?.game?.category !== ALEATORIO) {
       gameDispatch({
         game: {
@@ -68,8 +66,7 @@ const SuccessPage = () => {
     navigate('/jugar')
   }
 
-  const goToCategories = (e) => {
-    e.preventDefault()
+  const goToCategories = () => {
     if (gameState?.game?.category !== ALEATORIO) {
       navigate('/niveles')
     } else {
@@ -133,7 +130,7 @@ const SuccessPage = () => {
 
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          <Button className={classes.darkButton} onClick={(e) => goToNext(e)}>
+          <Button className={classes.darkButton} onClick={() => goToNext()}>
             <Typography variant="h1">
               {i18n.texts[languageState.language].next}
             </Typography>
@@ -142,7 +139,7 @@ const SuccessPage = () => {
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button
             className={classes.darkButton}
-            onClick={(e) => goToCategories(e)}
+            onClick={() => goToCategories()}
           >
             <Typography variant="h1">
               {gameState?.game?.category !== ALEATORIO

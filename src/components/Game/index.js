@@ -22,6 +22,7 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import { ALEATORIO } from '../../constants/const'
 import { useGameContext, Actions } from '../../store/game'
 import { useLanguageContext } from '../../store/language'
+import i18n from '../../constants/i18n.json'
 
 import 'react-simple-keyboard/build/css/index.css'
 import { getWordToGuess, getImage, getQuestions } from '../../utils'
@@ -368,7 +369,7 @@ const Game = () => {
                   {remainingTime}
                 </Typography>
                 <Typography sx={{ textAlign: 'center' }} variant="body0">
-                  Segundos
+                  {i18n.texts[languageState?.language].seconds}
                 </Typography>
               </Stack>
             )}
@@ -377,7 +378,7 @@ const Game = () => {
             onClick={handleDownload}
             sx={{ border: `1px solid ${theme.palette.primary.main}` }}
           >
-            Bajar y compartir
+            {i18n.texts[languageState?.language].downloadAndShare}
           </Button>
         </Stack>
       </Dialog>

@@ -9,7 +9,9 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import { useNavigate } from 'react-router-dom'
 import { useTheme } from '@mui/styles'
 import { useGameContext } from '../../store/game'
+import { useLanguageContext } from '../../store/language'
 import { ALEATORIO } from '../../constants/const'
+import i18n from '../../constants/i18n.json'
 import useStyles from './styles'
 
 const NavBar = (props) => {
@@ -26,6 +28,7 @@ const NavBar = (props) => {
   const classes = useStyles()
   const navigate = useNavigate()
   const { gameState } = useGameContext()
+  const { languageState } = useLanguageContext()
 
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu)
@@ -71,7 +74,7 @@ const NavBar = (props) => {
         {level && gameState?.game?.category !== ALEATORIO && (
           <Stack sx={{ textAlign: 'center' }}>
             <Typography color="primary.main" variant="body1">
-              Nivel
+              {i18n.texts[languageState?.language].level}
             </Typography>
             <Typography
               color="primary.main"

@@ -8,6 +8,7 @@ import {
   FUNKOS,
   ESCUDOS,
   BANDERAS,
+  WUZZLES,
   ESP,
   ENG,
 } from '../constants/const'
@@ -28,6 +29,7 @@ import dataFunkos from '../data/funkos.json'
 import dataEscudos from '../data/escudos.json'
 import dataBanderas from '../data/banderas.json'
 import dataAleatoria from '../data/preguntas.json'
+import dataWuzzles from '../data/wuzzles.json'
 
 import LevelAcertijos from '../components/Levels/LevelAdivinanzas'
 import LevelEmojis from '../components/Levels/LevelEmojis'
@@ -38,11 +40,14 @@ import LevelLogos from '../components/Levels/LevelLogos'
 import LevelFunkos from '../components/Levels/LevelFunkos'
 import LevelEscudos from '../components/Levels/LevelEscudos'
 import LevelBanderas from '../components/Levels/LevelBanderas'
+import LevelWuzzles from '../components/Levels/LevelWuzzles'
 
 const getWordToGuess = (category, lang) => {
   let dataList
 
   switch (category) {
+    case WUZZLES:
+      return dataWuzzles.listado
     case ACERTIJOS:
       return dataAcertijos.listado
     case EMOJIS:
@@ -94,6 +99,8 @@ const getImage = (category, level) => {
   switch (category) {
     case ACERTIJOS:
       return <LevelAcertijos level={level} />
+    case WUZZLES:
+      return <LevelWuzzles level={level} />
     case PELICULAS:
       return <LevelPeliculas level={level} />
     case LOGOS:
