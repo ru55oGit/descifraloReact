@@ -79,7 +79,8 @@ const Levels = () => {
         ?.levelReached || 1
     )
     setLevelWuzzles(
-      JSON.parse(localStorage?.getItem(WUZZLES))?.levelReached || 1
+      JSON.parse(localStorage?.getItem(`${WUZZLES}_${languageState.language}`))
+        ?.levelReached || 1
     )
   }, [languageState])
 

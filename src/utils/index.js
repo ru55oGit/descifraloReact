@@ -26,6 +26,8 @@ import dataSombras from '../data/sombras.json'
 import dataSombrasEsp from '../data/sombras_sp.json'
 import dataSombrasEng from '../data/sombras_en.json'
 import dataFunkos from '../data/funkos.json'
+import dataFunkosEsp from '../data/funkos_sp.json'
+import dataFunkosEng from '../data/funkos_en.json'
 import dataEscudos from '../data/escudos.json'
 import dataBanderas from '../data/banderas.json'
 import dataAleatoria from '../data/preguntas.json'
@@ -85,7 +87,15 @@ const getWordToGuess = (category, lang) => {
 
       return dataList
     case FUNKOS:
-      return dataFunkos.listado
+      if (lang === ESP) {
+        dataList = dataFunkosEsp.listado
+      } else if (lang === ENG) {
+        dataList = dataFunkosEng.listado
+      } else {
+        dataList = dataFunkos.listado
+      }
+
+      return dataList
     case ESCUDOS:
       return dataEscudos.listado
     case BANDERAS:
