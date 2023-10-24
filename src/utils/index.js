@@ -1,3 +1,5 @@
+import { ProgressBar } from 'react-loader-spinner'
+
 import {
   ACERTIJOS,
   EMOJIS,
@@ -30,6 +32,7 @@ import dataFunkosEsp from '../data/funkos_sp.json'
 import dataFunkosEng from '../data/funkos_en.json'
 import dataEscudos from '../data/escudos.json'
 import dataBanderas from '../data/banderas.json'
+import dataBanderasEng from '../data/banderas_en.json'
 import dataAleatoria from '../data/preguntas.json'
 import dataWuzzles from '../data/wuzzles.json'
 
@@ -99,7 +102,13 @@ const getWordToGuess = (category, lang) => {
     case ESCUDOS:
       return dataEscudos.listado
     case BANDERAS:
-      return dataBanderas.listado
+      if (lang === ENG) {
+        dataList = dataBanderasEng.listado
+      } else {
+        dataList = dataBanderas.listado
+      }
+
+      return dataList
     default:
       return dataAcertijos.listado
   }
@@ -128,7 +137,16 @@ const getImage = (category, level) => {
     case BANDERAS:
       return <LevelBanderas level={level} />
     default:
-      return <LevelEscudos level={1} />
+      return (
+        <ProgressBar
+          barColor={(theme) => theme.palette.primary.main}
+          borderColor={(theme) => theme.palette.primary.main}
+          height="100"
+          visible
+          width="100"
+          wrapperStyle={{}}
+        />
+      )
   }
 }
 
