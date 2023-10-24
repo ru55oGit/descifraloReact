@@ -128,7 +128,7 @@ const getImage = (category, level) => {
     case BANDERAS:
       return <LevelBanderas level={level} />
     default:
-      return <LevelAcertijos level={level} />
+      return <LevelEscudos level={1} />
   }
 }
 
