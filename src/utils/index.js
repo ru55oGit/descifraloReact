@@ -33,7 +33,8 @@ import dataFunkosEng from '../data/funkos_en.json'
 import dataEscudos from '../data/escudos.json'
 import dataBanderas from '../data/banderas.json'
 import dataBanderasEng from '../data/banderas_en.json'
-import dataAleatoria from '../data/preguntas.json'
+import dataAleatoria from '../data/aleatorios.json'
+import dataAleatoriaEng from '../data/aleatorios_en.json'
 import dataWuzzles from '../data/wuzzles.json'
 
 import LevelAcertijos from '../components/Levels/LevelAdivinanzas'
@@ -144,15 +145,24 @@ const getImage = (category, level) => {
           height="100"
           visible
           width="100"
-          wrapperStyle={{}}
         />
       )
   }
 }
 
-const getQuestions = () =>
-  dataAleatoria.preguntas[
+const getQuestions = (lang) => {
+  if (lang === ENG) {
+    return dataAleatoriaEng.preguntas[
+      Math.ceil(Math.random() * dataAleatoriaEng.preguntas.length + 1)
+    ]
+  }
+  if (lang === ESP) {
+    return ''
+  }
+
+  return dataAleatoria.preguntas[
     Math.ceil(Math.random() * dataAleatoria.preguntas.length + 1)
   ]
+}
 
 export { getWordToGuess, getImage, getQuestions }

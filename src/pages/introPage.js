@@ -15,7 +15,7 @@ const CategoriesPage = () => {
 
   return (
     <Box className={classes.backgroundIntro}>
-      <Carrousel />
+      <Carrousel languageState={languageState} />
       <Button
         className={classes.transparentButton}
         onClick={() => navigate('/categorias')}

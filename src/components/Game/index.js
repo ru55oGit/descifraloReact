@@ -150,7 +150,9 @@ const Game = () => {
 
       setLevelReached(parseInt(storage?.levelReached || 1, 10))
     } else if (gameState?.game?.category === ALEATORIO) {
-      const { pregunta, categoria, respuesta, titulo } = getQuestions()
+      const { pregunta, categoria, respuesta, titulo } = getQuestions(
+        languageState?.language
+      )
 
       if (categoria === ALEATORIO) {
         setQuestion(pregunta)

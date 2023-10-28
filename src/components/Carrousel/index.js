@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import Carousel from 'nuka-carousel'
-
+import PropTypes from 'prop-types'
 import Box from '@mui/material/Box'
 import { useTheme } from '@mui/styles'
 import { getImage } from '../../utils'
@@ -13,9 +13,11 @@ import {
   ESCUDOS,
   PELICULAS,
   EMOJIS,
+  WUZZLES,
+  ENG,
 } from '../../constants/const'
 
-const Carrousel = () => {
+const Carrousel = ({ languageState }) => {
   const theme = useTheme()
 
   return (
@@ -35,7 +37,10 @@ const Carrousel = () => {
             width: '80%',
           }}
         >
-          {getImage(ACERTIJOS, Math.floor(Math.random() * 70))}
+          {getImage(
+            languageState?.language === ENG ? WUZZLES : ACERTIJOS,
+            Math.floor(Math.random() * 100)
+          )}
         </Box>
         <Box
           sx={{
@@ -43,7 +48,7 @@ const Carrousel = () => {
             width: '80%',
           }}
         >
-          {getImage(LOGOS, Math.floor(Math.random() * 70))}
+          {getImage(LOGOS, Math.floor(Math.random() * 100))}
         </Box>
         <Box
           sx={{
@@ -51,7 +56,7 @@ const Carrousel = () => {
             width: '80%',
           }}
         >
-          {getImage(FUNKOS, Math.floor(Math.random() * 70))}
+          {getImage(FUNKOS, Math.floor(Math.random() * 100))}
         </Box>
         <Box
           sx={{
@@ -59,7 +64,7 @@ const Carrousel = () => {
             width: '80%',
           }}
         >
-          {getImage(ESCUDOS, Math.floor(Math.random() * 70))}
+          {getImage(ESCUDOS, Math.floor(Math.random() * 100))}
         </Box>
         <Box
           sx={{
@@ -67,7 +72,7 @@ const Carrousel = () => {
             width: '80%',
           }}
         >
-          {getImage(SOMBRAS, Math.floor(Math.random() * 70))}
+          {getImage(SOMBRAS, Math.floor(Math.random() * 100))}
         </Box>
         <Box
           sx={{
@@ -75,7 +80,7 @@ const Carrousel = () => {
             width: '80%',
           }}
         >
-          {getImage(EMOJIS, Math.floor(Math.random() * 70))}
+          {getImage(EMOJIS, Math.floor(Math.random() * 100))}
         </Box>
         <Box
           sx={{
@@ -83,7 +88,7 @@ const Carrousel = () => {
             width: '80%',
           }}
         >
-          {getImage(PELICULAS, Math.floor(Math.random() * 70))}
+          {getImage(PELICULAS, Math.floor(Math.random() * 100))}
         </Box>
       </Carousel>
     </Box>
@@ -91,3 +96,9 @@ const Carrousel = () => {
 }
 
 export default Carrousel
+
+Carrousel.propTypes = {
+  languageState: PropTypes.shape({
+    language: PropTypes.string.isRequired,
+  }).isRequired,
+}
