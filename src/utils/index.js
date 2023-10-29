@@ -33,9 +33,10 @@ import dataFunkosEng from '../data/funkos_en.json'
 import dataEscudos from '../data/escudos.json'
 import dataBanderas from '../data/banderas.json'
 import dataBanderasEng from '../data/banderas_en.json'
+import dataWuzzles from '../data/wuzzles.json'
 import dataAleatoria from '../data/aleatorios.json'
 import dataAleatoriaEng from '../data/aleatorios_en.json'
-import dataWuzzles from '../data/wuzzles.json'
+import dataAleatoriaEsp from '../data/aleatorios_sp.json'
 
 import LevelAcertijos from '../components/Levels/LevelAdivinanzas'
 import LevelEmojis from '../components/Levels/LevelEmojis'
@@ -157,7 +158,9 @@ const getQuestions = (lang) => {
     ]
   }
   if (lang === ESP) {
-    return ''
+    return dataAleatoriaEsp.preguntas[
+      Math.ceil(Math.random() * dataAleatoriaEsp.preguntas.length + 1)
+    ]
   }
 
   return dataAleatoria.preguntas[
