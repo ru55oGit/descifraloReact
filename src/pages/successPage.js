@@ -87,7 +87,7 @@ const SuccessPage = () => {
           <Typography
             fontWeight={theme.fontWeight.bold}
             sx={{ lineHeight: 1 }}
-            variant="h1"
+            variant="h2"
           >
             {key}
           </Typography>
