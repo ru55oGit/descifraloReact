@@ -50,6 +50,15 @@ const SuccessPage = () => {
     }
   }, [state.answer, state.title])
 
+  const goToCategories = () => {
+    if (gameState?.game?.category !== ALEATORIO) {
+      navigate('/niveles')
+    } else {
+      navigate('/categorias')
+    }
+    console.log('categories')
+  }
+
   const goToNext = () => {
     if (gameState?.game?.category !== ALEATORIO) {
       gameDispatch({
@@ -63,15 +72,8 @@ const SuccessPage = () => {
         type: Actions.UPDATE_LEVEL,
       })
     }
+    console.log('jugar')
     navigate('/jugar')
-  }
-
-  const goToCategories = () => {
-    if (gameState?.game?.category !== ALEATORIO) {
-      navigate('/niveles')
-    } else {
-      navigate('/categorias')
-    }
   }
 
   const getStatistics = () => {
@@ -130,7 +132,12 @@ const SuccessPage = () => {
 
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          <Button className={classes.darkButton} onClick={() => goToNext()}>
+          <Button
+            className={classes.darkButton}
+            onTouchEnd={() => {
+              goToNext()
+            }}
+          >
             <Typography variant="h1">
               {i18n.texts[languageState.language].next}
             </Typography>
@@ -139,7 +146,9 @@ const SuccessPage = () => {
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button
             className={classes.darkButton}
-            onClick={() => goToCategories()}
+            onTouchEnd={() => {
+              goToCategories()
+            }}
           >
             <Typography variant="h1">
               {gameState?.game?.category !== ALEATORIO
