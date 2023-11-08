@@ -56,7 +56,6 @@ const SuccessPage = () => {
     } else {
       navigate('/categorias')
     }
-    console.log('categories')
   }
 
   const goToNext = () => {
@@ -72,7 +71,6 @@ const SuccessPage = () => {
         type: Actions.UPDATE_LEVEL,
       })
     }
-    console.log('jugar')
     navigate('/jugar')
   }
 
