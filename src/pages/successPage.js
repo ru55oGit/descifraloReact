@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable consistent-return */
 /* eslint-disable no-unreachable-loop */
 /* eslint-disable no-restricted-syntax */
@@ -8,11 +9,11 @@ import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
+import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import { useNavigate, useLocation } from 'react-router-dom'
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { useParams } from 'react-router'
 import { useTheme } from '@mui/styles'
-import CheckCircleIcon from '@mui/icons-material/CheckCircle'
+import { isDevice } from '../utils'
 import { useGameContext, Actions } from '../store/game'
 import { useLanguageContext } from '../store/language'
 import i18n from '../constants/i18n.json'
@@ -132,6 +133,7 @@ const SuccessPage = () => {
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button
             className={classes.darkButton}
+            onClick={!isDevice ? () => goToNext() : undefined}
             onTouchEnd={() => {
               goToNext()
             }}
@@ -144,6 +146,7 @@ const SuccessPage = () => {
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button
             className={classes.darkButton}
+            onClick={() => (!isDevice ? goToCategories() : undefined)}
             onTouchEnd={() => {
               goToCategories()
             }}

@@ -49,6 +49,16 @@ import LevelEscudos from '../components/Levels/LevelEscudos'
 import LevelBanderas from '../components/Levels/LevelBanderas'
 import LevelWuzzles from '../components/Levels/LevelWuzzles'
 
+const userAgent = navigator.userAgent.toLowerCase()
+const isMobile = /iphone|ipad|ipod|android|blackberry|windows phone/g.test(
+  userAgent
+)
+const isTablet = /(ipad|tablet|playbook|silk)|(android(?!.*mobile))/g.test(
+  userAgent
+)
+
+const isDevice = isMobile || isTablet
+
 const getWordToGuess = (category, lang) => {
   let dataList
 
@@ -168,4 +178,4 @@ const getQuestions = (lang) => {
   ]
 }
 
-export { getWordToGuess, getImage, getQuestions }
+export { getWordToGuess, getImage, getQuestions, isDevice }

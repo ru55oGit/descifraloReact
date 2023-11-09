@@ -21,7 +21,6 @@
     "prop-types": "^15.8.1",
     "react": "latest",
     "react-countdown-circle-timer": "^3.2.1",
-    "react-device-detect": "^2.2.3",
     "react-dom": "latest",
     "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^6.9.0",

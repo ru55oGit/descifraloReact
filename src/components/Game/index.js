@@ -5,7 +5,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unstable-nested-components */
 import { useState, useEffect, useCallback, useRef } from 'react'
-import { isMobile } from 'react-device-detect'
 import { toPng } from 'html-to-image'
 import Keyboard from 'react-simple-keyboard'
 import Box from '@mui/material/Box'
@@ -25,7 +24,7 @@ import { useLanguageContext } from '../../store/language'
 import i18n from '../../constants/i18n.json'
 
 import 'react-simple-keyboard/build/css/index.css'
-import { getWordToGuess, getImage, getQuestions } from '../../utils'
+import { getWordToGuess, getImage, getQuestions, isDevice } from '../../utils'
 import useStyles from './styles'
 
 const Game = () => {
@@ -303,7 +302,7 @@ const Game = () => {
           </Typography>
           <Box
             className={classes.imageContainer}
-            sx={{ width: isMobile ? '30vh' : '50vh' }}
+            sx={{ width: isDevice ? '30vh' : '50vh' }}
           >
             {category !== ALEATORIO ? (
               getImage(category, level)

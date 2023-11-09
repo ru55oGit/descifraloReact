@@ -35,17 +35,16 @@ const Chip = (props) => {
 
   return (
     <Box>
-      <Box className={classes.chipContainer}>
-        <Stack
-          className={classes.imageContainer}
-          onClick={() => handleClick(category, level)}
-        >
+      <Box
+        className={classes.chipContainer}
+        onClick={() => handleClick(category, level)}
+      >
+        <Stack className={classes.imageContainer}>
           {getImage(category, level)}
         </Stack>
 
         <Stack className={classes.textContainer}>
           <PlayCircleOutlineRoundedIcon
-            onClick={() => handleClick(category, level)}
             sx={{
               background: theme.palette.white.main,
               borderRadius: '50%',
