@@ -57,7 +57,7 @@ const Language = ({ showTitle }) => {
               }
               variant={language === LAT ? 'body1' : 'body0'}
             >
-              Latino
+              Esp. Lat.
             </Typography>
           </Stack>
         </Button>

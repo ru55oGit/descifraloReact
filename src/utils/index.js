@@ -164,17 +164,17 @@ const getImage = (category, level) => {
 const getQuestions = (lang) => {
   if (lang === ENG) {
     return dataAleatoriaEng.preguntas[
-      Math.ceil(Math.random() * dataAleatoriaEng.preguntas.length + 1)
+      Math.ceil(Math.random() * dataAleatoriaEng.preguntas.length)
     ]
   }
   if (lang === ESP) {
     return dataAleatoriaEsp.preguntas[
-      Math.ceil(Math.random() * dataAleatoriaEsp.preguntas.length + 1)
+      Math.ceil(Math.random() * dataAleatoriaEsp.preguntas.length)
     ]
   }
 
   return dataAleatoria.preguntas[
-    Math.ceil(Math.random() * dataAleatoria.preguntas.length + 1)
+    Math.ceil(Math.random() * dataAleatoria.preguntas.length)
   ]
 }
 

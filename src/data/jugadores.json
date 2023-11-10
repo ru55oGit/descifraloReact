@@ -4,601 +4,79 @@
       "titulo": "Jugadores",
       "respuesta": "Lionel|Messi",
       "pregunta": "1",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "Cristiano|Ronaldo",
       "pregunta": "2",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "Ronaldo",
       "pregunta": "3",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "diego|maradona",
       "pregunta": "4",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "enzo|francescoli",
       "pregunta": "5",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "zinedine|zidane",
       "pregunta": "6",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "raul",
       "pregunta": "7",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "pele",
       "pregunta": "8",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "Zlatan|Ibrahimovic",
       "pregunta": "9",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "wayne|rooney",
       "pregunta": "10",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "Franz|Beckenbauer",
       "pregunta": "11",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "Johan|Cruyff",
       "pregunta": "12",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     },
     {
       "titulo": "Jugadores",
       "respuesta": "rafa|marquez",
       "pregunta": "13",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "gohan",
-      "pregunta": "14",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "el gavilan|pollero",
-      "pregunta": "15",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "Kearney",
-      "pregunta": "16",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "jefe|Quimby",
-      "pregunta": "17",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "majin boo",
-      "pregunta": "18",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "astro",
-      "pregunta": "19",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "pitufo|fortachon",
-      "pregunta": "20",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "porky",
-      "pregunta": "21",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "dr hibbert",
-      "pregunta": "22",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "donald",
-      "pregunta": "23",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "steve|Hyuga",
-      "pregunta": "24",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "milhouse",
-      "pregunta": "25",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "pluto",
-      "pregunta": "26",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "lisa|simpson",
-      "pregunta": "27",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "tiro loco|mcgraw",
-      "pregunta": "28",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "akira",
-      "pregunta": "29",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "robotina",
-      "pregunta": "30",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "masha|y oso",
-      "pregunta": "31",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "maggie|simpson",
-      "pregunta": "32",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "super|sonico",
-      "pregunta": "33",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "alcalde|diamante",
-      "pregunta": "34",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "goofy",
-      "pregunta": "35",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "huckleberry|hound",
-      "pregunta": "36",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "la hormiga",
-      "pregunta": "37",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "el pajaro|loco",
-      "pregunta": "38",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "el inspector",
-      "pregunta": "39",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "el fantasma|del espacio",
-      "pregunta": "40",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "pitufo|vanidoso",
-      "pregunta": "41",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "los gemelos|fantasticos",
-      "pregunta": "42",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "artie|ziff",
-      "pregunta": "43",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "ayudante|de santa",
-      "pregunta": "44",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "carl|carlson",
-      "pregunta": "45",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "cleto",
-      "pregunta": "46",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "uter",
-      "pregunta": "47",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "edna|krabappel",
-      "pregunta": "48",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "barney",
-      "pregunta": "49",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "patan",
-      "pregunta": "50",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "jeremias|springfield",
-      "pregunta": "51",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "jessica|alegria",
-      "pregunta": "52",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "kent|brockman",
-      "pregunta": "53",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "kirk|van houten",
-      "pregunta": "54",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "margo|zavala",
-      "pregunta": "55",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "montgomery|burns",
-      "pregunta": "56",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "la mujer|maravilla",
-      "pregunta": "57",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "profesor|frink",
-      "pregunta": "58",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "rafa|gorgory",
-      "pregunta": "59",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "cometin|sonico",
-      "pregunta": "60",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "sam|bigotes",
-      "pregunta": "61",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "leon o",
-      "pregunta": "62",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "astroboy",
-      "pregunta": "63",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "la hormiga|atomica",
-      "pregunta": "64",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "el oso|yogi",
-      "pregunta": "65",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "jem",
-      "pregunta": "66",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "herbert|powell",
-      "pregunta": "67",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "benito",
-      "pregunta": "68",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "la pantera|rosa",
-      "pregunta": "69",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "funzo",
-      "pregunta": "70",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "ricky|ricon",
-      "pregunta": "71",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "duffman",
-      "pregunta": "72",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "pikachu",
-      "pregunta": "73",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "lucero|sonico",
-      "pregunta": "74",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "gaspar",
-      "pregunta": "75",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "battle cat",
-      "pregunta": "76",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "jefe|gorgory",
-      "pregunta": "77",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "super|raton",
-      "pregunta": "78",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "jimbo",
-      "pregunta": "79",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "juan|topo",
-      "pregunta": "80",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "frank|grimes",
-      "pregunta": "81",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "don gato",
-      "pregunta": "82",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "pitufo|filosofo",
-      "pregunta": "83",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "dr nick",
-      "pregunta": "84",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "birdman",
-      "pregunta": "85",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "vegetta",
-      "pregunta": "86",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "larry|burns",
-      "pregunta": "87",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "inocencia|donoso",
-      "pregunta": "88",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "rayo de|plata",
-      "pregunta": "89",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "lionel|hutz",
-      "pregunta": "90",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "kang",
-      "pregunta": "91",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "krusty",
-      "pregunta": "92",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "el gallo|claudio",
-      "pregunta": "93",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "heidi",
-      "pregunta": "94",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "el jardinero|willy",
-      "pregunta": "95",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "papa|pitufo",
-      "pregunta": "96",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "Ultra|sonico",
-      "pregunta": "97",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "mr chispa",
-      "pregunta": "98",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "el inspector|gadget",
-      "pregunta": "99",
-      "categoria": "Jugadores"
-    },
-    {
-      "titulo": "Jugadores",
-      "respuesta": "martin|prince",
-      "pregunta": "100",
-      "categoria": "Jugadores"
+      "categoria": "jugadores"
     }
   ]
 }
