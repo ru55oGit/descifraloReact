@@ -13,7 +13,6 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useParams } from 'react-router'
 import { useTheme } from '@mui/styles'
-import { isDevice } from '../utils'
 import { useGameContext, Actions } from '../store/game'
 import { useLanguageContext } from '../store/language'
 import i18n from '../constants/i18n.json'
@@ -133,10 +132,7 @@ const SuccessPage = () => {
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button
             className={classes.darkButton}
-            onClick={!isDevice ? () => goToNext() : undefined}
-            onTouchEnd={() => {
-              goToNext()
-            }}
+            onClickCapture={() => goToNext()}
           >
             <Typography variant="h1">
               {i18n.texts[languageState.language].next}
@@ -146,10 +142,7 @@ const SuccessPage = () => {
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button
             className={classes.darkButton}
-            onClick={() => (!isDevice ? goToCategories() : undefined)}
-            onTouchEnd={() => {
-              goToCategories()
-            }}
+            onClickCapture={() => goToCategories()}
           >
             <Typography variant="h1">
               {gameState?.game?.category !== ALEATORIO
