@@ -130,10 +130,7 @@ const SuccessPage = () => {
 
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          <Button
-            className={classes.darkButton}
-            onClickCapture={() => goToNext()}
-          >
+          <Button className={classes.darkButton} onFocus={() => goToNext()}>
             <Typography variant="h1">
               {i18n.texts[languageState.language].next}
             </Typography>
@@ -142,7 +139,7 @@ const SuccessPage = () => {
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button
             className={classes.darkButton}
-            onClickCapture={() => goToCategories()}
+            onFocus={() => goToCategories()}
           >
             <Typography variant="h1">
               {gameState?.game?.category !== ALEATORIO
