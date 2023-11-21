@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable consistent-return */
 /* eslint-disable no-unreachable-loop */
 /* eslint-disable no-restricted-syntax */
@@ -9,16 +8,16 @@ import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
-import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import { useNavigate, useLocation } from 'react-router-dom'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { useParams } from 'react-router'
 import { useTheme } from '@mui/styles'
+import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import { useGameContext, Actions } from '../store/game'
 import { useLanguageContext } from '../store/language'
 import i18n from '../constants/i18n.json'
 import useStyles from '../styles/pages'
 import { ALEATORIO } from '../constants/const'
-import { isDevice } from '../utils'
 
 const SuccessPage = () => {
   const classes = useStyles()
@@ -51,14 +50,6 @@ const SuccessPage = () => {
     }
   }, [state.answer, state.title])
 
-  const goToCategories = () => {
-    if (gameState?.game?.category !== ALEATORIO) {
-      navigate('/niveles')
-    } else {
-      navigate('/categorias')
-    }
-  }
-
   const goToNext = () => {
     if (gameState?.game?.category !== ALEATORIO) {
       gameDispatch({
@@ -75,42 +66,13 @@ const SuccessPage = () => {
     navigate('/jugar')
   }
 
-  const buttonNext = () =>
-    !isDevice ? (
-      <Button className={classes.darkButton} onClick={() => goToNext()}>
-        <Typography variant="h1">
-          {i18n.texts[languageState.language].next}
-        </Typography>
-      </Button>
-    ) : (
-      <Button className={classes.darkButton} onTouchEnd={() => goToNext()}>
-        <Typography variant="h1">
-          {i18n.texts[languageState.language].next}
-        </Typography>
-      </Button>
-    )
-
-  const buttonCategory = () =>
-    !isDevice ? (
-      <Button className={classes.darkButton} onClick={() => goToCategories()}>
-        <Typography variant="h1">
-          {gameState?.game?.category !== ALEATORIO
-            ? i18n.texts[languageState.language].levels
-            : i18n.texts[languageState.language].categories}
-        </Typography>
-      </Button>
-    ) : (
-      <Button
-        className={classes.darkButton}
-        onTouchEnd={() => goToCategories()}
-      >
-        <Typography variant="h1">
-          {gameState?.game?.category !== ALEATORIO
-            ? i18n.texts[languageState.language].levels
-            : i18n.texts[languageState.language].categories}
-        </Typography>
-      </Button>
-    )
+  const goToCategories = () => {
+    if (gameState?.game?.category !== ALEATORIO) {
+      navigate('/niveles')
+    } else {
+      navigate('/categorias')
+    }
+  }
 
   const getStatistics = () => {
     const rows = []
@@ -125,7 +87,7 @@ const SuccessPage = () => {
           <Typography
             fontWeight={theme.fontWeight.bold}
             sx={{ lineHeight: 1 }}
-            variant="h2"
+            variant="h1"
           >
             {key}
           </Typography>
@@ -168,10 +130,20 @@ const SuccessPage = () => {
 
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          {buttonNext()}
+          <Button className={classes.darkButton} onClick={goToNext}>
+            <Typography variant="h1">
+              {i18n.texts[languageState.language].next}
+            </Typography>
+          </Button>
         </Grid>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          {buttonCategory()}
+          <Button className={classes.darkButton} onClick={goToCategories}>
+            <Typography variant="h1">
+              {gameState?.game?.category !== ALEATORIO
+                ? i18n.texts[languageState.language].levels
+                : i18n.texts[languageState.language].categories}
+            </Typography>
+          </Button>
         </Grid>
       </Grid>
     </Box>
