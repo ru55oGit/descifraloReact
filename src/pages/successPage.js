@@ -18,6 +18,7 @@ import { useLanguageContext } from '../store/language'
 import i18n from '../constants/i18n.json'
 import useStyles from '../styles/pages'
 import { ALEATORIO } from '../constants/const'
+import { isDevice } from '../utils'
 
 const SuccessPage = () => {
   const classes = useStyles()
@@ -130,7 +131,11 @@ const SuccessPage = () => {
 
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          <Button className={classes.darkButton} onFocus={() => goToNext()}>
+          <Button
+            className={classes.darkButton}
+            onFocus={() => !isDevice && goToNext()}
+            onTouchEnd={() => goToNext()}
+          >
             <Typography variant="h1">
               {i18n.texts[languageState.language].next}
             </Typography>
@@ -139,7 +144,8 @@ const SuccessPage = () => {
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button
             className={classes.darkButton}
-            onFocus={() => goToCategories()}
+            onFocus={() => !isDevice && goToCategories()}
+            onTouchEnd={() => goToCategories()}
           >
             <Typography variant="h1">
               {gameState?.game?.category !== ALEATORIO
