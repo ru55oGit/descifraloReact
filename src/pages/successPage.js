@@ -132,16 +132,17 @@ const SuccessPage = () => {
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button className={classes.darkButton} onClick={goToNext}>
             <Typography variant="h1">
-              {i18n.texts[languageState.language].next}
+              {/* {i18n.texts[languageState.language].next} */}1
             </Typography>
           </Button>
         </Grid>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button className={classes.darkButton} onClick={goToCategories}>
             <Typography variant="h1">
-              {gameState?.game?.category !== ALEATORIO
+              {/* {gameState?.game?.category !== ALEATORIO
                 ? i18n.texts[languageState.language].levels
-                : i18n.texts[languageState.language].categories}
+                : i18n.texts[languageState.language].categories} */}
+              2
             </Typography>
           </Button>
         </Grid>
