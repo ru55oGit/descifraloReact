@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable consistent-return */
 /* eslint-disable no-unreachable-loop */
 /* eslint-disable no-restricted-syntax */
@@ -48,7 +49,7 @@ const SuccessPage = () => {
       }
       setSession(sessionStorage)
     }
-  }, [state.answer, state.title])
+  }, [])
 
   const goToNext = () => {
     if (gameState?.game?.category !== ALEATORIO) {
@@ -130,18 +131,18 @@ const SuccessPage = () => {
 
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
+          <Button className={classes.darkButton} onClick={goToNext}>
+            <Typography variant="h1">
+              {i18n.texts[languageState.language].next}
+            </Typography>
+          </Button>
+        </Grid>
+        <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           <Button className={classes.darkButton} onClick={goToCategories}>
             <Typography variant="h1">
               {gameState?.game?.category !== ALEATORIO
                 ? i18n.texts[languageState.language].levels
                 : i18n.texts[languageState.language].categories}
-            </Typography>
-          </Button>
-        </Grid>
-        <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          <Button className={classes.darkButton} onClick={goToNext}>
-            <Typography variant="h1">
-              {i18n.texts[languageState.language].next}
             </Typography>
           </Button>
         </Grid>
