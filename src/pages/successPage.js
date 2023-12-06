@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable consistent-return */
 /* eslint-disable no-unreachable-loop */
 /* eslint-disable no-restricted-syntax */
@@ -49,7 +48,7 @@ const SuccessPage = () => {
       }
       setSession(sessionStorage)
     }
-  }, [])
+  }, [state])
 
   const goToNext = () => {
     if (gameState?.game?.category !== ALEATORIO) {
