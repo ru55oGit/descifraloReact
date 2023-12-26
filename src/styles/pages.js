@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '0 3px 5px 1px rgba(0, 0, 0, 0.75)',
     display: 'flex',
     flexDirection: 'column',
-    height: '110px',
+    height: '130px',
     justifyContent: 'space-between',
     margin: '10px auto',
     padding: '8px',

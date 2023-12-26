@@ -18,6 +18,7 @@ import { useLanguageContext } from '../store/language'
 import i18n from '../constants/i18n.json'
 import useStyles from '../styles/pages'
 import { ALEATORIO } from '../constants/const'
+import { isDevice } from '../utils'
 
 const SuccessPage = () => {
   const classes = useStyles()
@@ -30,6 +31,7 @@ const SuccessPage = () => {
   const [session, setSession] = useState()
 
   useEffect(() => {
+    console.log(state.title)
     if (state.title) {
       const storedDataJSON = sessionStorage.getItem(state.title)
 
@@ -48,7 +50,7 @@ const SuccessPage = () => {
       }
       setSession(sessionStorage)
     }
-  }, [state])
+  }, [state.answer, state.title])
 
   const goToNext = () => {
     if (gameState?.game?.category !== ALEATORIO) {
@@ -130,20 +132,38 @@ const SuccessPage = () => {
 
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          <Button className={classes.darkButton} onClick={goToNext}>
-            <Typography variant="h1">
-              {i18n.texts[languageState.language].next}
-            </Typography>
-          </Button>
+          {isDevice ? (
+            <Button className={classes.darkButton} onTouchEnd={goToNext}>
+              <Typography variant="h1">
+                {i18n.texts[languageState.language].next}
+              </Typography>
+            </Button>
+          ) : (
+            <Button className={classes.darkButton} onClick={goToNext}>
+              <Typography variant="h1">
+                {i18n.texts[languageState.language].next}
+              </Typography>
+            </Button>
+          )}
         </Grid>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          <Button className={classes.darkButton} onClick={goToCategories}>
-            <Typography variant="h1">
-              {gameState?.game?.category !== ALEATORIO
-                ? i18n.texts[languageState.language].levels
-                : i18n.texts[languageState.language].categories}
-            </Typography>
-          </Button>
+          {isDevice ? (
+            <Button className={classes.darkButton} onTouchEnd={goToCategories}>
+              <Typography variant="h1">
+                {gameState?.game?.category !== ALEATORIO
+                  ? i18n.texts[languageState.language].levels
+                  : i18n.texts[languageState.language].categories}
+              </Typography>
+            </Button>
+          ) : (
+            <Button className={classes.darkButton} onClick={goToCategories}>
+              <Typography variant="h1">
+                {gameState?.game?.category !== ALEATORIO
+                  ? i18n.texts[languageState.language].levels
+                  : i18n.texts[languageState.language].categories}
+              </Typography>
+            </Button>
+          )}
         </Grid>
       </Grid>
     </Box>
