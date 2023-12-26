@@ -31,7 +31,6 @@ const SuccessPage = () => {
   const [session, setSession] = useState()
 
   useEffect(() => {
-    console.log(state.title)
     if (state.title) {
       const storedDataJSON = sessionStorage.getItem(state.title)
 
