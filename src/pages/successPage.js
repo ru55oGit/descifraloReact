@@ -19,6 +19,7 @@ import i18n from '../constants/i18n.json'
 import useStyles from '../styles/pages'
 import { ALEATORIO } from '../constants/const'
 import { isDevice } from '../utils'
+import { CATEGORIES, LEVELS, PLAY } from '../constants/routes'
 
 const SuccessPage = () => {
   const classes = useStyles()
@@ -64,14 +65,14 @@ const SuccessPage = () => {
         type: Actions.UPDATE_LEVEL,
       })
     }
-    navigate('/jugar')
+    navigate(PLAY)
   }
 
   const goToCategories = () => {
-    if (gameState?.game?.category !== ALEATORIO) {
-      navigate('/niveles')
+    if (gameState?.game?.category === ALEATORIO) {
+      navigate(CATEGORIES)
     } else {
-      navigate('/categorias')
+      navigate(LEVELS)
     }
   }
 

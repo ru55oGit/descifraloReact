@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
 import { useNavigate } from 'react-router-dom'
 import { getImage } from '../../utils'
-
+import { LEVELS } from '../../constants/routes'
 import {
   Acertijos,
   Emojis,
@@ -73,7 +73,7 @@ const Levels = () => {
       type: Actions.UPDATE_LEVEL,
     })
 
-    navigate('/niveles')
+    navigate(LEVELS)
   }
 
   return (

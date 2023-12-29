@@ -22,7 +22,7 @@ import { ALEATORIO } from '../../constants/const'
 import { useGameContext, Actions } from '../../store/game'
 import { useLanguageContext } from '../../store/language'
 import i18n from '../../constants/i18n.json'
-
+import { NEXT, LEVELS, HOME } from '../../constants/routes'
 import 'react-simple-keyboard/build/css/index.css'
 import { getWordToGuess, getImage, getQuestions, isDevice } from '../../utils'
 import useStyles from './styles'
@@ -88,7 +88,7 @@ const Game = () => {
       wrongLetters?.includes('111') &&
       gameState?.game?.category === ALEATORIO
     ) {
-      navigate(`/sig/${ALEATORIO}`, { state: { answer: 0, title } })
+      navigate(`${NEXT}/${ALEATORIO}`, { state: { answer: 0, title } })
     } else if (
       wrongLetters?.includes('111') &&
       storage?.timeBlocked === undefined
@@ -144,7 +144,7 @@ const Game = () => {
           ].respuesta
         )
       } catch (err) {
-        navigate('/niveles')
+        navigate(LEVELS)
       }
 
       setLevelReached(parseInt(storage?.levelReached || 1, 10))
@@ -162,7 +162,7 @@ const Game = () => {
       setWord(respuesta)
       setTitle(titulo)
     } else {
-      navigate('/')
+      navigate(HOME)
     }
 
     return () => {
@@ -265,7 +265,7 @@ const Game = () => {
           JSON.stringify({ levelReached: level + 1 })
         )
       }
-      navigate(`/sig/${category}`, { state: { answer: 1, title } })
+      navigate(`${NEXT}/${category}`, { state: { answer: 1, title } })
     }
   }
 

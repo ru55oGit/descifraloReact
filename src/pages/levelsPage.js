@@ -13,6 +13,7 @@ import { useGameContext, Actions } from '../store/game'
 import { useLanguageContext } from '../store/language'
 import useStyles from '../styles/pages'
 import { getWordToGuess, getImage } from '../utils'
+import { HOME, PLAY } from '../constants/routes'
 
 const LevelsPage = () => {
   const classes = useStyles()
@@ -45,7 +46,7 @@ const LevelsPage = () => {
         })
       }
     } else {
-      navigate('/')
+      navigate(HOME)
     }
   }, [gameState, navigate, list, languageState.language])
 
@@ -58,7 +59,7 @@ const LevelsPage = () => {
       type: Actions.UPDATE_LEVEL,
     })
 
-    navigate('/jugar')
+    navigate(PLAY)
   }
 
   return (

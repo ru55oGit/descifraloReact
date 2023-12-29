@@ -13,6 +13,7 @@ import { useLanguageContext } from '../../store/language'
 import { ALEATORIO } from '../../constants/const'
 import i18n from '../../constants/i18n.json'
 import useStyles from './styles'
+import { CATEGORIES, PLAY, LEVELS } from '../../constants/routes'
 
 const NavBar = (props) => {
   const {
@@ -43,11 +44,11 @@ const NavBar = (props) => {
   const handleBack = () => {
     if (
       gameState?.game?.category === ALEATORIO ||
-      window.location.pathname === '/niveles'
+      window.location.pathname === LEVELS
     ) {
-      navigate('/categorias')
-    } else if (window.location.pathname === '/jugar') {
-      navigate('/niveles')
+      navigate(CATEGORIES)
+    } else if (window.location.pathname === PLAY) {
+      navigate(LEVELS)
     } else {
       navigate(-1)
     }

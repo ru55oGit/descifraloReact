@@ -7,6 +7,7 @@ import useStyles from '../styles/pages'
 import Language from '../components/Language'
 import { useLanguageContext } from '../store/language'
 import i18n from '../constants/i18n.json'
+import { CATEGORIES } from '../constants/routes'
 
 const CategoriesPage = () => {
   const classes = useStyles()
@@ -18,7 +19,7 @@ const CategoriesPage = () => {
       <Carrousel languageState={languageState} />
       <Button
         className={classes.transparentButton}
-        onClick={() => navigate('/categorias')}
+        onClick={() => navigate(CATEGORIES)}
       >
         <Typography variant="hxl">
           {i18n.texts[languageState?.language].play}

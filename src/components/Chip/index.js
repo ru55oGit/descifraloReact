@@ -10,6 +10,7 @@ import { getImage } from '../../utils'
 import { useGameContext, Actions } from '../../store/game'
 import { ALEATORIO } from '../../constants/const'
 import { useLanguageContext } from '../../store/language'
+import { LEVELS, PLAY } from '../../constants/routes'
 import i18n from '../../constants/i18n.json'
 
 const Chip = (props) => {
@@ -30,7 +31,7 @@ const Chip = (props) => {
       type: Actions.UPDATE_LEVEL,
     })
 
-    navigate(!isRandom ? '/niveles' : '/jugar')
+    navigate(!isRandom ? LEVELS : PLAY)
   }
 
   return (
