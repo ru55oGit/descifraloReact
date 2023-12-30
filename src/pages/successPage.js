@@ -152,7 +152,7 @@ const SuccessPage = () => {
           {isDevice ? (
             <Button
               className={classes.darkButton}
-              onTouchStart={goToCategories}
+              onTouchStart={() => setTimeout(goToCategories(), 500)}
             >
               <Typography variant="h1">
                 {gameState?.game?.category !== ALEATORIO
