@@ -6,7 +6,7 @@ import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
 import { useNavigate } from 'react-router-dom'
 import Language from '../Language'
-
+import { HOME } from '../../constants/routes'
 import useStyles from './styles'
 
 const Menu = () => {
@@ -17,7 +17,7 @@ const Menu = () => {
     <Box className={classes.listContainer}>
       <List disablePadding>
         <ListItem className={classes.listItem} disablePadding>
-          <ListItemButton onClick={() => navigate('/')}>
+          <ListItemButton onClick={() => navigate(HOME)}>
             <ListItemText>
               <Typography color="text.primary" variant="h2">
                 Inicio

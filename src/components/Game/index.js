@@ -18,7 +18,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useTheme } from '@mui/styles'
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
-import { ALEATORIO } from '../../constants/const'
+import { ALEATORIO, QUESTIONS } from '../../constants/const'
 import { useGameContext, Actions } from '../../store/game'
 import { useLanguageContext } from '../../store/language'
 import i18n from '../../constants/i18n.json'
@@ -302,9 +302,9 @@ const Game = () => {
           </Typography>
           <Box
             className={classes.imageContainer}
-            sx={{ width: isDevice ? '30vh' : '50vh' }}
+            sx={{ width: isDevice ? '25vh' : '50vh' }}
           >
-            {category !== ALEATORIO ? (
+            {category !== QUESTIONS ? (
               getImage(category, level)
             ) : (
               <Typography variant="hxl">{question}</Typography>

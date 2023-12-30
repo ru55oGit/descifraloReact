@@ -30,6 +30,7 @@ const SuccessPage = () => {
   const { category } = useParams()
   const { state } = useLocation()
   const [session, setSession] = useState()
+  const [categorySelected, setCategorySelected] = useState()
 
   useEffect(() => {
     if (state.title) {
@@ -50,10 +51,11 @@ const SuccessPage = () => {
       }
       setSession(sessionStorage)
     }
-  }, [state.answer, state.title])
+    setCategorySelected(gameState?.game?.category)
+  }, [state.answer, state.title, gameState])
 
   const goToNext = () => {
-    if (gameState?.game?.category !== ALEATORIO) {
+    if (categorySelected !== ALEATORIO) {
       gameDispatch({
         game: {
           category,
@@ -69,10 +71,7 @@ const SuccessPage = () => {
   }
 
   const goToCategories = () => {
-    // eslint-disable-next-line no-alert
-    alert(gameState?.game?.category)
-
-    if (gameState?.game?.category === ALEATORIO) {
+    if (categorySelected === ALEATORIO) {
       navigate(CATEGORIES)
     } else {
       navigate(LEVELS)
