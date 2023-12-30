@@ -133,7 +133,7 @@ const SuccessPage = () => {
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           {isDevice ? (
-            <Button className={classes.darkButton} onTouchEnd={goToNext}>
+            <Button className={classes.darkButton} onTouchStart={goToNext}>
               <Typography variant="h1">
                 {i18n.texts[languageState.language].next}
               </Typography>
@@ -148,7 +148,10 @@ const SuccessPage = () => {
         </Grid>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           {isDevice ? (
-            <Button className={classes.darkButton} onTouchEnd={goToCategories}>
+            <Button
+              className={classes.darkButton}
+              onTouchStart={goToCategories}
+            >
               <Typography variant="h1">
                 {gameState?.game?.category !== ALEATORIO
                   ? i18n.texts[languageState.language].levels
