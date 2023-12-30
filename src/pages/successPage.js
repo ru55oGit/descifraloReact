@@ -69,6 +69,9 @@ const SuccessPage = () => {
   }
 
   const goToCategories = () => {
+    // eslint-disable-next-line no-alert
+    alert(gameState?.game?.category)
+
     if (gameState?.game?.category === ALEATORIO) {
       navigate(CATEGORIES)
     } else {
