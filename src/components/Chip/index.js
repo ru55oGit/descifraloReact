@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types'
 import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import PlayCircleOutlineRoundedIcon from '@mui/icons-material/PlayCircleOutlineRounded'
 import { useTheme } from '@mui/styles'
 import { useNavigate } from 'react-router-dom'
 import useStyles from './styles'
-import { getImage } from '../../utils'
+import { getImage, isDevice } from '../../utils'
 import { useGameContext, Actions } from '../../store/game'
 import { ALEATORIO } from '../../constants/const'
 import { useLanguageContext } from '../../store/language'
@@ -36,38 +37,73 @@ const Chip = (props) => {
 
   return (
     <Box>
-      <Box
-        className={classes.chipContainer}
-        onClick={() => handleClick(category, level)}
-      >
-        <Stack className={classes.imageContainer}>
-          {getImage(category, level)}
-        </Stack>
+      {isDevice ? (
+        <Button
+          className={classes.chipContainer}
+          onTouchStart={() => handleClick(category, level)}
+        >
+          <Stack className={classes.imageContainer}>
+            {getImage(category, level)}
+          </Stack>
 
-        <Stack className={classes.textContainer}>
-          <PlayCircleOutlineRoundedIcon
-            sx={{
-              background: theme.palette.white.main,
-              borderRadius: '50%',
-              color: theme.palette.primary.main,
-              cursor: 'pointer',
-              fontSize: '3rem',
-            }}
-          />
-          {isRandom ? (
-            <Typography>
-              {i18n.texts[languageState?.language].allCategories}
+          <Stack className={classes.textContainer}>
+            <PlayCircleOutlineRoundedIcon
+              sx={{
+                background: theme.palette.white.main,
+                borderRadius: '50%',
+                color: theme.palette.primary.main,
+                cursor: 'pointer',
+                fontSize: '3rem',
+              }}
+            />
+            {isRandom ? (
+              <Typography>
+                {i18n.texts[languageState?.language].allCategories}
+              </Typography>
+            ) : (
+              <Typography>
+                {i18n.texts[languageState?.language].level}: {level}
+              </Typography>
+            )}
+            <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
+              {title}
             </Typography>
-          ) : (
-            <Typography>
-              {i18n.texts[languageState?.language].level}: {level}
+          </Stack>
+        </Button>
+      ) : (
+        <Button
+          className={classes.chipContainer}
+          onClick={() => handleClick(category, level)}
+        >
+          <Stack className={classes.imageContainer}>
+            {getImage(category, level)}
+          </Stack>
+
+          <Stack className={classes.textContainer}>
+            <PlayCircleOutlineRoundedIcon
+              sx={{
+                background: theme.palette.white.main,
+                borderRadius: '50%',
+                color: theme.palette.primary.main,
+                cursor: 'pointer',
+                fontSize: '3rem',
+              }}
+            />
+            {isRandom ? (
+              <Typography>
+                {i18n.texts[languageState?.language].allCategories}
+              </Typography>
+            ) : (
+              <Typography>
+                {i18n.texts[languageState?.language].level}: {level}
+              </Typography>
+            )}
+            <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
+              {title}
             </Typography>
-          )}
-          <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
-            {title}
-          </Typography>
-        </Stack>
-      </Box>
+          </Stack>
+        </Button>
+      )}
     </Box>
   )
 }

@@ -9,8 +9,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '5px 5px 10px 0px rgba(0,0,0,0.5)',
     display: 'flex',
     height: '110px',
+    justifyContent: 'flex-start',
     margin: '50px auto',
     position: 'relative',
+    textAlign: 'left',
     width: '95%',
   },
   imageContainer: {
