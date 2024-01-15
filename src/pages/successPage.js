@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable consistent-return */
 /* eslint-disable no-unreachable-loop */
 /* eslint-disable no-restricted-syntax */
@@ -29,12 +30,11 @@ const SuccessPage = () => {
   const { languageState } = useLanguageContext()
   const { category } = useParams()
   const { state } = useLocation()
-  const [session, setSession] = useState()
-  const [categorySelected, setCategorySelected] = useState()
+  const [session, setSession] = useState(sessionStorage || {})
 
   useEffect(() => {
     if (state.title) {
-      const storedDataJSON = sessionStorage.getItem(state.title)
+      const storedDataJSON = sessionStorage.getItem(state?.title)
 
       if (!storedDataJSON) {
         sessionStorage.setItem(
@@ -51,11 +51,10 @@ const SuccessPage = () => {
       }
       setSession(sessionStorage)
     }
-    setCategorySelected(gameState?.game?.category)
-  }, [state.answer, state.title, gameState])
+  }, [state.title, state.answer])
 
   const goToNext = () => {
-    if (categorySelected !== ALEATORIO) {
+    if (gameState?.game?.category !== ALEATORIO) {
       gameDispatch({
         game: {
           category,
@@ -71,7 +70,7 @@ const SuccessPage = () => {
   }
 
   const goToCategories = () => {
-    if (categorySelected === ALEATORIO) {
+    if (gameState?.game?.category === ALEATORIO) {
       navigate(CATEGORIES)
     } else {
       navigate(LEVELS)
