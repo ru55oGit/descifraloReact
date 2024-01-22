@@ -38,24 +38,29 @@ const Chip = (props) => {
   return (
     <Box>
       {isDevice ? (
-        <Button
-          className={classes.chipContainer}
-          onTouchStart={() => handleClick(category, level)}
-        >
-          <Stack className={classes.imageContainer}>
+        <Box className={classes.chipContainer}>
+          <Button
+            className={classes.imageContainer}
+            onTouchStart={() => handleClick(category, level)}
+          >
             {getImage(category, level)}
-          </Stack>
-
+          </Button>
           <Stack className={classes.textContainer}>
-            <PlayCircleOutlineRoundedIcon
-              sx={{
-                background: theme.palette.white.main,
-                borderRadius: '50%',
-                color: theme.palette.primary.main,
-                cursor: 'pointer',
-                fontSize: '3rem',
-              }}
-            />
+            <Button onTouchStart={() => handleClick(category, level)}>
+              <PlayCircleOutlineRoundedIcon
+                sx={{
+                  background: theme.palette.white.main,
+                  borderRadius: '50%',
+                  color: theme.palette.primary.main,
+                  cursor: 'pointer',
+                  fontSize: '3rem',
+                }}
+              />
+              <Typography>Jugar</Typography>
+            </Button>
+            <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
+              {title}
+            </Typography>
             {isRandom ? (
               <Typography>
                 {i18n.texts[languageState?.language].allCategories}
@@ -65,30 +70,32 @@ const Chip = (props) => {
                 {i18n.texts[languageState?.language].level}: {level}
               </Typography>
             )}
-            <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
-              {title}
-            </Typography>
           </Stack>
-        </Button>
+        </Box>
       ) : (
-        <Button
-          className={classes.chipContainer}
-          onClick={() => handleClick(category, level)}
-        >
-          <Stack className={classes.imageContainer}>
+        <Box className={classes.chipContainer}>
+          <Button
+            className={classes.imageContainer}
+            onClick={() => handleClick(category, level)}
+          >
             {getImage(category, level)}
-          </Stack>
+          </Button>
 
           <Stack className={classes.textContainer}>
-            <PlayCircleOutlineRoundedIcon
-              sx={{
-                background: theme.palette.white.main,
-                borderRadius: '50%',
-                color: theme.palette.primary.main,
-                cursor: 'pointer',
-                fontSize: '3rem',
-              }}
-            />
+            <Button onClick={() => handleClick(category, level)}>
+              <PlayCircleOutlineRoundedIcon
+                sx={{
+                  borderRadius: '50%',
+                  color: theme.palette.primary.main,
+                  cursor: 'pointer',
+                  fontSize: '3rem',
+                }}
+              />
+              <Typography>Jugar</Typography>
+            </Button>
+            <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
+              {title}
+            </Typography>
             {isRandom ? (
               <Typography>
                 {i18n.texts[languageState?.language].allCategories}
@@ -98,11 +105,8 @@ const Chip = (props) => {
                 {i18n.texts[languageState?.language].level}: {level}
               </Typography>
             )}
-            <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
-              {title}
-            </Typography>
           </Stack>
-        </Button>
+        </Box>
       )}
     </Box>
   )
