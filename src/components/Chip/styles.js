@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     right: '10px',
     top: '-50px',
     width: 110,
+    zIndex: 1,
   },
   textContainer: {
     '& .MuiButton-root': {
