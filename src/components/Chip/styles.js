@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     height: '110px',
     justifyContent: 'flex-start',
-    margin: '50px auto',
+    margin: '55px auto',
     padding: '8px 0',
     position: 'relative',
     textAlign: 'left',
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     right: '10px',
     top: '-50px',
-    width: 120,
+    width: 110,
   },
   textContainer: {
     '& .MuiButton-root': {

@@ -39,12 +39,9 @@ const Chip = (props) => {
     <Box>
       {isDevice ? (
         <Box className={classes.chipContainer}>
-          <Button
-            className={classes.imageContainer}
-            onTouchStart={() => handleClick(category, level)}
-          >
+          <Stack className={classes.imageContainer}>
             {getImage(category, level)}
-          </Button>
+          </Stack>
           <Stack className={classes.textContainer}>
             <Button onTouchStart={() => handleClick(category, level)}>
               <PlayCircleOutlineRoundedIcon
@@ -74,12 +71,9 @@ const Chip = (props) => {
         </Box>
       ) : (
         <Box className={classes.chipContainer}>
-          <Button
-            className={classes.imageContainer}
-            onClick={() => handleClick(category, level)}
-          >
+          <Stack className={classes.imageContainer}>
             {getImage(category, level)}
-          </Button>
+          </Stack>
 
           <Stack className={classes.textContainer}>
             <Button onClick={() => handleClick(category, level)}>
