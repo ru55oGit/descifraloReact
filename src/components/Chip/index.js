@@ -22,9 +22,7 @@ const Chip = (props) => {
   const { languageState } = useLanguageContext()
   const { level, category, title, isRandom } = props
 
-  const handleClick = (cat, lev, str) => {
-    console.log(str)
-
+  const handleClick = (cat, lev) => {
     const payload = !isRandom
       ? { category: cat, level: lev }
       : { category: ALEATORIO, level: null }
@@ -45,7 +43,7 @@ const Chip = (props) => {
             {getImage(category, level)}
           </Stack>
           <Stack className={classes.textContainer}>
-            <Button onTouchEnd={() => handleClick(category, level, 'touch')}>
+            <Button onTouchEnd={() => handleClick(category, level)}>
               <PlayCircleOutlineRoundedIcon
                 sx={{
                   background: theme.palette.white.main,
@@ -80,7 +78,7 @@ const Chip = (props) => {
           </Stack>
 
           <Stack className={classes.textContainer}>
-            <Button onClick={() => handleClick(category, level, 'click')}>
+            <Button onClick={() => handleClick(category, level)}>
               <PlayCircleOutlineRoundedIcon
                 sx={{
                   borderRadius: '50%',
