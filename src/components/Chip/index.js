@@ -22,7 +22,9 @@ const Chip = (props) => {
   const { languageState } = useLanguageContext()
   const { level, category, title, isRandom } = props
 
-  const handleClick = (cat, lev) => {
+  const handleClick = (cat, lev, str) => {
+    console.log(str)
+
     const payload = !isRandom
       ? { category: cat, level: lev }
       : { category: ALEATORIO, level: null }
@@ -43,7 +45,7 @@ const Chip = (props) => {
             {getImage(category, level)}
           </Stack>
           <Stack className={classes.textContainer}>
-            <Button onTouchStart={() => handleClick(category, level)}>
+            <Button onTouchEnd={() => handleClick(category, level, 'touch')}>
               <PlayCircleOutlineRoundedIcon
                 sx={{
                   background: theme.palette.white.main,
@@ -53,7 +55,9 @@ const Chip = (props) => {
                   fontSize: '3rem',
                 }}
               />
-              <Typography>Jugar</Typography>
+              <Typography>
+                {i18n.texts[languageState?.language].play}
+              </Typography>
             </Button>
             <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
               {title}
@@ -76,7 +80,7 @@ const Chip = (props) => {
           </Stack>
 
           <Stack className={classes.textContainer}>
-            <Button onClick={() => handleClick(category, level)}>
+            <Button onClick={() => handleClick(category, level, 'click')}>
               <PlayCircleOutlineRoundedIcon
                 sx={{
                   borderRadius: '50%',
@@ -85,7 +89,9 @@ const Chip = (props) => {
                   fontSize: '3rem',
                 }}
               />
-              <Typography>Jugar</Typography>
+              <Typography>
+                {i18n.texts[languageState?.language].play}
+              </Typography>
             </Button>
             <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
               {title}
