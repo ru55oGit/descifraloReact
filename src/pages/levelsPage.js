@@ -12,7 +12,7 @@ import NavBar from '../components/NavBar'
 import { useGameContext, Actions } from '../store/game'
 import { useLanguageContext } from '../store/language'
 import useStyles from '../styles/pages'
-import { getWordToGuess, getImage } from '../utils'
+import { getWordToGuess, getImage, isDevice } from '../utils'
 import { HOME, PLAY } from '../constants/routes'
 
 const LevelsPage = () => {
@@ -62,6 +62,43 @@ const LevelsPage = () => {
     navigate(PLAY)
   }
 
+  const buttons = (k, i) =>
+    isDevice ? (
+      <Button
+        key={k.respuesta}
+        ref={levelReached === i + 1 ? scrollToRef : null}
+        onTouchEnd={() => handleClick(i)}
+        sx={{
+          background: theme.palette.white.main,
+          border: `1px solid ${theme.palette.primary.main}`,
+          borderRadius: '4px',
+          boxShadow: theme.palette.shadows.overlay,
+          m: '2px',
+          p: '4px',
+          width: 'calc(25% - 8px)',
+        }}
+      >
+        {getImage(gameState.game.category, i + 1)}
+      </Button>
+    ) : (
+      <Button
+        key={k.respuesta}
+        ref={levelReached === i + 1 ? scrollToRef : null}
+        onClick={() => handleClick(i)}
+        sx={{
+          background: theme.palette.white.main,
+          border: `1px solid ${theme.palette.primary.main}`,
+          borderRadius: '4px',
+          boxShadow: theme.palette.shadows.overlay,
+          m: '2px',
+          p: '4px',
+          width: 'calc(25% - 8px)',
+        }}
+      >
+        {getImage(gameState.game.category, i + 1)}
+      </Button>
+    )
+
   return (
     <Box className={classes.boxContainer}>
       <NavBar
@@ -110,22 +147,7 @@ const LevelsPage = () => {
         {list &&
           list.map((k, i) =>
             levelReached >= i + 1 ? (
-              <Button
-                key={k.respuesta}
-                ref={levelReached === i + 1 ? scrollToRef : null}
-                onClick={() => handleClick(i)}
-                sx={{
-                  background: theme.palette.white.main,
-                  border: `1px solid ${theme.palette.primary.main}`,
-                  borderRadius: '4px',
-                  boxShadow: theme.palette.shadows.overlay,
-                  m: '2px',
-                  p: '4px',
-                  width: 'calc(25% - 8px)',
-                }}
-              >
-                {getImage(gameState.game.category, i + 1)}
-              </Button>
+              buttons(k, i)
             ) : (
               <Button
                 key={k.respuesta}
