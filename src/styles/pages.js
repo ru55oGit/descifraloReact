@@ -2,8 +2,7 @@ import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles((theme) => ({
   backgroundIntro: {
-    backgroundColor: theme.palette.primary.main,
-    backgroundSize: '64px 96px',
+    background: 'linear-gradient(#a34747, #F44336)',
     display: 'flex',
     flexDirection: 'column',
     height: '100vh',
