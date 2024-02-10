@@ -14,6 +14,9 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import { useParams } from 'react-router'
 import { useTheme } from '@mui/styles'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
+import Collapse from '@mui/material/Collapse'
+import NavBar from '../components/NavBar'
+import Menu from '../components/Menu'
 import { useGameContext, Actions } from '../store/game'
 import { useLanguageContext } from '../store/language'
 import i18n from '../constants/i18n.json'
@@ -31,6 +34,7 @@ const SuccessPage = () => {
   const { category } = useParams()
   const { state } = useLocation()
   const [session, setSession] = useState(sessionStorage || {})
+  const [openMenu, setOpenMenu] = useState(false)
 
   useEffect(() => {
     if (state.title) {
@@ -117,6 +121,10 @@ const SuccessPage = () => {
 
   return (
     <Box className={classes.backgroundSuccess}>
+      <NavBar fixed openMenu={openMenu} setOpenMenu={setOpenMenu} />
+      <Collapse className={classes.menu} in={openMenu}>
+        <Menu />
+      </Collapse>
       {state.title && <Grid container>{session && getStatistics()}</Grid>}
 
       {!state.title && (
@@ -134,13 +142,16 @@ const SuccessPage = () => {
       <Grid container spacing={1}>
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           {isDevice ? (
-            <Button className={classes.darkButton} onTouchStart={goToNext}>
+            <Button
+              className={classes.transparentButton}
+              onTouchStart={goToNext}
+            >
               <Typography variant="h1">
                 {i18n.texts[languageState.language].next}
               </Typography>
             </Button>
           ) : (
-            <Button className={classes.darkButton} onClick={goToNext}>
+            <Button className={classes.transparentButton} onClick={goToNext}>
               <Typography variant="h1">
                 {i18n.texts[languageState.language].next}
               </Typography>
@@ -150,7 +161,7 @@ const SuccessPage = () => {
         <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
           {isDevice ? (
             <Button
-              className={classes.darkButton}
+              className={classes.transparentButton}
               onTouchStart={goToCategories}
             >
               <Typography variant="h1">
@@ -160,7 +171,10 @@ const SuccessPage = () => {
               </Typography>
             </Button>
           ) : (
-            <Button className={classes.darkButton} onClick={goToCategories}>
+            <Button
+              className={classes.transparentButton}
+              onClick={goToCategories}
+            >
               <Typography variant="h1">
                 {gameState?.game?.category !== ALEATORIO
                   ? i18n.texts[languageState.language].levels

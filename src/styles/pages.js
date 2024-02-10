@@ -10,17 +10,19 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '414px',
   },
   backgroundSuccess: {
-    background: theme.palette.white.main,
-    borderStyle: 'double',
+    background: 'linear-gradient(#a34747, #F44336)',
     display: 'flex',
     flexDirection: 'column',
-    height: 'auto',
+    height: '100vh',
     justifyContent: 'space-between',
-    margin: '16px auto',
+    margin: 'auto',
     maxWidth: '414px',
-    minHeight: '85vh',
-    padding: '30px 8px',
+    padding: '0 8px 16px',
+    position: 'relative',
     width: '90%',
+    [theme.breakpoints.down('sm')]: {
+      padding: '0 20px',
+    },
   },
   boxContainer: {
     backgroundColor: 'transparent',
@@ -38,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.error.main,
   },
   gridItem: {
+    background: theme.palette.white.main,
     borderRadius: '12px',
     boxShadow: '0 3px 5px 1px rgba(0, 0, 0, 0.75)',
     display: 'flex',
@@ -71,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.white.main,
     margin: 'auto',
     padding: '8px 32px',
-    width: 'calc(85% - 32px)',
+    width: 'calc(100% - 16px)',
   },
   warning: {
     color: theme.palette.warning.dark,

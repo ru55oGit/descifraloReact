@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import { useState, useEffect } from 'react'
 import Stack from '@mui/material/Stack'
 import Avatar from '@mui/material/Avatar'
@@ -8,7 +7,7 @@ import { useTheme } from '@mui/styles'
 import { useLanguageContext, Actions } from '../../store/language'
 import { ENG, ESP, LAT } from '../../constants/const'
 
-const Language = ({ showTitle }) => {
+const Language = () => {
   const theme = useTheme()
   const { languageDispatch, languageState } = useLanguageContext()
 
@@ -30,11 +29,6 @@ const Language = ({ showTitle }) => {
 
   return (
     <Stack sx={{ backgroundColor: theme.palette.divider, p: 1 }}>
-      {showTitle && (
-        <Typography sx={{ textAlign: 'center' }} variant="h1">
-          Idioma/Language
-        </Typography>
-      )}
       <Stack direction="row" sx={{ justifyContent: 'space-evenly', mt: 1 }}>
         <Button
           onClick={() => handleLanguage(LAT)}
@@ -117,11 +111,3 @@ const Language = ({ showTitle }) => {
 }
 
 export default Language
-
-Language.propTypes = {
-  showTitle: PropTypes.bool,
-}
-
-Language.defaultProps = {
-  showTitle: false,
-}

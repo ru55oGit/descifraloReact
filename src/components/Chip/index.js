@@ -95,7 +95,11 @@ const Chip = (props) => {
                 {i18n.texts[languageState?.language].play}
               </Typography>
             </Button>
-            <Typography sx={{ textTransform: 'uppercase' }} variant="hxl">
+            <Typography
+              className={classes.textCategories}
+              sx={{ textTransform: 'uppercase' }}
+              variant="hxl"
+            >
               {title}
             </Typography>
             {isRandom ? (

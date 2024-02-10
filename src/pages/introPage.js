@@ -20,6 +20,7 @@ const CategoriesPage = () => {
       <Button
         className={classes.transparentButton}
         onClick={() => navigate(CATEGORIES)}
+        sx={{ width: 'calc(85% - 32px) !important' }}
       >
         <Typography variant="hxl">
           {i18n.texts[languageState?.language].play}
