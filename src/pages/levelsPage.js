@@ -5,9 +5,7 @@ import Stack from '@mui/material/Stack'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import { ProgressBar } from 'react-loader-spinner'
-import Collapse from '@mui/material/Collapse'
 import { useTheme } from '@mui/styles'
-import Donate from '../components/Donate'
 import NavBar from '../components/NavBar'
 import { useGameContext, Actions } from '../store/game'
 import { useLanguageContext } from '../store/language'
@@ -107,9 +105,6 @@ const LevelsPage = () => {
         openDonate={openDonate}
         setOpenDonate={setOpenDonate}
       />
-      <Collapse className={classes.menu} in={openDonate}>
-        <Donate />
-      </Collapse>
       {!list && (
         <Box
           sx={{

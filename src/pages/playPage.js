@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import Box from '@mui/material/Box'
-import Collapse from '@mui/material/Collapse'
 import Game from '../components/Game'
 import NavBar from '../components/NavBar'
-import Donate from '../components/Donate'
 
 import useStyles from '../styles/pages'
 import { useGameContext } from '../store/game'
@@ -21,9 +19,6 @@ const PlayPage = () => {
         openDonate={openDonate}
         setOpenDonate={setOpenDonate}
       />
-      <Collapse className={classes.menu} in={openDonate}>
-        <Donate />
-      </Collapse>
       <Game />
     </Box>
   )

@@ -4,8 +4,6 @@ import Collapse from '@mui/material/Collapse'
 import Categories2 from '../components/Categories2'
 import NavBar from '../components/NavBar'
 import Menu from '../components/Menu'
-import Donate from '../components/Donate'
-
 import useStyles from '../styles/pages'
 
 const CategoriesPage = () => {
@@ -25,16 +23,10 @@ const CategoriesPage = () => {
       <Collapse className={classes.menu} in={openMenu}>
         <Menu />
       </Collapse>
-      <Collapse className={classes.menu} in={openDonate}>
-        <Donate />
-      </Collapse>
       {openMenu && (
         <Box className={classes.modal} onClick={() => setOpenMenu(false)} />
       )}
-      {openDonate && (
-        <Box className={classes.modal} onClick={() => setOpenDonate(false)} />
-      )}
-      {!openMenu && !openDonate && <Categories2 />}
+      {!openMenu && <Categories2 />}
     </Box>
   )
 }
