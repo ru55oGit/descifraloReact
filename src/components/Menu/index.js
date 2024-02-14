@@ -62,6 +62,17 @@ const Menu = () => {
         </ListItem>
         <ListItem className={classes.listItem} disablePadding>
           <ListItemButton>
+            <ListItemText
+              sx={{
+                textAlign: 'center',
+              }}
+            >
+              <Typography variant="hxl">Idioma/Language</Typography>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem className={classes.listItem} disablePadding>
+          <ListItemButton>
             <ListItemText>
               <Button
                 onClick={() => handleLanguage(LAT)}
@@ -69,6 +80,7 @@ const Menu = () => {
                   '&:hover': { background: 'transparent' },
                   color: theme.palette.text.primary,
                   p: 0,
+                  textTransform: 'capitalize',
                 }}
               >
                 <Avatar
@@ -98,6 +110,8 @@ const Menu = () => {
                 sx={{
                   '&:hover': { background: 'transparent' },
                   color: theme.palette.text.primary,
+                  p: 0,
+                  textTransform: 'capitalize',
                 }}
               >
                 <Avatar
@@ -127,6 +141,8 @@ const Menu = () => {
                 sx={{
                   '&:hover': { background: 'transparent' },
                   color: theme.palette.text.primary,
+                  p: 0,
+                  textTransform: 'capitalize',
                 }}
               >
                 <Avatar
