@@ -41,7 +41,7 @@ const CategoriesPage = () => {
         </Typography>
       </Button>
 
-      <Box sx={{ m: 2, textAlign: 'right' }}>
+      <Box sx={{ mb: 3, mr: 2, textAlign: 'right' }}>
         <Button
           aria-describedby={id}
           className={classes.transparentButton}
