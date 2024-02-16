@@ -12,10 +12,10 @@ import Button from '@mui/material/Button'
 
 import { useTheme } from '@mui/styles'
 import { useNavigate } from 'react-router-dom'
-import { useLanguageContext, Actions } from '../../store/language'
-import { HOME } from '../../constants/routes'
+import { useLanguageContext, Actions } from 'store/language'
+import { HOME } from 'constants/routes'
+import { LAT, ESP, ENG } from 'constants/const'
 import useStyles from './styles'
-import { LAT, ESP, ENG } from '../../constants/const'
 
 const Menu = () => {
   const classes = useStyles()

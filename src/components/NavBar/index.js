@@ -7,12 +7,12 @@ import MenuIcon from '@mui/icons-material/Menu'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import { useNavigate } from 'react-router-dom'
 import { useTheme } from '@mui/styles'
-import { useGameContext } from '../../store/game'
-import { useLanguageContext } from '../../store/language'
-import { ALEATORIO } from '../../constants/const'
-import i18n from '../../constants/i18n.json'
+import { useGameContext } from 'store/game'
+import { useLanguageContext } from 'store/language'
+import { ALEATORIO } from 'constants/const'
+import i18n from 'constants/i18n.json'
+import { CATEGORIES, PLAY, LEVELS } from 'constants/routes'
 import useStyles from './styles'
-import { CATEGORIES, PLAY, LEVELS } from '../../constants/routes'
 
 const NavBar = (props) => {
   const { backArrow, fixed, openMenu, setOpenMenu, setOpenDonate, level } =

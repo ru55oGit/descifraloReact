@@ -15,15 +15,15 @@ import { useParams } from 'react-router'
 import { useTheme } from '@mui/styles'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import Collapse from '@mui/material/Collapse'
-import NavBar from '../components/NavBar'
-import Menu from '../components/Menu'
-import { useGameContext, Actions } from '../store/game'
-import { useLanguageContext } from '../store/language'
-import i18n from '../constants/i18n.json'
-import useStyles from '../styles/pages'
-import { ALEATORIO } from '../constants/const'
-import { isDevice } from '../utils'
-import { CATEGORIES, LEVELS, PLAY } from '../constants/routes'
+import NavBar from 'components/NavBar'
+import Menu from 'components/Menu'
+import { useGameContext, Actions } from 'store/game'
+import { useLanguageContext } from 'store/language'
+import i18n from 'constants/i18n.json'
+import useStyles from 'styles/pages'
+import { ALEATORIO } from 'constants/const'
+import { isDevice } from 'utils'
+import { CATEGORIES, LEVELS, PLAY } from 'constants/routes'
 
 const SuccessPage = () => {
   const classes = useStyles()
@@ -125,10 +125,17 @@ const SuccessPage = () => {
       <Collapse className={classes.menu} in={openMenu}>
         <Menu />
       </Collapse>
-      {state.title && <Grid container>{session && getStatistics()}</Grid>}
+      {state.title && (
+        <Grid container sx={{ pt: '65px' }}>
+          {session && getStatistics()}
+        </Grid>
+      )}
 
       {!state.title && (
-        <Stack sx={{ textAlign: 'center' }}>
+        <Stack
+          className={classes.successContainer}
+          sx={{ textAlign: 'center' }}
+        >
           <CheckCircleIcon
             color="success"
             sx={{ fontSize: 200, margin: 'auto' }}

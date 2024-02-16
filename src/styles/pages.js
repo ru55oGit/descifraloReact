@@ -13,10 +13,11 @@ const useStyles = makeStyles((theme) => ({
     background: 'linear-gradient(#a34747, #F44336)',
     display: 'flex',
     flexDirection: 'column',
-    height: '100vh',
+    height: 'auto',
     justifyContent: 'space-between',
     margin: 'auto',
     maxWidth: '414px',
+    minHeight: '100vh',
     padding: '0 8px 16px',
     position: 'relative',
     width: '90%',
@@ -66,6 +67,13 @@ const useStyles = makeStyles((theme) => ({
   },
   success: {
     color: theme.palette.success.checkmark,
+  },
+  successContainer: {
+    background: theme.palette.white.main,
+    borderRadius: '16px',
+    height: '50%',
+    margin: 'auto',
+    width: '80%',
   },
   transparentButton: {
     background: 'transparent',

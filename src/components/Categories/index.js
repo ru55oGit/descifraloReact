@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
 import { useNavigate } from 'react-router-dom'
-import { getImage } from '../../utils'
-import { LEVELS } from '../../constants/routes'
+import { getImage } from 'utils'
+import { LEVELS } from 'constants/routes'
 import {
   Acertijos,
   Emojis,
@@ -14,7 +14,7 @@ import {
   Funkos,
   Escudos,
   Banderas,
-} from '../IconsCategories'
+} from 'IconsCategories'
 import {
   ACERTIJOS,
   PELICULAS,
@@ -25,8 +25,8 @@ import {
   FUNKOS,
   ESCUDOS,
   BANDERAS,
-} from '../../constants/const'
-import { useGameContext, Actions } from '../../store/game'
+} from 'constants/const'
+import { useGameContext, Actions } from 'store/game'
 import useStyles from './styles'
 
 const Levels = () => {

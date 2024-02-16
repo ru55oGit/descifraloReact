@@ -3,7 +3,7 @@ import Carousel from 'nuka-carousel'
 import PropTypes from 'prop-types'
 import Box from '@mui/material/Box'
 import { useTheme } from '@mui/styles'
-import { getImage } from '../../utils'
+import { getImage } from 'utils'
 
 import {
   ACERTIJOS,
@@ -15,7 +15,7 @@ import {
   EMOJIS,
   WUZZLES,
   ENG,
-} from '../../constants/const'
+} from 'constants/const'
 
 const Carrousel = ({ languageState }) => {
   const theme = useTheme()

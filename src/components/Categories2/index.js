@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import Box from '@mui/material/Box'
-import Chip from '../Chip'
-import { useLanguageContext } from '../../store/language'
-import i18n from '../../constants/i18n.json'
+import Chip from 'components/Chip'
+import { useLanguageContext } from 'store/language'
+import i18n from 'constants/i18n.json'
 
 import {
   ACERTIJOS,
@@ -15,7 +15,7 @@ import {
   BANDERAS,
   WUZZLES,
   ENG,
-} from '../../constants/const'
+} from 'constants/const'
 import useStyles from './styles'
 
 const random = [

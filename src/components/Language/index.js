@@ -4,8 +4,8 @@ import Avatar from '@mui/material/Avatar'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import { useTheme } from '@mui/styles'
-import { useLanguageContext, Actions } from '../../store/language'
-import { ENG, ESP, LAT } from '../../constants/const'
+import { useLanguageContext, Actions } from 'store/language'
+import { ENG, ESP, LAT } from 'constants/const'
 
 const Language = () => {
   const theme = useTheme()
