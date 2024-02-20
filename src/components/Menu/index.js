@@ -84,7 +84,7 @@ const Menu = () => {
                 }}
               >
                 <Avatar
-                  src="images/argentina.svg"
+                  src="/images/argentina.svg"
                   sx={{ height: 28, mr: 1, width: 40 }}
                   variant="square"
                 />
@@ -115,7 +115,7 @@ const Menu = () => {
                 }}
               >
                 <Avatar
-                  src="images/espania.svg"
+                  src="/images/espania.svg"
                   sx={{ height: 28, mr: 1, width: 40 }}
                   variant="square"
                 />
@@ -146,7 +146,7 @@ const Menu = () => {
                 }}
               >
                 <Avatar
-                  src="images/usa.svg"
+                  src="/images/usa.svg"
                   sx={{ height: 28, mr: 1, width: 40 }}
                   variant="square"
                 />
@@ -179,7 +179,7 @@ const Menu = () => {
             )}`}
           >
             <Avatar
-              src="images/whatsappicon.png"
+              src="/images/whatsappicon.png"
               sx={{ height: 48, width: 48 }}
             />
           </Link>
@@ -189,7 +189,7 @@ const Menu = () => {
             )}&redirect_uri=${encodeURIComponent(window.location.origin)}`}
           >
             <Avatar
-              src="images/facebookicon.png"
+              src="/images/facebookicon.png"
               sx={{ height: 48, width: 48 }}
             />
           </Link>
@@ -200,7 +200,7 @@ const Menu = () => {
             target="_blank"
           >
             <Avatar
-              src="images/twittericon.png"
+              src="/images/twittericon.png"
               sx={{ height: 48, width: 48 }}
             />
           </Link>

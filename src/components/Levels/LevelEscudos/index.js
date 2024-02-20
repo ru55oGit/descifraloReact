@@ -100,7 +100,7 @@ import {
   Escudos98,
   Escudos99,
   Escudos100,
-} from '../../SVG/Escudos'
+} from 'components/SVG/Escudos'
 
 const LevelEscudos = ({ level }) => {
   switch (level) {

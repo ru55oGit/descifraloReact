@@ -172,7 +172,7 @@ import {
   Sombras170,
   Sombras171,
   Sombras172,
-} from '../../SVG/Sombras'
+} from 'components/SVG/Sombras'
 
 const LevelSombras = ({ level }) => {
   switch (level) {

@@ -1,8 +1,8 @@
 import { createContext, useContext, useMemo, useReducer } from 'react'
 import PropTypes from 'prop-types'
+import { LAT } from 'constants/const'
 import reducer from './reducer'
 import actions from './actions'
-import { LAT } from '../../constants/const'
 
 const LanguageContext = createContext(false)
 

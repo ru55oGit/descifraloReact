@@ -6,12 +6,12 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import { ProgressBar } from 'react-loader-spinner'
 import { useTheme } from '@mui/styles'
-import NavBar from '../components/NavBar'
-import { useGameContext, Actions } from '../store/game'
-import { useLanguageContext } from '../store/language'
-import useStyles from '../styles/pages'
-import { getWordToGuess, getImage, isDevice } from '../utils'
-import { HOME, PLAY } from '../constants/routes'
+import NavBar from 'components/NavBar'
+import { useGameContext, Actions } from 'store/game'
+import { useLanguageContext } from 'store/language'
+import useStyles from 'styles/pages'
+import { getWordToGuess, getImage, isDevice } from 'utils'
+import { HOME, PLAY } from 'constants/routes'
 
 const LevelsPage = () => {
   const classes = useStyles()

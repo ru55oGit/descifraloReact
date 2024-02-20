@@ -184,7 +184,7 @@ import {
   Peliculas182,
   Peliculas183,
   Peliculas184,
-} from '../../SVG/Peliculas'
+} from 'components/SVG/Peliculas'
 
 const LevelPeliculas = ({ level }) => {
   switch (level) {

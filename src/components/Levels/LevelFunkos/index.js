@@ -100,7 +100,7 @@ import {
   Funkos98,
   Funkos99,
   Funkos100,
-} from '../../SVG/Funkos'
+} from 'components/SVG/Funkos'
 
 const LevelFunkos = ({ level }) => {
   switch (level) {

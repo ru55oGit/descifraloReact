@@ -20,14 +20,14 @@ import Menu from 'components/Menu'
 import { useGameContext, Actions } from 'store/game'
 import { useLanguageContext } from 'store/language'
 import i18n from 'constants/i18n.json'
-import useStyles from 'styles/pages'
 import { ALEATORIO } from 'constants/const'
 import { isDevice } from 'utils'
 import { CATEGORIES, LEVELS, PLAY } from 'constants/routes'
+import useStyles from 'styles/pages'
 
 const SuccessPage = () => {
-  const classes = useStyles()
   const theme = useTheme()
+  const classes = useStyles()
   const navigate = useNavigate()
   const { gameDispatch, gameState } = useGameContext()
   const { languageState } = useLanguageContext()
@@ -125,13 +125,17 @@ const SuccessPage = () => {
       <Collapse className={classes.menu} in={openMenu}>
         <Menu />
       </Collapse>
-      {state.title && (
+      {openMenu && (
+        <Box className={classes.modal} onClick={() => setOpenMenu(false)} />
+      )}
+
+      {!openMenu && state.title && (
         <Grid container sx={{ pt: '65px' }}>
           {session && getStatistics()}
         </Grid>
       )}
 
-      {!state.title && (
+      {!openMenu && !state.title && (
         <Stack
           className={classes.successContainer}
           sx={{ textAlign: 'center' }}
@@ -146,51 +150,53 @@ const SuccessPage = () => {
         </Stack>
       )}
 
-      <Grid container spacing={1}>
-        <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          {isDevice ? (
-            <Button
-              className={classes.transparentButton}
-              onTouchStart={goToNext}
-            >
-              <Typography variant="h1">
-                {i18n.texts[languageState.language].next}
-              </Typography>
-            </Button>
-          ) : (
-            <Button className={classes.transparentButton} onClick={goToNext}>
-              <Typography variant="h1">
-                {i18n.texts[languageState.language].next}
-              </Typography>
-            </Button>
-          )}
+      {!openMenu && (
+        <Grid container spacing={1}>
+          <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
+            {isDevice ? (
+              <Button
+                className={classes.transparentButton}
+                onTouchStart={goToNext}
+              >
+                <Typography variant="h1">
+                  {i18n.texts[languageState.language].next}
+                </Typography>
+              </Button>
+            ) : (
+              <Button className={classes.transparentButton} onClick={goToNext}>
+                <Typography variant="h1">
+                  {i18n.texts[languageState.language].next}
+                </Typography>
+              </Button>
+            )}
+          </Grid>
+          <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
+            {isDevice ? (
+              <Button
+                className={classes.transparentButton}
+                onTouchStart={goToCategories}
+              >
+                <Typography variant="h1">
+                  {gameState?.game?.category !== ALEATORIO
+                    ? i18n.texts[languageState.language].levels
+                    : i18n.texts[languageState.language].categories}
+                </Typography>
+              </Button>
+            ) : (
+              <Button
+                className={classes.transparentButton}
+                onClick={goToCategories}
+              >
+                <Typography variant="h1">
+                  {gameState?.game?.category !== ALEATORIO
+                    ? i18n.texts[languageState.language].levels
+                    : i18n.texts[languageState.language].categories}
+                </Typography>
+              </Button>
+            )}
+          </Grid>
         </Grid>
-        <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-          {isDevice ? (
-            <Button
-              className={classes.transparentButton}
-              onTouchStart={goToCategories}
-            >
-              <Typography variant="h1">
-                {gameState?.game?.category !== ALEATORIO
-                  ? i18n.texts[languageState.language].levels
-                  : i18n.texts[languageState.language].categories}
-              </Typography>
-            </Button>
-          ) : (
-            <Button
-              className={classes.transparentButton}
-              onClick={goToCategories}
-            >
-              <Typography variant="h1">
-                {gameState?.game?.category !== ALEATORIO
-                  ? i18n.texts[languageState.language].levels
-                  : i18n.texts[languageState.language].categories}
-              </Typography>
-            </Button>
-          )}
-        </Grid>
-      </Grid>
+      )}
     </Box>
   )
 }

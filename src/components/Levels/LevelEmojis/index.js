@@ -129,7 +129,7 @@ import {
   Emojis127,
   Emojis128,
   Emojis129,
-} from '../../SVG/Emojis'
+} from 'components/SVG/Emojis'
 
 const LevelEmojis = ({ level }) => {
   switch (level) {

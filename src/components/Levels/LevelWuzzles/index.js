@@ -120,7 +120,7 @@ import {
   Wuzzles118,
   Wuzzles119,
   Wuzzles120,
-} from '../../SVG/Wuzzles'
+} from 'components/SVG/Wuzzles'
 
 const LevelWuzzles = ({ level }) => {
   switch (level) {

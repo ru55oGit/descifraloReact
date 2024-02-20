@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import Box from '@mui/material/Box'
-import Game from '../components/Game'
-import NavBar from '../components/NavBar'
+import Game from 'components/Game'
+import NavBar from 'components/NavBar'
 
-import useStyles from '../styles/pages'
-import { useGameContext } from '../store/game'
+import useStyles from 'styles/pages'
+import { useGameContext } from 'store/game'
 
 const PlayPage = () => {
   const classes = useStyles()
