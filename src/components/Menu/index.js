@@ -8,7 +8,6 @@ import ListItemText from '@mui/material/ListItemText'
 import Stack from '@mui/material/Stack'
 import Avatar from '@mui/material/Avatar'
 import Link from '@mui/material/Link'
-import Button from '@mui/material/Button'
 
 import { useTheme } from '@mui/styles'
 import { useNavigate } from 'react-router-dom'
@@ -72,96 +71,60 @@ const Menu = () => {
           </ListItemButton>
         </ListItem>
         <ListItem className={classes.listItem} disablePadding>
-          <ListItemButton>
-            <ListItemText>
-              <Button
-                onClick={() => handleLanguage(LAT)}
-                sx={{
-                  '&:hover': { background: 'transparent' },
-                  color: theme.palette.text.primary,
-                  p: 0,
-                  textTransform: 'capitalize',
-                }}
-              >
-                <Avatar
-                  src="/images/argentina.svg"
-                  sx={{ height: 28, mr: 1, width: 40 }}
-                  variant="square"
-                />
-                <Typography
-                  fontWeight={
-                    language === LAT
-                      ? theme.fontWeight.bold
-                      : theme.fontWeight.regular
-                  }
-                  variant={language === LAT ? 'body1' : 'body0'}
-                >
-                  Español latinoamericano
-                </Typography>
-              </Button>
-            </ListItemText>
+          <ListItemButton onClick={() => handleLanguage(LAT)}>
+            <Avatar
+              src="/images/argentina.svg"
+              sx={{ height: 28, mr: 1, width: 40 }}
+              variant="square"
+            />
+            <Typography
+              fontWeight={
+                language === LAT
+                  ? theme.fontWeight.bold
+                  : theme.fontWeight.regular
+              }
+              variant={language === LAT ? 'body1' : 'body0'}
+            >
+              Español latinoamericano
+            </Typography>
           </ListItemButton>
         </ListItem>
         <ListItem className={classes.listItem} disablePadding>
-          <ListItemButton>
-            <ListItemText>
-              <Button
-                onClick={() => handleLanguage(ESP)}
-                sx={{
-                  '&:hover': { background: 'transparent' },
-                  color: theme.palette.text.primary,
-                  p: 0,
-                  textTransform: 'capitalize',
-                }}
-              >
-                <Avatar
-                  src="/images/espania.svg"
-                  sx={{ height: 28, mr: 1, width: 40 }}
-                  variant="square"
-                />
-                <Typography
-                  fontWeight={
-                    language === ESP
-                      ? theme.fontWeight.bold
-                      : theme.fontWeight.regular
-                  }
-                  variant={language === ESP ? 'body1' : 'body0'}
-                >
-                  Español
-                </Typography>
-              </Button>
-            </ListItemText>
+          <ListItemButton onClick={() => handleLanguage(ESP)}>
+            <Avatar
+              src="/images/espania.svg"
+              sx={{ height: 28, mr: 1, width: 40 }}
+              variant="square"
+            />
+            <Typography
+              fontWeight={
+                language === ESP
+                  ? theme.fontWeight.bold
+                  : theme.fontWeight.regular
+              }
+              variant={language === ESP ? 'body1' : 'body0'}
+            >
+              Español
+            </Typography>
           </ListItemButton>
         </ListItem>
         <ListItem className={classes.listItem} disablePadding>
-          <ListItemButton>
-            <ListItemText>
-              <Button
-                onClick={() => handleLanguage(ENG)}
-                sx={{
-                  '&:hover': { background: 'transparent' },
-                  color: theme.palette.text.primary,
-                  p: 0,
-                  textTransform: 'capitalize',
-                }}
-              >
-                <Avatar
-                  src="/images/usa.svg"
-                  sx={{ height: 28, mr: 1, width: 40 }}
-                  variant="square"
-                />
-                <Typography
-                  fontWeight={
-                    language === ENG
-                      ? theme.fontWeight.bold
-                      : theme.fontWeight.regular
-                  }
-                  variant={language === ENG ? 'body1' : 'body0'}
-                >
-                  English
-                </Typography>
-              </Button>
-            </ListItemText>
+          <ListItemButton onClick={() => handleLanguage(ENG)}>
+            <Avatar
+              src="/images/usa.svg"
+              sx={{ height: 28, mr: 1, width: 40 }}
+              variant="square"
+            />
+            <Typography
+              fontWeight={
+                language === ENG
+                  ? theme.fontWeight.bold
+                  : theme.fontWeight.regular
+              }
+              variant={language === ENG ? 'body1' : 'body0'}
+            >
+              English
+            </Typography>
           </ListItemButton>
         </ListItem>
       </List>

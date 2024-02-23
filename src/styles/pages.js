@@ -18,11 +18,11 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     maxWidth: '414px',
     minHeight: '100vh',
-    padding: '0 8px 16px',
+    padding: '0 8px 32px',
     position: 'relative',
     width: '90%',
     [theme.breakpoints.down('sm')]: {
-      padding: '0 20px',
+      padding: '0 20px 32px',
     },
   },
   boxContainer: {
