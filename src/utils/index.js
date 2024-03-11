@@ -161,20 +161,53 @@ const getImage = (category, level) => {
   }
 }
 
+const saveArray = (name, array) => {
+  localStorage.setItem(name, JSON.stringify(array))
+}
+
+const getArray = (name) => JSON.parse(localStorage.getItem(name)) || []
+
+const getIndex = (arrName, limit) => {
+  let idx = 0
+  let random = 0
+
+  const arr = getArray(arrName) || [1]
+
+  do {
+    random = Math.ceil(Math.random() * limit)
+
+    idx = random
+  } while (arr.indexOf(random) > 0)
+
+  arr.push(idx)
+
+  saveArray(arrName, arr)
+
+  return idx
+}
+
 const getQuestions = (lang) => {
   if (lang === ENG) {
+    // return dataAleatoriaEng.preguntas[
+    //   Math.ceil(Math.random() * dataAleatoriaEng.preguntas.length)
+    // ]
     return dataAleatoriaEng.preguntas[
-      Math.ceil(Math.random() * dataAleatoriaEng.preguntas.length)
+      getIndex('dataAleatoriaEng', dataAleatoriaEng.preguntas.length)
     ]
   }
+
   if (lang === ESP) {
+    // return dataAleatoriaEsp.preguntas[
+    //   Math.ceil(Math.random() * dataAleatoriaEsp.preguntas.length)
+    // ]
     return dataAleatoriaEsp.preguntas[
-      Math.ceil(Math.random() * dataAleatoriaEsp.preguntas.length)
+      getIndex('dataAleatoriaEsp', dataAleatoriaEsp.preguntas.length)
     ]
   }
 
   return dataAleatoria.preguntas[
-    Math.ceil(Math.random() * dataAleatoria.preguntas.length)
+    // Math.ceil(Math.random() * dataAleatoria.preguntas.length)
+    getIndex('dataAleatoria', dataAleatoria.preguntas.length)
   ]
 }
 
