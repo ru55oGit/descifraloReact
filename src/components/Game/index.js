@@ -198,7 +198,15 @@ const Game = () => {
         sx={{ justifyContent: 'center', mb: 2 }}
       >
         {answer[id].split('').map((key) =>
-          key !== "'" ? (
+          key === "'" || key === '?' || key === '¿' ? (
+            <Typography
+              color="white.main"
+              sx={{ lineHeight: '0.8' }}
+              variant="hxl"
+            >
+              {key}
+            </Typography>
+          ) : (
             <Paper
               key={Math.ceil(Math.random() * 10000)}
               className={
@@ -208,14 +216,6 @@ const Game = () => {
             >
               {rendered ? key.toUpperCase() : key === ' ' ? '' : '_'}
             </Paper>
-          ) : (
-            <Typography
-              color="white.main"
-              sx={{ lineHeight: '0.8' }}
-              variant="hxl"
-            >
-              {key}
-            </Typography>
           )
         )}
       </Stack>
@@ -248,6 +248,12 @@ const Game = () => {
         }
         if (answer.charAt(i) === "'") {
           result[i] = "'"
+        }
+        if (answer.charAt(i) === '¿') {
+          result[i] = '¿'
+        }
+        if (answer.charAt(i) === '?') {
+          result[i] = '?'
         }
       } else {
         result[i] = answer.charAt(i)
