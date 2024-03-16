@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import Box from '@mui/material/Box'
+import Stack from '@mui/material/Stack'
+import Typography from '@mui/material/Typography'
 import Chip from 'components/Chip'
 import { useLanguageContext } from 'store/language'
 import i18n from 'constants/i18n.json'
@@ -140,6 +142,22 @@ const Levels = () => {
         level={Math.ceil(Math.random() * 99)}
         title={i18n.texts[languageState?.language].random}
       />
+      <Stack spacing={3} sx={{ textAlign: 'center' }}>
+        <Typography variant="hxl">
+          {i18n.texts[languageState?.language].collaborate}
+        </Typography>
+        <a
+          href="https://cafecito.app/imaginalo"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Invitame un café en cafecito.app"
+            src="https://cdn.cafecito.app/imgs/buttons/button_5.png"
+            srcSet="https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x"
+          />
+        </a>
+      </Stack>
     </Box>
   )
 }

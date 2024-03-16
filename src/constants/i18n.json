@@ -1,6 +1,7 @@
 {
   "texts": {
     "lat": {
+      "home": "Inicio",
       "play": "Jugar",
       "level": "Nivel",
       "puzzles": "Acertijos",
@@ -18,9 +19,12 @@
       "levels": "Niveles",
       "categories": "Categorías",
       "downloadAndShare": "Bajar y Compartir",
-      "seconds": "Segundos"
+      "seconds": "Segundos",
+      "share": "Compartir",
+      "collaborate": "Colaboraciones"
     },
     "esp": {
+      "home": "Inicio",
       "play": "Jugar",
       "level": "Nivel",
       "puzzles": "Acertijos",
@@ -38,9 +42,12 @@
       "levels": "Niveles",
       "categories": "Categorías",
       "downloadAndShare": "Bajar y Compartir",
-      "seconds": "Segundos"
+      "seconds": "Segundos",
+      "share": "Compartir",
+      "collaborate": "Colaboraciones"
     },
     "eng": {
+      "home": "Home",
       "play": "Play",
       "level": "Level",
       "puzzles": "Puzzles",
@@ -58,7 +65,9 @@
       "levels": "Levels",
       "categories": "Categories",
       "downloadAndShare": "Download and Share",
-      "seconds": "Seconds"
+      "seconds": "Seconds",
+      "share": "Share",
+      "collaborate": "Collaborations"
     }
   }
 }

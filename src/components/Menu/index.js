@@ -8,6 +8,7 @@ import ListItemText from '@mui/material/ListItemText'
 import Stack from '@mui/material/Stack'
 import Avatar from '@mui/material/Avatar'
 import Link from '@mui/material/Link'
+import i18n from 'constants/i18n.json'
 
 import { useTheme } from '@mui/styles'
 import { useNavigate } from 'react-router-dom'
@@ -45,19 +46,34 @@ const Menu = () => {
           <ListItemButton onClick={() => navigate(HOME)}>
             <ListItemText>
               <Typography color="text.primary" variant="h2">
-                Inicio
+                {i18n.texts[languageState?.language].home}
               </Typography>
             </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem className={classes.listItem} disablePadding>
-          <ListItemButton>
-            <ListItemText>
-              <Typography color="text.primary" variant="h2">
-                Descifralo
+          <ListItemText
+            sx={{
+              textAlign: 'center',
+            }}
+          >
+            <Stack spacing={3}>
+              <Typography variant="hxl">
+                {i18n.texts[languageState?.language].collaborate}
               </Typography>
-            </ListItemText>
-          </ListItemButton>
+              <a
+                href="https://cafecito.app/imaginalo"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="Invitame un café en cafecito.app"
+                  src="https://cdn.cafecito.app/imgs/buttons/button_5.png"
+                  srcSet="https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x"
+                />
+              </a>
+            </Stack>
+          </ListItemText>
         </ListItem>
         <ListItem className={classes.listItem} disablePadding>
           <ListItemButton>
@@ -130,7 +146,7 @@ const Menu = () => {
       </List>
       <Stack sx={{ backgroundColor: theme.palette.divider, p: 2 }}>
         <Typography sx={{ textAlign: 'center' }} variant="hxl">
-          Compartir
+          {i18n.texts[languageState?.language].share}
         </Typography>
         <Stack
           direction="row"
