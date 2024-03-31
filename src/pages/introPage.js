@@ -34,12 +34,19 @@ const CategoriesPage = () => {
 
   return (
     <Box className={classes.backgroundIntro}>
-      <Stack spacing={4} sx={{ textAlign: 'center' }}>
+      <Stack
+        spacing={4}
+        sx={{
+          flex: '0.7',
+          justifyContent: 'space-between',
+          textAlign: 'center',
+        }}
+      >
         <Typography
           className="lobster"
           sx={{
             color: theme.palette.white.main,
-            fontSize: 60,
+            fontSize: '4.7rem',
             textAlign: 'center',
           }}
         >
@@ -60,7 +67,7 @@ const CategoriesPage = () => {
         </Button>
       </Stack>
 
-      <Box sx={{ mb: 3, mr: 2, textAlign: 'right' }}>
+      <Box sx={{ bottom: 16, position: 'absolute', right: 16 }}>
         <Button
           aria-describedby={id}
           className={classes.transparentButton}

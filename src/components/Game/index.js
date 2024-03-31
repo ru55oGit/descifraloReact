@@ -302,7 +302,7 @@ const Game = () => {
           {wrongLetters === '111' && (
             <Avatar
               src="/images/imaginalo.png"
-              sx={{ height: 80, m: 'auto', p: 2, width: 340 }}
+              sx={{ height: 'auto', m: 'auto', p: 2, width: '81vw' }}
               variant="square"
             />
           )}
