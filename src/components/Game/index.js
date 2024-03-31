@@ -8,6 +8,7 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { toPng } from 'html-to-image'
 import Keyboard from 'react-simple-keyboard'
 import Box from '@mui/material/Box'
+import Avatar from '@mui/material/Avatar'
 import Stack from '@mui/material/Stack'
 import Dialog from '@mui/material/Dialog'
 import Button from '@mui/material/Button'
@@ -298,14 +299,23 @@ const Game = () => {
       </Stack>
       <Box ref={refQR}>
         <Box className={classes.souround}>
-          <Typography
-            align="center"
-            color="white.main"
-            sx={{ mb: '4px' }}
-            variant="hxxl"
-          >
-            {title}
-          </Typography>
+          {wrongLetters === '111' && (
+            <Avatar
+              src="/images/imaginalo.png"
+              sx={{ height: 80, m: 'auto', p: 2, width: 340 }}
+              variant="square"
+            />
+          )}
+          {title && (
+            <Typography
+              align="center"
+              color="white.main"
+              sx={{ mb: '4px' }}
+              variant="hxxl"
+            >
+              {title}
+            </Typography>
+          )}
           <Box
             className={classes.imageContainer}
             sx={{ width: isDevice ? '25vh' : '50vh' }}
@@ -322,8 +332,9 @@ const Game = () => {
               color="primary.main"
               sx={{
                 background: theme.palette.white.main,
-                borderRadius: '8px',
+                borderRadius: '4px',
                 display: 'block',
+                height: 40,
                 margin: '16px auto',
                 padding: 1,
                 width: 'fit-content',
@@ -355,7 +366,10 @@ const Game = () => {
           },
         }}
       >
-        <Stack spacing={2}>
+        <Stack spacing={2} sx={{ '& h1 ~ div': { margin: 'auto' } }}>
+          <Typography align="center" sx={{ mb: 3 }} variant="h1">
+            {i18n.texts[languageState?.language].downloadTitle}
+          </Typography>
           <CountdownCircleTimer
             colors={['#000', '#d9dbdf', '#aeb0b4', '#76787b']}
             colorsTime={[7, 5, 2, 0]}
@@ -372,15 +386,18 @@ const Game = () => {
           >
             {({ remainingTime }) => (
               <Stack>
-                <Typography sx={{ textAlign: 'center' }} variant="hxxl">
+                <Typography align="center" variant="hxxl">
                   {remainingTime}
                 </Typography>
-                <Typography sx={{ textAlign: 'center' }} variant="body0">
+                <Typography align="center" variant="body0">
                   {i18n.texts[languageState?.language].seconds}
                 </Typography>
               </Stack>
             )}
           </CountdownCircleTimer>
+          <Typography align="center" sx={{ maxWidth: 200 }} variant="body2">
+            {i18n.texts[languageState?.language].downloadText}
+          </Typography>
           <Button
             onClick={handleDownload}
             sx={{ border: `1px solid ${theme.palette.primary.main}` }}

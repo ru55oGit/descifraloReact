@@ -18,7 +18,9 @@
       "next": "Siguiente",
       "levels": "Niveles",
       "categories": "Categorías",
+      "downloadTitle": "Perdiste",
       "downloadAndShare": "Bajar y Compartir",
+      "downloadText": "Pide ayuda a tus amigos con este nivel",
       "seconds": "Segundos",
       "share": "Compartir",
       "collaborate": "Colaboraciones"
@@ -41,7 +43,9 @@
       "next": "Siguiente",
       "levels": "Niveles",
       "categories": "Categorías",
+      "downloadTitle": "Perdiste",
       "downloadAndShare": "Bajar y Compartir",
+      "downloadText": "Pide ayuda a tus amigos con este nivel",
       "seconds": "Segundos",
       "share": "Compartir",
       "collaborate": "Colaboraciones"
@@ -64,7 +68,9 @@
       "next": "Next",
       "levels": "Levels",
       "categories": "Categories",
+      "downloadTitle": "You lost",
       "downloadAndShare": "Download and Share",
+      "downloadText": "Ask for help to your friends with this level",
       "seconds": "Seconds",
       "share": "Share",
       "collaborate": "Collaborations"

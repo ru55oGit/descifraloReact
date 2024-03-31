@@ -23,9 +23,11 @@ const Carrousel = ({ languageState }) => {
   return (
     <Box
       sx={{
+        '&.MuiBox-root': {
+          m: 'auto',
+        },
         background: theme.palette.white.main,
         borderRadius: `${theme.borderRadius[2]}px`,
-        m: 'auto',
         padding: '16px 8px',
         width: 'calc(90% - 64px)',
       }}

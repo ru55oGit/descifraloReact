@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     height: '100vh',
+    justifyContent: 'center',
     margin: 'auto',
     maxWidth: '414px',
   },
