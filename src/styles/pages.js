@@ -8,7 +8,8 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
     justifyContent: 'center',
     margin: 'auto',
-    maxWidth: '414px',
+    maxWidth: '430px',
+    position: 'relative',
   },
   backgroundSuccess: {
     background: 'linear-gradient(#a34747, #F44336)',
@@ -17,13 +18,13 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
     justifyContent: 'space-between',
     margin: 'auto',
-    maxWidth: '414px',
-    minHeight: '100vh',
+    maxWidth: '430px',
+    minHeight: 'calc(100vh - 32px)',
     padding: '0 8px 32px',
     position: 'relative',
     width: '90%',
     [theme.breakpoints.down('sm')]: {
-      padding: '0 20px 32px',
+      padding: '0 21px 32px',
     },
   },
   boxContainer: {

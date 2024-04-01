@@ -18,12 +18,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     margin: 'auto',
-    minHeight: 250,
+    minHeight: 'auto',
     padding: '8px',
     textAlign: 'center',
     width: '75%',
     [theme.breakpoints.between('xs', 'sm')]: {
-      width: '65vw',
+      width: '55vw',
     },
   },
   keyboardContainer: {

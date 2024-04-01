@@ -9,7 +9,7 @@ const Collaborations = () => (
       spacing={1.5}
       sx={{ alignItems: 'center', justifyContent: 'center' }}
     >
-      <Typography fontWeight={900}>BITCOIN:</Typography>
+      <Typography fontWeight={900}>BTC:</Typography>
       <Chip
         label="37o9gVhMa2ZRAYw9pzmwcczfvNFKBJXWt6"
         sx={{ fontWeight: 'bold' }}

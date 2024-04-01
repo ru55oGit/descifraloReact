@@ -37,7 +37,7 @@ const CategoriesPage = () => {
       <Stack
         spacing={4}
         sx={{
-          flex: '0.7',
+          flex: '0.8',
           justifyContent: 'space-between',
           textAlign: 'center',
         }}
