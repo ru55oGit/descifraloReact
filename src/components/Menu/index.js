@@ -8,7 +8,6 @@ import ListItemText from '@mui/material/ListItemText'
 import Stack from '@mui/material/Stack'
 import Avatar from '@mui/material/Avatar'
 import Link from '@mui/material/Link'
-import Collaborations from 'components/Collaborations'
 import i18n from 'constants/i18n.json'
 import { useTheme } from '@mui/styles'
 import { useNavigate } from 'react-router-dom'
@@ -50,20 +49,6 @@ const Menu = () => {
               </Typography>
             </ListItemText>
           </ListItemButton>
-        </ListItem>
-        <ListItem className={classes.listItem} disablePadding>
-          <ListItemText
-            sx={{
-              textAlign: 'center',
-            }}
-          >
-            <Stack spacing={3}>
-              <Typography variant="hxl">
-                {i18n.texts[languageState?.language].collaborate}
-              </Typography>
-              <Collaborations />
-            </Stack>
-          </ListItemText>
         </ListItem>
         <ListItem className={classes.listItem} disablePadding>
           <ListItemButton>

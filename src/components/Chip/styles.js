@@ -28,10 +28,9 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
   },
   textCategories: {
-    background: 'linear-gradient(#a34747, #F44336)',
     backgroundClip: 'text',
-    color: 'transparent',
-    fontSize: '28px',
+    color: theme.palette.primary.main,
+    fontSize: '1.4rem',
     lineHeight: 1,
     margin: 0,
     textTransform: 'uppercase',

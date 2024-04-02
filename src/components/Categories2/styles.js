@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
     background: theme.backgrounds[2],
     margin: 'auto',
     maxWidth: 'calc(414px - 4px)',
-    padding: '60px 10px',
+    padding: '60px 10px 0',
   },
   [theme.breakpoints.up('md')]: {
     justifyContent: 'center',
