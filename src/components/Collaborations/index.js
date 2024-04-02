@@ -15,10 +15,10 @@ const Collaborations = () => {
     <Box
       sx={{
         background: theme.palette.white.main,
-        ml: -1.2,
+        ml: -1.3,
         p: 1,
         textAlign: 'center',
-        width: 'calc(100% + 8px)',
+        width: 'calc(100% + 4px)',
       }}
     >
       <Typography variant="hxxl">
