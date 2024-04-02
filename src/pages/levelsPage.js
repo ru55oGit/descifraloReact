@@ -135,7 +135,7 @@ const LevelsPage = () => {
           flexWrap: 'wrap',
           justifyContent: 'space-around',
           margin: 'auto',
-          maxWidth: 'calc(414px + 16px)',
+          maxWidth: 'calc(430px + 16px)',
           pt: '64px',
         }}
       >

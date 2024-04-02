@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     height: 45,
     justifyContent: 'space-between',
     left: '50%',
-    maxWidth: '414px',
+    maxWidth: '430px',
     padding: 8,
     transform: 'translate(-50%, 0px)',
     width: 'calc(100% - 16px)',

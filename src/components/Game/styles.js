@@ -5,10 +5,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.main,
     height: 'calc(100vh - 60px)',
     margin: 'auto',
-    maxWidth: 'calc(414px + 16px)',
+    maxWidth: 'calc(430px + 16px)',
     width: '100%',
     [theme.breakpoints.down('sm')]: {
-      maxWidth: '414px',
+      maxWidth: '430px',
     },
   },
   imageContainer: {
@@ -28,11 +28,11 @@ const useStyles = makeStyles((theme) => ({
   },
   keyboardContainer: {
     bottom: 0,
-    maxWidth: 'calc(414px + 16px)',
+    maxWidth: 'calc(430px + 16px)',
     position: 'fixed',
     width: '100%',
     [theme.breakpoints.down('sm')]: {
-      maxWidth: '414px',
+      maxWidth: '430px',
     },
   },
   letterWithSpaceContainer: {
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     width: 24,
   },
   lifeContainer: {
-    height: '2rem',
+    height: '3rem',
     justifyContent: 'flex-end',
     padding: '4px 8px',
   },

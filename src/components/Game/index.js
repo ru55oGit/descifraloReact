@@ -287,12 +287,12 @@ const Game = () => {
               k === '0' ? (
                 <FavoriteIcon
                   key={Math.random()}
-                  sx={{ color: theme.palette.white.main, fontSize: '2rem' }}
+                  sx={{ color: theme.palette.white.main, fontSize: '3rem' }}
                 />
               ) : (
                 <FavoriteBorderIcon
                   key={Math.random()}
-                  sx={{ color: theme.palette.white.main, fontSize: '2rem' }}
+                  sx={{ color: theme.palette.white.main, fontSize: '3rem' }}
                 />
               )
             )}
@@ -302,7 +302,7 @@ const Game = () => {
           {wrongLetters === '111' && (
             <Avatar
               src="/images/imaginalo.png"
-              sx={{ height: 'auto', m: 'auto', p: 2, width: '81vw' }}
+              sx={{ height: 'auto', m: 'auto', p: 2, width: 'fit-content' }}
               variant="square"
             />
           )}

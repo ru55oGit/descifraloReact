@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     background: 'rgba(168, 168, 168, 0.9)',
     height: '100vh',
     margin: 'auto',
-    maxWidth: 'calc(414px + 16px)',
+    maxWidth: 'calc(430px + 16px)',
   },
   success: {
     color: theme.palette.success.checkmark,

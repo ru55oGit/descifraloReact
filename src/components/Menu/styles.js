@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.white.main,
     borderBottom: `1px solid ${theme.palette.text.primary}`,
     height: 'auto',
-    maxWidth: 'calc(414px + 16px)',
+    maxWidth: 'calc(430px + 16px)',
     width: '100vw',
   },
   listItem: {
