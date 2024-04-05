@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: 'auto',
     padding: '8px',
     textAlign: 'center',
-    width: '75%',
+    width: '67%',
     [theme.breakpoints.between('xs', 'sm')]: {
       width: '55vw',
     },

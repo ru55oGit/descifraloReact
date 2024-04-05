@@ -53,6 +53,18 @@ const CategoriesPage = () => {
           Imaginalo
         </Typography>
         <Carrousel languageState={languageState} />
+        <Typography
+          color="white.main"
+          sx={{
+            fontFamily: 'Averta',
+            fontStyle: 'italic',
+            m: '16px auto 0 !important',
+            width: '90%',
+          }}
+          variant="hxl"
+        >
+          {i18n.texts[languageState?.language].description}
+        </Typography>
         <Button
           className={classes.transparentButton}
           onClick={() => navigate(CATEGORIES)}

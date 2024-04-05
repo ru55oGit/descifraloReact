@@ -59,6 +59,18 @@ const NavBar = (props) => {
             sx={{ color: theme.palette.primary.main, fontSize: '2rem' }}
           />
         )}
+        <Typography
+          className="lobster"
+          color="primary.main"
+          sx={{
+            left: '50%',
+            position: 'absolute',
+            transform: 'translateX(-50%)',
+          }}
+          variant="hxxl"
+        >
+          Imaginalo
+        </Typography>
         {level && gameState?.game?.category !== ALEATORIO && (
           <Stack sx={{ textAlign: 'center' }}>
             <Typography color="primary.main" variant="body1">

@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   containerCategories: {
     background: theme.backgrounds[2],
     margin: 'auto',
-    maxWidth: 'calc(414px - 4px)',
+    maxWidth: 'calc(430px - 4px)',
     padding: '60px 10px 0',
   },
   [theme.breakpoints.up('md')]: {

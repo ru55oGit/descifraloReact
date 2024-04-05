@@ -3,6 +3,7 @@
     "lat": {
       "home": "Inicio",
       "play": "Jugar",
+      "description": "El mejor quiz de imágenes, con 9 categorías y más de 1000 de niveles.",
       "level": "Nivel",
       "puzzles": "Acertijos",
       "movies": "Peliculas",
@@ -28,6 +29,7 @@
     "esp": {
       "home": "Inicio",
       "play": "Jugar",
+      "description": "El mejor quiz de imágenes, con 9 categorías y más de 1000 de niveles.",
       "level": "Nivel",
       "puzzles": "Acertijos",
       "movies": "Peliculas",
@@ -53,6 +55,7 @@
     "eng": {
       "home": "Home",
       "play": "Play",
+      "description": "Best image quiz ever, 9 categories and more than 1000 levels.",
       "level": "Level",
       "puzzles": "Puzzles",
       "movies": "Movies",
