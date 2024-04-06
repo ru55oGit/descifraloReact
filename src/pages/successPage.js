@@ -123,7 +123,7 @@ const SuccessPage = () => {
     <Box className={classes.backgroundSuccess}>
       <NavBar fixed openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <Collapse className={classes.menu} in={openMenu}>
-        <Menu />
+        <Menu showCategories />
       </Collapse>
       {openMenu && (
         <Box className={classes.modal} onClick={() => setOpenMenu(false)} />
