@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import List from '@mui/material/List'
@@ -182,3 +183,11 @@ const Menu = (props) => {
 }
 
 export default Menu
+
+Menu.propTypes = {
+  showCategories: PropTypes.bool,
+}
+
+Menu.defaultProps = {
+  showCategories: false,
+}
