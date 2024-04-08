@@ -11,7 +11,7 @@ import { useGameContext, Actions } from 'store/game'
 import { useLanguageContext } from 'store/language'
 import useStyles from 'styles/pages'
 import { getWordToGuess, getImage, isDevice } from 'utils'
-import { HOME, PLAY } from 'constants/routes'
+import { CATEGORIES, PLAY } from 'constants/routes'
 
 const LevelsPage = () => {
   const classes = useStyles()
@@ -44,7 +44,7 @@ const LevelsPage = () => {
         })
       }
     } else {
-      navigate(HOME)
+      navigate(CATEGORIES)
     }
   }, [gameState, navigate, list, languageState.language])
 

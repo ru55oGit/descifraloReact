@@ -55,6 +55,9 @@ const CategoriesPage = () => {
         <Carrousel languageState={languageState} />
         <Typography
           color="white.main"
+          dangerouslySetInnerHTML={{
+            __html: i18n.texts[languageState?.language].description,
+          }}
           sx={{
             fontFamily: 'Averta',
             fontStyle: 'italic',
@@ -62,9 +65,7 @@ const CategoriesPage = () => {
             width: '90%',
           }}
           variant="hxl"
-        >
-          {i18n.texts[languageState?.language].description}
-        </Typography>
+        />
         <Button
           className={classes.transparentButton}
           onClick={() => navigate(CATEGORIES)}

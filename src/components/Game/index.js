@@ -23,7 +23,7 @@ import { ALEATORIO, QUESTIONS } from 'constants/const'
 import { useGameContext, Actions } from 'store/game'
 import { useLanguageContext } from 'store/language'
 import i18n from 'constants/i18n.json'
-import { NEXT, LEVELS, HOME } from 'constants/routes'
+import { NEXT, LEVELS, CATEGORIES } from 'constants/routes'
 import 'react-simple-keyboard/build/css/index.css'
 import { getWordToGuess, getImage, getQuestions, isDevice } from 'utils'
 import useStyles from './styles'
@@ -163,7 +163,7 @@ const Game = () => {
       setWord(respuesta)
       setTitle(titulo)
     } else {
-      navigate(HOME)
+      navigate(CATEGORIES)
     }
 
     return () => {
