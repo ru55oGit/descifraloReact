@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography'
 import { ProgressBar } from 'react-loader-spinner'
 import { useTheme } from '@mui/styles'
 import NavBar from 'components/NavBar'
+import Collaborations from 'components/Collaborations'
 import { useGameContext, Actions } from 'store/game'
 import { useLanguageContext } from 'store/language'
 import useStyles from 'styles/pages'
@@ -71,8 +72,8 @@ const LevelsPage = () => {
           border: `1px solid ${theme.palette.primary.main}`,
           borderRadius: '4px',
           boxShadow: theme.palette.shadows.overlay,
-          m: '2px',
-          p: '4px',
+          m: 0.25,
+          p: 0.5,
           width: 'calc(25% - 8px)',
         }}
       >
@@ -88,8 +89,8 @@ const LevelsPage = () => {
           border: `1px solid ${theme.palette.primary.main}`,
           borderRadius: '4px',
           boxShadow: theme.palette.shadows.overlay,
-          m: '2px',
-          p: '4px',
+          m: 0.25,
+          p: 0.5,
           width: 'calc(25% - 8px)',
         }}
       >
@@ -161,6 +162,7 @@ const LevelsPage = () => {
               </Button>
             )
           )}
+        <Collaborations />
       </Box>
     </Box>
   )
