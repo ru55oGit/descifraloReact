@@ -78,6 +78,20 @@ const LevelsPage = () => {
         }}
       >
         {getImage(gameState.game.category, i + 1)}
+        <Typography
+          sx={{
+            background: theme.palette.primary.main,
+            borderRadius: '50%',
+            bottom: 2,
+            color: theme.palette.white.main,
+            position: 'absolute',
+            right: 2,
+            width: 24,
+          }}
+          variant="body2"
+        >
+          {i + 1}
+        </Typography>
       </Button>
     ) : (
       <Button
@@ -95,6 +109,20 @@ const LevelsPage = () => {
         }}
       >
         {getImage(gameState.game.category, i + 1)}
+        <Typography
+          sx={{
+            background: theme.palette.primary.main,
+            borderRadius: '50%',
+            bottom: 2,
+            color: theme.palette.white.main,
+            position: 'absolute',
+            right: 2,
+            width: 24,
+          }}
+          variant="body2"
+        >
+          {i + 1}
+        </Typography>
       </Button>
     )
 
