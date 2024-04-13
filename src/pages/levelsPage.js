@@ -70,7 +70,7 @@ const LevelsPage = () => {
         sx={{
           background: theme.palette.white.main,
           border: `1px solid ${theme.palette.primary.main}`,
-          borderRadius: '4px',
+          borderRadius: 0.5,
           boxShadow: theme.palette.shadows.overlay,
           m: 0.25,
           p: 0.5,
@@ -87,7 +87,7 @@ const LevelsPage = () => {
         sx={{
           background: theme.palette.white.main,
           border: `1px solid ${theme.palette.primary.main}`,
-          borderRadius: '4px',
+          borderRadius: 0.5,
           boxShadow: theme.palette.shadows.overlay,
           m: 0.25,
           p: 0.5,
@@ -137,7 +137,9 @@ const LevelsPage = () => {
           justifyContent: 'space-around',
           margin: 'auto',
           maxWidth: 'calc(430px + 16px)',
-          pt: '64px',
+          pl: 3,
+          pr: 3,
+          pt: 10,
         }}
       >
         {list &&
@@ -150,11 +152,11 @@ const LevelsPage = () => {
                 disabled
                 sx={{
                   background: theme.palette.white.main,
-                  borderRadius: '4px',
+                  borderRadius: 0.5,
                   boxShadow: theme.palette.shadows.overlay,
                   m: '4px 2px',
-                  minHeight: '90px',
-                  p: '4px',
+                  minHeight: 'calc(25vw - 24px)',
+                  p: 0.5,
                   width: 'calc(25% - 8px)',
                 }}
               >

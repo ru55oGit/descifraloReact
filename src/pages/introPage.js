@@ -80,7 +80,7 @@ const CategoriesPage = () => {
         </Button>
       </Stack>
 
-      <Box sx={{ bottom: 16, position: 'absolute', right: 16 }}>
+      <Box sx={{ alignSelf: 'self-end', m: '0 16px 16px' }}>
         <Button
           aria-describedby={id}
           className={classes.transparentButton}

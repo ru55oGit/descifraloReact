@@ -15,7 +15,7 @@ const Collaborations = () => {
     <Box
       sx={{
         background: theme.palette.white.main,
-        p: 1,
+        p: 0.5,
         textAlign: 'center',
         width: 'calc(100% - 16px)',
       }}
