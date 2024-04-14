@@ -15,15 +15,16 @@ const Collaborations = () => {
     <Box
       sx={{
         background: theme.palette.white.main,
-        p: 0.5,
+        mt: 0.5,
+        pt: 2,
         textAlign: 'center',
-        width: 'calc(100% - 16px)',
+        width: '100%',
       }}
     >
       <Typography variant="hxxl">
         {i18n.texts[languageState?.language].collaborate}
       </Typography>
-      <Stack sx={{ mb: 2, mt: 2 }}>
+      <Stack sx={{ my: 2 }}>
         <a
           href="https://cafecito.app/imaginalo"
           rel="noopener noreferrer"
@@ -41,7 +42,7 @@ const Collaborations = () => {
         sx={{
           '& .MuiAvatar-root': { m: 'auto' },
           justifyContent: 'center',
-          mb: 2,
+          p: 1,
         }}
       >
         <Typography fontWeight={900} variant="h1">

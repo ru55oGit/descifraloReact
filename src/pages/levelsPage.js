@@ -165,9 +165,8 @@ const LevelsPage = () => {
           justifyContent: 'space-around',
           margin: 'auto',
           maxWidth: 'calc(430px + 16px)',
-          pl: 3,
-          pr: 3,
-          pt: 10,
+          pt: { sm: 8, xs: 10 },
+          px: { sm: 0, xs: 3 },
         }}
       >
         {list &&
@@ -183,7 +182,7 @@ const LevelsPage = () => {
                   borderRadius: 0.5,
                   boxShadow: theme.palette.shadows.overlay,
                   m: '4px 2px',
-                  minHeight: 'calc(25vw - 24px)',
+                  minHeight: { sm: 100, xs: 'calc(25vw - 16px)' },
                   p: 0.5,
                   width: 'calc(25% - 8px)',
                 }}
@@ -192,7 +191,9 @@ const LevelsPage = () => {
               </Button>
             )
           )}
-        <Collaborations />
+        <Box sx={{ width: 'calc(100% - 8px)' }}>
+          <Collaborations />
+        </Box>
       </Box>
     </Box>
   )
