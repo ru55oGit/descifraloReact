@@ -14,6 +14,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import { useParams } from 'react-router'
 import { useTheme } from '@mui/styles'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
 import Collapse from '@mui/material/Collapse'
 import NavBar from 'components/NavBar'
 import Menu from 'components/Menu'
@@ -58,14 +59,20 @@ const SuccessPage = () => {
   }, [state.title, state.answer])
 
   const goToNext = () => {
+    const lvl =
+      JSON.parse(localStorage?.getItem(`${category}_${languageState.language}`))
+        ?.levelReached || 1
+
     if (gameState?.game?.category !== ALEATORIO) {
       gameDispatch({
         game: {
           category,
           level:
-            JSON.parse(
-              localStorage?.getItem(`${category}_${languageState.language}`)
-            )?.levelReached || 1,
+            lvl === gameState?.game?.maxLevel
+              ? // eslint-disable-next-line no-unsafe-optional-chaining
+                gameState?.game?.level + 1
+              : lvl,
+          maxLevel: gameState?.game?.maxLevel,
         },
         type: Actions.UPDATE_LEVEL,
       })
@@ -138,39 +145,74 @@ const SuccessPage = () => {
       {!openMenu && !state.title && (
         <Stack
           className={classes.successContainer}
-          sx={{ textAlign: 'center' }}
+          sx={{ pb: 2, textAlign: 'center' }}
         >
-          <CheckCircleIcon
-            color="success"
-            sx={{ fontSize: 200, margin: 'auto' }}
-          />
-          <Typography color="success.main" variant="hxxl">
-            {i18n.texts[languageState.language].correct}
+          {gameState?.game?.maxLevel !== gameState?.game?.level && (
+            <CheckCircleIcon
+              color="success"
+              sx={{ fontSize: 200, margin: 'auto' }}
+            />
+          )}
+          {gameState?.game?.maxLevel === gameState?.game?.level && (
+            <EmojiEventsIcon
+              color="warning"
+              sx={{ fontSize: 200, margin: 'auto' }}
+            />
+          )}
+          <Typography
+            color={
+              gameState?.game?.maxLevel === gameState?.game?.level
+                ? 'warning.main'
+                : 'success.main'
+            }
+            variant="hxxl"
+          >
+            {gameState?.game?.maxLevel === gameState?.game?.level
+              ? i18n.texts[languageState.language].congrats
+              : i18n.texts[languageState.language].correct}
           </Typography>
+          {gameState?.game?.maxLevel === gameState?.game?.level && (
+            <Typography variant="body2">
+              {i18n.texts[languageState.language].congratsDesc}
+            </Typography>
+          )}
         </Stack>
       )}
 
       {!openMenu && (
         <Grid container spacing={1}>
-          <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
-            {isDevice ? (
-              <Button
-                className={classes.transparentButton}
-                onTouchStart={goToNext}
-              >
-                <Typography variant="h1">
-                  {i18n.texts[languageState.language].next}
-                </Typography>
-              </Button>
-            ) : (
-              <Button className={classes.transparentButton} onClick={goToNext}>
-                <Typography variant="h1">
-                  {i18n.texts[languageState.language].next}
-                </Typography>
-              </Button>
-            )}
-          </Grid>
-          <Grid item sx={{ display: 'flex', justifyContent: 'center' }} xs={6}>
+          {gameState?.game?.maxLevel !== gameState?.game?.level && (
+            <Grid
+              item
+              sx={{ display: 'flex', justifyContent: 'center' }}
+              xs={6}
+            >
+              {isDevice ? (
+                <Button
+                  className={classes.transparentButton}
+                  onTouchStart={goToNext}
+                >
+                  <Typography variant="h1">
+                    {i18n.texts[languageState.language].next}
+                  </Typography>
+                </Button>
+              ) : (
+                <Button
+                  className={classes.transparentButton}
+                  onClick={goToNext}
+                >
+                  <Typography variant="h1">
+                    {i18n.texts[languageState.language].next}
+                  </Typography>
+                </Button>
+              )}
+            </Grid>
+          )}
+          <Grid
+            item
+            sx={{ display: 'flex', justifyContent: 'center', m: 'auto' }}
+            xs={gameState?.game?.maxLevel === gameState?.game?.level ? 12 : 6}
+          >
             {isDevice ? (
               <Button
                 className={classes.transparentButton}

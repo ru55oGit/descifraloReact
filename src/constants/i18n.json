@@ -24,7 +24,9 @@
       "downloadText": "Pide ayuda a tus amigos con este nivel",
       "seconds": "Segundos",
       "share": "Compartir",
-      "collaborate": "Colaboraciones"
+      "collaborate": "Colaboraciones",
+      "congrats": "Felicitaciones",
+      "congratsDesc": "Has superado todos los niveles"
     },
     "esp": {
       "home": "Inicio",
@@ -50,7 +52,9 @@
       "downloadText": "Pide ayuda a tus amigos con este nivel",
       "seconds": "Segundos",
       "share": "Compartir",
-      "collaborate": "Colaboraciones"
+      "collaborate": "Colaboraciones",
+      "congrats": "Enhorabuena",
+      "congratsDesc": "Has superado todos los niveles"
     },
     "eng": {
       "home": "Home",
@@ -76,7 +80,9 @@
       "downloadText": "Ask for help to your friends with this level",
       "seconds": "Seconds",
       "share": "Share",
-      "collaborate": "Collaborations"
+      "collaborate": "Collaborations",
+      "congrats": "Congratulations",
+      "congratsDesc": "You have passed all the levels"
     }
   }
 }

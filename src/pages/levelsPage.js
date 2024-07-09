@@ -54,6 +54,7 @@ const LevelsPage = () => {
       game: {
         category: gameState.game.category,
         level: level + 1,
+        maxLevel: list?.length,
       },
       type: Actions.UPDATE_LEVEL,
     })

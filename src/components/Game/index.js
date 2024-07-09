@@ -175,6 +175,7 @@ const Game = () => {
               levelReached === gameState.game.level
                 ? gameState.game.level + 1
                 : gameState.game.level,
+            maxLevel: gameState.game.maxLevel,
           },
           type: Actions.UPDATE_LEVEL,
         })
@@ -267,9 +268,16 @@ const Game = () => {
       setHideKeyboard(true)
 
       if (levelReached === gameState.game.level) {
+        const lvl =
+          level + 1 > gameState?.game?.maxLevel
+            ? gameState?.game?.maxLevel
+            : level + 1
+
         localStorage.setItem(
           `${gameState?.game?.category}_${languageState.language}`,
-          JSON.stringify({ levelReached: level + 1 })
+          JSON.stringify({
+            levelReached: lvl,
+          })
         )
       }
       navigate(`${NEXT}/${category}`, { state: { answer: 1, title } })
