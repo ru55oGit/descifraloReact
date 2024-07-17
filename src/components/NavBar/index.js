@@ -11,7 +11,7 @@ import { useGameContext } from 'store/game'
 import { useLanguageContext } from 'store/language'
 import { ALEATORIO } from 'constants/const'
 import i18n from 'constants/i18n.json'
-import { CATEGORIES, PLAY, LEVELS } from 'constants/routes'
+import { CATEGORIES, PLAY, LEVELS, HOME } from 'constants/routes'
 import useStyles from './styles'
 
 const NavBar = (props) => {
@@ -51,18 +51,28 @@ const NavBar = (props) => {
         {!backArrow ? (
           <MenuIcon
             onClick={handleOpenMenu}
-            sx={{ color: theme.palette.primary.main, fontSize: '2rem' }}
+            sx={{
+              color: theme.palette.primary.main,
+              cursor: 'pointer',
+              fontSize: '2rem',
+            }}
           />
         ) : (
           <ArrowBackIcon
             onClick={handleBack}
-            sx={{ color: theme.palette.primary.main, fontSize: '2rem' }}
+            sx={{
+              color: theme.palette.primary.main,
+              cursor: 'pointer',
+              fontSize: '2rem',
+            }}
           />
         )}
         <Typography
           className="lobster"
           color="primary.main"
+          onClick={() => navigate(HOME)}
           sx={{
+            cursor: 'pointer',
             left: '50%',
             position: 'absolute',
             transform: 'translateX(-50%)',
