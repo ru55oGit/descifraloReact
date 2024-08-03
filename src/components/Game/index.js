@@ -18,7 +18,6 @@ import { useNavigate } from 'react-router-dom'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useTheme } from '@mui/styles'
-import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import { ALEATORIO, QUESTIONS } from 'constants/const'
 import { useGameContext, Actions } from 'store/game'
 import { useLanguageContext } from 'store/language'
@@ -47,6 +46,13 @@ const Game = () => {
   const [question, setQuestion] = useState()
   const [title, setTitle] = useState()
 
+  const timerToString = () => {
+    const minutes = `0${Math.floor(minutesBlocked / 60)}`.slice(-2)
+    const seconds = `0${minutesBlocked % 60}`.slice(-2)
+
+    return `${minutes}:${seconds}`
+  }
+
   const layout = {
     default: [
       '1 2 3 4 5 6 7 8 9 0',
@@ -55,6 +61,28 @@ const Game = () => {
       'Z X C V B N M',
     ],
   }
+
+  useEffect(() => {
+    let myTimeout = 0
+
+    if (minutesBlocked > 0) {
+      myTimeout = setTimeout(() => {
+        setMinutesBlocked(minutesBlocked - 1)
+      }, 1000)
+    } else {
+      setMinutesBlocked(300)
+      setHideKeyboard(false)
+      setWrongLetters('000')
+      localStorage.setItem(
+        `${gameState?.game?.category}_${languageState.language}`,
+        JSON.stringify({ levelReached })
+      )
+    }
+
+    return () => {
+      clearTimeout(myTimeout)
+    }
+  }, [minutesBlocked])
 
   const handleDownload = useCallback(() => {
     const baseNode = refQR.current
@@ -375,34 +403,23 @@ const Game = () => {
         }}
       >
         <Stack spacing={2} sx={{ '& h1 ~ div': { margin: 'auto' } }}>
-          <Typography align="center" sx={{ mb: 3 }} variant="h1">
+          <Typography align="center" variant="h1">
             {i18n.texts[languageState?.language].downloadTitle}
           </Typography>
-          <CountdownCircleTimer
-            colors={['#000', '#d9dbdf', '#aeb0b4', '#76787b']}
-            colorsTime={[7, 5, 2, 0]}
-            duration={minutesBlocked}
-            isPlaying
-            onComplete={() => {
-              setHideKeyboard(false)
-              setWrongLetters('000')
-              localStorage.setItem(
-                `${gameState?.game?.category}_${languageState.language}`,
-                JSON.stringify({ levelReached })
-              )
-            }}
-          >
-            {({ remainingTime }) => (
-              <Stack>
-                <Typography align="center" variant="hxxl">
-                  {remainingTime}
-                </Typography>
-                <Typography align="center" variant="body0">
-                  {i18n.texts[languageState?.language].seconds}
-                </Typography>
-              </Stack>
-            )}
-          </CountdownCircleTimer>
+          {/**
+           *  onComplete={() => {
+                setHideKeyboard(false)
+                setWrongLetters('000')
+                localStorage.setItem(
+                  `${gameState?.game?.category}_${languageState.language}`,
+                  JSON.stringify({ levelReached })
+                )
+              }}
+           */}
+          <Typography align="center" sx={{ mb: 3 }} variant="hxxl">
+            {timerToString()}
+          </Typography>
+
           <Typography align="center" sx={{ maxWidth: 200 }} variant="body2">
             {i18n.texts[languageState?.language].downloadText}
           </Typography>
