@@ -406,16 +406,6 @@ const Game = () => {
           <Typography align="center" variant="h1">
             {i18n.texts[languageState?.language].downloadTitle}
           </Typography>
-          {/**
-           *  onComplete={() => {
-                setHideKeyboard(false)
-                setWrongLetters('000')
-                localStorage.setItem(
-                  `${gameState?.game?.category}_${languageState.language}`,
-                  JSON.stringify({ levelReached })
-                )
-              }}
-           */}
           <Typography align="center" sx={{ mb: 3 }} variant="hxxl">
             {timerToString()}
           </Typography>

@@ -45,27 +45,39 @@ const Collaborations = () => {
           p: 1,
         }}
       >
-        <Typography fontWeight={900} variant="h1">
+        <Typography fontWeight={900} sx={{ mb: -2 }} variant="h1">
           Bitcoin
         </Typography>
-        <Typography>OKX</Typography>
+        <Typography fontSize={9}>(BEP20)</Typography>
         <Avatar
-          src="/images/btc-okx.jpeg"
+          src="/images/btc-bep20-fiwind.png"
           sx={{ height: 'auto', width: 180 }}
           variant="square"
         />
         <Chip
-          label="37o9gVhMa2ZRAYw9pzmwcczfvNFKBJXWt6"
+          label="0x9336e589e91cdde188e9c4a1595d819fa380baf9"
           sx={{ fontWeight: 'bold' }}
         />
-        <Typography>Binance</Typography>
+      </Stack>
+      <Stack
+        spacing={1.5}
+        sx={{
+          '& .MuiAvatar-root': { m: 'auto' },
+          justifyContent: 'center',
+          p: 1,
+        }}
+      >
+        <Typography fontWeight={900} sx={{ mb: -2 }} variant="h1">
+          USDT
+        </Typography>
+        <Typography fontSize={9}>(Polygon)</Typography>
         <Avatar
-          src="/images/btc-binance.jpeg"
+          src="/images/usdt-polygon-fiwind.png"
           sx={{ height: 'auto', width: 180 }}
           variant="square"
         />
         <Chip
-          label="14E51krRkrB73YF3WkcuKdsSwXJGCEH2VD"
+          label="0x9336e589e91cdde188e9c4a1595d819fa380baf9"
           sx={{ fontWeight: 'bold' }}
         />
       </Stack>
