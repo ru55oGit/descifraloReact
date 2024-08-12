@@ -59,7 +59,10 @@ const StatisticsPage = () => {
   }, [refQR, gameState, theme])
 
   return (
-    <Box className={classes.boxContainer}>
+    <Box
+      className={classes.boxContainer}
+      sx={{ margin: 'auto', maxWidth: 'calc(430px + 16px)' }}
+    >
       <NavBar backArrow={showButton} fixed />
       <Box ref={refQR} sx={{ background: theme.palette.primary.main, pb: 9 }}>
         <Stack
