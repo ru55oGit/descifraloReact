@@ -21,8 +21,9 @@ import { useTheme } from '@mui/styles'
 import { ALEATORIO, QUESTIONS } from 'constants/const'
 import { useGameContext, Actions } from 'store/game'
 import { useLanguageContext } from 'store/language'
+import Shares from 'components/Shares'
 import i18n from 'constants/i18n.json'
-import { NEXT, LEVELS, CATEGORIES } from 'constants/routes'
+import { NEXT, LEVELS, CATEGORIES, STATISTICS } from 'constants/routes'
 import 'react-simple-keyboard/build/css/index.css'
 import { getWordToGuess, getImage, getQuestions, isDevice } from 'utils'
 import useStyles from './styles'
@@ -83,6 +84,10 @@ const Game = () => {
       clearTimeout(myTimeout)
     }
   }, [minutesBlocked])
+
+  const handleStatistics = () => {
+    navigate(STATISTICS)
+  }
 
   const handleDownload = useCallback(() => {
     const baseNode = refQR.current
@@ -397,8 +402,10 @@ const Game = () => {
         open={wrongLetters === '111'}
         sx={{
           '& .MuiDialog-paperScrollPaper': {
+            maxWidth: 'calc(430px + 16px)',
             overflow: 'hidden',
             p: 5,
+            width: '90%',
           },
         }}
       >
@@ -410,7 +417,11 @@ const Game = () => {
             {timerToString()}
           </Typography>
 
-          <Typography align="center" sx={{ maxWidth: 200 }} variant="body2">
+          <Typography
+            align="center"
+            sx={{ margin: '16px auto !important', maxWidth: 200 }}
+            variant="body2"
+          >
             {i18n.texts[languageState?.language].downloadText}
           </Typography>
           <Button
@@ -420,6 +431,8 @@ const Game = () => {
             {i18n.texts[languageState?.language].downloadAndShare}
           </Button>
         </Stack>
+        <Shares />
+        <Button onClick={handleStatistics}>Estadisticas</Button>
       </Dialog>
     </Box>
   )

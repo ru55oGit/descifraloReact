@@ -56,7 +56,7 @@ const SuccessPage = () => {
       }
       setSession(sessionStorage)
     }
-  }, [state.title, state.answer])
+  }, [state?.title, state?.answer])
 
   const goToNext = () => {
     const lvl =

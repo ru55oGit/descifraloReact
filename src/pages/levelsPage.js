@@ -23,7 +23,6 @@ const LevelsPage = () => {
   const { languageState } = useLanguageContext()
   const [list, setList] = useState()
   const [levelReached, setLevelReached] = useState()
-  const [openDonate, setOpenDonate] = useState(false)
 
   useEffect(() => {
     if (gameState.game) {
@@ -129,12 +128,7 @@ const LevelsPage = () => {
 
   return (
     <Box className={classes.boxContainer}>
-      <NavBar
-        backArrow
-        fixed
-        openDonate={openDonate}
-        setOpenDonate={setOpenDonate}
-      />
+      <NavBar backArrow fixed />
       {!list && (
         <Box
           sx={{

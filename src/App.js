@@ -7,6 +7,7 @@ import CategoriesPage from './pages/categoriesPage'
 import PlayPage from './pages/playPage'
 import LevelsPage from './pages/levelsPage'
 import SuccessPage from './pages/successPage'
+import StatisticsPage from './pages/statisticsPage'
 import theme from './theme'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                 <Route element={<PlayPage />} path="/jugar" />
                 <Route element={<LevelsPage />} path="/niveles" />
                 <Route element={<SuccessPage />} path="/sig/:category" />
+                <Route element={<StatisticsPage />} path="/estadisticas" />
               </Routes>
             </Router>
           </ThemeProvider>

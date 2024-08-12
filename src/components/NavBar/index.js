@@ -15,8 +15,7 @@ import { CATEGORIES, PLAY, LEVELS, HOME } from 'constants/routes'
 import useStyles from './styles'
 
 const NavBar = (props) => {
-  const { backArrow, fixed, openMenu, setOpenMenu, setOpenDonate, level } =
-    props
+  const { backArrow, fixed, openMenu, setOpenMenu, level } = props
   const theme = useTheme()
   const classes = useStyles()
   const navigate = useNavigate()
@@ -25,7 +24,6 @@ const NavBar = (props) => {
 
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu)
-    setOpenDonate(false)
   }
 
   const handleBack = () => {
@@ -107,7 +105,6 @@ NavBar.propTypes = {
   fixed: PropTypes.bool,
   level: PropTypes.number,
   openMenu: PropTypes.bool,
-  setOpenDonate: PropTypes.func,
   setOpenMenu: PropTypes.func,
 }
 
@@ -116,6 +113,5 @@ NavBar.defaultProps = {
   fixed: false,
   level: null,
   openMenu: false,
-  setOpenDonate: () => {},
   setOpenMenu: () => {},
 }

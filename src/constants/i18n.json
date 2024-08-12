@@ -20,13 +20,17 @@
       "levels": "Niveles",
       "categories": "Categorías",
       "downloadTitle": "Perdiste",
-      "downloadAndShare": "Bajar y Compartir",
+      "downloadAndShare": "Bajar y compartir nivel",
+      "downAndShare": "Bajar y compartir",
       "downloadText": "Pide ayuda a tus amigos con este nivel",
       "seconds": "Segundos",
       "share": "Compartir",
       "collaborate": "Colaboraciones",
       "congrats": "Felicitaciones",
-      "congratsDesc": "Has superado todos los niveles"
+      "congratsDesc": "Has superado todos los niveles",
+      "levelReached": "Nivel alcanzado",
+      "totalLevels": "Cantidad de niveles",
+      "percDone": "Porcentaje realizado"
     },
     "esp": {
       "home": "Inicio",
@@ -48,13 +52,17 @@
       "levels": "Niveles",
       "categories": "Categorías",
       "downloadTitle": "Perdiste",
-      "downloadAndShare": "Bajar y Compartir",
+      "downloadAndShare": "Bajar y compartir nivel",
+      "downAndShare": "Bajar y compartir",
       "downloadText": "Pide ayuda a tus amigos con este nivel",
       "seconds": "Segundos",
       "share": "Compartir",
       "collaborate": "Colaboraciones",
       "congrats": "Enhorabuena",
-      "congratsDesc": "Has superado todos los niveles"
+      "congratsDesc": "Has superado todos los niveles",
+      "levelReached": "Nivel alcanzado",
+      "totalLevels": "Cantidad de niveles",
+      "percDone": "Porcentaje realizado"
     },
     "eng": {
       "home": "Home",
@@ -76,13 +84,17 @@
       "levels": "Levels",
       "categories": "Categories",
       "downloadTitle": "You lost",
-      "downloadAndShare": "Download and Share",
+      "downloadAndShare": "Download and Share level",
+      "downAndShare": "Download and Share",
       "downloadText": "Ask for help to your friends with this level",
       "seconds": "Seconds",
       "share": "Share",
       "collaborate": "Collaborations",
       "congrats": "Congratulations",
-      "congratsDesc": "You have passed all the levels"
+      "congratsDesc": "You have passed all the levels",
+      "levelReached": "Level achieved",
+      "totalLevels": "Number of levels",
+      "percDone": "Percentage done"
     }
   }
 }
