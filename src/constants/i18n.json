@@ -31,7 +31,11 @@
       "congratsDesc": "Has superado todos los niveles",
       "levelReached": "Nivel alcanzado",
       "totalLevels": "Cantidad de niveles",
-      "percDone": "Porcentaje completado"
+      "percDone": "Porcentaje completado",
+      "deleteProgressTitle": "Borrar progreso",
+      "deleteProgressDescription": "¿Estás segura/o que quieres borrar tu progreso?",
+      "accept": "Aceptar",
+      "cancel": "Cancelar"
     },
     "esp": {
       "home": "Inicio",
@@ -64,7 +68,11 @@
       "congratsDesc": "Has superado todos los niveles",
       "levelReached": "Nivel alcanzado",
       "totalLevels": "Cantidad de niveles",
-      "percDone": "Porcentaje completado"
+      "percDone": "Porcentaje completado",
+      "deleteProgressTitle": "Borrar progreso",
+      "deleteProgressDescription": "¿Estás segura/o que quieres borrar tu progreso?",
+      "accept": "Aceptar",
+      "cancel": "Cancelar"
     },
     "eng": {
       "home": "Home",
@@ -97,7 +105,11 @@
       "congratsDesc": "You have passed all the levels",
       "levelReached": "Level achieved",
       "totalLevels": "Number of levels",
-      "percDone": "Percentage done"
+      "percDone": "Percentage done",
+      "deleteProgressTitle": "Clear progress",
+      "deleteProgressDescription": "Are you sure you want to delete your progress?",
+      "accept": "Accept",
+      "cancel": "Cancel"
     }
   }
 }

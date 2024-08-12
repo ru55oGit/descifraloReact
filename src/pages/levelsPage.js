@@ -3,6 +3,11 @@ import { useNavigate } from 'react-router-dom'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import Button from '@mui/material/Button'
+import Dialog from '@mui/material/Dialog'
+import DialogContent from '@mui/material/DialogContent'
+import DialogContentText from '@mui/material/DialogContentText'
+import DialogTitle from '@mui/material/DialogTitle'
+import DialogActions from '@mui/material/DialogActions'
 import Typography from '@mui/material/Typography'
 import { ProgressBar } from 'react-loader-spinner'
 import { useTheme } from '@mui/styles'
@@ -13,6 +18,7 @@ import { useLanguageContext } from 'store/language'
 import useStyles from 'styles/pages'
 import { getWordToGuess, getImage, isDevice } from 'utils'
 import { CATEGORIES, PLAY } from 'constants/routes'
+import i18n from 'constants/i18n.json'
 
 const LevelsPage = () => {
   const classes = useStyles()
@@ -23,6 +29,7 @@ const LevelsPage = () => {
   const { languageState } = useLanguageContext()
   const [list, setList] = useState()
   const [levelReached, setLevelReached] = useState()
+  const [openDialog, setOpenDialog] = useState()
 
   useEffect(() => {
     if (gameState.game) {
@@ -126,6 +133,41 @@ const LevelsPage = () => {
       </Button>
     )
 
+  const dialog = () => (
+    <Dialog
+      onClose={() => setOpenDialog(false)}
+      open={openDialog}
+      PaperProps={{
+        component: 'form',
+        onSubmit: () => {
+          localStorage.removeItem(
+            `${gameState?.game?.category}_${languageState?.language}`
+          )
+          setOpenDialog(false)
+          navigate(CATEGORIES)
+        },
+      }}
+    >
+      <DialogTitle>
+        {i18n.texts[languageState?.language].deleteProgressTitle}
+      </DialogTitle>
+      <DialogContent>
+        <DialogContentText>
+          {i18n.texts[languageState?.language].deleteProgressDescription}
+        </DialogContentText>
+      </DialogContent>
+      <DialogActions>
+        <Button onClick={() => setOpenDialog(false)}>
+          {i18n.texts[languageState?.language].cancel}
+        </Button>
+        <Button type="submit">
+          {' '}
+          {i18n.texts[languageState?.language].accept}
+        </Button>
+      </DialogActions>
+    </Dialog>
+  )
+
   return (
     <Box className={classes.boxContainer}>
       <NavBar backArrow fixed />
@@ -186,6 +228,10 @@ const LevelsPage = () => {
               </Button>
             )
           )}
+        <Button onClick={() => setOpenDialog(true)}>
+          {i18n.texts[languageState?.language].deleteProgressTitle}
+        </Button>
+        {dialog()}
         <Box sx={{ width: 'calc(100% - 8px)' }}>
           <Collaborations />
         </Box>
