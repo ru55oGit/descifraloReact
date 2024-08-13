@@ -159,10 +159,12 @@ const StatisticsPage = () => {
               </Typography>
               <Typography color="primary.main" variant="hxl">
                 %
-                {(
-                  (gameState?.game?.level / gameState?.game?.maxLevel) *
-                  100
-                ).toFixed(2)}
+                {gameState?.game?.level === 1
+                  ? 0.0
+                  : (
+                      (gameState?.game?.level / gameState?.game?.maxLevel) *
+                      100
+                    ).toFixed(2)}
               </Typography>
             </Grid>
           </Grid>

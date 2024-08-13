@@ -85,10 +85,6 @@ const Game = () => {
     }
   }, [minutesBlocked])
 
-  const handleStatistics = () => {
-    navigate(STATISTICS)
-  }
-
   const handleDownload = useCallback(() => {
     const baseNode = refQR.current
 
@@ -432,7 +428,9 @@ const Game = () => {
           </Button>
         </Stack>
         <Shares />
-        <Button onClick={handleStatistics}>Estadisticas</Button>
+        <Button onClick={() => navigate(STATISTICS)}>
+          {i18n.texts[languageState?.language].statistics}
+        </Button>
       </Dialog>
     </Box>
   )

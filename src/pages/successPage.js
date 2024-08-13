@@ -181,33 +181,6 @@ const SuccessPage = () => {
 
       {!openMenu && (
         <Grid container spacing={1}>
-          {gameState?.game?.maxLevel !== gameState?.game?.level && (
-            <Grid
-              item
-              sx={{ display: 'flex', justifyContent: 'center' }}
-              xs={6}
-            >
-              {isDevice ? (
-                <Button
-                  className={classes.transparentButton}
-                  onTouchStart={goToNext}
-                >
-                  <Typography variant="h1">
-                    {i18n.texts[languageState.language].next}
-                  </Typography>
-                </Button>
-              ) : (
-                <Button
-                  className={classes.transparentButton}
-                  onClick={goToNext}
-                >
-                  <Typography variant="h1">
-                    {i18n.texts[languageState.language].next}
-                  </Typography>
-                </Button>
-              )}
-            </Grid>
-          )}
           <Grid
             item
             sx={{ display: 'flex', justifyContent: 'center', m: 'auto' }}
@@ -237,6 +210,33 @@ const SuccessPage = () => {
               </Button>
             )}
           </Grid>
+          {gameState?.game?.maxLevel !== gameState?.game?.level && (
+            <Grid
+              item
+              sx={{ display: 'flex', justifyContent: 'center' }}
+              xs={6}
+            >
+              {isDevice ? (
+                <Button
+                  className={classes.transparentButton}
+                  onTouchStart={goToNext}
+                >
+                  <Typography variant="h1">
+                    {i18n.texts[languageState.language].next}
+                  </Typography>
+                </Button>
+              ) : (
+                <Button
+                  className={classes.transparentButton}
+                  onClick={goToNext}
+                >
+                  <Typography variant="h1">
+                    {i18n.texts[languageState.language].next}
+                  </Typography>
+                </Button>
+              )}
+            </Grid>
+          )}
         </Grid>
       )}
     </Box>
