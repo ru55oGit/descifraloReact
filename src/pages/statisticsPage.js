@@ -8,7 +8,6 @@ import Avatar from '@mui/material/Avatar'
 import NavBar from 'components/NavBar'
 import { useGameContext } from 'store/game'
 import { getImage } from 'utils'
-import useStyles from 'styles/pages'
 import { useTheme } from '@mui/styles'
 import { Typography } from '@mui/material'
 import Button from '@mui/material/Button'
@@ -19,7 +18,6 @@ import { CATEGORIES } from 'constants/routes'
 
 const StatisticsPage = () => {
   const { gameState } = useGameContext()
-  const classes = useStyles()
   const theme = useTheme()
   const { languageState } = useLanguageContext()
   const refQR = useRef()
@@ -60,11 +58,22 @@ const StatisticsPage = () => {
 
   return (
     <Box
-      className={classes.boxContainer}
-      sx={{ margin: 'auto', maxWidth: 'calc(430px + 16px)' }}
+      sx={{
+        background: theme.palette.primary.main,
+        height: '100vh',
+        margin: 'auto',
+        maxWidth: 'calc(430px + 16px)',
+      }}
     >
       <NavBar backArrow={showButton} fixed />
-      <Box ref={refQR} sx={{ background: theme.palette.primary.main, pb: 9 }}>
+      <Box
+        ref={refQR}
+        sx={{
+          pb: 3,
+          position: 'relative',
+          top: showButton ? 45 : 0,
+        }}
+      >
         <Stack
           sx={{
             '& SVG': {
@@ -73,9 +82,8 @@ const StatisticsPage = () => {
               margin: 'auto',
               width: '80%',
             },
-            backgroundColor: theme.palette.primary.main,
-            height: '100%',
-            paddingTop: showButton ? 9 : 0,
+            background: theme.palette.primary.main,
+            padding: '16px 0',
             textAlign: 'center',
           }}
         >
@@ -188,7 +196,7 @@ const StatisticsPage = () => {
                 borderRadius: '4px',
                 display: 'block',
                 height: 40,
-                margin: '16px auto',
+                margin: '8px auto 16px',
                 padding: 1,
                 width: 'fit-content',
               }}
