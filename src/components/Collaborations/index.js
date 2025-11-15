@@ -1,7 +1,7 @@
 import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
-import Chip from '@mui/material/Chip'
-import Avatar from '@mui/material/Avatar'
+// import Chip from '@mui/material/Chip'
+// import Avatar from '@mui/material/Avatar'
 import Typography from '@mui/material/Typography'
 import { useTheme } from '@mui/material'
 import { useLanguageContext } from 'store/language'
@@ -16,7 +16,7 @@ const Collaborations = () => {
       sx={{
         background: theme.palette.white.main,
         mt: 0.5,
-        pt: 2,
+        py: 2,
         textAlign: 'center',
         width: '100%',
       }}
@@ -37,7 +37,7 @@ const Collaborations = () => {
           />
         </a>
       </Stack>
-      <Stack
+      {/* <Stack
         spacing={1.5}
         sx={{
           '& .MuiAvatar-root': { m: 'auto' },
@@ -80,7 +80,7 @@ const Collaborations = () => {
           label="0x9336e589e91cdde188e9c4a1595d819fa380baf9"
           sx={{ fontWeight: 'bold' }}
         />
-      </Stack>
+      </Stack> */}
     </Box>
   )
 }
