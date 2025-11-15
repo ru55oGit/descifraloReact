@@ -12,6 +12,7 @@ import { ALEATORIO } from 'constants/const'
 import { useLanguageContext } from 'store/language'
 import { LEVELS, PLAY } from 'constants/routes'
 import i18n from 'constants/i18n.json'
+import posthog from '../../posthog'
 import useStyles from './styles'
 
 const Chip = (props) => {
@@ -23,6 +24,11 @@ const Chip = (props) => {
   const { level, category, title, isRandom } = props
 
   const handleClick = (cat, lev) => {
+    posthog.capture('categoria_seleccionada', {
+      categoria: isRandom ? ALEATORIO : cat,
+      nivel: isRandom ? null : lev,
+    })
+
     const payload = !isRandom
       ? { category: cat, level: lev }
       : { category: ALEATORIO, level: null }
