@@ -36,7 +36,11 @@
       "deleteProgressTitle": "Borrar progreso",
       "deleteProgressDescription": "¿Estás segura/o que quieres borrar tu progreso?",
       "accept": "Aceptar",
-      "cancel": "Cancelar"
+      "cancel": "Cancelar",
+      "howToPlay": "¿CÓMO JUGAR?",
+      "selectCategory": "Selecciona categoría y nivel",
+      "riskLetters": "Arriesga letras",
+      "guessWord": "Adivina la palabra"
     },
     "esp": {
       "home": "Inicio",
@@ -74,7 +78,11 @@
       "deleteProgressTitle": "Borrar progreso",
       "deleteProgressDescription": "¿Estás segura/o que quieres borrar tu progreso?",
       "accept": "Aceptar",
-      "cancel": "Cancelar"
+      "cancel": "Cancelar",
+      "howToPlay": "¿CÓMO JUGAR?",
+      "selectCategory": "Selecciona categoría y nivel",
+      "riskLetters": "Arriesga letras",
+      "guessWord": "Adivina la palabra"
     },
     "eng": {
       "home": "Home",
@@ -112,7 +120,11 @@
       "deleteProgressTitle": "Clear progress",
       "deleteProgressDescription": "Are you sure you want to delete your progress?",
       "accept": "Accept",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "howToPlay": "HOW TO PLAY?",
+      "selectCategory": "Select category and level",
+      "riskLetters": "Risk letters",
+      "guessWord": "Guess the word"
     }
   }
 }

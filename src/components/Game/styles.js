@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles((theme) => ({
   gameContainer: {
-    backgroundColor: theme.palette.primary.main,
+    background: 'linear-gradient(#a34747, #F44336)',
     height: 'calc(100vh - 60px)',
     margin: 'auto',
     maxWidth: 'calc(430px + 16px)',
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '4px 8px',
   },
   souround: {
-    background: theme.palette.primary.main,
+    background: 'linear-gradient(#a34747, #F44336)',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',

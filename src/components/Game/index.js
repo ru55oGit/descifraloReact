@@ -363,7 +363,7 @@ const Game = () => {
               <Typography variant="hxl">{question}</Typography>
             )}
           </Box>
-          <Box sx={{ mt: 3 }}>{wordToGuess()}</Box>
+          <Box sx={{ mt: 1 }}>{wordToGuess()}</Box>
           {wrongLetters === '111' && (
             <Typography
               color="primary.main"
