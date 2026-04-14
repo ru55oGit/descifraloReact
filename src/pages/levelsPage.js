@@ -104,10 +104,10 @@ const LevelsPage = () => {
     isDevice ? (
       <Button
         key={k.respuesta}
-        ref={levelReached === i + 1 ? scrollToRef : null}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
         onTouchEnd={() => handleTouchEnd(i)}
+        onTouchMove={handleTouchMove}
+        onTouchStart={handleTouchStart}
+        ref={levelReached === i + 1 ? scrollToRef : null}
         sx={{
           background: theme.palette.white.main,
           border: `1px solid ${theme.palette.primary.main}`,
@@ -137,8 +137,8 @@ const LevelsPage = () => {
     ) : (
       <Button
         key={k.respuesta}
-        ref={levelReached === i + 1 ? scrollToRef : null}
         onClick={() => handleClick(i)}
+        ref={levelReached === i + 1 ? scrollToRef : null}
         sx={{
           background: theme.palette.white.main,
           border: `1px solid ${theme.palette.primary.main}`,
