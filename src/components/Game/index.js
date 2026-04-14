@@ -28,10 +28,40 @@ import 'react-simple-keyboard/build/css/index.css'
 import { getWordToGuess, getImage, getQuestions, isDevice } from 'utils'
 import useStyles from './styles'
 
+// Array of simple symbols/icons for the rain effect
+const RAIN_SYMBOLS = [
+  '🎮',
+  '🎯',
+  '🎨',
+  '🎭',
+  '🎪',
+  '🎲',
+  '🃏',
+  '🧩',
+  '🔍',
+  '💡',
+  '⭐',
+  '🌟',
+  '✨',
+  '🔥',
+  '💎',
+  '🏆',
+  '🎊',
+  '🎉',
+  '🎈',
+  '🎀',
+  '🎁',
+  '🏅',
+  '🥇',
+  '🔮',
+]
+
 const Game = () => {
   const classes = useStyles()
   const theme = useTheme()
   const refQR = useRef()
+  const canvasRef = useRef(null)
+  const intervalRef = useRef(null)
   const { gameState, gameDispatch } = useGameContext()
   const { languageState } = useLanguageContext()
   const navigate = useNavigate()
@@ -139,6 +169,57 @@ const Game = () => {
   useEffect(() => {
     handleWrongLetters()
   }, [wrongLetters])
+
+  // Rain effect logic
+  useEffect(() => {
+    const canvas = canvasRef.current
+
+    if (!canvas) return undefined
+
+    function spawnSymbol() {
+      if (!canvas) return
+
+      const el = document.createElement('div')
+
+      el.className = 'rain-symbol'
+      el.textContent =
+        RAIN_SYMBOLS[Math.floor(Math.random() * RAIN_SYMBOLS.length)]
+
+      const left = Math.random() * 100
+      const dur = 5 + Math.random() * 8
+      const size = 1.1 + Math.random() * 0.7 // Same size as introPage
+      const delay = Math.random() * -dur
+
+      el.style.cssText = `
+        left: ${left}%; 
+        font-size: ${size}rem; 
+        animation-duration: ${dur}s; 
+        animation-delay: ${delay}s;
+      `
+
+      canvas.appendChild(el)
+
+      // Clean up symbol after animation
+      setTimeout(() => {
+        if (el.parentNode) {
+          el.parentNode.removeChild(el)
+        }
+      }, (dur + Math.abs(delay)) * 1000)
+    }
+
+    // Generate symbols every 600ms
+    intervalRef.current = setInterval(spawnSymbol, 600)
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current)
+      }
+      // Clean remaining symbols
+      if (canvas) {
+        canvas.innerHTML = ''
+      }
+    }
+  }, [])
 
   useEffect(() => {
     if (gameState?.game && gameState?.game?.category !== ALEATORIO) {
@@ -314,8 +395,57 @@ const Game = () => {
   }
 
   return (
-    <Box className={classes.gameContainer}>
-      <Stack className={classes.lifeContainer} direction="row">
+    <Box
+      className={classes.gameContainer}
+      sx={{
+        overflow: 'hidden',
+        position: 'relative',
+      }}
+    >
+      {/* Canvas for symbol rain */}
+      <Box
+        ref={canvasRef}
+        id="bg-canvas"
+        sx={{
+          '& .rain-symbol': {
+            animation: 'fall linear infinite',
+            opacity: 0.4,
+            pointerEvents: 'none',
+            position: 'absolute',
+            top: '-50px',
+            userSelect: 'none',
+          },
+          '@keyframes fall': {
+            '0%': {
+              opacity: 0,
+              transform: 'translateY(-100px) rotate(0deg)',
+            },
+            '10%': {
+              opacity: 0.4,
+            },
+            '100%': {
+              opacity: 0,
+              transform: 'translateY(100vh) rotate(360deg)',
+            },
+            '90%': {
+              opacity: 0.4,
+            },
+          },
+          height: '100%',
+          left: 0,
+          pointerEvents: 'none',
+          position: 'absolute',
+          top: 0,
+          width: '100%',
+          zIndex: 0,
+        }}
+      />
+
+      <Stack
+        className={classes.lifeContainer}
+        direction="row"
+        sx={{ position: 'relative', zIndex: 1 }}
+      >
         {(gameState?.game?.level === levelReached ||
           gameState?.game?.category === ALEATORIO) &&
           wrongLetters
@@ -334,7 +464,7 @@ const Game = () => {
               )
             )}
       </Stack>
-      <Box ref={refQR}>
+      <Box ref={refQR} sx={{ position: 'relative', zIndex: 1 }}>
         <Box className={classes.souround}>
           {wrongLetters === '111' && (
             <Avatar
@@ -385,7 +515,10 @@ const Game = () => {
       </Box>
 
       {!hideKeyboard && (
-        <Stack className={classes.keyboardContainer}>
+        <Stack
+          className={classes.keyboardContainer}
+          sx={{ position: 'relative', zIndex: 1 }}
+        >
           <Keyboard
             layout={layout}
             layoutName="default"

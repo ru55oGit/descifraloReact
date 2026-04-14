@@ -59,7 +59,6 @@ const useStyles = makeStyles((theme) => ({
     padding: '4px 8px',
   },
   souround: {
-    background: 'linear-gradient(#a34747, #F44336)',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
