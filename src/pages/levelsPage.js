@@ -73,8 +73,10 @@ const LevelsPage = () => {
   }
 
   // Touch event handlers for mobile
+
   const handleTouchStart = (e) => {
     const touch = e.touches[0]
+
     setTouchStart({ x: touch.clientX, y: touch.clientY })
     setTouchMoved(false)
   }
