@@ -31,6 +31,10 @@ const LevelsPage = () => {
   const [levelReached, setLevelReached] = useState()
   const [openDialog, setOpenDialog] = useState()
 
+  // Touch handling state for mobile scroll vs tap detection
+  const [touchStart, setTouchStart] = useState({ x: 0, y: 0 })
+  const [touchMoved, setTouchMoved] = useState(false)
+
   useEffect(() => {
     if (gameState.game) {
       setLevelReached(
@@ -68,12 +72,42 @@ const LevelsPage = () => {
     navigate(PLAY)
   }
 
+  // Touch event handlers for mobile
+  const handleTouchStart = (e) => {
+    const touch = e.touches[0]
+    setTouchStart({ x: touch.clientX, y: touch.clientY })
+    setTouchMoved(false)
+  }
+
+  const handleTouchMove = (e) => {
+    if (!touchStart) return
+
+    const touch = e.touches[0]
+    const deltaX = Math.abs(touch.clientX - touchStart.x)
+    const deltaY = Math.abs(touch.clientY - touchStart.y)
+
+    // If movement is greater than 10px, consider it a scroll
+    if (deltaX > 10 || deltaY > 10) {
+      setTouchMoved(true)
+    }
+  }
+
+  const handleTouchEnd = (level) => {
+    // Only trigger click if there was no significant movement (not scrolling)
+    if (!touchMoved) {
+      handleClick(level)
+    }
+    setTouchMoved(false)
+  }
+
   const buttons = (k, i) =>
     isDevice ? (
       <Button
         key={k.respuesta}
         ref={levelReached === i + 1 ? scrollToRef : null}
-        onTouchEnd={() => handleClick(i)}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={() => handleTouchEnd(i)}
         sx={{
           background: theme.palette.white.main,
           border: `1px solid ${theme.palette.primary.main}`,
