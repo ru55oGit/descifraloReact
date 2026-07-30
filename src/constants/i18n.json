@@ -40,7 +40,11 @@
       "howToPlay": "¿CÓMO JUGAR?",
       "selectCategory": "Selecciona categoría y nivel",
       "riskLetters": "Arriesga letras",
-      "guessWord": "Adivina la palabra"
+      "guessWord": "Adivina la palabra",
+      "greetingMorning": "Buenos días ☀️",
+      "greetingAfternoon": "Buenas tardes 🌤️",
+      "greetingEvening": "Buenas noches 🌙",
+      "daysWithoutPlayingMessage": "hace {{days}} días que no jugás"
     },
     "esp": {
       "home": "Inicio",
@@ -82,7 +86,11 @@
       "howToPlay": "¿CÓMO JUGAR?",
       "selectCategory": "Selecciona categoría y nivel",
       "riskLetters": "Arriesga letras",
-      "guessWord": "Adivina la palabra"
+      "guessWord": "Adivina la palabra",
+      "greetingMorning": "Buenos días ☀️",
+      "greetingAfternoon": "Buenas tardes 🌤️",
+      "greetingEvening": "Buenas noches 🌙",
+      "daysWithoutPlayingMessage": "hace {{days}} días que no juegas"
     },
     "eng": {
       "home": "Home",
@@ -124,7 +132,11 @@
       "howToPlay": "HOW TO PLAY?",
       "selectCategory": "Select category and level",
       "riskLetters": "Risk letters",
-      "guessWord": "Guess the word"
+      "guessWord": "Guess the word",
+      "greetingMorning": "Good morning ☀️",
+      "greetingAfternoon": "Good afternoon 🌤️",
+      "greetingEvening": "Good evening 🌙",
+      "daysWithoutPlayingMessage": "it's been {{days}} days since you last played"
     }
   }
 }

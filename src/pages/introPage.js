@@ -13,6 +13,7 @@ import { useLanguageContext } from 'store/language'
 import i18n from 'constants/i18n.json'
 import { CATEGORIES } from 'constants/routes'
 import { useTheme } from '@mui/styles'
+import { getDaysSinceLastPlayed } from 'utils/lastPlayedState'
 // Array of simple symbols/icons for the rain effect
 const RAIN_SYMBOLS = [
   '🎮',
@@ -49,6 +50,23 @@ const CategoriesPage = () => {
   const theme = useTheme()
   const canvasRef = useRef(null)
   const intervalRef = useRef(null)
+
+  const texts = i18n.texts[languageState?.language] || i18n.texts.esp
+  const daysSincePlayed = getDaysSinceLastPlayed()
+  const nowHour = new Date().getHours()
+
+  let timeGreeting = texts.greetingEvening
+
+  if (nowHour < 12) {
+    timeGreeting = texts.greetingMorning
+  } else if (nowHour < 20) {
+    timeGreeting = texts.greetingAfternoon
+  }
+
+  const greeting =
+    daysSincePlayed != null && daysSincePlayed > 1
+      ? `${timeGreeting}, ${texts.daysWithoutPlayingMessage.replace('{{days}}', daysSincePlayed)}`
+      : timeGreeting
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget)
@@ -178,6 +196,18 @@ const CategoriesPage = () => {
           }}
         >
           Imaginalo
+        </Typography>
+        <Typography
+          sx={{
+            color: theme.palette.white.main,
+            fontFamily: 'Averta',
+            fontSize: '1rem',
+            fontWeight: 600,
+            opacity: 0.85,
+            textAlign: 'center',
+          }}
+        >
+          {greeting}
         </Typography>
         <Carrousel languageState={languageState} />
         <Box
