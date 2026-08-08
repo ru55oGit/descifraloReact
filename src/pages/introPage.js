@@ -4,8 +4,9 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import Stack from '@mui/material/Stack'
 import Popover from '@mui/material/Popover'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import LanguageIcon from '@mui/icons-material/Language'
+import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded'
 import Carrousel from 'components/Carrousel'
 import useStyles from 'styles/pages'
 import Language from 'components/Language'
@@ -42,9 +43,13 @@ const RAIN_SYMBOLS = [
   '🔮',
 ]
 
+const HUB_URL = 'https://dejadeboludear.netlify.app/'
+
 const CategoriesPage = () => {
   const classes = useStyles()
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
+  const fromHub = searchParams.get('from') === 'boludeando'
   const { languageState } = useLanguageContext()
   const [anchorEl, setAnchorEl] = useState(null)
   const theme = useTheme()
@@ -138,6 +143,30 @@ const CategoriesPage = () => {
         position: 'relative',
       }}
     >
+      {fromHub && (
+        <Box
+          aria-label="Volver"
+          component="a"
+          href={HUB_URL}
+          sx={{
+            alignItems: 'center',
+            backgroundColor: '#fff',
+            borderRadius: '8px',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.25)',
+            display: 'flex',
+            height: 40,
+            justifyContent: 'center',
+            left: 16,
+            position: 'absolute',
+            top: 16,
+            width: 40,
+            zIndex: 1000,
+          }}
+        >
+          <ArrowBackRoundedIcon sx={{ color: '#F44336' }} />
+        </Box>
+      )}
+
       {/* Canvas for symbol rain */}
       <Box
         ref={canvasRef}
